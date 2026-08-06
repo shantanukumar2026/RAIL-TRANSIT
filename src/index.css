@@ -67,6 +67,7 @@ section[id], div[id] {
 *::after,
 html,
 body,
+body,
 div,
 span,
 h1, h2, h3, h4, h5, h6,
@@ -82,7 +83,7 @@ textarea,
 nav,
 li,
 ul {
-  font-family: 'Proxima Nova', 'ProximaNova', 'StoneSansIIITCW05-Book', 'StoneSansIIITCW05', sans-serif !important;
+  font-family: 'StoneSansIIITCW05-Medium', 'StoneSansIIITCW05-Book', 'StoneSansIIITCW05', 'Proxima Nova', sans-serif !important;
 }
 
 h1,
@@ -97,7 +98,7 @@ h6,
 .brand-contact-btn,
 .sub-nav-btn,
 .section-title {
-  font-family: 'Proxima Nova', 'ProximaNova', 'Inter', sans-serif !important;
+  font-family: 'StoneSansIIITCW05-Medium', 'StoneSansIIITCW05-Book', 'StoneSansIIITCW05', sans-serif !important;
   letter-spacing: -0.015em;
   line-height: 1.25;
 }
