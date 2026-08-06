@@ -57,8 +57,8 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="site-header" style={{ position: 'sticky', top: 0, zIndex: 1000, background: '#FFFFFF' }}>
-      {/* 1. Top Utility Micro-Bar (Paving Risers Style) */}
-      <div style={{ background: '#0F291E', color: '#CBD5E1', fontSize: '11px', fontWeight: 500, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+      {/* 1. Top Utility Micro-Bar */}
+      <div style={{ background: '#195B34', color: '#FFFFFF', fontSize: '11px', fontWeight: 500, borderBottom: '1px solid rgba(255,255,255,0.15)' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '0 4vw', height: '34px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#E2E8F0' }}>
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34D399" strokeWidth="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
@@ -306,7 +306,7 @@ export const Header: React.FC<HeaderProps> = ({
             <a href="#contact" onClick={closeAllMenus} style={{ textDecoration: 'none' }}>
               <button
                 style={{
-                  background: '#0F0F0F',
+                  background: '#195B34',
                   color: '#FFFFFF',
                   border: 'none',
                   height: '46px',
@@ -322,8 +322,8 @@ export const Header: React.FC<HeaderProps> = ({
                   alignItems: 'center',
                   gap: '8px'
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = '#195B34')}
-                onMouseLeave={(e) => (e.currentTarget.style.background = '#0F0F0F')}
+                onMouseEnter={(e) => (e.currentTarget.style.background = '#15803D')}
+                onMouseLeave={(e) => (e.currentTarget.style.background = '#195B34')}
               >
                 <span>{t.contactUsBtn || 'REQUEST QUOTE'}</span>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="9 18 15 12 9 6" /></svg>
