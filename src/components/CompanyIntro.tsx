@@ -56,7 +56,7 @@ export const CompanyIntro: React.FC<CompanyIntroProps> = ({ lang }) => {
           <div style={{ position: 'relative' }}>
             <div style={{ borderRadius: '0px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(15, 23, 42, 0.15)', border: '2px solid #059669', background: '#042F2E', position: 'relative', height: '480px' }}>
               <video
-                src="https://www.megafraud.club/video/282244_small.mp4"
+                src="/videos/foundry_live.mp4"
                 autoPlay
                 loop
                 muted

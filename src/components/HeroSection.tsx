@@ -110,7 +110,7 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
           {/* Right Hero Column: Large Featured Component & Overlay */}
           <div style={{ position: 'relative', minHeight: '520px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', overflow: 'hidden' }}>
             <video
-              src="https://www.megafraud.club/video/282244_small.mp4"
+              src="/videos/foundry_live.mp4"
               autoPlay
               loop
               muted
