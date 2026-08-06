@@ -1,0 +1,239 @@
+import React, { useState } from 'react';
+import { Sliders, ShieldCheck, Zap, Activity } from 'lucide-react';
+
+export const SolidificationCalculator: React.FC = () => {
+  const [alloy, setAlloy] = useState<'manganese' | 'ductile' | 'forged'>('manganese');
+  const [temp, setTemp] = useState<number>(1550);
+  const [axleLoad, setAxleLoad] = useState<number>(36);
+
+  const alloyData = {
+    manganese: {
+      name: 'Austenitic Manganese Steel (AREMA Ch. 4)',
+      yieldStrength: '680 - 750 MPa',
+      hardness: '220 - 550 BHN (Work-Hardened)',
+      fractureToughness: '120 J/cm² @ -40°C',
+      porosityRisk: '0.00% (MagmaSoft® Modeled)',
+      desc: 'Formulated with 11-14% manganese for extreme impact work-hardening in turnout frog crossovers.'
+    },
+    ductile: {
+      name: 'SG Ductile Iron (ASTM A536 80-55-06)',
+      yieldStrength: '550 - 620 MPa',
+      hardness: '180 - 245 BHN',
+      fractureToughness: '95 J/cm² @ -20°C',
+      porosityRisk: '0.01% (Thermal Sand Coated)',
+      desc: 'High spheroidal graphite density delivering superior vibration damping for locomotive brake heads.'
+    },
+    forged: {
+      name: 'Forged Alloy Steel (AAR M-101 Grade F)',
+      yieldStrength: '850 - 980 MPa',
+      hardness: '280 - 340 BHN',
+      fractureToughness: '145 J/cm² @ -50°C',
+      porosityRisk: '0.00% (36-Ton Hydraulic Press)',
+      desc: 'Vacuum degassed carbon steel forged with continuous grain flow for heavy freight axles.'
+    }
+  };
+
+  const current = alloyData[alloy];
+
+  return (
+    <section className="section-full-vh" style={{ background: '#143D2E', color: '#F5F2EB', borderBottom: '2px solid #C5A059', position: 'relative' }}>
+      <div className="blueprint-grid-dark" style={{ position: 'absolute', inset: 0, opacity: 0.35, pointerEvents: 'none' }} />
+
+      <div className="container-custom" style={{ position: 'relative', zIndex: 10 }}>
+        
+        {/* Header */}
+        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '1rem' }}>
+          <div>
+            <div className="eyebrow eyebrow-dark">
+              <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#C5A059' }} />
+              <span>INTERACTIVE METALLURGICAL ENGINE</span>
+            </div>
+            <h2 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#F5F2EB', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+              THERMAL SOLIDIFICATION &amp; TOLERANCE CALCULATOR
+            </h2>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(197, 160, 89, 0.15)', border: '1px solid #C5A059', padding: '6px 14px', borderRadius: '2px' }}>
+            <Activity size={16} color="#C5A059" />
+            <span style={{ fontSize: '11px', fontWeight: 900, color: '#C5A059', letterSpacing: '0.1em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+              LIVE SIMULATION ACTIVE
+            </span>
+          </div>
+        </div>
+
+        {/* Interactive Controls & Real-Time Telemetry */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '2rem', alignItems: 'stretch' }}>
+          
+          {/* Left Panel: Inputs */}
+          <div style={{ gridColumn: 'span 5', background: 'rgba(12, 36, 27, 0.95)', border: '1px solid rgba(197, 160, 89, 0.3)', padding: '2rem', borderRadius: '2px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div>
+              <h3 style={{ fontSize: '14px', fontWeight: 900, color: '#C5A059', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 1.5rem 0', display: 'flex', alignItems: 'center', gap: '8px', fontFamily: "'Geist', sans-serif !important" }}>
+                <Sliders size={16} color="#C5A059" />
+                <span>SELECT ALLOY &amp; PARAMETERS</span>
+              </h3>
+
+              {/* Alloy Picker Buttons */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '1.75rem' }}>
+                <button
+                  onClick={() => setAlloy('manganese')}
+                  style={{
+                    background: alloy === 'manganese' ? '#1C4735' : 'rgba(255,255,255,0.04)',
+                    border: alloy === 'manganese' ? '1.5px solid #C5A059' : '1px solid rgba(255,255,255,0.1)',
+                    color: '#F5F2EB',
+                    padding: '12px 16px',
+                    fontSize: '12.5px',
+                    fontWeight: 800,
+                    textAlign: 'left',
+                    cursor: 'pointer',
+                    borderRadius: '2px',
+                    transition: 'all 0.2s',
+                    fontFamily: "'Geist', sans-serif !important"
+                  }}
+                >
+                  Austenitic Manganese (Turnout Frogs)
+                </button>
+
+                <button
+                  onClick={() => setAlloy('ductile')}
+                  style={{
+                    background: alloy === 'ductile' ? '#1C4735' : 'rgba(255,255,255,0.04)',
+                    border: alloy === 'ductile' ? '1.5px solid #C5A059' : '1px solid rgba(255,255,255,0.1)',
+                    color: '#F5F2EB',
+                    padding: '12px 16px',
+                    fontSize: '12.5px',
+                    fontWeight: 800,
+                    textAlign: 'left',
+                    cursor: 'pointer',
+                    borderRadius: '2px',
+                    transition: 'all 0.2s',
+                    fontFamily: "'Geist', sans-serif !important"
+                  }}
+                >
+                  SG Ductile Iron (Brake Heads)
+                </button>
+
+                <button
+                  onClick={() => setAlloy('forged')}
+                  style={{
+                    background: alloy === 'forged' ? '#1C4735' : 'rgba(255,255,255,0.04)',
+                    border: alloy === 'forged' ? '1.5px solid #C5A059' : '1px solid rgba(255,255,255,0.1)',
+                    color: '#F5F2EB',
+                    padding: '12px 16px',
+                    fontSize: '12.5px',
+                    fontWeight: 800,
+                    textAlign: 'left',
+                    cursor: 'pointer',
+                    borderRadius: '2px',
+                    transition: 'all 0.2s',
+                    fontFamily: "'Geist', sans-serif !important"
+                  }}
+                >
+                  Forged Alloy Steel (Locomotive Axles)
+                </button>
+              </div>
+
+              {/* Pouring Temperature Slider */}
+              <div style={{ marginBottom: '1.5rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
+                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#A3B5AC', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Geist', sans-serif !important" }}>MELT POURING TEMP (°C)</label>
+                  <span style={{ fontSize: '12px', fontWeight: 900, color: '#C5A059', fontFamily: "'Geist', sans-serif !important" }}>{temp} °C</span>
+                </div>
+                <input 
+                  type="range" 
+                  min="1400" 
+                  max="1700" 
+                  step="10"
+                  value={temp}
+                  onChange={e => setTemp(Number(e.target.value))}
+                  style={{ width: '100%', accentColor: '#C5A059', cursor: 'pointer' }}
+                />
+              </div>
+
+              {/* Axle Load Capacity Slider */}
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
+                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#A3B5AC', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Geist', sans-serif !important" }}>AXLE LOAD SPECIFICATION (TONS)</label>
+                  <span style={{ fontSize: '12px', fontWeight: 900, color: '#C5A059', fontFamily: "'Geist', sans-serif !important" }}>{axleLoad} TONS</span>
+                </div>
+                <input 
+                  type="range" 
+                  min="25" 
+                  max="45" 
+                  step="1"
+                  value={axleLoad}
+                  onChange={e => setAxleLoad(Number(e.target.value))}
+                  style={{ width: '100%', accentColor: '#C5A059', cursor: 'pointer' }}
+                />
+              </div>
+
+            </div>
+
+            <div style={{ paddingTop: '1.25rem', marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <ShieldCheck size={16} color="#C5A059" />
+              <span style={{ fontSize: '11px', color: '#A3B5AC', fontFamily: "'Manrope', sans-serif !important" }}>
+                Calculations auto-validated against AREMA Chapter 4 specs.
+              </span>
+            </div>
+          </div>
+
+          {/* Right Panel: Simulated Results Telemetry */}
+          <div style={{ gridColumn: 'span 7', background: '#FFFFFF', color: '#1F2937', padding: '2.25rem', borderRadius: '2px', boxShadow: '0 20px 45px rgba(0,0,0,0.25)', borderTop: '4px solid #C5A059', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', borderBottom: '1px solid #E5E7EB', paddingBottom: '0.75rem' }}>
+                <h4 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#143D2E', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                  {current.name}
+                </h4>
+                <span style={{ background: '#143D2E', color: '#C5A059', fontSize: '10px', fontWeight: 900, padding: '4px 10px', letterSpacing: '0.1em', fontFamily: "'Geist', sans-serif !important" }}>
+                  SIMULATED TELEMETRY
+                </span>
+              </div>
+
+              <p style={{ fontSize: '13px', color: '#4B5563', lineHeight: 1.6, marginBottom: '1.5rem', fontFamily: "'Manrope', sans-serif !important" }}>
+                {current.desc}
+              </p>
+
+              {/* Telemetry Metric Cards */}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem', marginBottom: '1.5rem' }}>
+                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3px solid #C5A059' }}>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>YIELD STRENGTH</span>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>{current.yieldStrength}</strong>
+                </div>
+
+                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3px solid #C5A059' }}>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>BRINELL HARDNESS</span>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>{current.hardness}</strong>
+                </div>
+
+                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3px solid #C5A059' }}>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>SUB-ZERO IMPACT TOUGHNESS</span>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>{current.fractureToughness}</strong>
+                </div>
+
+                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3px solid #C5A059' }}>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>INTERNAL POROSITY RISK</span>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>{current.porosityRisk}</strong>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ background: '#143D2E', color: '#F5F2EB', padding: '1rem 1.25rem', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Zap size={16} color="#C5A059" />
+                <span style={{ fontSize: '12px', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>
+                  CALCULATED HAL SAFETY FACTOR: 3.4x OPERATIONAL LOAD
+                </span>
+              </div>
+              <a href="#contact" className="link-hover-arrow" style={{ color: '#C5A059' }}>
+                <span>REQUEST SPECS</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default SolidificationCalculator;

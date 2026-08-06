@@ -1,190 +1,112 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './index.css';
-import { translations } from './translations';
 
+import TopContactBar from './components/TopContactBar';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import CompanyIntro from './components/CompanyIntro';
-import ManufacturingExcellence from './components/ManufacturingExcellence';
-import ProductsSection from './components/ProductsSection';
-import SpecialtyMixesSection from './components/SpecialtyMixesSection';
-import MarketsSection from './components/MarketsSection';
-import EsgSustainability from './components/EsgSustainability';
-import FeaturedProjects from './components/FeaturedProjects';
-import { InnovationSection } from './components/InnovationSection';
-import LogisticsCoverage from './components/LogisticsCoverage';
-import FleetOperations from './components/FleetOperations';
-import DigitalSolutions from './components/DigitalSolutions';
-import SafetyStandards from './components/SafetyStandards';
-import KnowledgeCenter from './components/KnowledgeCenter';
+import FeaturedComponents from './components/FeaturedComponents';
+import ProductShowcaseStrip from './components/ProductShowcaseStrip';
+import RailwayTelemetryWidget from './components/RailwayTelemetryWidget';
+import ManufacturingCapabilities from './components/ManufacturingCapabilities';
+import SolidificationCalculator from './components/SolidificationCalculator';
+import ManufacturingProcess from './components/ManufacturingProcess';
+import IndustriesWeServe from './components/IndustriesWeServe';
+import FactoryOverview from './components/FactoryOverview';
+import EngineeringExcellence from './components/EngineeringExcellence';
+import StandardsGrid from './components/StandardsGrid';
+import TestingFacilities from './components/TestingFacilities';
+import AuthoritiesApprovals from './components/AuthoritiesApprovals';
+import NewsInsights from './components/NewsInsights';
+import CtaBanner from './components/CtaBanner';
 import Footer from './components/Footer';
-import type { MegaMenuTab } from './types';
+
+import RequestQuoteModal from './components/RequestQuoteModal';
+import WatchVideoModal from './components/WatchVideoModal';
 
 function App() {
-  const [lang, setLang] = useState<'en' | 'es'>('en');
-  const [activeMegaMenu, setActiveMegaMenu] = useState<MegaMenuTab>(null);
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', 'light');
-  }, []);
+  const handleOpenQuote = () => setIsQuoteModalOpen(true);
+  const handleCloseQuote = () => setIsQuoteModalOpen(false);
 
-  // Gallery Filter State
-  const [galleryFilter, setGalleryFilter] = useState<'all' | 'commercial' | 'infrastructure' | 'industrial'>('all');
-
-  // Logistics Dispatch States
-  const [activeHub, setActiveHub] = useState<'houston' | 'chicago' | 'denver' | 'dallas'>('houston');
-
-  // ESG Sustainability States
-  const [clinkerRatio, setClinkerRatio] = useState(30);
-  const [esgVolumeVal] = useState('100');
-
-  const t = translations[lang];
-
-  const galleryProjects = [
-    {
-      title: lang === 'en' ? 'Amtrak High-Speed Corridor Turnout Frogs' : 'Desvíos para Corredor de Alta Velocidad Amtrak',
-      loc: 'Philadelphia, Pennsylvania',
-      vol: '1,200 Turnout Sets',
-      category: 'infrastructure',
-      img: '/images/istockphoto-1313022678-1024x1024.jpg'
-    },
-    {
-      title: lang === 'en' ? 'NYC MTA Subway Bogie Side Frames & Axles' : 'Bastidores y Ejes de Bogie para Metro MTA de Nueva York',
-      loc: 'New York City, NY',
-      vol: '4,500 Forged Axles',
-      category: 'industrial',
-      img: '/images/istockphoto-2263816291-1024x1024.jpg'
-    },
-    {
-      title: lang === 'en' ? 'BNSF Heavy Freight Line Rail Fastenings' : 'Fijaciones de Vía para Línea de Carga Pesada BNSF',
-      loc: 'Chicago, Illinois',
-      vol: '180,000 Tie Plates',
-      category: 'commercial',
-      img: '/images/istockphoto-2278348463-1024x1024.jpg'
-    },
-    {
-      title: lang === 'en' ? 'Chicago Metra Catenary & OHL Hardware' : 'Herrajes para Catenaria Metra de Chicago',
-      loc: 'Chicago, Illinois',
-      vol: '12,000 Catenary Arms',
-      category: 'infrastructure',
-      img: '/images/istockphoto-2166976559-1024x1024.jpg'
-    },
-    {
-      title: lang === 'en' ? 'Union Pacific Intermodal Crossing Diamonds' : 'Cruzamientos de Manganeso Intermodales Union Pacific',
-      loc: 'Dallas, Texas',
-      vol: '850 Manganese Frogs',
-      category: 'commercial',
-      img: '/images/istockphoto-2284955682-1024x1024.jpg'
-    },
-    {
-      title: lang === 'en' ? 'BART Rapid Transit Third Rail Insulator Supports' : 'Soportes de Aisladores de Tercer Riel para BART',
-      loc: 'San Francisco, California',
-      vol: '25,000 Support Units',
-      category: 'industrial',
-      img: '/images/istockphoto-2263288423-1024x1024.jpg'
-    }
-  ];
-
-  const filteredProjects = galleryFilter === 'all'
-    ? galleryProjects
-    : galleryProjects.filter(p => p.category === galleryFilter);
-
-  const logisticsHubData = {
-    houston: {
-      name: lang === 'en' ? 'ABC FOUNDRIES East Coast Hub' : 'Centro Este de ABC FOUNDRIES',
-      activeMixers: 42,
-      yardsLoaded: '8,400 Tons',
-      transitTime: '24 hrs dispatch',
-      status: lang === 'en' ? 'Optimal Flow' : 'Flujo Óptimo'
-    },
-    chicago: {
-      name: lang === 'en' ? 'Chicago Rail Forging & CNC Center' : 'Centro de Forja y CNC Ferroviario de Chicago',
-      activeMixers: 35,
-      yardsLoaded: '6,900 Tons',
-      transitTime: '12 hrs dispatch',
-      status: lang === 'en' ? 'Optimal Flow' : 'Flujo Óptimo'
-    },
-    denver: {
-      name: lang === 'en' ? 'Canada Foundries Division' : 'División Canada Foundries',
-      activeMixers: 28,
-      yardsLoaded: '5,100 Tons',
-      transitTime: '36 hrs dispatch',
-      status: lang === 'en' ? 'High Demand' : 'Demanda Alta'
-    },
-    dallas: {
-      name: lang === 'en' ? 'ABC Forge Southern Depot' : 'Depósito Sur de ABC Forge',
-      activeMixers: 48,
-      yardsLoaded: '9,800 Tons',
-      transitTime: '18 hrs dispatch',
-      status: lang === 'en' ? 'Optimal Flow' : 'Flujo Óptimo'
-    }
-  };
-
+  const handleOpenVideo = () => setIsVideoModalOpen(true);
+  const handleCloseVideo = () => setIsVideoModalOpen(false);
 
   return (
-    <>
-      <Header
-        lang={lang}
-        setLang={setLang}
-        activeMegaMenu={activeMegaMenu}
-        setActiveMegaMenu={setActiveMegaMenu}
-        t={t}
-      />
+    <div style={{ minHeight: '100vh', background: '#F8F9FA', color: '#1F2937' }}>
+      
+      {/* 01 Top Contact Bar */}
+      <TopContactBar />
+
+      {/* 02 Main Navigation & 03 Mega Menu */}
+      <Header onRequestQuoteClick={handleOpenQuote} />
+
       <main id="main-content">
-        {/* 1. Hero */}
-        <HeroSection lang={lang} t={t} />
-
-        {/* 2. Corporate Overview */}
-        <CompanyIntro lang={lang} />
-
-        {/* 3. Manufacturing Ecosystem */}
-        <ManufacturingExcellence lang={lang} />
-
-        {/* 4. Product Portfolio */}
-        <ProductsSection lang={lang} />
-        <SpecialtyMixesSection />
-
-        {/* 5. Markets We Serve */}
-        <MarketsSection />
-
-
-
-        {/* 7. Sustainability & Environmental Performance */}
-        <EsgSustainability
-          clinkerRatio={clinkerRatio}
-          setClinkerRatio={setClinkerRatio}
-          esgVolumeVal={esgVolumeVal}
+        {/* 04 Full Screen Hero Section */}
+        <HeroSection 
+          onExploreClick={() => {
+            const el = document.getElementById('capabilities');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+          }}
+          onWatchVideoClick={handleOpenVideo}
         />
 
-        {/* 8. Selected Landmark Projects */}
-        <FeaturedProjects
-          galleryFilter={galleryFilter}
-          setGalleryFilter={setGalleryFilter}
-          filteredProjects={filteredProjects}
-        />
+        {/* 05 Company Introduction */}
+        <CompanyIntro />
 
-        {/* 9. Research & Material Innovation */}
-        <InnovationSection lang={lang} />
+        {/* 06 Featured Rail Components (All 15 Products) */}
+        <FeaturedComponents />
 
-        {/* 10. Logistics & Fleet Operations */}
-        <LogisticsCoverage
-          logisticsHubData={logisticsHubData}
-          activeHub={activeHub}
-          setActiveHub={setActiveHub}
-        />
-        <FleetOperations />
+        {/* 07 Isolated Metal Castings Showcase Strip (Matching User Screenshot) */}
+        <ProductShowcaseStrip />
 
-        {/* 11. Digital Systems & Safety Standards */}
-        <DigitalSolutions lang={lang} />
-        <SafetyStandards lang={lang} />
+        {/* 08 Live Interactive Railway Telemetry & Speed Monitor */}
+        <RailwayTelemetryWidget />
 
-        {/* 12. Knowledge Center */}
-        <KnowledgeCenter />
+        {/* 09 Manufacturing Capabilities */}
+        <ManufacturingCapabilities />
+
+        {/* 10 Interactive Solidification & Metallurgy Calculator */}
+        <SolidificationCalculator />
+
+        {/* 11 Manufacturing Process Timeline */}
+        <ManufacturingProcess />
+
+        {/* 12 Railway Sectors We Serve */}
+        <IndustriesWeServe />
+
+        {/* 13 Factory Section with Stats Overlay */}
+        <FactoryOverview />
+
+        {/* 14 Engineering Excellence */}
+        <EngineeringExcellence />
+
+        {/* 15 International Standards & Wheelsets Showcase */}
+        <StandardsGrid />
+
+        {/* 16 In-House Testing Facilities */}
+        <TestingFacilities />
+
+        {/* 17 Authorities & Approvals */}
+        <AuthoritiesApprovals />
+
+        {/* 18 News & Insights */}
+        <NewsInsights />
+
+        {/* 19 CTA Banner */}
+        <CtaBanner onRequestQuoteClick={handleOpenQuote} />
       </main>
 
-      {/* 14. Global Corporate Footer */}
-        <Footer />
-    </>
+      {/* 20 Corporate Mega Footer & Bottom Footer */}
+      <Footer />
+
+      {/* Interactive Modals */}
+      <RequestQuoteModal isOpen={isQuoteModalOpen} onClose={handleCloseQuote} />
+      <WatchVideoModal isOpen={isVideoModalOpen} onClose={handleCloseVideo} />
+
+    </div>
   );
 }
 

@@ -1,94 +1,119 @@
 import React from 'react';
-import type { Language } from '../types';
-import { translations } from '../translations';
+import { ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
 
-interface CompanyIntroProps {
-  lang: Language;
-}
-
-export const CompanyIntro: React.FC<CompanyIntroProps> = ({ lang }) => {
-  const t = translations[lang];
-
+export const CompanyIntro: React.FC = () => {
   return (
-    <section id="company-overview" style={{ background: '#FFFFFF', padding: '48px 5vw', borderBottom: '1px solid #E2E8F0', scrollMarginTop: '100px' }}>
-      <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
-          <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#ECFDF5', border: '1px solid #A7F3D0', padding: '6px 14px', borderRadius: '0px', marginBottom: '16px' }}>
-              <span style={{ width: '8px', height: '8px', borderRadius: '0px', background: '#10B981' }} />
-              <span style={{ color: '#047857', fontSize: '11px', fontWeight: 800, letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-                {t.whoWeAre}
+    <section id="company-overview" className="section-full-vh" style={{ background: '#F8F9FA', borderBottom: '1px solid #E5E7EB', position: 'relative', overflow: 'hidden' }}>
+      {/* Blueprint Grid Pattern Overlay */}
+      <div className="blueprint-grid" style={{ position: 'absolute', inset: 0, opacity: 0.4, pointerEvents: 'none' }} />
+      <div className="section-shape-accent" style={{ top: '10%', right: '5%' }} />
+
+      <div className="container-custom" style={{ position: 'relative', zIndex: 10 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '3.5rem', alignItems: 'center' }}>
+          
+          {/* Left Side: Storytelling & Why Choose Us */}
+          <div style={{ gridColumn: 'span 7' }}>
+            <div className="eyebrow" style={{ letterSpacing: '0.2em', marginBottom: '1rem', fontFamily: "'Geist', sans-serif !important" }}>
+              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#C5A059' }} />
+              <span>THE MANUFACTURING HERITAGE</span>
+            </div>
+
+            {/* High-Impact Uppercase Swiss Industrial Heading */}
+            <h2 
+              style={{ 
+                fontSize: 'clamp(2.5rem, 4.2vw, 3.8rem)', 
+                color: '#143D2E', 
+                fontWeight: 900, 
+                lineHeight: 1.06, 
+                marginBottom: '1.5rem', 
+                letterSpacing: '-0.025em', 
+                textTransform: 'uppercase',
+                fontFamily: "'Geist', sans-serif !important" 
+              }}
+            >
+              HEAVY RAIL &amp; METALLURGICAL<br />
+              <span style={{ color: '#143D2E', position: 'relative', display: 'inline-block' }}>
+                ENGINEERING EXCELLENCE
+                <span style={{ position: 'absolute', bottom: '-4px', left: 0, width: '100%', height: '4px', background: '#C5A059' }} />
               </span>
-            </div>
-            <h2 style={{ fontSize: '36px', fontWeight: 800, color: '#195B34', letterSpacing: '-0.02em', lineHeight: 1.25, marginBottom: '16px' }}>
-              {t.introTitle}
             </h2>
-            <p style={{ fontSize: '16px', color: '#047857', fontWeight: 600, lineHeight: 1.5, marginBottom: '16px' }}>
-              {t.introSub}
-            </p>
-            <p style={{ fontSize: '15px', color: '#334155', lineHeight: 1.7, marginBottom: '16px' }}>
-              {t.introP1}
-            </p>
-            <p style={{ fontSize: '15px', color: '#334155', lineHeight: 1.7, marginBottom: '32px' }}>
-              {t.introP2}
+
+            <p style={{ fontSize: '1.1rem', color: '#4B5563', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '640px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+              ABC Rail &amp; Transit specializes in electric induction cast manganese turnout trackwork, heavy drop forged locomotive axles, and precision bogie components. Serving Class I freight railroads, high-speed corridors, and urban transit authorities globally with uncompromised quality assurance.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', borderTop: '2px solid #064E3B', paddingTop: '24px' }}>
-              <div>
-                <span style={{ fontSize: '32px', fontWeight: 900, color: '#195B34', display: 'block', lineHeight: 1 }}>18+</span>
-                <span style={{ fontSize: '13px', color: '#15803D', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{t.statPlants}</span>
+            {/* Why Choose ABC Foundries - 4 Story Pillars */}
+            <div style={{ marginBottom: '2.25rem', padding: '1.25rem', background: '#FFFFFF', border: '1px solid #E5E7EB', borderLeft: '4px solid #C5A059', borderRadius: '2px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+              <strong style={{ fontSize: '12.5px', fontWeight: 900, color: '#143D2E', letterSpacing: '0.1em', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem', fontFamily: "'Geist', sans-serif !important" }}>
+                WHY CLASS I RAILROADS PARTNER WITH ABC
+              </strong>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.85rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <CheckCircle2 size={15} color="#10B981" />
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>RDSO Approved Class A Foundry</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <CheckCircle2 size={15} color="#10B981" />
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>100% Volumetric Ultrasonic NDT</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <CheckCircle2 size={15} color="#10B981" />
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>36-Ton Axle Load Rating</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <CheckCircle2 size={15} color="#10B981" />
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>AREMA Ch. 4 &amp; AAR M-1003</span>
+                </div>
               </div>
-              <div>
-                <span style={{ fontSize: '32px', fontWeight: 900, color: '#195B34', display: 'block', lineHeight: 1 }}>250+</span>
-                <span style={{ fontSize: '13px', color: '#15803D', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{t.statMixers}</span>
+            </div>
+
+            <a 
+              href="#capabilities" 
+              className="link-hover-arrow"
+            >
+              <span>DISCOVER OUR MANUFACTURING FOOTPRINT</span>
+              <ArrowRight size={15} color="#C5A059" />
+            </a>
+          </div>
+
+          {/* Right Side: Heavy Machined Axlebox Housing Photo */}
+          <div style={{ gridColumn: 'span 5' }}>
+            <div className="img-hover-zoom" style={{ border: '1px solid #E5E7EB', background: '#FFFFFF', boxShadow: '0 20px 45px rgba(20, 61, 46, 0.12)', borderRadius: '2px', position: 'relative' }}>
+              
+              {/* Badge overlay */}
+              <div style={{ position: 'absolute', top: '14px', right: '14px', zIndex: 20, background: '#143D2E', color: '#C5A059', fontSize: '9.5px', fontWeight: 900, padding: '4px 10px', border: '1px solid #C5A059', letterSpacing: '0.1em', fontFamily: "'Geist', sans-serif !important" }}>
+                AAR M-1003 QA
               </div>
-              <div>
-                <span style={{ fontSize: '32px', fontWeight: 900, color: '#064E3B', display: 'block', lineHeight: 1 }}>5M+</span>
-                <span style={{ fontSize: '13px', color: '#64748B', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{t.statVolume}</span>
+
+              {/* Dynamic Image */}
+              <div style={{ height: '440px', overflow: 'hidden', position: 'relative', background: '#F8F9FA' }}>
+                <img 
+                  src="/images/istockphoto-1196704251-2048x2048.jpg" 
+                  alt="FINISH MACHINED AXLEBOX HOUSING" 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
               </div>
-              <div>
-                <span style={{ fontSize: '32px', fontWeight: 900, color: '#059669', display: 'block', lineHeight: 1 }}>-50%</span>
-                <span style={{ fontSize: '13px', color: '#64748B', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{t.statReduction}</span>
+
+              {/* Image Footer Details */}
+              <div style={{ padding: '1.25rem', background: '#FFFFFF', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div>
+                  <strong style={{ fontSize: '12px', fontWeight: 900, color: '#143D2E', letterSpacing: '0.06em', textTransform: 'uppercase', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>
+                    FINISH MACHINED AXLEBOX HOUSING
+                  </strong>
+                  <span style={{ fontSize: '11px', color: '#6C757D', fontFamily: "'Manrope', sans-serif !important" }}>
+                    Forged Carbon Steel ASTM A668 • 5-Axis CNC Finished
+                  </span>
+                </div>
+                
+                <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  <ShieldCheck size={16} color="#10B981" />
+                  <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#10B981', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>PASSED NDT</span>
+                </div>
               </div>
+
             </div>
           </div>
 
-          <div style={{ position: 'relative' }}>
-            <div style={{ borderRadius: '0px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(15, 23, 42, 0.15)', border: '2px solid #059669', background: '#042F2E', position: 'relative', height: '480px' }}>
-              <video
-                src="/videos/foundry_live.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-              />
-              <div style={{ position: 'absolute', top: '16px', right: '16px', background: 'rgba(6, 78, 59, 0.9)', color: '#34D399', border: '1px solid #34D399', padding: '6px 12px', fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', pointerEvents: 'none' }}>
-                LIVE FOUNDRY VIDEO
-              </div>
-            </div>
-            <div style={{
-              position: 'absolute',
-              bottom: '-24px',
-              left: '-24px',
-              background: '#064E3B',
-              color: '#FFFFFF',
-              padding: '24px',
-              borderRadius: '0px',
-              maxWidth: '320px',
-              borderLeft: '4px solid #10B981',
-              boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)',
-              zIndex: 10
-            }}>
-              <div style={{ fontSize: '12px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#A7F3D0', marginBottom: '4px' }}>
-                ABC FOUNDRIES & MEGA FORGE OPERATIONS
-              </div>
-              <p style={{ fontSize: '13px', margin: 0, opacity: 0.9, lineHeight: 1.4 }}>
-                Computerized electric induction melting with 3D solidification modeling & AAR M-1003 metallurgical quality control.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

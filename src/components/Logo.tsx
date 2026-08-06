@@ -3,32 +3,42 @@ import React from 'react';
 type Props = {
   className?: string;
   style?: React.CSSProperties;
-  imageStyle?: React.CSSProperties;
-  variant?: 'light' | 'dark';
+  variant?: 'light' | 'dark' | 'transparent';
 };
 
 export default function Logo({ className = '', style, variant = 'light' }: Props) {
-  const isDarkBg = variant === 'dark';
+  const isDark = variant === 'dark' || variant === 'transparent';
 
   return (
-    <div className={className} style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none', cursor: 'pointer', ...style }}>
-      {/* Icon Badge */}
-      <div style={{ background: isDarkBg ? '#10B981' : '#195B34', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF', borderRadius: '4px', boxShadow: '0 4px 10px rgba(25, 91, 52, 0.25)' }}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 2L2 7l10 5 10-5-10-5z" />
-          <path d="M2 17l10 5 10-5" />
-          <path d="M2 12l10 5 10-5" />
-        </svg>
+    <a href="#" className={className} style={{ display: 'inline-flex', alignItems: 'center', gap: '14px', textDecoration: 'none', ...style }}>
+      {/* Heavy Industrial Emblem */}
+      <div 
+        style={{ 
+          background: isDark ? '#FFFFFF' : '#143D2E', 
+          color: isDark ? '#143D2E' : '#FFFFFF', 
+          padding: '6px 10px', 
+          fontWeight: 900, 
+          fontSize: '22px', 
+          letterSpacing: '0.04em',
+          lineHeight: 1,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          border: '1px solid #B78A4C'
+        }}
+      >
+        ABC
       </div>
-      {/* Brand Text */}
+      
+      {/* Corporate Division Text */}
       <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <span style={{ fontSize: '19px', fontWeight: 900, color: isDarkBg ? '#FFFFFF' : '#195B34', letterSpacing: '0.04em', lineHeight: 1 }}>
-          ABC <span style={{ color: isDarkBg ? '#34D399' : '#195B34' }}>FOUNDRIES</span>
+        <span style={{ fontSize: '15px', fontWeight: 800, color: isDark ? '#FFFFFF' : '#143D2E', letterSpacing: '0.08em', textTransform: 'uppercase', lineHeight: 1.1 }}>
+          RAIL &amp; TRANSIT
         </span>
-        <span style={{ fontSize: '9.5px', fontWeight: 800, color: isDarkBg ? '#A7F3D0' : '#15803D', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: '3px' }}>
-          RAIL &amp; TRANSIT CASTINGS
+        <span style={{ fontSize: '9.5px', fontWeight: 700, color: isDark ? '#B78A4C' : '#7E8783', letterSpacing: '0.16em', textTransform: 'uppercase', marginTop: '2px' }}>
+          CASTINGS &amp; FORGINGS
         </span>
       </div>
-    </div>
+    </a>
   );
 }
