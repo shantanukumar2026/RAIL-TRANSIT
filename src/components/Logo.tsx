@@ -22,7 +22,7 @@ export default function Logo({ className = '', style, variant = 'light' }: Props
       </div>
       {/* Brand Text */}
       <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <span style={{ fontSize: '19px', fontWeight: 900, color: isDarkBg ? '#FFFFFF' : '#0F291E', letterSpacing: '0.04em', lineHeight: 1 }}>
+        <span style={{ fontSize: '19px', fontWeight: 900, color: isDarkBg ? '#FFFFFF' : '#195B34', letterSpacing: '0.04em', lineHeight: 1 }}>
           ABC <span style={{ color: isDarkBg ? '#34D399' : '#195B34' }}>FOUNDRIES</span>
         </span>
         <span style={{ fontSize: '9.5px', fontWeight: 800, color: isDarkBg ? '#A7F3D0' : '#15803D', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: '3px' }}>

@@ -43,10 +43,10 @@ export const InnovationSection: React.FC<InnovationSectionProps> = ({ lang }) =>
     <section id="innovation" style={{ background: '#FFFFFF', padding: '48px 5vw' }}>
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-          <span style={{ color: '#0F172A', fontSize: '12px', fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', display: 'block', marginBottom: '8px' }}>
+          <span style={{ color: '#195B34', fontSize: '12px', fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', display: 'block', marginBottom: '8px' }}>
             {lang === 'en' ? 'METALLURGICAL INNOVATION' : 'INNOVACIÓN METALÚRGICA'}
           </span>
-          <h2 style={{ fontSize: '38px', fontWeight: 900, color: '#15803D', letterSpacing: '-0.02em', margin: 0 }}>
+          <h2 style={{ fontSize: '38px', fontWeight: 900, color: '#195B34', letterSpacing: '-0.02em', margin: 0 }}>
             {lang === 'en' ? 'Next-Generation Rail Metallurgy' : 'Innovación Metalúrgica Ferroviaria'}
           </h2>
           <div style={{ width: '40px', height: '4px', background: '#15803D', margin: '16px auto 0 auto', borderRadius: '2px' }} />
@@ -79,7 +79,7 @@ export const InnovationSection: React.FC<InnovationSectionProps> = ({ lang }) =>
               <span style={{ background: '#ECFDF5', color: '#15803D', border: '1px solid #A7F3D0', padding: '4px 10px', borderRadius: '0px', fontSize: '11px', fontWeight: 800, textTransform: 'uppercase' }}>
                 {item.badge}
               </span>
-              <h3 style={{ fontSize: '20px', fontWeight: 800, color: '#0F172A', marginTop: '16px', marginBottom: '12px' }}>
+              <h3 style={{ fontSize: '20px', fontWeight: 800, color: '#195B34', marginTop: '16px', marginBottom: '12px' }}>
                 {item.title}
               </h3>
               <p style={{ fontSize: '14px', color: '#475569', lineHeight: 1.6, margin: 0 }}>

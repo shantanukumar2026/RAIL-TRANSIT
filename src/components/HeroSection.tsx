@@ -18,7 +18,7 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
               | USA FOUNDATIONS. GENERATIONAL STRENGTH.
             </div>
 
-            <h1 className="font-display" style={{ fontSize: 'clamp(2rem, 3.5vw, 3.2rem)', fontWeight: 900, color: '#0F291E', lineHeight: 1.08, textTransform: 'uppercase', marginBottom: '14px', letterSpacing: '-0.02em' }}>
+            <h1 className="font-display" style={{ fontSize: 'clamp(2rem, 3.5vw, 3.2rem)', fontWeight: 900, color: '#195B34', lineHeight: 1.08, textTransform: 'uppercase', marginBottom: '14px', letterSpacing: '-0.02em' }}>
               ENGINEERING<br />
               HIGH-RELIABILITY<br />
               <span style={{ color: '#195B34' }}>RAIL &amp; TRANSIT</span><br />

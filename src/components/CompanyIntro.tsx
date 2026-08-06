@@ -20,16 +20,16 @@ export const CompanyIntro: React.FC<CompanyIntroProps> = ({ lang }) => {
                 {t.whoWeAre}
               </span>
             </div>
-            <h2 style={{ fontSize: '36px', fontWeight: 800, color: '#0F291E', letterSpacing: '-0.02em', lineHeight: 1.25, marginBottom: '16px' }}>
+            <h2 style={{ fontSize: '36px', fontWeight: 800, color: '#195B34', letterSpacing: '-0.02em', lineHeight: 1.25, marginBottom: '16px' }}>
               {t.introTitle}
             </h2>
-            <p style={{ fontSize: '16px', color: '#15803D', fontWeight: 600, lineHeight: 1.5, marginBottom: '16px' }}>
+            <p style={{ fontSize: '16px', color: '#047857', fontWeight: 600, lineHeight: 1.5, marginBottom: '16px' }}>
               {t.introSub}
             </p>
-            <p style={{ fontSize: '15px', color: '#15803D', lineHeight: 1.7, marginBottom: '16px' }}>
+            <p style={{ fontSize: '15px', color: '#334155', lineHeight: 1.7, marginBottom: '16px' }}>
               {t.introP1}
             </p>
-            <p style={{ fontSize: '15px', color: '#15803D', lineHeight: 1.7, marginBottom: '32px' }}>
+            <p style={{ fontSize: '15px', color: '#334155', lineHeight: 1.7, marginBottom: '32px' }}>
               {t.introP2}
             </p>
 

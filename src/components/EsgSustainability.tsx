@@ -41,7 +41,7 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
                 </span>
                 <span style={{ color: '#15803D', fontSize: '12px', fontWeight: 600 }}>ISO 14001 &amp; AAR M-1003 Compliant</span>
               </div>
-              <h3 style={{ fontSize: '22px', fontWeight: 900, color: '#0F291E', marginBottom: '12px', lineHeight: 1.25 }}>
+              <h3 style={{ fontSize: '22px', fontWeight: 900, color: '#195B34', marginBottom: '12px', lineHeight: 1.25 }}>
                 Recycled Steel Melting &amp; Sand Recovery
               </h3>
               <p style={{ color: '#15803D', fontSize: '14px', lineHeight: 1.55, marginBottom: '20px' }}>
@@ -54,7 +54,7 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
                   <div key={i} style={{ background: '#F8FAFC', border: '1px solid #E5E7EB', padding: '14px 16px' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#195B34" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                      <strong style={{ fontSize: '13px', color: '#0F291E', fontWeight: 800 }}>{f.title}</strong>
+                      <strong style={{ fontSize: '13px', color: '#195B34', fontWeight: 800 }}>{f.title}</strong>
                     </div>
                     <span style={{ fontSize: '11.5px', color: '#15803D', lineHeight: 1.4, display: 'block', paddingLeft: '22px' }}>{f.desc}</span>
                   </div>
