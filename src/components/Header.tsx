@@ -102,11 +102,11 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={closeAllMenus}
               style={{
                 padding: '10px 14px',
-                color: '#0B2B1B',
-                fontSize: '14px',
-                fontWeight: 900,
+                color: '#195B34',
+                fontSize: '13px',
+                fontWeight: 600,
                 textTransform: 'uppercase',
-                letterSpacing: '0.04em',
+                letterSpacing: '0.08em',
                 textDecoration: 'none',
                 transition: 'all 0.15s ease'
               }}
@@ -125,11 +125,11 @@ export const Header: React.FC<HeaderProps> = ({
                   padding: '10px 14px',
                   background: 'none',
                   border: 'none',
-                  color: '#0B2B1B',
-                  fontSize: '14px',
-                  fontWeight: 900,
+                  color: '#195B34',
+                  fontSize: '13px',
+                  fontWeight: 600,
                   textTransform: 'uppercase',
-                  letterSpacing: '0.04em',
+                  letterSpacing: '0.08em',
                   cursor: 'pointer',
                   transition: 'all 0.2s ease'
                 }}
@@ -167,11 +167,11 @@ export const Header: React.FC<HeaderProps> = ({
                   padding: '10px 14px',
                   background: 'none',
                   border: 'none',
-                  color: '#0B2B1B',
-                  fontSize: '14px',
-                  fontWeight: 900,
+                  color: '#195B34',
+                  fontSize: '13px',
+                  fontWeight: 600,
                   textTransform: 'uppercase',
-                  letterSpacing: '0.04em',
+                  letterSpacing: '0.08em',
                   cursor: 'pointer',
                   transition: 'all 0.2s ease'
                 }}
@@ -209,11 +209,11 @@ export const Header: React.FC<HeaderProps> = ({
                   padding: '10px 14px',
                   background: 'none',
                   border: 'none',
-                  color: '#0B2B1B',
-                  fontSize: '14px',
-                  fontWeight: 900,
+                  color: '#195B34',
+                  fontSize: '13px',
+                  fontWeight: 600,
                   textTransform: 'uppercase',
-                  letterSpacing: '0.04em',
+                  letterSpacing: '0.08em',
                   cursor: 'pointer',
                   transition: 'all 0.2s ease'
                 }}
@@ -246,11 +246,11 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={closeAllMenus}
               style={{
                 padding: '10px 14px',
-                color: '#0B2B1B',
-                fontSize: '14px',
-                fontWeight: 900,
+                color: '#195B34',
+                fontSize: '13px',
+                fontWeight: 600,
                 textTransform: 'uppercase',
-                letterSpacing: '0.04em',
+                letterSpacing: '0.08em',
                 textDecoration: 'none',
                 transition: 'all 0.15s ease'
               }}
@@ -269,11 +269,11 @@ export const Header: React.FC<HeaderProps> = ({
                   padding: '10px 14px',
                   background: 'none',
                   border: 'none',
-                  color: '#0B2B1B',
-                  fontSize: '14px',
-                  fontWeight: 900,
+                  color: '#195B34',
+                  fontSize: '13px',
+                  fontWeight: 600,
                   textTransform: 'uppercase',
-                  letterSpacing: '0.04em',
+                  letterSpacing: '0.08em',
                   cursor: 'pointer',
                   transition: 'all 0.2s ease'
                 }}

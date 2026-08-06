@@ -6013,10 +6013,10 @@ footer#contact {
   margin: 0 !important;
   border-radius: 0 !important;
   box-sizing: border-box !important;
-  font-size: 14px !important;
-  font-weight: 900 !important;
-  color: #0B2B1B !important;
-  letter-spacing: 0.04em !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #195B34 !important;
+  letter-spacing: 0.08em !important;
 }
 
 .nav-dropdown-group:hover .nav-dropdown-btn {
