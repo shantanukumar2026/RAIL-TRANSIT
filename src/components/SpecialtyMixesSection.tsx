@@ -2,14 +2,14 @@ import React from 'react';
 
 export const SpecialtyMixesSection: React.FC = () => {
   const mixes = [
-    { name: 'Manganese Steel Castings', psi: '11% - 14% Austenitic Mn', app: 'Turnout frogs, crossover diamonds, track switches', avail: 'All Foundries', img: '/images/rail_castings_foundry_1.png' },
-    { name: 'Ductile Iron Track Castings', psi: 'ASTM A536 80-55-06', app: 'Rail tie plates, base plates, rail anchors', avail: 'High-Volume', img: '/images/rail_infrastructure_casting.png' },
-    { name: 'Forged Carbon & Alloy Axles', psi: 'ASTM A668 / AAR M-101', app: 'Heavy freight & passenger locomotive wheelsets', avail: 'Stock & Custom', img: '/images/rail_forged_axles_2.png' },
-    { name: 'Monobloc Cast/Forged Wheels', psi: 'AAR M-107 Class B & C', app: 'Freight car & transit passenger car wheelsets', avail: 'Stock & Custom', img: '/images/rail_forging_press.png' },
-    { name: 'Cast Steel Couplers & Yokes', psi: 'AAR M-201 Grade E Steel', app: 'Automatic train couplers, draft gear housings', avail: 'All Foundries', img: '/images/rail_infrastructure_casting.png' },
-    { name: 'High-Conductivity Catenary Arms', psi: 'Copper-Bronze & Aluminum', app: 'Transit overhead contact wire & pantograph cantilever', avail: 'Custom Spec', img: '/images/rail_catenary_hardware.png' },
-    { name: 'Ductile Third-Rail Supports', psi: 'Dielectric Insulation Base', app: 'Urban metro third-rail insulator shoe brackets', avail: 'Stock & Custom', img: '/images/rail_castings_foundry_1.png' },
-    { name: 'Track Drainage Trench Grates', psi: 'AASHTO H-20 / M306 Load', app: 'Trackbed water management & cable pull boxes', avail: 'All Foundries', img: '/images/rail_trackwork_mfg.png' }
+    { name: 'Manganese Steel Castings', psi: '11% - 14% Austenitic Mn', app: 'Turnout frogs, crossover diamonds, track switches', avail: 'All Foundries', img: '/images/istockphoto-2263816291-1024x1024.jpg' },
+    { name: 'Ductile Iron Track Castings', psi: 'ASTM A536 80-55-06', app: 'Rail tie plates, base plates, rail anchors', avail: 'High-Volume', img: '/images/istockphoto-2263817295-1024x1024.jpg' },
+    { name: 'Forged Carbon & Alloy Axles', psi: 'ASTM A668 / AAR M-101', app: 'Heavy freight & passenger locomotive wheelsets', avail: 'Stock & Custom', img: '/images/istockphoto-2278348463-1024x1024.jpg' },
+    { name: 'Monobloc Cast/Forged Wheels', psi: 'AAR M-107 Class B & C', app: 'Freight car & transit passenger car wheelsets', avail: 'Stock & Custom', img: '/images/istockphoto-1313022650-1024x1024.jpg' },
+    { name: 'Cast Steel Couplers & Yokes', psi: 'AAR M-201 Grade E Steel', app: 'Automatic train couplers, draft gear housings', avail: 'All Foundries', img: '/images/istockphoto-1345955492-1024x1024.jpg' },
+    { name: 'High-Conductivity Catenary Arms', psi: 'Copper-Bronze & Aluminum', app: 'Transit overhead contact wire & pantograph cantilever', avail: 'Custom Spec', img: '/images/istockphoto-2166976559-1024x1024.jpg' },
+    { name: 'Ductile Third-Rail Supports', psi: 'Dielectric Insulation Base', app: 'Urban metro third-rail insulator shoe brackets', avail: 'Stock & Custom', img: '/images/istockphoto-2263288423-1024x1024.jpg' },
+    { name: 'Track Drainage Trench Grates', psi: 'AASHTO H-20 / M306 Load', app: 'Trackbed water management & cable pull boxes', avail: 'All Foundries', img: '/images/istockphoto-2284955682-1024x1024.jpg' }
   ];
 
   return (
@@ -41,8 +41,11 @@ export const SpecialtyMixesSection: React.FC = () => {
                 justifyContent: 'space-between',
               }}
             >
-              <div style={{ height: '140px', overflow: 'hidden' }}>
+              <div style={{ height: '140px', overflow: 'hidden', position: 'relative' }}>
                 <img src={mix.img} alt={mix.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <div style={{ position: 'absolute', top: '6px', right: '6px', background: 'rgba(15,23,42,0.8)', color: '#34D399', padding: '2px 6px', fontSize: '8.5px', fontWeight: 800, letterSpacing: '0.05em', textTransform: 'uppercase', border: '1px solid rgba(52,211,153,0.3)', pointerEvents: 'none' }}>
+                  iStock Resource
+                </div>
               </div>
               <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div>

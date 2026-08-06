@@ -118,6 +118,10 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
                   className="hover-darken-overlay"
                 />
 
+                <div style={{ position: 'absolute', top: '10px', right: '10px', background: 'rgba(15,23,42,0.85)', color: '#34D399', padding: '3px 8px', fontSize: '9px', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', border: '1px solid rgba(52,211,153,0.3)', pointerEvents: 'none', zIndex: 10 }}>
+                  iStock Stock Asset Ref
+                </div>
+
                 {/* Card Info Overlay */}
                 <div
                   style={{

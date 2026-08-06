@@ -46,42 +46,42 @@ function App() {
       loc: 'Philadelphia, Pennsylvania',
       vol: '1,200 Turnout Sets',
       category: 'infrastructure',
-      img: '/images/rail_infrastructure_casting.png'
+      img: '/images/istockphoto-1313022678-1024x1024.jpg'
     },
     {
       title: lang === 'en' ? 'NYC MTA Subway Bogie Side Frames & Axles' : 'Bastidores y Ejes de Bogie para Metro MTA de Nueva York',
       loc: 'New York City, NY',
       vol: '4,500 Forged Axles',
       category: 'industrial',
-      img: '/images/rail_forged_axles_2.png'
+      img: '/images/istockphoto-2263816291-1024x1024.jpg'
     },
     {
       title: lang === 'en' ? 'BNSF Heavy Freight Line Rail Fastenings' : 'Fijaciones de Vía para Línea de Carga Pesada BNSF',
       loc: 'Chicago, Illinois',
       vol: '180,000 Tie Plates',
       category: 'commercial',
-      img: '/images/rail_trackwork_mfg.png'
+      img: '/images/istockphoto-2278348463-1024x1024.jpg'
     },
     {
       title: lang === 'en' ? 'Chicago Metra Catenary & OHL Hardware' : 'Herrajes para Catenaria Metra de Chicago',
       loc: 'Chicago, Illinois',
       vol: '12,000 Catenary Arms',
       category: 'infrastructure',
-      img: '/images/rail_catenary_hardware.png'
+      img: '/images/istockphoto-2166976559-1024x1024.jpg'
     },
     {
       title: lang === 'en' ? 'Union Pacific Intermodal Crossing Diamonds' : 'Cruzamientos de Manganeso Intermodales Union Pacific',
       loc: 'Dallas, Texas',
       vol: '850 Manganese Frogs',
       category: 'commercial',
-      img: '/images/rail_castings_foundry_1.png'
+      img: '/images/istockphoto-2284955682-1024x1024.jpg'
     },
     {
       title: lang === 'en' ? 'BART Rapid Transit Third Rail Insulator Supports' : 'Soportes de Aisladores de Tercer Riel para BART',
       loc: 'San Francisco, California',
       vol: '25,000 Support Units',
       category: 'industrial',
-      img: '/images/rail_forging_press.png'
+      img: '/images/istockphoto-2263288423-1024x1024.jpg'
     }
   ];
 

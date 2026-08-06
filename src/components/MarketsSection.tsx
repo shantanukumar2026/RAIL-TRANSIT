@@ -5,7 +5,7 @@ export const MarketsSection: React.FC = () => {
     {
       title: 'Class I Freight Railroads',
       desc: 'Heavy-duty manganese turnout frogs, forged steel axles, and tie plates engineered to withstand 36-ton heavy axle freight loads.',
-      img: '/images/rail_infrastructure_casting.png',
+      img: '/images/istockphoto-179969577-1024x1024.jpg',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" /><line x1="4" x2="4" y1="22" y2="15" /></svg>
       )
@@ -13,7 +13,7 @@ export const MarketsSection: React.FC = () => {
     {
       title: 'High-Speed Rail Networks',
       desc: 'Precision machined frog crossovers, insulated block joints, and high-frequency pantograph catenary arms for 300+ km/h corridors.',
-      img: '/images/rail_trackwork_mfg.png',
+      img: '/images/istockphoto-824316990-1024x1024.jpg',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2" /><line x1="9" y1="22" x2="9" y2="16" /><line x1="15" y1="22" x2="15" y2="16" /><path d="M9 16V8h6v8" /><path d="M9 8h6" /></svg>
       )
@@ -21,7 +21,7 @@ export const MarketsSection: React.FC = () => {
     {
       title: 'Urban Rapid Transit & Metro',
       desc: 'Ductile iron third-rail insulator shoe brackets, bogie side frames, monobloc wheels, and trackbed drainage trench covers.',
-      img: '/images/rail_catenary_hardware.png',
+      img: '/images/istockphoto-96684135-1024x1024.jpg',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 21H2M10.1 2.8a2 2 0 0 1 2.8 0L22 12h-3v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8H2l7.1-9.2z" /></svg>
       )
@@ -29,7 +29,7 @@ export const MarketsSection: React.FC = () => {
     {
       title: 'Commuter & Passenger Rail',
       desc: 'Passenger car coupler knuckles, draft gear housings, brake discs, and trackside junction pull boxes complying with FTA & FRA rules.',
-      img: '/images/rail_forged_axles_2.png',
+      img: '/images/istockphoto-2263288606-1024x1024.jpg',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 20H2M5 17h2v3H5zm4 0h2v3H9zm4 0h2v3h-2zm4 0h2v3h-2zM4 11V8a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3H4zm8-7V2" /></svg>
       )
@@ -37,7 +37,7 @@ export const MarketsSection: React.FC = () => {
     {
       title: 'Industrial & Mining Rail Sidings',
       desc: 'High-impact turnout frogs, rail anchors, and heavy iron base plates for mining haul tracks and industrial switching railyards.',
-      img: '/images/rail_castings_foundry_1.png',
+      img: '/images/istockphoto-1313022678-1024x1024.jpg',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>
       )
