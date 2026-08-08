@@ -36,16 +36,16 @@ export const ManufacturingProcess: React.FC = () => {
   ];
 
   return (
-    <section id="process" style={{ background: '#F5F2EB', padding: '5.5rem 0', borderBottom: '1px solid #E2DDD5' }}>
+    <section id="process" style={{ background: '#FAF6EE', padding: '5.5rem 0', borderBottom: '1px solid #E5E7EB' }}>
       <div className="container-custom">
 
         {/* Section Header */}
         <div style={{ marginBottom: '3.5rem' }}>
           <div className="eyebrow">
-            <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: '#B78A4C' }} />
-            <span>QUALITY ASSURANCE WORKFLOW</span>
+            <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: '#4CAF50' }} />
+            <span style={{ color: '#4CAF50' }}>QUALITY ASSURANCE WORKFLOW</span>
           </div>
-          <h2 style={{ fontSize: '2.25rem', color: '#143D2E', fontWeight: 800, margin: 0, textTransform: 'uppercase' }}>
+          <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 800, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
             MANUFACTURING PROCESS TIMELINE
           </h2>
         </div>
@@ -55,9 +55,10 @@ export const ManufacturingProcess: React.FC = () => {
           {steps.map((step, idx) => (
             <div 
               key={idx}
+              className="card-hover-industrial"
               style={{
                 background: '#FFFFFF',
-                border: '1px solid #E2DDD5',
+                border: '1px solid #E5E7EB',
                 padding: '1.75rem 1.25rem',
                 position: 'relative',
                 display: 'flex',
@@ -67,20 +68,20 @@ export const ManufacturingProcess: React.FC = () => {
               }}
             >
               <div>
-                <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#B78A4C', marginBottom: '0.75rem', lineHeight: 1 }}>
+                <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#4CAF50', marginBottom: '0.75rem', lineHeight: 1, fontFamily: "'Geist', sans-serif !important" }}>
                   {step.num}
                 </div>
-                <h3 style={{ fontSize: '12px', fontWeight: 800, color: '#143D2E', letterSpacing: '0.04em', lineHeight: 1.35, marginBottom: '0.75rem', textTransform: 'uppercase' }}>
+                <h3 style={{ fontSize: '12px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.04em', lineHeight: 1.35, marginBottom: '0.75rem', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
                   {step.title}
                 </h3>
-                <p style={{ fontSize: '11.5px', color: '#5C6662', lineHeight: 1.5, margin: 0 }}>
+                <p style={{ fontSize: '11.5px', color: '#4B5563', lineHeight: 1.5, margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>
                   {step.desc}
                 </p>
               </div>
 
               {idx < steps.length - 1 && (
-                <div style={{ display: 'flex', justifyContent: 'flex-end', paddingTop: '1rem', borderTop: '1px solid #F5F2EB' }}>
-                  <ArrowRight size={14} color="#B78A4C" />
+                <div style={{ display: 'flex', justifyContent: 'flex-end', paddingTop: '1rem', borderTop: '1px solid #FAF6EE' }}>
+                  <ArrowRight size={14} color="#4CAF50" />
                 </div>
               )}
             </div>

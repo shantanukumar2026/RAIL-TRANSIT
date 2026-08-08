@@ -43,17 +43,17 @@ export const TestingFacilities: React.FC = () => {
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <div className="eyebrow">
-              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#C5A059' }} />
-              <span>IN-HOUSE QUALITY ASSURANCE &amp; NDT</span>
+              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
+              <span style={{ color: '#4CAF50' }}>IN-HOUSE QUALITY ASSURANCE &amp; NDT</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#143D2E', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
               TESTING FACILITIES &amp; LABS
             </h2>
           </div>
 
           <a href="#contact" className="link-hover-arrow">
             <span>REQUEST LAB TEST REPORTS</span>
-            <ArrowRight size={14} color="#C5A059" />
+            <ArrowRight size={14} color="#4CAF50" />
           </a>
         </div>
 
@@ -76,11 +76,11 @@ export const TestingFacilities: React.FC = () => {
                   boxShadow: '0 4px 12px rgba(0,0,0,0.03)'
                 }}
               >
-                <div style={{ width: '44px', height: '44px', background: '#143D2E', color: '#C5A059', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid #C5A059' }}>
-                  <IconComp size={22} color="#C5A059" />
+                <div style={{ width: '44px', height: '44px', background: '#1B5E20', color: '#4CAF50', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid #4CAF50' }}>
+                  <IconComp size={22} color="#4CAF50" />
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '13.5px', fontWeight: 900, color: '#143D2E', letterSpacing: '0.04em', margin: '0 0 0.65rem 0', textTransform: 'uppercase', lineHeight: 1.35, fontFamily: "'Geist', sans-serif !important" }}>
+                  <h3 style={{ fontSize: '13.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.04em', margin: '0 0 0.65rem 0', textTransform: 'uppercase', lineHeight: 1.35, fontFamily: "'Geist', sans-serif !important" }}>
                     {test.title}
                   </h3>
                   <p style={{ fontSize: '13px', color: '#1F2937', lineHeight: 1.6, margin: 0, fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>

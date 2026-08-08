@@ -20,14 +20,14 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
     <div className="modal-backdrop" onClick={onClose}>
       <div 
         style={{ 
-          background: '#F5F2EB', 
-          border: '1px solid #B78A4C', 
+          background: '#FAF6EE', 
+          border: '1.5px solid #4CAF50', 
           width: '100%', 
           maxWidth: '560px', 
           padding: '2.5rem', 
           position: 'relative',
-          boxShadow: '0 25px 60px rgba(12, 36, 27, 0.4)',
-          color: '#1A2521'
+          boxShadow: '0 25px 60px rgba(27, 94, 32, 0.4)',
+          color: '#1F2937'
         }}
         onClick={e => e.stopPropagation()}
       >
@@ -40,7 +40,7 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
             background: 'transparent', 
             border: 'none', 
             cursor: 'pointer', 
-            color: '#143D2E' 
+            color: '#1B5E20' 
           }}
         >
           <X size={20} />
@@ -48,21 +48,22 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
 
         {submitted ? (
           <div style={{ textAlign: 'center', padding: '2rem 1rem' }}>
-            <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: '#143D2E', color: '#B78A4C', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.25rem auto' }}>
-              <CheckCircle2 size={32} />
+            <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: '#1B5E20', color: '#FAF6EE', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.25rem auto' }}>
+              <CheckCircle2 size={32} color="#4CAF50" />
             </div>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#143D2E', marginBottom: '0.75rem' }}>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#1B5E20', marginBottom: '0.75rem' }}>
               QUOTATION REQUEST SUBMITTED
             </h3>
-            <p style={{ fontSize: '14px', color: '#5C6662', lineHeight: 1.6, marginBottom: '2rem' }}>
+            <p style={{ fontSize: '14px', color: '#4B5563', lineHeight: 1.6, marginBottom: '2rem' }}>
               Thank you for reaching out. An ABC Rail metallurgical sales engineer will review your specifications and contact you within 24 business hours.
             </p>
             <button
               onClick={() => { setSubmitted(false); onClose(); }}
+              className="btn-animated"
               style={{
-                background: '#143D2E',
+                background: '#1B5E20',
                 color: '#FFFFFF',
-                border: 'none',
+                border: '1.5px solid #4CAF50',
                 padding: '12px 28px',
                 fontSize: '12px',
                 fontWeight: 800,
@@ -77,44 +78,44 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
         ) : (
           <div>
             <div className="eyebrow">
-              <span style={{ display: 'inline-block', width: '20px', height: '1.5px', background: '#B78A4C' }} />
-              <span>COMMERCIAL TENDER &amp; SPECIFICATIONS</span>
+              <span style={{ display: 'inline-block', width: '20px', height: '1.5px', background: '#4CAF50' }} />
+              <span style={{ color: '#4CAF50' }}>COMMERCIAL TENDER &amp; SPECIFICATIONS</span>
             </div>
 
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#143D2E', margin: '0 0 0.5rem 0', textTransform: 'uppercase' }}>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#1B5E20', margin: '0 0 0.5rem 0', textTransform: 'uppercase' }}>
               REQUEST A QUOTE
             </h3>
 
-            <p style={{ fontSize: '13px', color: '#5C6662', margin: '0 0 1.75rem 0', lineHeight: 1.5 }}>
+            <p style={{ fontSize: '13px', color: '#4B5563', margin: '0 0 1.75rem 0', lineHeight: 1.5 }}>
               Submit your technical requirements, CAD files, or project parameters for an immediate engineering estimate.
             </p>
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#143D2E', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>FULL NAME *</label>
-                  <input type="text" required placeholder="John Doe" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E2DDD5', background: '#FFFFFF', fontSize: '13px', color: '#1A2521', outline: 'none' }} />
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>FULL NAME *</label>
+                  <input type="text" required placeholder="John Doe" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none' }} />
                 </div>
                 <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#143D2E', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>COMPANY *</label>
-                  <input type="text" required placeholder="Railway Corp" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E2DDD5', background: '#FFFFFF', fontSize: '13px', color: '#1A2521', outline: 'none' }} />
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>COMPANY *</label>
+                  <input type="text" required placeholder="Railway Corp" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none' }} />
                 </div>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#143D2E', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>EMAIL ADDRESS *</label>
-                  <input type="email" required placeholder="name@company.com" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E2DDD5', background: '#FFFFFF', fontSize: '13px', color: '#1A2521', outline: 'none' }} />
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>EMAIL ADDRESS *</label>
+                  <input type="email" required placeholder="name@company.com" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none' }} />
                 </div>
                 <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#143D2E', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>PHONE</label>
-                  <input type="tel" placeholder="+1 (512) 555-0199" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E2DDD5', background: '#FFFFFF', fontSize: '13px', color: '#1A2521', outline: 'none' }} />
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>PHONE</label>
+                  <input type="tel" placeholder="+1 (512) 555-0199" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none' }} />
                 </div>
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#143D2E', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>PRODUCT INTEREST</label>
-                <select style={{ width: '100%', padding: '10px 12px', border: '1px solid #E2DDD5', background: '#FFFFFF', fontSize: '13px', color: '#1A2521', outline: 'none' }}>
+                <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>PRODUCT INTEREST</label>
+                <select style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none' }}>
                   <option>Rail Turnout Castings (AREMA Ch. 4)</option>
                   <option>Forged Locomotive Axles &amp; Wheelsets</option>
                   <option>AAR Grade E Couplers &amp; Draft Gear</option>
@@ -124,16 +125,17 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#143D2E', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>PROJECT SPECIFICATIONS</label>
-                <textarea rows={3} placeholder="Provide quantity, timeline, or material grade requirements..." style={{ width: '100%', padding: '10px 12px', border: '1px solid #E2DDD5', background: '#FFFFFF', fontSize: '13px', color: '#1A2521', outline: 'none', resize: 'vertical' }} />
+                <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>PROJECT SPECIFICATIONS</label>
+                <textarea rows={3} placeholder="Provide quantity, timeline, or material grade requirements..." style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none', resize: 'vertical' }} />
               </div>
 
               <button
                 type="submit"
+                className="btn-animated"
                 style={{
-                  background: '#143D2E',
+                  background: '#1B5E20',
                   color: '#FFFFFF',
-                  border: '1px solid #B78A4C',
+                  border: '1.5px solid #4CAF50',
                   padding: '14px',
                   fontSize: '12.5px',
                   fontWeight: 800,
@@ -148,7 +150,7 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
                 }}
               >
                 <span>SUBMIT QUOTATION REQUEST</span>
-                <Send size={14} color="#B78A4C" />
+                <Send size={14} color="#4CAF50" />
               </button>
             </form>
           </div>

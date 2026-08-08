@@ -42,7 +42,7 @@ export const ProductShowcaseStrip: React.FC = () => {
   ];
 
   return (
-    <section className="section-full-vh" style={{ background: '#F5F2EB', borderBottom: '1px solid #E5E7EB', padding: '3.5rem 0', position: 'relative', overflow: 'hidden' }}>
+    <section className="section-full-vh" style={{ background: '#FAF6EE', borderBottom: '1px solid #E5E7EB', padding: '3.5rem 0', position: 'relative', overflow: 'hidden' }}>
       {/* Background Blueprint Grid & Radial Glow Accents */}
       <div className="blueprint-grid" style={{ position: 'absolute', inset: 0, opacity: 0.35, pointerEvents: 'none' }} />
       <div className="section-shape-gold" style={{ top: '-10%', right: '-5%' }} />
@@ -52,10 +52,10 @@ export const ProductShowcaseStrip: React.FC = () => {
         {/* Section Title */}
         <div style={{ marginBottom: '2.5rem', textAlign: 'center' }}>
           <div className="eyebrow" style={{ justifyContent: 'center' }}>
-            <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#C5A059' }} />
-            <span>PRECISION METAL CASTINGS &amp; FORGINGS</span>
+            <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
+            <span style={{ color: '#4CAF50' }}>PRECISION METAL CASTINGS &amp; FORGINGS</span>
           </div>
-          <h2 style={{ fontSize: '2.25rem', color: '#143D2E', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+          <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
             CRITICAL RAIL &amp; INDUSTRIAL COMPONENTS
           </h2>
         </div>
@@ -90,15 +90,15 @@ export const ProductShowcaseStrip: React.FC = () => {
 
               {/* Product Label & Arrow */}
               <div>
-                <h3 style={{ fontSize: '11px', fontWeight: 900, color: '#143D2E', margin: '0 0 4px 0', textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Geist', sans-serif !important" }}>
+                <h3 style={{ fontSize: '11px', fontWeight: 900, color: '#1B5E20', margin: '0 0 4px 0', textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Geist', sans-serif !important" }}>
                   {item.title}
                 </h3>
-                <span style={{ fontSize: '9.5px', color: '#C5A059', fontWeight: 800, display: 'block', marginBottom: '8px', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '9.5px', color: '#4CAF50', fontWeight: 800, display: 'block', marginBottom: '8px', fontFamily: "'Geist', sans-serif !important" }}>
                   {item.specs}
                 </span>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  <ArrowRight size={14} color="#143D2E" />
+                  <ArrowRight size={14} color="#1B5E20" />
                 </div>
               </div>
 

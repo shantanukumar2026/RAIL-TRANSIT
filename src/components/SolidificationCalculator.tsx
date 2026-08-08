@@ -36,7 +36,7 @@ export const SolidificationCalculator: React.FC = () => {
   const current = alloyData[alloy];
 
   return (
-    <section className="section-full-vh" style={{ background: '#143D2E', color: '#F5F2EB', borderBottom: '2px solid #C5A059', position: 'relative' }}>
+    <section className="section-full-vh section-dark-gradient" style={{ color: '#FAF6EE', borderBottom: '2px solid #4CAF50', position: 'relative' }}>
       <div className="blueprint-grid-dark" style={{ position: 'absolute', inset: 0, opacity: 0.35, pointerEvents: 'none' }} />
 
       <div className="container-custom" style={{ position: 'relative', zIndex: 10 }}>
@@ -45,17 +45,17 @@ export const SolidificationCalculator: React.FC = () => {
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <div className="eyebrow eyebrow-dark">
-              <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#C5A059' }} />
-              <span>INTERACTIVE METALLURGICAL ENGINE</span>
+              <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#81C784' }} />
+              <span style={{ color: '#A5D6A7', fontWeight: 900 }}>INTERACTIVE METALLURGICAL ENGINE</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#F5F2EB', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
               THERMAL SOLIDIFICATION &amp; TOLERANCE CALCULATOR
             </h2>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(197, 160, 89, 0.15)', border: '1px solid #C5A059', padding: '6px 14px', borderRadius: '2px' }}>
-            <Activity size={16} color="#C5A059" />
-            <span style={{ fontSize: '11px', fontWeight: 900, color: '#C5A059', letterSpacing: '0.1em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid #81C784', padding: '6px 14px', borderRadius: '2px' }}>
+            <Activity size={16} color="#81C784" />
+            <span style={{ fontSize: '11px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.1em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
               LIVE SIMULATION ACTIVE
             </span>
           </div>
@@ -65,10 +65,10 @@ export const SolidificationCalculator: React.FC = () => {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '2rem', alignItems: 'stretch' }}>
           
           {/* Left Panel: Inputs */}
-          <div style={{ gridColumn: 'span 5', background: 'rgba(12, 36, 27, 0.95)', border: '1px solid rgba(197, 160, 89, 0.3)', padding: '2rem', borderRadius: '2px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div style={{ gridColumn: 'span 5', background: '#144818', border: '1px solid #81C784', padding: '2rem', borderRadius: '2px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
-              <h3 style={{ fontSize: '14px', fontWeight: 900, color: '#C5A059', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 1.5rem 0', display: 'flex', alignItems: 'center', gap: '8px', fontFamily: "'Geist', sans-serif !important" }}>
-                <Sliders size={16} color="#C5A059" />
+              <h3 style={{ fontSize: '14px', fontWeight: 900, color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 1.5rem 0', display: 'flex', alignItems: 'center', gap: '8px', fontFamily: "'Geist', sans-serif !important" }}>
+                <Sliders size={16} color="#81C784" />
                 <span>SELECT ALLOY &amp; PARAMETERS</span>
               </h3>
 
@@ -77,9 +77,9 @@ export const SolidificationCalculator: React.FC = () => {
                 <button
                   onClick={() => setAlloy('manganese')}
                   style={{
-                    background: alloy === 'manganese' ? '#1C4735' : 'rgba(255,255,255,0.04)',
-                    border: alloy === 'manganese' ? '1.5px solid #C5A059' : '1px solid rgba(255,255,255,0.1)',
-                    color: '#F5F2EB',
+                    background: alloy === 'manganese' ? '#FAF6EE' : 'rgba(255,255,255,0.06)',
+                    border: alloy === 'manganese' ? '1.5px solid #1B5E20' : '1px solid rgba(255,255,255,0.15)',
+                    color: alloy === 'manganese' ? '#1B5E20' : '#FAF6EE',
                     padding: '12px 16px',
                     fontSize: '12.5px',
                     fontWeight: 800,
@@ -89,6 +89,8 @@ export const SolidificationCalculator: React.FC = () => {
                     transition: 'all 0.2s',
                     fontFamily: "'Geist', sans-serif !important"
                   }}
+                  onMouseEnter={e => { if (alloy !== 'manganese') { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; } }}
+                  onMouseLeave={e => { if (alloy !== 'manganese') { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#FAF6EE'; } }}
                 >
                   Austenitic Manganese (Turnout Frogs)
                 </button>
@@ -96,9 +98,9 @@ export const SolidificationCalculator: React.FC = () => {
                 <button
                   onClick={() => setAlloy('ductile')}
                   style={{
-                    background: alloy === 'ductile' ? '#1C4735' : 'rgba(255,255,255,0.04)',
-                    border: alloy === 'ductile' ? '1.5px solid #C5A059' : '1px solid rgba(255,255,255,0.1)',
-                    color: '#F5F2EB',
+                    background: alloy === 'ductile' ? '#FAF6EE' : 'rgba(255,255,255,0.06)',
+                    border: alloy === 'ductile' ? '1.5px solid #1B5E20' : '1px solid rgba(255,255,255,0.15)',
+                    color: alloy === 'ductile' ? '#1B5E20' : '#FAF6EE',
                     padding: '12px 16px',
                     fontSize: '12.5px',
                     fontWeight: 800,
@@ -108,6 +110,8 @@ export const SolidificationCalculator: React.FC = () => {
                     transition: 'all 0.2s',
                     fontFamily: "'Geist', sans-serif !important"
                   }}
+                  onMouseEnter={e => { if (alloy !== 'ductile') { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; } }}
+                  onMouseLeave={e => { if (alloy !== 'ductile') { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#FAF6EE'; } }}
                 >
                   SG Ductile Iron (Brake Heads)
                 </button>
@@ -115,9 +119,9 @@ export const SolidificationCalculator: React.FC = () => {
                 <button
                   onClick={() => setAlloy('forged')}
                   style={{
-                    background: alloy === 'forged' ? '#1C4735' : 'rgba(255,255,255,0.04)',
-                    border: alloy === 'forged' ? '1.5px solid #C5A059' : '1px solid rgba(255,255,255,0.1)',
-                    color: '#F5F2EB',
+                    background: alloy === 'forged' ? '#FAF6EE' : 'rgba(255,255,255,0.06)',
+                    border: alloy === 'forged' ? '1.5px solid #1B5E20' : '1px solid rgba(255,255,255,0.15)',
+                    color: alloy === 'forged' ? '#1B5E20' : '#FAF6EE',
                     padding: '12px 16px',
                     fontSize: '12.5px',
                     fontWeight: 800,
@@ -127,6 +131,8 @@ export const SolidificationCalculator: React.FC = () => {
                     transition: 'all 0.2s',
                     fontFamily: "'Geist', sans-serif !important"
                   }}
+                  onMouseEnter={e => { if (alloy !== 'forged') { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; } }}
+                  onMouseLeave={e => { if (alloy !== 'forged') { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#FAF6EE'; } }}
                 >
                   Forged Alloy Steel (Locomotive Axles)
                 </button>
@@ -135,8 +141,8 @@ export const SolidificationCalculator: React.FC = () => {
               {/* Pouring Temperature Slider */}
               <div style={{ marginBottom: '1.5rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
-                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#A3B5AC', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Geist', sans-serif !important" }}>MELT POURING TEMP (°C)</label>
-                  <span style={{ fontSize: '12px', fontWeight: 900, color: '#C5A059', fontFamily: "'Geist', sans-serif !important" }}>{temp} °C</span>
+                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Geist', sans-serif !important" }}>MELT POURING TEMP (°C)</label>
+                  <span style={{ fontSize: '12px', fontWeight: 900, color: '#4CAF50', fontFamily: "'Geist', sans-serif !important" }}>{temp} °C</span>
                 </div>
                 <input 
                   type="range" 
@@ -145,15 +151,15 @@ export const SolidificationCalculator: React.FC = () => {
                   step="10"
                   value={temp}
                   onChange={e => setTemp(Number(e.target.value))}
-                  style={{ width: '100%', accentColor: '#C5A059', cursor: 'pointer' }}
+                  style={{ width: '100%', accentColor: '#4CAF50', cursor: 'pointer' }}
                 />
               </div>
 
               {/* Axle Load Capacity Slider */}
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
-                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#A3B5AC', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Geist', sans-serif !important" }}>AXLE LOAD SPECIFICATION (TONS)</label>
-                  <span style={{ fontSize: '12px', fontWeight: 900, color: '#C5A059', fontFamily: "'Geist', sans-serif !important" }}>{axleLoad} TONS</span>
+                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Geist', sans-serif !important" }}>AXLE LOAD SPECIFICATION (TONS)</label>
+                  <span style={{ fontSize: '12px', fontWeight: 900, color: '#4CAF50', fontFamily: "'Geist', sans-serif !important" }}>{axleLoad} TONS</span>
                 </div>
                 <input 
                   type="range" 
@@ -162,28 +168,28 @@ export const SolidificationCalculator: React.FC = () => {
                   step="1"
                   value={axleLoad}
                   onChange={e => setAxleLoad(Number(e.target.value))}
-                  style={{ width: '100%', accentColor: '#C5A059', cursor: 'pointer' }}
+                  style={{ width: '100%', accentColor: '#4CAF50', cursor: 'pointer' }}
                 />
               </div>
 
             </div>
 
-            <div style={{ paddingTop: '1.25rem', marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <ShieldCheck size={16} color="#C5A059" />
-              <span style={{ fontSize: '11px', color: '#A3B5AC', fontFamily: "'Manrope', sans-serif !important" }}>
+            <div style={{ paddingTop: '1.25rem', marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.15)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <ShieldCheck size={16} color="#4CAF50" />
+              <span style={{ fontSize: '11px', color: '#E8F5E9', fontFamily: "'Manrope', sans-serif !important" }}>
                 Calculations auto-validated against AREMA Chapter 4 specs.
               </span>
             </div>
           </div>
 
           {/* Right Panel: Simulated Results Telemetry */}
-          <div style={{ gridColumn: 'span 7', background: '#FFFFFF', color: '#1F2937', padding: '2.25rem', borderRadius: '2px', boxShadow: '0 20px 45px rgba(0,0,0,0.25)', borderTop: '4px solid #C5A059', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div style={{ gridColumn: 'span 7', background: '#FFFFFF', color: '#1F2937', padding: '2.25rem', borderRadius: '2px', boxShadow: '0 20px 45px rgba(0,0,0,0.25)', borderTop: '4px solid #4CAF50', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', borderBottom: '1px solid #E5E7EB', paddingBottom: '0.75rem' }}>
-                <h4 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#143D2E', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                <h4 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#1B5E20', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
                   {current.name}
                 </h4>
-                <span style={{ background: '#143D2E', color: '#C5A059', fontSize: '10px', fontWeight: 900, padding: '4px 10px', letterSpacing: '0.1em', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ background: '#1B5E20', color: '#FFFFFF', fontSize: '10px', fontWeight: 900, padding: '4px 10px', letterSpacing: '0.1em', fontFamily: "'Geist', sans-serif !important" }}>
                   SIMULATED TELEMETRY
                 </span>
               </div>
@@ -194,36 +200,36 @@ export const SolidificationCalculator: React.FC = () => {
 
               {/* Telemetry Metric Cards */}
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem', marginBottom: '1.5rem' }}>
-                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3px solid #C5A059' }}>
+                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
                   <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>YIELD STRENGTH</span>
-                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>{current.yieldStrength}</strong>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.yieldStrength}</strong>
                 </div>
 
-                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3px solid #C5A059' }}>
+                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
                   <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>BRINELL HARDNESS</span>
-                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>{current.hardness}</strong>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.hardness}</strong>
                 </div>
 
-                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3px solid #C5A059' }}>
+                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
                   <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>SUB-ZERO IMPACT TOUGHNESS</span>
-                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>{current.fractureToughness}</strong>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.fractureToughness}</strong>
                 </div>
 
-                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3px solid #C5A059' }}>
+                <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
                   <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>INTERNAL POROSITY RISK</span>
-                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>{current.porosityRisk}</strong>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.porosityRisk}</strong>
                 </div>
               </div>
             </div>
 
-            <div style={{ background: '#143D2E', color: '#F5F2EB', padding: '1rem 1.25rem', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <div style={{ background: '#1B5E20', color: '#FAF6EE', padding: '1rem 1.25rem', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Zap size={16} color="#C5A059" />
+                <Zap size={16} color="#4CAF50" />
                 <span style={{ fontSize: '12px', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>
                   CALCULATED HAL SAFETY FACTOR: 3.4x OPERATIONAL LOAD
                 </span>
               </div>
-              <a href="#contact" className="link-hover-arrow" style={{ color: '#C5A059' }}>
+              <a href="#contact" className="link-hover-arrow" style={{ color: '#1B5E20' }}>
                 <span>REQUEST SPECS</span>
               </a>
             </div>

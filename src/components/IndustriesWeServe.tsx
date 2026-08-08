@@ -35,10 +35,10 @@ export const IndustriesWeServe: React.FC = () => {
         {/* Section Header */}
         <div style={{ marginBottom: '3rem' }}>
           <div className="eyebrow">
-            <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#C5A059' }} />
-            <span>GLOBAL RAILWAY SECTOR COVERAGE</span>
+            <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#4CAF50' }} />
+            <span style={{ color: '#4CAF50' }}>GLOBAL RAILWAY SECTOR COVERAGE</span>
           </div>
-          <h2 style={{ fontSize: '2.25rem', color: '#143D2E', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+          <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
             RAILWAY SECTORS WE SERVE
           </h2>
         </div>
@@ -63,10 +63,10 @@ export const IndustriesWeServe: React.FC = () => {
                 alt={ind.title} 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', position: 'absolute', inset: 0 }}
               />
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(12, 36, 27, 0.95) 0%, rgba(20, 61, 46, 0.3) 60%, transparent 100%)' }} />
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(27, 94, 32, 0.95) 0%, rgba(20, 61, 46, 0.3) 60%, transparent 100%)' }} />
               
               <div style={{ position: 'relative', zIndex: 10, padding: '1.25rem 1rem', height: '100%', display: 'flex', alignItems: 'flex-end' }}>
-                <h3 style={{ fontSize: '12px', fontWeight: 900, color: '#F5F2EB', margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em', lineHeight: 1.25, fontFamily: "'Geist', sans-serif !important" }}>
+                <h3 style={{ fontSize: '12px', fontWeight: 900, color: '#FAF6EE', margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em', lineHeight: 1.25, fontFamily: "'Geist', sans-serif !important" }}>
                   {ind.title}
                 </h3>
               </div>

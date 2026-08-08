@@ -47,10 +47,10 @@ export const ManufacturingCapabilities: React.FC = () => {
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '3rem', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <div className="eyebrow">
-              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#C5A059' }} />
-              <span>END-TO-END INDUSTRIAL PRODUCTION</span>
+              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
+              <span style={{ color: '#4CAF50' }}>END-TO-END INDUSTRIAL PRODUCTION</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#143D2E', fontWeight: 900, margin: '0 0 0.5rem 0', textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: '0 0 0.5rem 0', textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Geist', sans-serif !important" }}>
               MANUFACTURING CAPABILITIES
             </h2>
             <p style={{ fontSize: '14px', color: '#4B5563', margin: 0, maxWidth: '580px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
@@ -63,7 +63,7 @@ export const ManufacturingCapabilities: React.FC = () => {
             className="link-hover-arrow"
           >
             <span>OUR PROCESS TIMELINE</span>
-            <ArrowRight size={14} color="#C5A059" />
+            <ArrowRight size={14} color="#4CAF50" />
           </a>
         </div>
 
@@ -74,9 +74,9 @@ export const ManufacturingCapabilities: React.FC = () => {
               key={idx}
               className="card-hover-industrial img-hover-zoom"
               style={{ 
-                background: '#143D2E', 
-                color: '#F5F2EB', 
-                border: '1px solid #274C3D', 
+                background: '#1B5E20', 
+                color: '#FAF6EE', 
+                border: '1px solid #1B5E20', 
                 borderRadius: '2px',
                 overflow: 'hidden', 
                 display: 'flex', 
@@ -93,14 +93,14 @@ export const ManufacturingCapabilities: React.FC = () => {
               />
 
               {/* Dark Overlay */}
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(12, 36, 27, 0.94) 0%, rgba(20, 61, 46, 0.4) 60%, transparent 100%)' }} />
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(14, 54, 18, 0.96) 0%, rgba(27, 94, 32, 0.5) 60%, transparent 100%)' }} />
 
               {/* Card Label Overlay */}
               <div style={{ position: 'relative', zIndex: 10, padding: '1.5rem', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-                <span style={{ fontSize: '10px', fontWeight: 900, color: '#C5A059', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '10px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>
                   {cap.sub}
                 </span>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#F5F2EB', margin: 0, textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Geist', sans-serif !important" }}>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#FAF6EE', margin: 0, textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Geist', sans-serif !important" }}>
                   {cap.title}
                 </h3>
               </div>

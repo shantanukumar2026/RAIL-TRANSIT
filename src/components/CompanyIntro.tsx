@@ -14,15 +14,15 @@ export const CompanyIntro: React.FC = () => {
           {/* Left Side: Storytelling & Why Choose Us */}
           <div style={{ gridColumn: 'span 7' }}>
             <div className="eyebrow" style={{ letterSpacing: '0.2em', marginBottom: '1rem', fontFamily: "'Geist', sans-serif !important" }}>
-              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#C5A059' }} />
-              <span>THE MANUFACTURING HERITAGE</span>
+              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
+              <span style={{ color: '#4CAF50' }}>THE MANUFACTURING HERITAGE</span>
             </div>
 
             {/* High-Impact Uppercase Swiss Industrial Heading */}
             <h2 
               style={{ 
                 fontSize: 'clamp(2.5rem, 4.2vw, 3.8rem)', 
-                color: '#143D2E', 
+                color: '#1B5E20', 
                 fontWeight: 900, 
                 lineHeight: 1.06, 
                 marginBottom: '1.5rem', 
@@ -32,9 +32,9 @@ export const CompanyIntro: React.FC = () => {
               }}
             >
               HEAVY RAIL &amp; METALLURGICAL<br />
-              <span style={{ color: '#143D2E', position: 'relative', display: 'inline-block' }}>
+              <span style={{ color: '#1B5E20', position: 'relative', display: 'inline-block' }}>
                 ENGINEERING EXCELLENCE
-                <span style={{ position: 'absolute', bottom: '-4px', left: 0, width: '100%', height: '4px', background: '#C5A059' }} />
+                <span style={{ position: 'absolute', bottom: '-4px', left: 0, width: '100%', height: '4px', background: '#4CAF50' }} />
               </span>
             </h2>
 
@@ -43,26 +43,26 @@ export const CompanyIntro: React.FC = () => {
             </p>
 
             {/* Why Choose ABC Foundries - 4 Story Pillars */}
-            <div style={{ marginBottom: '2.25rem', padding: '1.25rem', background: '#FFFFFF', border: '1px solid #E5E7EB', borderLeft: '4px solid #C5A059', borderRadius: '2px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
-              <strong style={{ fontSize: '12.5px', fontWeight: 900, color: '#143D2E', letterSpacing: '0.1em', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem', fontFamily: "'Geist', sans-serif !important" }}>
+            <div style={{ marginBottom: '2.25rem', padding: '1.25rem', background: '#FFFFFF', border: '1px solid #E5E7EB', borderLeft: '4px solid #4CAF50', borderRadius: '2px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+              <strong style={{ fontSize: '12.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.1em', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem', fontFamily: "'Geist', sans-serif !important" }}>
                 WHY CLASS I RAILROADS PARTNER WITH ABC
               </strong>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.85rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <CheckCircle2 size={15} color="#10B981" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>RDSO Approved Class A Foundry</span>
+                  <CheckCircle2 size={15} color="#4CAF50" />
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>RDSO Approved Class A Foundry</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <CheckCircle2 size={15} color="#10B981" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>100% Volumetric Ultrasonic NDT</span>
+                  <CheckCircle2 size={15} color="#4CAF50" />
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>100% Volumetric Ultrasonic NDT</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <CheckCircle2 size={15} color="#10B981" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>36-Ton Axle Load Rating</span>
+                  <CheckCircle2 size={15} color="#4CAF50" />
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>36-Ton Axle Load Rating</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <CheckCircle2 size={15} color="#10B981" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#143D2E', fontFamily: "'Geist', sans-serif !important" }}>AREMA Ch. 4 &amp; AAR M-1003</span>
+                  <CheckCircle2 size={15} color="#4CAF50" />
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>AREMA Ch. 4 &amp; AAR M-1003</span>
                 </div>
               </div>
             </div>
@@ -72,16 +72,16 @@ export const CompanyIntro: React.FC = () => {
               className="link-hover-arrow"
             >
               <span>DISCOVER OUR MANUFACTURING FOOTPRINT</span>
-              <ArrowRight size={15} color="#C5A059" />
+              <ArrowRight size={15} color="#4CAF50" />
             </a>
           </div>
 
           {/* Right Side: Heavy Machined Axlebox Housing Photo */}
           <div style={{ gridColumn: 'span 5' }}>
-            <div className="img-hover-zoom" style={{ border: '1px solid #E5E7EB', background: '#FFFFFF', boxShadow: '0 20px 45px rgba(20, 61, 46, 0.12)', borderRadius: '2px', position: 'relative' }}>
+            <div className="img-hover-zoom" style={{ border: '1px solid #E5E7EB', background: '#FFFFFF', boxShadow: '0 20px 45px rgba(27, 94, 32, 0.12)', borderRadius: '2px', position: 'relative' }}>
               
               {/* Badge overlay */}
-              <div style={{ position: 'absolute', top: '14px', right: '14px', zIndex: 20, background: '#143D2E', color: '#C5A059', fontSize: '9.5px', fontWeight: 900, padding: '4px 10px', border: '1px solid #C5A059', letterSpacing: '0.1em', fontFamily: "'Geist', sans-serif !important" }}>
+              <div style={{ position: 'absolute', top: '14px', right: '14px', zIndex: 20, background: '#1B5E20', color: '#FFFFFF', fontSize: '9.5px', fontWeight: 900, padding: '4px 10px', border: '1px solid #4CAF50', letterSpacing: '0.1em', fontFamily: "'Geist', sans-serif !important" }}>
                 AAR M-1003 QA
               </div>
 
@@ -97,7 +97,7 @@ export const CompanyIntro: React.FC = () => {
               {/* Image Footer Details */}
               <div style={{ padding: '1.25rem', background: '#FFFFFF', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div>
-                  <strong style={{ fontSize: '12px', fontWeight: 900, color: '#143D2E', letterSpacing: '0.06em', textTransform: 'uppercase', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>
+                  <strong style={{ fontSize: '12px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>
                     FINISH MACHINED AXLEBOX HOUSING
                   </strong>
                   <span style={{ fontSize: '11px', color: '#6C757D', fontFamily: "'Manrope', sans-serif !important" }}>
@@ -106,8 +106,8 @@ export const CompanyIntro: React.FC = () => {
                 </div>
                 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  <ShieldCheck size={16} color="#10B981" />
-                  <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#10B981', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>PASSED NDT</span>
+                  <ShieldCheck size={16} color="#4CAF50" />
+                  <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>PASSED NDT</span>
                 </div>
               </div>
 

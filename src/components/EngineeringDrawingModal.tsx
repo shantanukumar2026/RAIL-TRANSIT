@@ -26,7 +26,7 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
         position: 'fixed',
         inset: 0,
         zIndex: 2000,
-        background: 'rgba(12, 36, 27, 0.85)',
+        background: 'rgba(27, 94, 32, 0.85)',
         backdropFilter: 'blur(8px)',
         display: 'flex',
         alignItems: 'center',
@@ -46,18 +46,18 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
           overflowY: 'auto',
           borderRadius: '2px',
           boxShadow: '0 25px 60px rgba(0, 0, 0, 0.5)',
-          borderTop: '4px solid #C5A059',
+          borderTop: '4px solid #4CAF50',
           position: 'relative'
         }}
         onClick={e => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div style={{ background: '#143D2E', color: '#F5F2EB', padding: '1.25rem 1.75rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid rgba(197, 160, 89, 0.3)' }}>
+        <div style={{ background: '#1B5E20', color: '#FAF6EE', padding: '1.25rem 1.75rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid rgba(76, 175, 80, 0.3)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <div style={{ background: '#C5A059', color: '#143D2E', padding: '4px 8px', fontSize: '10px', fontWeight: 900, letterSpacing: '0.1em' }}>
+            <div style={{ background: '#4CAF50', color: '#1B5E20', padding: '4px 8px', fontSize: '10px', fontWeight: 900, letterSpacing: '0.1em' }}>
               {productSeries}
             </div>
-            <h3 style={{ fontSize: '1.15rem', fontWeight: 900, margin: 0, textTransform: 'uppercase', color: '#F5F2EB' }}>
+            <h3 style={{ fontSize: '1.15rem', fontWeight: 900, margin: 0, textTransform: 'uppercase', color: '#FAF6EE' }}>
               TECHNICAL BLUEPRINT &amp; CAD DRAWING: {productTitle}
             </h3>
           </div>
@@ -65,9 +65,9 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
           <button 
             onClick={onClose}
             aria-label="Close modal"
-            style={{ background: 'transparent', border: 'none', color: '#A3B5AC', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            style={{ background: 'transparent', border: 'none', color: '#FAF6EE', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            <X size={22} color="#F5F2EB" />
+            <X size={22} color="#FAF6EE" />
           </button>
         </div>
 
@@ -77,7 +77,7 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
           {/* Left Side: Authentic Engineering Callout Diagram / Drawing */}
           <div style={{ gridColumn: 'span 7' }}>
             <div style={{ background: '#F8F9FA', border: '1.5px solid #D1D5DB', borderRadius: '2px', padding: '1rem', position: 'relative', overflow: 'hidden' }}>
-              <div style={{ position: 'absolute', top: '12px', left: '12px', background: '#143D2E', color: '#C5A059', fontSize: '9px', fontWeight: 900, padding: '3px 8px', letterSpacing: '0.08em' }}>
+              <div style={{ position: 'absolute', top: '12px', left: '12px', background: '#1B5E20', color: '#FAF6EE', fontSize: '9px', fontWeight: 900, padding: '3px 8px', letterSpacing: '0.08em', border: '1px solid #4CAF50' }}>
                 APPROVED AREMA CAD DRAWING
               </div>
 
@@ -89,7 +89,7 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
 
               <div style={{ marginTop: '0.75rem', paddingTop: '0.75rem', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '11px', color: '#4B5563' }}>
                 <span>Scale: 1:1 True-to-Cast CAD</span>
-                <span style={{ fontWeight: 800, color: '#143D2E' }}>Tolerance: ±0.05mm CMM Verified</span>
+                <span style={{ fontWeight: 800, color: '#1B5E20' }}>Tolerance: ±0.05mm CMM Verified</span>
               </div>
             </div>
           </div>
@@ -98,10 +98,10 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
           <div style={{ gridColumn: 'span 5', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
               <div style={{ marginBottom: '1.25rem' }}>
-                <span style={{ fontSize: '11px', fontWeight: 900, color: '#C5A059', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                <span style={{ fontSize: '11px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
                   SPECIFICATION METALLURGY
                 </span>
-                <h4 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#143D2E', margin: '0 0 6px 0', textTransform: 'uppercase' }}>
+                <h4 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1B5E20', margin: '0 0 6px 0', textTransform: 'uppercase' }}>
                   {productSpecs}
                 </h4>
                 <p style={{ fontSize: '12.5px', color: '#4B5563', lineHeight: 1.5, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
@@ -111,20 +111,20 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
 
               {/* Technical Inspection Checkpoints */}
               <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', marginBottom: '1.5rem', borderRadius: '2px' }}>
-                <strong style={{ fontSize: '11px', fontWeight: 900, color: '#143D2E', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '8px' }}>
+                <strong style={{ fontSize: '11px', fontWeight: 900, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '8px' }}>
                   CAD COMPONENT CHECKPOINTS
                 </strong>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#1F2937', fontWeight: 600 }}>
-                    <CheckCircle2 size={14} color="#10B981" />
+                    <CheckCircle2 size={14} color="#4CAF50" />
                     <span>Sub-Zero Charpy V-Notch Impact: 120 J @ -40°C</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#1F2937', fontWeight: 600 }}>
-                    <CheckCircle2 size={14} color="#10B981" />
+                    <CheckCircle2 size={14} color="#4CAF50" />
                     <span>Yield Strength: 680 - 750 MPa (Work-Hardened)</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#1F2937', fontWeight: 600 }}>
-                    <CheckCircle2 size={14} color="#10B981" />
+                    <CheckCircle2 size={14} color="#4CAF50" />
                     <span>36-Ton Heavy Axle Load (HAL) Certified</span>
                   </div>
                 </div>
@@ -136,9 +136,11 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
               <a 
                 href={productImg || '/images/bogie_callouts_diagram.png'} 
                 download
+                className="btn-animated"
                 style={{
-                  background: '#143D2E',
+                  background: '#1B5E20',
                   color: '#FFFFFF',
+                  border: '1.5px solid #4CAF50',
                   padding: '12px 20px',
                   fontSize: '12px',
                   fontWeight: 900,
@@ -150,10 +152,10 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
                   justifyContent: 'center',
                   gap: '8px',
                   borderRadius: '2px',
-                  boxShadow: '0 4px 14px rgba(20,61,46,0.2)'
+                  boxShadow: '0 4px 14px rgba(27,94,32,0.2)'
                 }}
               >
-                <Download size={15} color="#C5A059" />
+                <Download size={15} color="#4CAF50" />
                 <span>DOWNLOAD CAD SPEC SHEET (.PDF)</span>
               </a>
 

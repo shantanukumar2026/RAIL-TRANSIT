@@ -3,62 +3,62 @@ import { Leaf, Recycle, Zap } from 'lucide-react';
 
 export const SustainabilitySection: React.FC = () => {
   return (
-    <section id="sustainability" style={{ background: '#FFFFFF', padding: '5.5rem 0', borderBottom: '1px solid #E2DDD5' }}>
+    <section id="sustainability" style={{ background: '#FFFFFF', padding: '5.5rem 0', borderBottom: '1px solid #E5E7EB' }}>
       <div className="container-custom">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '3.5rem', alignItems: 'center' }}>
           
           {/* Left Side: Factual Metrics */}
           <div style={{ gridColumn: 'span 7' }}>
             <div className="eyebrow">
-              <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: '#B78A4C' }} />
-              <span>DECARBONIZED FOUNDRY OPERATIONS</span>
+              <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: '#4CAF50' }} />
+              <span style={{ color: '#4CAF50' }}>DECARBONIZED FOUNDRY OPERATIONS</span>
             </div>
 
-            <h2 style={{ fontSize: '2.25rem', color: '#143D2E', fontWeight: 800, margin: '0 0 1.25rem 0', lineHeight: 1.2, textTransform: 'uppercase' }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 800, margin: '0 0 1.25rem 0', lineHeight: 1.2, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
               SUSTAINABLE METALLURGICAL PRODUCTION
             </h2>
 
-            <p style={{ fontSize: '1rem', color: '#4A5550', lineHeight: 1.7, marginBottom: '2rem', fontWeight: 400, maxWidth: '640px' }}>
+            <p style={{ fontSize: '1rem', color: '#4B5563', lineHeight: 1.7, marginBottom: '2rem', fontWeight: 500, maxWidth: '640px', fontFamily: "'Manrope', sans-serif !important" }}>
               ABC Rail operates electric arc and induction melting furnaces powered by 100% recycled structural scrap steel. Combined with closed-loop thermal sand reclamation, our foundries minimize environmental impact without compromising fatigue endurance or AREMA standards.
             </p>
 
             {/* 3 Factual Sustainability Pillar Cards */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem' }}>
-              <div style={{ background: '#F5F2EB', border: '1px solid #E2DDD5', padding: '1.25rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.5rem', color: '#143D2E' }}>
-                  <Recycle size={18} color="#B78A4C" />
-                  <strong style={{ fontSize: '1.25rem', fontWeight: 900 }}>98%</strong>
+              <div style={{ background: '#FAF6EE', border: '1px solid #E5E7EB', padding: '1.25rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.5rem', color: '#1B5E20' }}>
+                  <Recycle size={18} color="#4CAF50" />
+                  <strong style={{ fontSize: '1.25rem', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>98%</strong>
                 </div>
-                <span style={{ fontSize: '11px', fontWeight: 800, color: '#143D2E', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Geist', sans-serif !important" }}>
                   SAND RECOVERY
                 </span>
-                <span style={{ fontSize: '11px', color: '#7E8783', marginTop: '2px', display: 'block' }}>
+                <span style={{ fontSize: '11px', color: '#6B7280', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
                   Closed-loop thermal silica reclamation
                 </span>
               </div>
 
-              <div style={{ background: '#F5F2EB', border: '1px solid #E2DDD5', padding: '1.25rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.5rem', color: '#143D2E' }}>
-                  <Zap size={18} color="#B78A4C" />
-                  <strong style={{ fontSize: '1.25rem', fontWeight: 900 }}>100%</strong>
+              <div style={{ background: '#FAF6EE', border: '1px solid #E5E7EB', padding: '1.25rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.5rem', color: '#1B5E20' }}>
+                  <Zap size={18} color="#4CAF50" />
+                  <strong style={{ fontSize: '1.25rem', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>100%</strong>
                 </div>
-                <span style={{ fontSize: '11px', fontWeight: 800, color: '#143D2E', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Geist', sans-serif !important" }}>
                   RECYCLED SCRAP
                 </span>
-                <span style={{ fontSize: '11px', color: '#7E8783', marginTop: '2px', display: 'block' }}>
+                <span style={{ fontSize: '11px', color: '#6B7280', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
                   Electric induction furnace feedstock
                 </span>
               </div>
 
-              <div style={{ background: '#F5F2EB', border: '1px solid #E2DDD5', padding: '1.25rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.5rem', color: '#143D2E' }}>
-                  <Leaf size={18} color="#B78A4C" />
-                  <strong style={{ fontSize: '1.25rem', fontWeight: 900 }}>ISO 14001</strong>
+              <div style={{ background: '#FAF6EE', border: '1px solid #E5E7EB', padding: '1.25rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.5rem', color: '#1B5E20' }}>
+                  <Leaf size={18} color="#4CAF50" />
+                  <strong style={{ fontSize: '1.25rem', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>ISO 14001</strong>
                 </div>
-                <span style={{ fontSize: '11px', fontWeight: 800, color: '#143D2E', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Geist', sans-serif !important" }}>
                   ENVIRONMENTAL QA
                 </span>
-                <span style={{ fontSize: '11px', color: '#7E8783', marginTop: '2px', display: 'block' }}>
+                <span style={{ fontSize: '11px', color: '#6B7280', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
                   Zero-discharge plant management
                 </span>
               </div>
@@ -67,7 +67,7 @@ export const SustainabilitySection: React.FC = () => {
 
           {/* Right Side: Clean Heavy Rail Trackwork Facility Photo */}
           <div style={{ gridColumn: 'span 5' }}>
-            <div className="img-hover-zoom" style={{ border: '1px solid #E2DDD5', background: '#F5F2EB' }}>
+            <div className="img-hover-zoom" style={{ border: '1px solid #E5E7EB', background: '#FAF6EE' }}>
               <img 
                 src="/images/rail_trackwork_mfg.png" 
                 alt="ABC Environmental Heavy Rail Metallurgical Foundry" 

@@ -47,17 +47,17 @@ export const StandardsGrid: React.FC = () => {
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <div className="eyebrow">
-              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#C5A059' }} />
-              <span>CERTIFICATIONS &amp; GLOBAL COMPLIANCE</span>
+              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
+              <span style={{ color: '#4CAF50' }}>CERTIFICATIONS &amp; GLOBAL COMPLIANCE</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#143D2E', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
               INTERNATIONAL STANDARDS
             </h2>
           </div>
 
           <a href="#contact" className="link-hover-arrow">
             <span>REQUEST COMPLIANCE CERTIFICATES</span>
-            <ArrowRight size={14} color="#C5A059" />
+            <ArrowRight size={14} color="#4CAF50" />
           </a>
         </div>
 
@@ -80,15 +80,15 @@ export const StandardsGrid: React.FC = () => {
             >
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', borderBottom: '1px solid #E5E7EB', paddingBottom: '0.75rem' }}>
-                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#143D2E', letterSpacing: '0.02em', fontFamily: "'Geist', sans-serif !important" }}>
+                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.02em', fontFamily: "'Geist', sans-serif !important" }}>
                     {std.code}
                   </span>
-                  <div style={{ width: '28px', height: '28px', borderRadius: '2px', background: '#143D2E', color: '#C5A059', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <ShieldCheck size={16} color="#C5A059" />
+                  <div style={{ width: '28px', height: '28px', borderRadius: '2px', background: '#1B5E20', color: '#4CAF50', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <ShieldCheck size={16} color="#4CAF50" />
                   </div>
                 </div>
 
-                <strong style={{ fontSize: '11.5px', fontWeight: 900, color: '#143D2E', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '0.65rem', fontFamily: "'Geist', sans-serif !important" }}>
+                <strong style={{ fontSize: '11.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '0.65rem', fontFamily: "'Geist', sans-serif !important" }}>
                   {std.name}
                 </strong>
 
@@ -109,8 +109,8 @@ export const StandardsGrid: React.FC = () => {
               alt="Heavy Duty Locomotive Wheelset & Gear Assembly" 
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(20,61,46,0.9), transparent)', padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-              <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#C5A059', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(27,94,32,0.9), transparent)', padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+              <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
                 AAR M-101 CERTIFIED WHEELSETS
               </span>
               <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
@@ -125,8 +125,8 @@ export const StandardsGrid: React.FC = () => {
               alt="Machined Industrial Rotavator Gearboxes" 
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(20,61,46,0.9), transparent)', padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-              <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#C5A059', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(27,94,32,0.9), transparent)', padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+              <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
                 PRECISION GEARING DIVISIONS
               </span>
               <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>

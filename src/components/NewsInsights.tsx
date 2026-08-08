@@ -34,10 +34,10 @@ export const NewsInsights: React.FC = () => {
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '3rem', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <div className="eyebrow">
-              <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#C5A059' }} />
-              <span>CORPORATE UPDATES</span>
+              <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#4CAF50' }} />
+              <span style={{ color: '#4CAF50' }}>INDUSTRY &amp; GRIEVANCE UPDATES</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#143D2E', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
               NEWS &amp; INSIGHTS
             </h2>
           </div>
@@ -47,7 +47,7 @@ export const NewsInsights: React.FC = () => {
             className="link-hover-arrow"
           >
             <span>VIEW ALL NEWS</span>
-            <ArrowRight size={14} color="#C5A059" />
+            <ArrowRight size={14} color="#4CAF50" />
           </a>
         </div>
 
@@ -81,7 +81,7 @@ export const NewsInsights: React.FC = () => {
                 {/* Card Content */}
                 <div style={{ padding: '1.5rem 1.25rem' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '0.65rem' }}>
-                    <span style={{ fontSize: '10px', fontWeight: 900, color: '#C5A059', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                    <span style={{ fontSize: '10px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
                       {item.category}
                     </span>
                     <span style={{ color: '#E5E7EB' }}>|</span>
@@ -90,7 +90,7 @@ export const NewsInsights: React.FC = () => {
                     </span>
                   </div>
 
-                  <h3 style={{ fontSize: '1.05rem', fontWeight: 900, color: '#143D2E', lineHeight: 1.35, margin: '0 0 0.5rem 0', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                  <h3 style={{ fontSize: '1.05rem', fontWeight: 900, color: '#1B5E20', lineHeight: 1.35, margin: '0 0 0.5rem 0', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
                     {item.title}
                   </h3>
 
@@ -101,10 +101,10 @@ export const NewsInsights: React.FC = () => {
               </div>
 
               <div style={{ padding: '1rem 1.25rem', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <span style={{ fontSize: '11px', fontWeight: 800, color: '#143D2E', letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
                   READ TECHNICAL BULLETIN
                 </span>
-                <ArrowRight size={13} color="#C5A059" />
+                <ArrowRight size={13} color="#4CAF50" />
               </div>
             </div>
           ))}

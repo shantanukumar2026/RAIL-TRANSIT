@@ -22,7 +22,7 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="section-full-vh" style={{ background: '#143D2E', color: '#F5F2EB', borderBottom: '2px solid #C5A059', position: 'relative' }}>
+    <section id="contact" className="section-full-vh section-dark-gradient" style={{ color: '#FAF6EE', borderBottom: '2px solid #4CAF50', position: 'relative' }}>
       <div className="blueprint-grid-dark" style={{ position: 'absolute', inset: 0, opacity: 0.35, pointerEvents: 'none' }} />
 
       <div className="container-custom" style={{ position: 'relative', zIndex: 10 }}>
@@ -31,46 +31,46 @@ export const ContactSection: React.FC = () => {
           {/* Left Column: Contact Information */}
           <div style={{ gridColumn: 'span 5' }}>
             <div className="eyebrow eyebrow-dark" style={{ marginBottom: '1.25rem' }}>
-              <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#C5A059' }} />
-              <span>COMMERCIAL &amp; TECHNICAL DISPATCH</span>
+              <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#81C784' }} />
+              <span style={{ color: '#A5D6A7', fontWeight: 900 }}>COMMERCIAL &amp; TECHNICAL DISPATCH</span>
             </div>
 
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: '#F5F2EB', margin: '0 0 1.25rem 0', textTransform: 'uppercase', lineHeight: 1.15, fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: '#FFFFFF', margin: '0 0 1.25rem 0', textTransform: 'uppercase', lineHeight: 1.15, fontFamily: "'Geist', sans-serif !important" }}>
               REQUEST A TECHNICAL QUOTE
             </h2>
 
-            <p style={{ fontSize: '1.05rem', color: '#A3B5AC', lineHeight: 1.65, marginBottom: '2.5rem', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+            <p style={{ fontSize: '1.05rem', color: '#FFFFFF', lineHeight: 1.65, marginBottom: '2.5rem', fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
               Submit your engineering drawings, AREMA Chapter 4 requirements, or AAR M-1003 volume inquiries. Our foundry sales engineers respond within 24 business hours.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '2.5rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ width: '42px', height: '42px', borderRadius: '2px', background: 'rgba(255, 255, 255, 0.08)', border: '1px solid rgba(197, 160, 89, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#C5A059' }}>
-                  <Phone size={18} color="#C5A059" />
+                <div style={{ width: '42px', height: '42px', borderRadius: '2px', background: 'rgba(255, 255, 255, 0.12)', border: '1px solid #81C784', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#81C784' }}>
+                  <Phone size={18} color="#81C784" />
                 </div>
                 <div>
-                  <span style={{ fontSize: '11px', color: '#A3B5AC', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>FOUNDRY DISPATCH HOTLINE</span>
-                  <strong style={{ fontSize: '15px', color: '#F5F2EB', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>+1 (800) 555-0199</strong>
+                  <span style={{ fontSize: '11px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontWeight: 700, fontFamily: "'Geist', sans-serif !important" }}>FOUNDRY DISPATCH HOTLINE</span>
+                  <strong style={{ fontSize: '15px', color: '#FFFFFF', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>+1 (800) 555-0199</strong>
                 </div>
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ width: '42px', height: '42px', borderRadius: '2px', background: 'rgba(255, 255, 255, 0.08)', border: '1px solid rgba(197, 160, 89, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#C5A059' }}>
-                  <Mail size={18} color="#C5A059" />
+                <div style={{ width: '42px', height: '42px', borderRadius: '2px', background: 'rgba(255, 255, 255, 0.12)', border: '1px solid #81C784', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#81C784' }}>
+                  <Mail size={18} color="#81C784" />
                 </div>
                 <div>
-                  <span style={{ fontSize: '11px', color: '#A3B5AC', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>ENGINEERING ESTIMATING EMAIL</span>
-                  <strong style={{ fontSize: '15px', color: '#F5F2EB', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>dispatch@abcfoundries.com</strong>
+                  <span style={{ fontSize: '11px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontWeight: 700, fontFamily: "'Geist', sans-serif !important" }}>ENGINEERING ESTIMATING EMAIL</span>
+                  <strong style={{ fontSize: '15px', color: '#FFFFFF', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>dispatch@abcfoundries.com</strong>
                 </div>
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ width: '42px', height: '42px', borderRadius: '2px', background: 'rgba(255, 255, 255, 0.08)', border: '1px solid rgba(197, 160, 89, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#C5A059' }}>
-                  <MapPin size={18} color="#C5A059" />
+                <div style={{ width: '42px', height: '42px', borderRadius: '2px', background: 'rgba(255, 255, 255, 0.08)', border: '1px solid rgba(76, 175, 80, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#4CAF50' }}>
+                  <MapPin size={18} color="#4CAF50" />
                 </div>
                 <div>
-                  <span style={{ fontSize: '11px', color: '#A3B5AC', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>FOUNDRY &amp; FORGE COMPLEX</span>
-                  <strong style={{ fontSize: '15px', color: '#F5F2EB', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>100 Industrial Parkway, Suite 500</strong>
+                  <span style={{ fontSize: '11px', color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>FOUNDRY &amp; FORGE COMPLEX</span>
+                  <strong style={{ fontSize: '15px', color: '#FAF6EE', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>100 Industrial Parkway, Suite 500</strong>
                 </div>
               </div>
             </div>
@@ -79,12 +79,12 @@ export const ContactSection: React.FC = () => {
 
           {/* Right Column: Quote Request Form */}
           <div style={{ gridColumn: 'span 7' }}>
-            <div style={{ background: '#FFFFFF', color: '#1F2937', padding: '2.5rem', borderRadius: '2px', boxShadow: '0 25px 50px rgba(0,0,0,0.3)', borderTop: '4px solid #C5A059' }}>
+            <div style={{ background: '#FFFFFF', color: '#1F2937', padding: '2.5rem', borderRadius: '2px', boxShadow: '0 25px 50px rgba(0,0,0,0.3)', borderTop: '4px solid #4CAF50' }}>
               
               {formSubmitted ? (
                 <div style={{ padding: '3rem 2rem', textAlign: 'center' }}>
-                  <CheckCircle2 size={48} color="#143D2E" style={{ margin: '0 auto 1rem auto' }} />
-                  <h3 style={{ fontSize: '1.5rem', color: '#143D2E', margin: '0 0 0.5rem 0', fontFamily: "'Geist', sans-serif !important" }}>SPECIFICATION SUBMITTED</h3>
+                  <CheckCircle2 size={48} color="#1B5E20" style={{ margin: '0 auto 1rem auto' }} />
+                  <h3 style={{ fontSize: '1.5rem', color: '#1B5E20', margin: '0 0 0.5rem 0', fontFamily: "'Geist', sans-serif !important" }}>SPECIFICATION SUBMITTED</h3>
                   <p style={{ color: '#4B5563', fontSize: '14px', margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>
                     Thank you. Our heavy rail metallurgical engineering team will review your parameters and respond within 24 hours.
                   </p>
@@ -94,7 +94,7 @@ export const ContactSection: React.FC = () => {
                   
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
                     <div>
-                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#143D2E', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>FULL NAME *</label>
+                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>FULL NAME *</label>
                       <input 
                         type="text"
                         required
@@ -106,7 +106,7 @@ export const ContactSection: React.FC = () => {
                     </div>
 
                     <div>
-                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#143D2E', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>CORPORATE EMAIL *</label>
+                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>CORPORATE EMAIL *</label>
                       <input 
                         type="email"
                         required
@@ -120,7 +120,7 @@ export const ContactSection: React.FC = () => {
 
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
                     <div>
-                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#143D2E', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>PHONE NUMBER</label>
+                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>PHONE NUMBER</label>
                       <input 
                         type="tel"
                         placeholder="+1 (800) 555-0199"
@@ -131,7 +131,7 @@ export const ContactSection: React.FC = () => {
                     </div>
 
                     <div>
-                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#143D2E', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>COMPANY / AGENCY</label>
+                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>COMPANY / AGENCY</label>
                       <input 
                         type="text"
                         placeholder="Class I Rail / Transit Agency"
@@ -143,7 +143,7 @@ export const ContactSection: React.FC = () => {
                   </div>
 
                   <div>
-                    <label style={{ fontSize: '11px', fontWeight: 800, color: '#143D2E', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>PRODUCT CATEGORY *</label>
+                    <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>PRODUCT CATEGORY *</label>
                     <select 
                       value={formData.specification}
                       onChange={e => setFormData({ ...formData, specification: e.target.value })}
@@ -158,7 +158,7 @@ export const ContactSection: React.FC = () => {
                   </div>
 
                   <div>
-                    <label style={{ fontSize: '11px', fontWeight: 800, color: '#143D2E', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>PROJECT SPECIFICATION &amp; VOLUME DETAILS</label>
+                    <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>PROJECT SPECIFICATION &amp; VOLUME DETAILS</label>
                     <textarea 
                       rows={3}
                       placeholder="Specify material grade (e.g., ASTM A27, manganese steel), volume units, and delivery timeline..."
@@ -172,9 +172,9 @@ export const ContactSection: React.FC = () => {
                     type="submit"
                     className="btn-animated"
                     style={{ 
-                      background: '#143D2E', 
+                      background: '#1B5E20', 
                       color: '#FFFFFF', 
-                      border: 'none', 
+                      border: '1.5px solid #4CAF50', 
                       padding: '14px 28px', 
                       fontSize: '13px', 
                       fontWeight: 900, 
@@ -186,12 +186,12 @@ export const ContactSection: React.FC = () => {
                       justifyContent: 'center',
                       gap: '10px',
                       borderRadius: '2px',
-                      boxShadow: '0 6px 16px rgba(20, 61, 46, 0.2)',
+                      boxShadow: '0 6px 16px rgba(27, 94, 32, 0.2)',
                       fontFamily: "'Geist', sans-serif !important"
                     }}
                   >
                     <span>SUBMIT REQUEST FOR QUOTE</span>
-                    <Send size={15} color="#C5A059" />
+                    <Send size={15} color="#4CAF50" />
                   </button>
 
                 </form>

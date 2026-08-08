@@ -6,6 +6,7 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import CompanyIntro from './components/CompanyIntro';
 import FeaturedComponents from './components/FeaturedComponents';
+import InteractiveExplorer from './components/InteractiveExplorer';
 import ProductShowcaseStrip from './components/ProductShowcaseStrip';
 import RailwayTelemetryWidget from './components/RailwayTelemetryWidget';
 import ManufacturingCapabilities from './components/ManufacturingCapabilities';
@@ -17,22 +18,28 @@ import EngineeringExcellence from './components/EngineeringExcellence';
 import StandardsGrid from './components/StandardsGrid';
 import TestingFacilities from './components/TestingFacilities';
 import AuthoritiesApprovals from './components/AuthoritiesApprovals';
+import TrustCertificationSection from './components/TrustCertificationSection';
 import NewsInsights from './components/NewsInsights';
 import CtaBanner from './components/CtaBanner';
 import Footer from './components/Footer';
 
 import RequestQuoteModal from './components/RequestQuoteModal';
 import WatchVideoModal from './components/WatchVideoModal';
+import ProductExplorerModal from './components/ProductExplorerModal';
 
 function App() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const [isExplorerModalOpen, setIsExplorerModalOpen] = useState(false);
 
   const handleOpenQuote = () => setIsQuoteModalOpen(true);
   const handleCloseQuote = () => setIsQuoteModalOpen(false);
 
   const handleOpenVideo = () => setIsVideoModalOpen(true);
   const handleCloseVideo = () => setIsVideoModalOpen(false);
+
+  const handleOpenExplorer = () => setIsExplorerModalOpen(true);
+  const handleCloseExplorer = () => setIsExplorerModalOpen(false);
 
   return (
     <div style={{ minHeight: '100vh', background: '#F8F9FA', color: '#1F2937' }}>
@@ -41,25 +48,29 @@ function App() {
       <TopContactBar />
 
       {/* 02 Main Navigation & 03 Mega Menu */}
-      <Header onRequestQuoteClick={handleOpenQuote} />
+      <Header 
+        onRequestQuoteClick={handleOpenQuote} 
+        onOpenExplorer={handleOpenExplorer}
+      />
 
       <main id="main-content">
         {/* 04 Full Screen Hero Section */}
         <HeroSection 
-          onExploreClick={() => {
-            const el = document.getElementById('capabilities');
-            if (el) el.scrollIntoView({ behavior: 'smooth' });
-          }}
+          onExploreClick={handleOpenExplorer}
+          onRequestQuoteClick={handleOpenQuote}
           onWatchVideoClick={handleOpenVideo}
         />
 
         {/* 05 Company Introduction */}
         <CompanyIntro />
 
-        {/* 06 Featured Rail Components (All 15 Products) */}
+        {/* 06 Featured Rail Components (All Products) */}
         <FeaturedComponents />
 
-        {/* 07 Isolated Metal Castings Showcase Strip (Matching User Screenshot) */}
+        {/* 06B Interactive Engineering & Product Spec Explorer */}
+        <InteractiveExplorer onRequestQuoteForProduct={() => setIsQuoteModalOpen(true)} />
+
+        {/* 07 Isolated Metal Castings Showcase Strip */}
         <ProductShowcaseStrip />
 
         {/* 08 Live Interactive Railway Telemetry & Speed Monitor */}
@@ -92,10 +103,13 @@ function App() {
         {/* 17 Authorities & Approvals */}
         <AuthoritiesApprovals />
 
-        {/* 18 News & Insights */}
+        {/* 18 Company Trust & Official Certifications */}
+        <TrustCertificationSection />
+
+        {/* 19 News & Insights */}
         <NewsInsights />
 
-        {/* 19 CTA Banner */}
+        {/* 20 CTA Banner */}
         <CtaBanner onRequestQuoteClick={handleOpenQuote} />
       </main>
 
@@ -105,6 +119,14 @@ function App() {
       {/* Interactive Modals */}
       <RequestQuoteModal isOpen={isQuoteModalOpen} onClose={handleCloseQuote} />
       <WatchVideoModal isOpen={isVideoModalOpen} onClose={handleCloseVideo} />
+      <ProductExplorerModal 
+        isOpen={isExplorerModalOpen} 
+        onClose={handleCloseExplorer}
+        onRequestQuoteForProduct={() => {
+          setIsExplorerModalOpen(false);
+          setIsQuoteModalOpen(true);
+        }}
+      />
 
     </div>
   );

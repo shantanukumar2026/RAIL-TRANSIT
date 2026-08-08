@@ -7,7 +7,7 @@ interface CtaBannerProps {
 
 export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => {
   return (
-    <section style={{ position: 'relative', background: '#143D2E', color: '#F5F2EB', padding: '5rem 0', overflow: 'hidden', borderBottom: '2px solid #C5A059' }}>
+    <section className="section-dark-gradient" style={{ position: 'relative', color: '#FAF6EE', padding: '5rem 0', overflow: 'hidden', borderBottom: '2px solid #4CAF50' }}>
       {/* Background Photo */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
         <img 
@@ -15,7 +15,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
           alt="Factory Assembly Facility" 
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(12, 36, 27, 0.96) 0%, rgba(20, 61, 46, 0.88) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(27, 94, 32, 0.96) 0%, rgba(20, 61, 46, 0.88) 100%)' }} />
       </div>
 
       <div className="container-custom" style={{ position: 'relative', zIndex: 10 }}>
@@ -23,15 +23,15 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
           
           <div style={{ maxWidth: '680px' }}>
             <div className="eyebrow eyebrow-dark" style={{ marginBottom: '1rem' }}>
-              <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#C5A059' }} />
-              <span>ENGINEERING CONSULTATION &amp; QUOTATIONS</span>
+              <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#81C784' }} />
+              <span style={{ color: '#A5D6A7', fontWeight: 900 }}>ENGINEERING CONSULTATION &amp; QUOTATIONS</span>
             </div>
 
-            <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.75rem)', color: '#F5F2EB', fontWeight: 900, lineHeight: 1.15, margin: '0 0 1rem 0', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.75rem)', color: '#FFFFFF', fontWeight: 900, lineHeight: 1.15, margin: '0 0 1rem 0', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
               READY TO DISCUSS YOUR COMPONENT SPECIFICATIONS?
             </h2>
 
-            <p style={{ fontSize: '1.05rem', color: '#A3B5AC', lineHeight: 1.6, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+            <p style={{ fontSize: '1.05rem', color: '#FFFFFF', lineHeight: 1.6, margin: 0, fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
               Our metallurgical engineering team provides technical consultations, custom CAD reviews, AAR M-1003 compliance verification, and project quotation estimates within 24 hours.
             </p>
           </div>
@@ -41,9 +41,9 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
               onClick={onRequestQuoteClick}
               className="btn-animated"
               style={{
-                background: '#1C4735',
+                background: '#1B5E20',
                 color: '#FFFFFF',
-                border: '1.5px solid #C5A059',
+                border: '1.5px solid #4CAF50',
                 padding: '16px 32px',
                 fontSize: '13px',
                 fontWeight: 900,
@@ -54,21 +54,21 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
                 alignItems: 'center',
                 gap: '10px',
                 borderRadius: '2px',
-                boxShadow: '0 10px 25px rgba(12, 36, 27, 0.5)',
+                boxShadow: '0 10px 25px rgba(27, 94, 32, 0.5)',
                 fontFamily: "'Geist', sans-serif !important"
               }}
             >
               <span>REQUEST A QUOTE</span>
-              <ArrowRight size={15} color="#C5A059" />
+              <ArrowRight size={15} color="#4CAF50" />
             </button>
 
             <a
               href="mailto:dispatch@abcfoundries.com"
               className="btn-animated"
               style={{
-                background: 'rgba(255, 255, 255, 0.08)',
-                border: '1px solid rgba(245, 242, 235, 0.3)',
-                color: '#F5F2EB',
+                background: '#1B5E20',
+                border: '1.5px solid #4CAF50',
+                color: '#FAF6EE',
                 padding: '15px 28px',
                 fontSize: '13px',
                 fontWeight: 900,
@@ -82,7 +82,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
                 fontFamily: "'Geist', sans-serif !important"
               }}
             >
-              <Mail size={15} color="#C5A059" />
+              <Mail size={15} color="#4CAF50" />
               <span>CONTACT SALES</span>
             </a>
           </div>

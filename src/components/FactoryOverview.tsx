@@ -41,29 +41,29 @@ export const FactoryOverview: React.FC = () => {
               alt="ABC Rail 5-Axis CNC Machined Axlebox Housing" 
               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, transparent 60%, rgba(20, 61, 46, 0.95) 100%)' }} />
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, transparent 60%, rgba(27, 94, 32, 0.95) 100%)' }} />
           </div>
 
           {/* Right Column: Dark Green Stats Panel */}
-          <div style={{ gridColumn: 'span 5', background: '#143D2E', color: '#F5F2EB', padding: '3.5rem 3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div style={{ gridColumn: 'span 5', background: '#1B5E20', color: '#FAF6EE', padding: '3.5rem 3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2.5rem 2rem' }}>
               {stats.map((stat, idx) => {
                 const IconComp = stat.icon;
                 return (
                   <div key={idx}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '0.5rem' }}>
-                      <div style={{ width: '32px', height: '32px', borderRadius: '2px', background: 'rgba(255, 255, 255, 0.08)', border: '1px solid rgba(197, 160, 89, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#C5A059' }}>
-                        <IconComp size={16} color="#C5A059" />
+                      <div style={{ width: '32px', height: '32px', borderRadius: '2px', background: 'rgba(255, 255, 255, 0.12)', border: '1px solid #81C784', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#81C784' }}>
+                        <IconComp size={16} color="#81C784" />
                       </div>
-                      <span style={{ fontSize: '1.85rem', fontWeight: 900, color: '#F5F2EB', lineHeight: 1, fontFamily: "'Geist', sans-serif !important" }}>
+                      <span style={{ fontSize: '1.85rem', fontWeight: 900, color: '#FFFFFF', lineHeight: 1, fontFamily: "'Geist', sans-serif !important" }}>
                         {stat.value}
                       </span>
                     </div>
 
-                    <strong style={{ fontSize: '11px', fontWeight: 900, color: '#C5A059', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>
+                    <strong style={{ fontSize: '11px', fontWeight: 900, color: '#81C784', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>
                       {stat.label}
                     </strong>
-                    <span style={{ fontSize: '11px', color: '#A3B5AC', lineHeight: 1.4, display: 'block', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+                    <span style={{ fontSize: '11px', color: '#FFFFFF', lineHeight: 1.4, display: 'block', fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
                       {stat.sub}
                     </span>
                   </div>
