@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
-import { ArrowRight, Search, ChevronDown, Building2, Layers, ShieldCheck, Compass, Sparkles } from 'lucide-react';
+import { ArrowRight, Search, ChevronDown, Building2, Layers, ShieldCheck, Compass } from 'lucide-react';
 
 interface HeaderProps {
   onRequestQuoteClick?: () => void;
@@ -142,7 +142,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
           <div className="container-custom" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
 
             {/* Corporate Division Emblem */}
-            <div onClick={() => { if (onNavigate) onNavigate('home'); }} style={{ cursor: 'pointer' }}>
+            <div>
               <Logo variant="light" />
             </div>
 

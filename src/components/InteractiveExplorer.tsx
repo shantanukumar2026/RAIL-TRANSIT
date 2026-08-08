@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { 
-  Search, Filter, Layers, Check, Download, 
+  Search, Check, Download, 
   ChevronRight, ArrowRight, Eye, Table, Grid, Info, Sparkles, X, Compass
 } from 'lucide-react';
 import EngineeringDrawingModal from './EngineeringDrawingModal';
@@ -2052,9 +2052,9 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
             isOpen={!!drawingModalProduct}
             onClose={() => setDrawingModalProduct(null)}
             productTitle={drawingModalProduct.title}
-            series={drawingModalProduct.series}
-            specs={drawingModalProduct.specs}
-            drawingImg={drawingModalProduct.img}
+            productSeries={drawingModalProduct.series}
+            productSpecs={drawingModalProduct.specs}
+            productImg={drawingModalProduct.img}
           />
         )}
 

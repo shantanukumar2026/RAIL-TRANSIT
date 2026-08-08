@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Send, CheckCircle2, FileText, MessageSquare } from 'lucide-react';
+import { ShieldCheck, Send, CheckCircle2 } from 'lucide-react';
 
 export const WagonTrackingGrievance: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
