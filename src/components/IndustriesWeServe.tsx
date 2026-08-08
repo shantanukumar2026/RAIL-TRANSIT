@@ -24,7 +24,7 @@ export const IndustriesWeServe: React.FC = () => {
     },
     {
       title: 'HEAVY FREIGHT CORRIDORS',
-      img: '/images/Trackside & Turnout Castings-2.jpg'
+      img: '/images/trackside_turnout_castings_2.jpg'
     }
   ];
 

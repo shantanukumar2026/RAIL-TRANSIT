@@ -176,8 +176,8 @@ export const FeaturedComponents: React.FC = () => {
       series: 'SERIES 4020',
       specs: '60kg UIC / AREMA (Amer. Railway Engineering & Maint. Assoc.) High Speed Switch',
       desc: 'Full Form: TWS = Thick Web Switch Point Tongue Rail for 160km/h high-speed turnout switching.',
-      img: '/images/Trackside & Turnout Castings-2.jpg',
-      drawingImg: '/images/Trackside & Turnout Castings-2.jpg'
+      img: '/images/trackside_turnout_castings_2.jpg',
+      drawingImg: '/images/trackside_turnout_castings_2.jpg'
     },
     {
       id: 'trk-03',
@@ -196,8 +196,8 @@ export const FeaturedComponents: React.FC = () => {
       series: 'SERIES 4040',
       specs: 'IS 2062 / ASTM A148 Cast Steel Track Plate',
       desc: 'Precision cast steel track tie plates, canted rail seats, and heavy elastic clip fastening shoulder brackets.',
-      img: '/images/Trackside & Turnout Castings-2.jpg',
-      drawingImg: '/images/Trackside & Turnout Castings-2.jpg'
+      img: '/images/trackside_turnout_castings_2.jpg',
+      drawingImg: '/images/trackside_turnout_castings_2.jpg'
     },
 
     // Foundry & Industrial Castings (4 Items)

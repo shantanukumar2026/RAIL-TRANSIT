@@ -294,8 +294,8 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: '780 MPa',
     hardness: '320 - 360 BHN',
     desc: 'Full Form: TWS = Thick Web Switch Point Tongue Rail for 160km/h high-speed turnout switching.',
-    img: '/images/Trackside & Turnout Castings-2.jpg',
-    drawingImg: '/images/Trackside & Turnout Castings-2.jpg',
+    img: '/images/trackside_turnout_castings_2.jpg',
+    drawingImg: '/images/trackside_turnout_castings_2.jpg',
     cadFile: 'TWS-SWITCH-60KG-UIC.STEP',
     keyFeatures: ['Full Form: TWS = Thick Web Switch Point', 'Machined asymmetrical web profile', 'Integrated point machine drive']
   },
@@ -332,8 +332,8 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: '350 MPa',
     hardness: '190 BHN',
     desc: 'Precision cast steel track tie plates, canted rail seats, and heavy elastic clip fastening shoulder brackets.',
-    img: '/images/Trackside & Turnout Castings-2.jpg',
-    drawingImg: '/images/Trackside & Turnout Castings-2.jpg',
+    img: '/images/trackside_turnout_castings_2.jpg',
+    drawingImg: '/images/trackside_turnout_castings_2.jpg',
     cadFile: 'TRACK-TIE-PLATE-60KG.STEP',
     keyFeatures: ['1:40 canted rail seat angle', 'Integrated ribbing reinforcement', 'Galvanized corrosion protection']
   },
@@ -899,8 +899,8 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: '450 - 550 MPa',
     hardness: '200 - 260 BHN',
     desc: 'Comprehensive range of EN8 and EN9 engineering carbon steel castings for heavy machinery axles, gears, and shafts.',
-    img: '/images/Trackside & Turnout Castings.jpg',
-    drawingImg: '/images/Trackside & Turnout Castings.jpg',
+    img: '/images/trackside_turnout_castings.jpg',
+    drawingImg: '/images/trackside_turnout_castings.jpg',
     cadFile: 'EN8-EN9-STEEL-CASTINGS.STEP',
     keyFeatures: ['Full Form: EN = European Norm Steel Standards', 'Good machinability & toughness', 'Normalized heat treatment']
   },
@@ -918,8 +918,8 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: '650 - 850 MPa',
     hardness: '280 - 340 BHN',
     desc: 'High-tensile EN19 and EN24 nickel-chromium-molybdenum steel castings quenched and tempered for extreme stress components.',
-    img: '/images/Trackside & Turnout Castings.jpg',
-    drawingImg: '/images/Trackside & Turnout Castings.jpg',
+    img: '/images/trackside_turnout_castings.jpg',
+    drawingImg: '/images/trackside_turnout_castings.jpg',
     cadFile: 'EN19-EN24-HIGH-TENSILE.STEP',
     keyFeatures: ['EN24 Ni-Cr-Mo high tensile steel', 'Extreme torsional fatigue resistance', 'Deep hardenability']
   },
