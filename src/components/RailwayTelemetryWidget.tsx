@@ -150,7 +150,7 @@ export const RailwayTelemetryWidget: React.FC = () => {
           </div>
 
           {/* Right Panel: Simulated Live Telemetry Telematics */}
-          <div style={{ gridColumn: 'span 7', background: '#FFFFFF', color: '#1F2937', padding: '2.25rem', borderRadius: '2px', boxShadow: '0 20px 45px rgba(0,0,0,0.3)', borderTop: '4px solid #4CAF50', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div style={{ gridColumn: 'span 7', background: '#FFFFFF', color: '#1B5E20', padding: '2.25rem', borderRadius: '2px', boxShadow: '0 20px 45px rgba(0,0,0,0.3)', borderTop: '4px solid #4CAF50', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem', borderBottom: '1px solid #E5E7EB', paddingBottom: '0.75rem' }}>
                 <h4 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#1B5E20', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
@@ -168,21 +168,21 @@ export const RailwayTelemetryWidget: React.FC = () => {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '1.5rem' }}>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1.15rem', borderLeft: `4px solid ${getSignalColor()}` }}>
-                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>AXLEBOX BEARING TEMP</span>
+                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>AXLEBOX BEARING TEMP</span>
                   <strong style={{ fontSize: '20px', fontWeight: 900, color: axleTemp > 100 ? '#DC2626' : '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{axleTemp} °C</strong>
-                  <span style={{ fontSize: '10px', color: '#6C757D', display: 'block', marginTop: '2px', fontWeight: 600 }}>Max threshold: 120°C</span>
+                  <span style={{ fontSize: '10px', color: '#4CAF50', display: 'block', marginTop: '2px', fontWeight: 600 }}>Max threshold: 120°C</span>
                 </div>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1.15rem', borderLeft: '4px solid #4CAF50' }}>
-                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>HAL LOAD FORCE</span>
+                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>HAL LOAD FORCE</span>
                   <strong style={{ fontSize: '20px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{Math.round(36 * (speed / 180))} TONS</strong>
-                  <span style={{ fontSize: '10px', color: '#6C757D', display: 'block', marginTop: '2px', fontWeight: 600 }}>36-Ton Axle Spec</span>
+                  <span style={{ fontSize: '10px', color: '#4CAF50', display: 'block', marginTop: '2px', fontWeight: 600 }}>36-Ton Axle Spec</span>
                 </div>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1.15rem', borderLeft: '4px solid #1B5E20' }}>
-                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>TRACK BRAKE SHOE FORCE</span>
+                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>TRACK BRAKE SHOE FORCE</span>
                   <strong style={{ fontSize: '20px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{signalStatus === 'STOP' ? '12.4 kN' : '0.0 kN'}</strong>
-                  <span style={{ fontSize: '10px', color: '#6C757D', display: 'block', marginTop: '2px', fontWeight: 600 }}>Ductile Iron Shoe</span>
+                  <span style={{ fontSize: '10px', color: '#4CAF50', display: 'block', marginTop: '2px', fontWeight: 600 }}>Ductile Iron Shoe</span>
                 </div>
 
               </div>

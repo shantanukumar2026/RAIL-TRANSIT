@@ -27,7 +27,7 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
           padding: '2.5rem', 
           position: 'relative',
           boxShadow: '0 25px 60px rgba(27, 94, 32, 0.4)',
-          color: '#1F2937'
+          color: '#1B5E20'
         }}
         onClick={e => e.stopPropagation()}
       >
@@ -94,28 +94,28 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>FULL NAME *</label>
-                  <input type="text" required placeholder="John Doe" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none' }} />
+                  <input type="text" required placeholder="John Doe" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1B5E20', outline: 'none' }} />
                 </div>
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>COMPANY *</label>
-                  <input type="text" required placeholder="Railway Corp" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none' }} />
+                  <input type="text" required placeholder="Railway Corp" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1B5E20', outline: 'none' }} />
                 </div>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>EMAIL ADDRESS *</label>
-                  <input type="email" required placeholder="name@company.com" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none' }} />
+                  <input type="email" required placeholder="name@company.com" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1B5E20', outline: 'none' }} />
                 </div>
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>PHONE</label>
-                  <input type="tel" placeholder="+1 (512) 555-0199" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none' }} />
+                  <input type="tel" placeholder="+1 (512) 555-0199" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1B5E20', outline: 'none' }} />
                 </div>
               </div>
 
               <div>
                 <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>PRODUCT INTEREST</label>
-                <select style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none' }}>
+                <select style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1B5E20', outline: 'none' }}>
                   <option>Rail Turnout Castings (AREMA Ch. 4)</option>
                   <option>Forged Locomotive Axles &amp; Wheelsets</option>
                   <option>AAR Grade E Couplers &amp; Draft Gear</option>
@@ -126,7 +126,7 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
 
               <div>
                 <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>PROJECT SPECIFICATIONS</label>
-                <textarea rows={3} placeholder="Provide quantity, timeline, or material grade requirements..." style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1F2937', outline: 'none', resize: 'vertical' }} />
+                <textarea rows={3} placeholder="Provide quantity, timeline, or material grade requirements..." style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1B5E20', outline: 'none', resize: 'vertical' }} />
               </div>
 
               <button

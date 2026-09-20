@@ -161,12 +161,12 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                   border: '1px solid #E5E7EB',
                   borderRadius: '2px',
                   outline: 'none',
-                  color: '#1F2937',
+                  color: '#1B5E20',
                   fontFamily: "'Manrope', sans-serif",
                   cursor: 'pointer'
                 }}
               />
-              <Search size={16} color="#6C757D" style={{ position: 'absolute', right: '14px', top: '50%', transform: 'translateY(-50%)' }} />
+              <Search size={16} color="#4CAF50" style={{ position: 'absolute', right: '14px', top: '50%', transform: 'translateY(-50%)' }} />
             </div>
 
             {/* Action Buttons: Product Explorer + Request Quote CTA */}
@@ -358,7 +358,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
               left: 0,
               width: '100%',
               background: '#FFFFFF',
-              color: '#1F2937',
+              color: '#1B5E20',
               boxShadow: '0 30px 60px rgba(0, 0, 0, 0.2)',
               borderTop: '3px solid #4CAF50',
               borderBottom: '3px solid #1B5E20',
@@ -385,7 +385,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                               href="#products"
                               onClick={() => setActiveMegaMenu(null)}
                               style={{
-                                color: '#374151',
+                                color: '#2E7D32',
                                 textDecoration: 'none',
                                 fontSize: '13.5px',
                                 fontWeight: 600,
@@ -401,7 +401,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                                 e.currentTarget.style.transform = 'translateX(5px)';
                               }}
                               onMouseLeave={e => {
-                                e.currentTarget.style.color = '#374151';
+                                e.currentTarget.style.color = '#2E7D32';
                                 e.currentTarget.style.background = 'transparent';
                                 e.currentTarget.style.transform = 'translateX(0)';
                               }}
@@ -433,7 +433,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                       <h4 style={{ fontSize: '15px', fontWeight: 900, color: '#1B5E20', margin: '0 0 6px 0', fontFamily: "'Geist', sans-serif" }}>
                         North American Heavy Freight &amp; Transit Castings
                       </h4>
-                      <p style={{ fontSize: '12.5px', color: '#6C757D', margin: '0 0 14px 0', lineHeight: 1.45, fontFamily: "'Manrope', sans-serif" }}>
+                      <p style={{ fontSize: '12.5px', color: '#4CAF50', margin: '0 0 14px 0', lineHeight: 1.45, fontFamily: "'Manrope', sans-serif" }}>
                         Engineered to AREMA &amp; AAR M-1003 standards for 36-ton heavy axle load endurance.
                       </p>
                       <a

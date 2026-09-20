@@ -177,7 +177,7 @@ export const TrustCertificationSection: React.FC = () => {
                   <span>{cert.authority}</span>
                 </p>
 
-                <p style={{ fontSize: '12.5px', color: '#374151', lineHeight: 1.55, margin: '0 0 1.25rem 0', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+                <p style={{ fontSize: '12.5px', color: '#2E7D32', lineHeight: 1.55, margin: '0 0 1.25rem 0', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
                   {cert.scope}
                 </p>
               </div>
@@ -348,12 +348,12 @@ export const TrustCertificationSection: React.FC = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2rem' }}>
               <div style={{ background: '#F9FAFB', border: '1px solid #E5E7EB', padding: '1rem', borderRadius: '2px' }}>
                 <strong style={{ fontSize: '11px', color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>CERTIFICATE TITLE</strong>
-                <p style={{ fontSize: '14px', fontWeight: 800, color: '#1F2937', margin: 0, fontFamily: "'Geist', sans-serif !important" }}>{selectedCert.title}</p>
+                <p style={{ fontSize: '14px', fontWeight: 800, color: '#1B5E20', margin: 0, fontFamily: "'Geist', sans-serif !important" }}>{selectedCert.title}</p>
               </div>
 
               <div style={{ background: '#F9FAFB', border: '1px solid #E5E7EB', padding: '1rem', borderRadius: '2px' }}>
                 <strong style={{ fontSize: '11px', color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>MANUFACTURING SCOPE</strong>
-                <p style={{ fontSize: '13px', color: '#374151', margin: 0, lineHeight: 1.5, fontFamily: "'Manrope', sans-serif !important" }}>{selectedCert.scope}</p>
+                <p style={{ fontSize: '13px', color: '#2E7D32', margin: 0, lineHeight: 1.5, fontFamily: "'Manrope', sans-serif !important" }}>{selectedCert.scope}</p>
               </div>
 
               <div style={{ background: '#F0FDF4', border: '1px solid #BBF7D0', padding: '1rem', borderRadius: '2px' }}>
@@ -390,7 +390,7 @@ export const TrustCertificationSection: React.FC = () => {
                 onClick={() => setSelectedCert(null)}
                 style={{
                   background: '#F3F4F6',
-                  color: '#374151',
+                  color: '#2E7D32',
                   border: '1px solid #D1D5DB',
                   padding: '12px 20px',
                   fontSize: '12px',

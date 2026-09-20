@@ -119,7 +119,7 @@ export const AuthoritiesApprovals: React.FC = () => {
                       <strong style={{ fontSize: '12px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', lineHeight: 1.3, fontFamily: "'Geist', sans-serif !important" }}>
                         {app.category}
                       </strong>
-                      <span style={{ fontSize: '11px', color: '#6C757D', fontFamily: "'Manrope', sans-serif !important" }}>
+                      <span style={{ fontSize: '11px', color: '#4CAF50', fontFamily: "'Manrope', sans-serif !important" }}>
                         {app.desc}
                       </span>
                     </div>
@@ -127,7 +127,7 @@ export const AuthoritiesApprovals: React.FC = () => {
 
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                     {app.items.map((item, iIdx) => (
-                      <li key={iIdx} style={{ fontSize: '12.5px', color: '#1F2937', fontWeight: 600, display: 'flex', alignItems: 'flex-start', gap: '8px', lineHeight: 1.45, fontFamily: "'Manrope', sans-serif !important" }}>
+                      <li key={iIdx} style={{ fontSize: '12.5px', color: '#1B5E20', fontWeight: 600, display: 'flex', alignItems: 'flex-start', gap: '8px', lineHeight: 1.45, fontFamily: "'Manrope', sans-serif !important" }}>
                         <CheckCircle2 size={15} color="#4CAF50" style={{ flexShrink: 0, marginTop: '2px' }} />
                         <span>{item}</span>
                       </li>

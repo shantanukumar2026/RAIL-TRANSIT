@@ -18,7 +18,7 @@ export const WagonTrackingGrievance: React.FC = () => {
   };
 
   return (
-    <div style={{ fontFamily: "'Geist', sans-serif", color: '#0F172A', maxWidth: '900px', margin: '0 auto' }}>
+    <div style={{ fontFamily: "'Geist', sans-serif", color: '#1B5E20', maxWidth: '900px', margin: '0 auto' }}>
       
       {/* Simple Grievance Card */}
       <div style={{ background: '#FFFFFF', borderRadius: '16px', padding: '2.5rem', border: '1px solid #E2E8F0', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
@@ -29,7 +29,7 @@ export const WagonTrackingGrievance: React.FC = () => {
               <CheckCircle2 size={32} />
             </div>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '0.5rem' }}>Grievance Submitted Successfully!</h3>
-            <p style={{ color: '#64748B', lineHeight: 1.6, maxWidth: '480px', margin: '0 auto 1.5rem auto' }}>
+            <p style={{ color: '#4CAF50', lineHeight: 1.6, maxWidth: '480px', margin: '0 auto 1.5rem auto' }}>
               Thank you, <strong>{formData.name}</strong>. Your ticket <strong>GRV-2026-9810</strong> has been registered. Our Quality Support Team will review your issue and respond within 24 hours.
             </p>
             <button
@@ -48,7 +48,7 @@ export const WagonTrackingGrievance: React.FC = () => {
               </h2>
             </div>
             
-            <p style={{ fontSize: '0.925rem', color: '#64748B', lineHeight: 1.6, marginBottom: '2rem' }}>
+            <p style={{ fontSize: '0.925rem', color: '#4CAF50', lineHeight: 1.6, marginBottom: '2rem' }}>
               We are committed to uncompromised quality. If you have any feedback, technical queries, or product grievances, please submit your details below for immediate review by our Quality Support team.
             </p>
 

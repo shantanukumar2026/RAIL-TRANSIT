@@ -100,7 +100,7 @@ export const CompanyIntro: React.FC = () => {
                   <strong style={{ fontSize: '12px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>
                     FINISH MACHINED AXLEBOX HOUSING
                   </strong>
-                  <span style={{ fontSize: '11px', color: '#6C757D', fontFamily: "'Manrope', sans-serif !important" }}>
+                  <span style={{ fontSize: '11px', color: '#4CAF50', fontFamily: "'Manrope', sans-serif !important" }}>
                     Forged Carbon Steel ASTM A668 • 5-Axis CNC Finished
                   </span>
                 </div>

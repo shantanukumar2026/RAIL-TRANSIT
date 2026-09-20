@@ -82,7 +82,7 @@ export const InnovationSection: React.FC<InnovationSectionProps> = ({ lang }) =>
               <h3 style={{ fontSize: '20px', fontWeight: 800, color: '#195B34', marginTop: '16px', marginBottom: '12px' }}>
                 {item.title}
               </h3>
-              <p style={{ fontSize: '14px', color: '#475569', lineHeight: 1.6, margin: 0 }}>
+              <p style={{ fontSize: '14px', color: '#4CAF50', lineHeight: 1.6, margin: 0 }}>
                 {item.desc}
               </p>
             </div>

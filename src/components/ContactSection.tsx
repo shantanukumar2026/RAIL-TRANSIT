@@ -79,7 +79,7 @@ export const ContactSection: React.FC = () => {
 
           {/* Right Column: Quote Request Form */}
           <div style={{ gridColumn: 'span 7' }}>
-            <div style={{ background: '#FFFFFF', color: '#1F2937', padding: '2.5rem', borderRadius: '2px', boxShadow: '0 25px 50px rgba(0,0,0,0.3)', borderTop: '4px solid #4CAF50' }}>
+            <div style={{ background: '#FFFFFF', color: '#1B5E20', padding: '2.5rem', borderRadius: '2px', boxShadow: '0 25px 50px rgba(0,0,0,0.3)', borderTop: '4px solid #4CAF50' }}>
               
               {formSubmitted ? (
                 <div style={{ padding: '3rem 2rem', textAlign: 'center' }}>

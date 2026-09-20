@@ -39,7 +39,7 @@ export const MarketsSection: React.FC = () => {
             <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: '0 0 0.5rem 0', textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Geist', sans-serif !important" }}>
               MARKETS WE SERVE
             </h2>
-            <p style={{ fontSize: '14px', color: '#6C757D', margin: 0, maxWidth: '580px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+            <p style={{ fontSize: '14px', color: '#4CAF50', margin: 0, maxWidth: '580px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
               Engineered rail components deployed across North American freight networks, global transit systems, and heavy industrial mining lines.
             </p>
           </div>

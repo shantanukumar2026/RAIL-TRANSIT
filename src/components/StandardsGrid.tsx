@@ -92,7 +92,7 @@ export const StandardsGrid: React.FC = () => {
                   {std.name}
                 </strong>
 
-                <p style={{ fontSize: '13px', color: '#1F2937', lineHeight: 1.6, margin: 0, fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
+                <p style={{ fontSize: '13px', color: '#1B5E20', lineHeight: 1.6, margin: 0, fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
                   {std.desc}
                 </p>
               </div>

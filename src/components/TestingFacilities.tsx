@@ -83,7 +83,7 @@ export const TestingFacilities: React.FC = () => {
                   <h3 style={{ fontSize: '13.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.04em', margin: '0 0 0.65rem 0', textTransform: 'uppercase', lineHeight: 1.35, fontFamily: "'Geist', sans-serif !important" }}>
                     {test.title}
                   </h3>
-                  <p style={{ fontSize: '13px', color: '#1F2937', lineHeight: 1.6, margin: 0, fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
+                  <p style={{ fontSize: '13px', color: '#1B5E20', lineHeight: 1.6, margin: 0, fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
                     {test.desc}
                   </p>
                 </div>

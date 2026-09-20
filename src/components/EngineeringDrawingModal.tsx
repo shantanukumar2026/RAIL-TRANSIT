@@ -39,7 +39,7 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
       <div 
         style={{
           background: '#FFFFFF',
-          color: '#1F2937',
+          color: '#1B5E20',
           width: '100%',
           maxWidth: '960px',
           maxHeight: '90vh',
@@ -115,15 +115,15 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
                   CAD COMPONENT CHECKPOINTS
                 </strong>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#1F2937', fontWeight: 600 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#1B5E20', fontWeight: 600 }}>
                     <CheckCircle2 size={14} color="#4CAF50" />
                     <span>Sub-Zero Charpy V-Notch Impact: 120 J @ -40°C</span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#1F2937', fontWeight: 600 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#1B5E20', fontWeight: 600 }}>
                     <CheckCircle2 size={14} color="#4CAF50" />
                     <span>Yield Strength: 680 - 750 MPa (Work-Hardened)</span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#1F2937', fontWeight: 600 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#1B5E20', fontWeight: 600 }}>
                     <CheckCircle2 size={14} color="#4CAF50" />
                     <span>36-Ton Heavy Axle Load (HAL) Certified</span>
                   </div>
@@ -164,7 +164,7 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
                 style={{
                   background: '#F8F9FA',
                   border: '1px solid #D1D5DB',
-                  color: '#1F2937',
+                  color: '#1B5E20',
                   padding: '10px 20px',
                   fontSize: '12px',
                   fontWeight: 800,

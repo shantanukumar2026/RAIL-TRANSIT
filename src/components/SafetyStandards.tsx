@@ -58,7 +58,7 @@ export const SafetyStandards: React.FC<SafetyStandardsProps> = ({ lang }) => {
               <h3 style={{ fontSize: '20px', fontWeight: 800, color: '#064E3B', marginBottom: '12px' }}>
                 {std.title}
               </h3>
-              <p style={{ fontSize: '14px', color: '#334155', lineHeight: 1.6, margin: 0 }}>
+              <p style={{ fontSize: '14px', color: '#2E7D32', lineHeight: 1.6, margin: 0 }}>
                 {std.desc}
               </p>
             </div>

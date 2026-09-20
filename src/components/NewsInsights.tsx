@@ -85,7 +85,7 @@ export const NewsInsights: React.FC = () => {
                       {item.category}
                     </span>
                     <span style={{ color: '#E5E7EB' }}>|</span>
-                    <span style={{ fontSize: '10.5px', color: '#6C757D', fontWeight: 700, fontFamily: "'Geist', sans-serif !important" }}>
+                    <span style={{ fontSize: '10.5px', color: '#4CAF50', fontWeight: 700, fontFamily: "'Geist', sans-serif !important" }}>
                       {item.date}
                     </span>
                   </div>

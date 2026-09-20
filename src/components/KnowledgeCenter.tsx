@@ -37,7 +37,7 @@ export const KnowledgeCenter: React.FC = () => {
             >
               <div>
                 <h4 style={{ fontSize: '16px', fontWeight: 800, color: '#195B34', margin: '0 0 6px 0' }}>{resource.title}</h4>
-                <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: 1.5, margin: 0, fontWeight: 400 }}>{resource.desc}</p>
+                <p style={{ fontSize: '13.5px', color: '#4CAF50', lineHeight: 1.5, margin: 0, fontWeight: 400 }}>{resource.desc}</p>
               </div>
               <a href="#knowledge" onClick={(e) => { e.preventDefault(); }} style={{ color: '#195B34', fontSize: '12px', fontWeight: 700, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', marginTop: '16px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                 <span>Download PDF</span>

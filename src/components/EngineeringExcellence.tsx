@@ -41,7 +41,7 @@ export const EngineeringExcellence: React.FC = () => {
                 <strong style={{ fontSize: '13px', color: '#1B5E20', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>
                   3D Thermal Simulation
                 </strong>
-                <span style={{ fontSize: '12px', color: '#6C757D', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
+                <span style={{ fontSize: '12px', color: '#4CAF50', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
                   Predictive liquid metal flow modeling
                 </span>
               </div>
@@ -50,7 +50,7 @@ export const EngineeringExcellence: React.FC = () => {
                 <strong style={{ fontSize: '13px', color: '#1B5E20', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>
                   Sub-Zero Impact QA
                 </strong>
-                <span style={{ fontSize: '12px', color: '#6C757D', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
+                <span style={{ fontSize: '12px', color: '#4CAF50', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
                   Charpy V-notch fracture toughness
                 </span>
               </div>
@@ -59,7 +59,7 @@ export const EngineeringExcellence: React.FC = () => {
                 <strong style={{ fontSize: '13px', color: '#1B5E20', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>
                   Austenitic Mn Steel
                 </strong>
-                <span style={{ fontSize: '12px', color: '#6C757D', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
+                <span style={{ fontSize: '12px', color: '#4CAF50', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
                   11–14% work-hardening manganese
                 </span>
               </div>
@@ -68,7 +68,7 @@ export const EngineeringExcellence: React.FC = () => {
                 <strong style={{ fontSize: '13px', color: '#1B5E20', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>
                   100% Ultrasonic NDT
                 </strong>
-                <span style={{ fontSize: '12px', color: '#6C757D', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
+                <span style={{ fontSize: '12px', color: '#4CAF50', marginTop: '2px', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
                   Full volumetric flaw scanning
                 </span>
               </div>

@@ -12,7 +12,7 @@ export const FleetOperations: React.FC = () => {
     <section id="fleet" style={{ background: '#FFFFFF', padding: '48px 5vw', borderBottom: '1px solid #E5E7EB' }}>
       <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '36px', alignItems: 'center' }}>
         <div>
-          <span style={{ color: '#1F2937', fontSize: '11px', fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', display: 'block', marginBottom: '6px' }}>FLEET MANAGEMENT</span>
+          <span style={{ color: '#1B5E20', fontSize: '11px', fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', display: 'block', marginBottom: '6px' }}>FLEET MANAGEMENT</span>
           <h2 className="font-display" style={{ fontSize: '32px', fontWeight: 900, color: '#195B34', letterSpacing: '-0.02em', textTransform: 'uppercase', marginBottom: '16px' }}>Fleet &amp; Operations</h2>
           <p style={{ color: '#6B7280', fontSize: '14.5px', lineHeight: 1.6, marginBottom: '24px' }}>
             Our logistics operations utilize heavy-duty booster-axle mixers. Each mixer is equipped with computerized drum controls and satellite tracking to ensure chemical hydration properties remain within precise parameters during transit.
@@ -21,7 +21,7 @@ export const FleetOperations: React.FC = () => {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', borderTop: '1px solid #E5E7EB', paddingTop: '20px' }}>
             {fleetSpecs.map((spec, idx) => (
               <div key={idx} style={{ background: '#F8FAFC', border: '1px solid #E5E7EB', padding: '14px 16px' }}>
-                <strong style={{ fontSize: '13.5px', color: '#1F2937', display: 'block', fontWeight: 800, marginBottom: '4px' }}>{spec.title}</strong>
+                <strong style={{ fontSize: '13.5px', color: '#1B5E20', display: 'block', fontWeight: 800, marginBottom: '4px' }}>{spec.title}</strong>
                 <span style={{ color: '#6B7280', fontSize: '12px', lineHeight: 1.4, display: 'block' }}>{spec.desc}</span>
               </div>
             ))}

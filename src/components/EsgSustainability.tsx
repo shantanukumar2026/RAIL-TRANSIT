@@ -65,7 +65,7 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
             {/* Interactive Recycling Rate Box */}
             <div style={{ background: '#F8FAFC', border: '1px solid #E5E7EB', borderLeft: '4px solid #195B34', padding: '20px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                <label style={{ fontSize: '11px', fontWeight: 800, color: '#1F2937', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
                   SCRAP STEEL RECYCLING RATE: <span style={{ color: '#195B34', fontSize: '13px' }}>{clinkerRatio}%</span>
                 </label>
                 <div style={{ display: 'flex', gap: '6px' }}>
@@ -75,7 +75,7 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
                       onClick={() => setClinkerRatio(preset)}
                       style={{
                         background: clinkerRatio === preset ? '#195B34' : '#FFFFFF',
-                        color: clinkerRatio === preset ? '#FFFFFF' : '#374151',
+                        color: clinkerRatio === preset ? '#FFFFFF' : '#2E7D32',
                         border: '1px solid #E5E7EB',
                         padding: '3px 8px',
                         fontSize: '10.5px',
@@ -107,7 +107,7 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
 
               <div style={{ marginTop: '12px', paddingTop: '10px', borderTop: '1px solid #E5E7EB', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontSize: '11.5px', color: '#6B7280' }}>
-                  Output Base: <strong style={{ color: '#1F2937' }}>{esgVolumeVal} Tons</strong>
+                  Output Base: <strong style={{ color: '#1B5E20' }}>{esgVolumeVal} Tons</strong>
                 </span>
                 <span style={{ fontSize: '12px', color: '#195B34', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '4px' }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#195B34" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></svg>

@@ -51,7 +51,7 @@ export const SpecialtyMixesSection: React.FC = () => {
                 <div>
                   <span style={{ fontSize: '11px', fontWeight: 800, color: '#15803D', letterSpacing: '0.05em', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>{mix.psi}</span>
                   <h4 style={{ fontSize: '16px', fontWeight: 800, color: '#195B34', margin: '0 0 8px 0', letterSpacing: '-0.01em' }}>{mix.name}</h4>
-                  <p style={{ fontSize: '13px', color: '#64748B', margin: '0 0 12px 0', lineHeight: 1.4 }}><strong>Applications:</strong> {mix.app}</p>
+                  <p style={{ fontSize: '13px', color: '#4CAF50', margin: '0 0 12px 0', lineHeight: 1.4 }}><strong>Applications:</strong> {mix.app}</p>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid #F1F5F9', paddingTop: '10px', fontSize: '11px', color: '#94A3B8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                   <span>Availability: <strong style={{ color: '#195B34' }}>{mix.avail}</strong></span>

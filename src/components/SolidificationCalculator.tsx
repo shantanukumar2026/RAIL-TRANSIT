@@ -183,7 +183,7 @@ export const SolidificationCalculator: React.FC = () => {
           </div>
 
           {/* Right Panel: Simulated Results Telemetry */}
-          <div style={{ gridColumn: 'span 7', background: '#FFFFFF', color: '#1F2937', padding: '2.25rem', borderRadius: '2px', boxShadow: '0 20px 45px rgba(0,0,0,0.25)', borderTop: '4px solid #4CAF50', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div style={{ gridColumn: 'span 7', background: '#FFFFFF', color: '#1B5E20', padding: '2.25rem', borderRadius: '2px', boxShadow: '0 20px 45px rgba(0,0,0,0.25)', borderTop: '4px solid #4CAF50', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', borderBottom: '1px solid #E5E7EB', paddingBottom: '0.75rem' }}>
                 <h4 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#1B5E20', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
@@ -201,22 +201,22 @@ export const SolidificationCalculator: React.FC = () => {
               {/* Telemetry Metric Cards */}
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem', marginBottom: '1.5rem' }}>
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
-                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>YIELD STRENGTH</span>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>YIELD STRENGTH</span>
                   <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.yieldStrength}</strong>
                 </div>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
-                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>BRINELL HARDNESS</span>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>BRINELL HARDNESS</span>
                   <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.hardness}</strong>
                 </div>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
-                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>SUB-ZERO IMPACT TOUGHNESS</span>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>SUB-ZERO IMPACT TOUGHNESS</span>
                   <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.fractureToughness}</strong>
                 </div>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
-                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#6C757D', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>INTERNAL POROSITY RISK</span>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>INTERNAL POROSITY RISK</span>
                   <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.porosityRisk}</strong>
                 </div>
               </div>

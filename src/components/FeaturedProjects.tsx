@@ -26,7 +26,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
         {/* Split Editorial Header */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', alignItems: 'end', marginBottom: '28px' }}>
           <div>
-            <span style={{ color: '#1F2937', fontSize: '11px', fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', display: 'block', marginBottom: '6px' }}>PORTFOLIO OF SCALE</span>
+            <span style={{ color: '#1B5E20', fontSize: '11px', fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', display: 'block', marginBottom: '6px' }}>PORTFOLIO OF SCALE</span>
             <h2 className="font-display" style={{ fontSize: '32px', fontWeight: 900, color: '#195B34', letterSpacing: '-0.02em', lineHeight: 1.15, textTransform: 'uppercase', margin: 0 }}>
               Featured Projects
             </h2>
@@ -53,7 +53,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
                 padding: '8px 18px',
                 border: '1px solid #E5E7EB',
                 background: galleryFilter === tab.id ? '#195B34' : '#FFFFFF',
-                color: galleryFilter === tab.id ? '#FFFFFF' : '#1F2937',
+                color: galleryFilter === tab.id ? '#FFFFFF' : '#1B5E20',
                 borderRadius: '0px',
                 fontWeight: 800,
                 fontSize: '11px',

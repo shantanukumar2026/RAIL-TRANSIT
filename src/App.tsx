@@ -42,7 +42,7 @@ function App() {
   const handleCloseExplorer = () => setIsExplorerModalOpen(false);
 
   return (
-    <div style={{ minHeight: '100vh', background: '#F8F9FA', color: '#1F2937' }}>
+    <div style={{ minHeight: '100vh', background: '#F8F9FA', color: '#1B5E20' }}>
       
       {/* 01 Top Contact Bar */}
       <TopContactBar />

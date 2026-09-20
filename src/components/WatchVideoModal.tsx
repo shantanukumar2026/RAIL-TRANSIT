@@ -44,7 +44,7 @@ export const WatchVideoModal: React.FC<WatchVideoModalProps> = ({ isOpen, onClos
           <X size={18} />
         </button>
 
-        <div style={{ width: '100%', height: '480px', background: '#000000', overflow: 'hidden' }}>
+        <div style={{ width: '100%', height: '480px', background: '#1B5E20', overflow: 'hidden' }}>
           <video 
             src="/videos/foundry_live.mp4" 
             controls 
