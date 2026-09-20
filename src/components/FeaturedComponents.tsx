@@ -406,7 +406,7 @@ export const FeaturedComponents: React.FC = () => {
                     <span style={{ fontSize: '11px', fontWeight: 700, color: '#4CAF50', display: 'block', marginBottom: '8px', letterSpacing: '0.05em', fontFamily: "'Geist', sans-serif !important" }}>
                       {item.specs}
                     </span>
-                    <p style={{ fontSize: '11.5px', color: '#4B5563', lineHeight: 1.45, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+                    <p style={{ fontSize: '14px', color: '#374151', lineHeight: 1.5, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
                       {item.desc}
                     </p>
                   </div>

@@ -1576,7 +1576,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                       {product.title}
                     </h3>
 
-                    <p style={{ fontSize: '0.85rem', color: '#64748B', lineHeight: 1.45, margin: '0 0 1rem 0', flex: 1 }}>
+                    <p style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.5, margin: '0 0 1rem 0', flex: 1 }}>
                       {product.desc}
                     </p>
 
