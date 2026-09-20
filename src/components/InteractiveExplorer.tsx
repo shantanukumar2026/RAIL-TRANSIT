@@ -309,7 +309,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Reduction Gear Housing manufactured by Westpoint Industries.',
-    img: 'https://media.gettyimages.com/id/654392522/photo/gearbox-metal-wheels-close-up.jpg?c=8tLIS2VMbTwdbYNGTL-eDH6zZL61mb40BH4GRD8-TCM%3D&k=20&s=170667a&w=gi',
+    img: 'public/images/gettyimages-144461984-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
