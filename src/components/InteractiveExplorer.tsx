@@ -173,7 +173,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Axlebox Housing - IS 1030 manufactured by Westpoint Industries.',
-    img: 'https://media.istockphoto.com/id/175853314/pl/zdj%C4%99cie/zestaw-ko%C5%82owy.jpg?c=n_AGSy3nqQbVpnDcYgTC9RbjDdViTYDOb4BjWYeCrDI%3D&k=20&s=1024x1024&w=is',
+    img: '/images/gettyimages-169263915-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
