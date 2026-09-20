@@ -37,13 +37,13 @@ export const TopContactBar: React.FC = () => {
           <span style={{ color: 'rgba(255,255,255,0.35)' }}>|</span>
 
           <a 
-            href="mailto:foundrymen@wespointindustries.com" 
+            href="mailto:foundrymen@westpointindustries.com" 
             style={{ color: '#FFFFFF', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '5px', fontWeight: 800, transition: 'all 0.2s', padding: '3px 8px', borderRadius: '2px' }}
             onMouseEnter={e => { e.currentTarget.style.color = '#1B5E20'; e.currentTarget.style.background = '#FAF6EE'; }}
             onMouseLeave={e => { e.currentTarget.style.color = '#FFFFFF'; e.currentTarget.style.background = 'transparent'; }}
           >
             <Mail size={13} color="#81C784" />
-            <span>foundrymen@wespointindustries.com</span>
+            <span>foundrymen@westpointindustries.com</span>
           </a>
         </div>
 

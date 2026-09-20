@@ -94,7 +94,7 @@ export const Footer: React.FC = () => {
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13.5px', color: '#FFFFFF', fontWeight: 700, fontFamily: "'Manrope', sans-serif !important" }}>
                 <Mail size={18} color="#4CAF50" style={{ flexShrink: 0 }} />
-                <span>foundrymen@wespointindustries.com</span>
+                <span>foundrymen@westpointindustries.com</span>
               </li>
             </ul>
           </div>

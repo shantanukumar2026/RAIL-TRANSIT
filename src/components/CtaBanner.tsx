@@ -63,7 +63,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
             </button>
 
             <a
-              href="mailto:foundrymen@wespointindustries.com"
+              href="mailto:foundrymen@westpointindustries.com"
               className="btn-animated"
               style={{
                 background: '#1B5E20',
