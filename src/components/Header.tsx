@@ -13,13 +13,14 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
 
   useEffect(() => {
     const handleScroll = () => {
+      setActiveMegaMenu(null);
       if (window.scrollY > 40) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

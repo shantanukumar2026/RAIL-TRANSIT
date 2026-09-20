@@ -31,46 +31,47 @@ export const Footer: React.FC = () => {
   };
 
   const services = [
-    'Turnout Trackwork Castings',
-    'High-Tensile Forged Axles',
-    'Bogie & Bolster Castings',
-    'Friction Draft Gear',
-    'AAR Couplers & Knuckles',
-    'Custom Steel Tooling'
+    'Manganese Turnout Frogs',
+    'Forged Wheelsets & Axles',
+    'Locomotive Bogie Castings',
+    'Draft Gear & Coupler Knuckles',
+    'Track Tie Plates & Fasteners',
+    'Custom Rail Patterns & Tooling'
   ];
 
   const solutions = [
-    '3D CAD & Simulation',
-    'AREMA Chapter 4 Stamped Calcs',
-    'Automated Induction Melting',
-    'Ultrasonic & Magnetic QA Lab',
-    'Heavy-Haul Rail Direct Logistics',
-    'Low-Carbon Scrap Melting'
+    'AREMA Trackwork Engineering',
+    'AAR M-1003 QA Certification',
+    'Electric Induction Steel Melting',
+    'Ultrasonic NDT & Testing Lab',
+    'Heavy-Axle-Load Track Systems',
+    'Class I Railroad Supply Chain'
   ];
 
   const companyLinks = [
-    'About Us',
-    'Our Technical Team',
-    'Careers',
-    'Global Contact Hubs'
+    'About Westpoint Group',
+    'Metallurgical Engineering Team',
+    'Foundry & Forging Facilities',
+    'Rail Network Vendor Status',
+    'Contact Enterprise Sales'
   ];
 
   const industryPills = [
-    'Civil Infrastructure',
-    'Highway & DOT',
-    'Energy & Utilities',
-    'Municipal Transit',
-    'Commercial Rail',
-    'Heavy Rail & Transit',
-    'Water & Wastewater',
-    'Industrial Plants'
+    'Class I Freight Corridors',
+    'Urban Passenger Transit & Metro',
+    'High-Speed Passenger Rail',
+    'Heavy-Haul Mining Rail',
+    'Locomotive & Rolling Stock',
+    'Railway Switch & Turnouts',
+    'Commuter & Intercity Lines',
+    'Rail Maintenance-of-Way (MOW)'
   ];
 
   return (
     <footer style={{ background: '#144818', color: '#FFFFFF', borderTop: '3px solid #4CAF50', position: 'relative' }}>
 
-      {/* Main Top Footer Grid */}
-      <div className="container-custom" style={{ paddingTop: '4.5rem', paddingBottom: '3.5rem', paddingLeft: '2rem', paddingRight: '2.5rem' }}>
+      {/* Main Top Footer Grid with 13rem top padding so sticky header never obscures headings */}
+      <div className="container-custom" style={{ paddingTop: '13rem', paddingBottom: '4rem', paddingLeft: '2rem', paddingRight: '2.5rem' }}>
         <div className="footer-corporate-grid">
 
           {/* ==================== LEFT COLUMN: BRAND & CONTACT ==================== */}
@@ -82,7 +83,7 @@ export const Footer: React.FC = () => {
 
             {/* Mission Statement */}
             <p style={{ fontSize: '13px', color: 'rgba(255, 255, 255, 0.85)', lineHeight: 1.65, margin: '0 0 1.75rem 0', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
-              From engineering to digital, design to deployment — Westpoint Group Companies brings every rail and transit casting solution under one roof to turn ideas into real-world impact.
+              Westpoint Group manufactures heavy-duty steel castings, forged axles, and track switch components for Class I freight railroads and urban passenger transit systems across North America.
             </p>
 
             {/* Contact Rows with Rounded Icon Pills */}
