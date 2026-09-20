@@ -309,7 +309,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Reduction Gear Housing manufactured by Westpoint Industries.',
-    img: 'public/images/gettyimages-144461984-1024x1024.jpg',
+    img: '/images/gettyimages-144461984-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -717,7 +717,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Gearboxes manufactured by Westpoint Industries.',
-    img: 'public/images/gettyimages-144461984-1024x1024.jpg',
+    img: '/images/gettyimages-144461984-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
