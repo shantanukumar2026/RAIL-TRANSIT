@@ -46,7 +46,7 @@ export const TestingFacilities: React.FC = () => {
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
               <span style={{ color: '#4CAF50' }}>IN-HOUSE QUALITY ASSURANCE &amp; NDT</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               TESTING FACILITIES &amp; LABS
             </h2>
           </div>
@@ -80,7 +80,7 @@ export const TestingFacilities: React.FC = () => {
                   <IconComp size={22} color="#4CAF50" />
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '13.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.04em', margin: '0 0 0.65rem 0', textTransform: 'uppercase', lineHeight: 1.35, fontFamily: "'Geist', sans-serif !important" }}>
+                  <h3 style={{ fontSize: '13.5px', fontWeight: 900, color: '#111827', letterSpacing: '0.04em', margin: '0 0 0.65rem 0', textTransform: 'uppercase', lineHeight: 1.35, fontFamily: "'Manrope', sans-serif !important" }}>
                     {test.title}
                   </h3>
                   <p style={{ fontSize: '13px', color: '#1B5E20', lineHeight: 1.6, margin: 0, fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>

@@ -12,12 +12,12 @@ const slidesData = [
   {
     id: 1,
     tag: '01 ROLLING STOCK',
-    eyebrow: 'U.S. RAIL & TRANSIT MANUFACTURING',
+    eyebrow: 'WESTPOINT GROUP RAIL & TRANSIT MANUFACTURING',
     headline: 'BUILT TO MOVE THE WORLD',
-    desc: 'Precision-engineered castings and forgings for rail and transit applications. Turnout frogs, forged axles, bogies, and catenary hardware built for strength and made to last.',
+    desc: 'Westpoint Group Companies is a global leader in precision-engineered castings and forgings for rail and transit applications. Turnout frogs, forged axles, bogies, and catenary hardware built for strength and made to last.',
     mediaType: 'image',
     mediaSrc: '/images/istockphoto-1196704251-2048x2048.jpg',
-    badgeTitle: 'FOUNDRY & FORGING OPERATIONS',
+    badgeTitle: 'WESTPOINT FOUNDRY & FORGING OPERATIONS',
     badgeSub: 'Electric induction melting & 5-axis CNC machining',
     cadSpec: 'AAR M-201 GRADE E STEEL'
   },
@@ -134,7 +134,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
                   letterSpacing: '-0.025em', 
                   margin: '0 0 1.25rem 0',
                   textTransform: 'uppercase',
-                  fontFamily: "'Geist', sans-serif !important"
+                  fontFamily: "'Manrope', sans-serif !important"
                 }}
               >
                 {slide.headline}
@@ -171,12 +171,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
                     alignItems: 'center',
                     gap: '10px',
                     borderRadius: '4px',
-                    fontFamily: "'Geist', sans-serif !important"
+                    fontFamily: "'Manrope', sans-serif !important"
                   }}
                 >
                   <Layers size={16} />
                   <span>EXPLORE PRODUCT SPECIFICATIONS</span>
-                  <ArrowRight size={15} color="#FFFFFF" />
+                  <ArrowRight size={15} color="currentColor" />
                 </button>
 
                 <button
@@ -197,7 +197,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
                     border: '1.5px solid rgba(255, 255, 255, 0.3)',
                     backdropFilter: 'blur(4px)',
                     transition: 'all 0.2s',
-                    fontFamily: "'Geist', sans-serif !important"
+                    fontFamily: "'Manrope', sans-serif !important"
                   }}
                   onMouseEnter={e => { e.currentTarget.style.background = '#FFFFFF'; e.currentTarget.style.color = '#1B5E20'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.12)'; e.currentTarget.style.color = '#FFFFFF'; }}
@@ -210,15 +210,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
               <div style={{ display: 'flex', alignItems: 'center', gap: '20px', paddingTop: '1.25rem', borderTop: '1px solid rgba(255, 255, 255, 0.25)', flexWrap: 'wrap' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <CheckCircle size={15} color="#81C784" />
-                  <span style={{ fontSize: '11px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.05em', fontFamily: "'Geist', sans-serif !important" }}>AREMA CHAPTER 4</span>
+                  <span style={{ fontSize: '11px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>AREMA CHAPTER 4</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <CheckCircle size={15} color="#81C784" />
-                  <span style={{ fontSize: '11px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.05em', fontFamily: "'Geist', sans-serif !important" }}>AAR M-1003 QA</span>
+                  <span style={{ fontSize: '11px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>AAR M-1003 QA</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <CheckCircle size={15} color="#81C784" />
-                  <span style={{ fontSize: '11px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.05em', fontFamily: "'Geist', sans-serif !important" }}>FRA RULE 213</span>
+                  <span style={{ fontSize: '11px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>FRA RULE 213</span>
                 </div>
               </div>
 
@@ -278,14 +278,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
                 }}
               >
                 <Layers size={13} color="#81C784" />
-                <span style={{ fontSize: '10px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.08em', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '10px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.08em', fontFamily: "'Manrope', sans-serif !important" }}>
                   {slide.cadSpec}
                 </span>
               </div>
 
               {/* Clean Media Tag Overlay */}
               <div style={{ position: 'absolute', bottom: '0.85rem', left: '0.85rem', right: '0.85rem', background: 'rgba(27, 94, 32, 0.92)', backdropFilter: 'blur(6px)', padding: '10px 14px', borderLeft: '4px solid #4CAF50' }}>
-                <strong style={{ fontSize: '11.5px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>
+                <strong style={{ fontSize: '11.5px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
                   {slide.badgeTitle}
                 </strong>
                 <span style={{ fontSize: '10.5px', color: '#FAF6EE', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>
@@ -297,7 +297,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
             {/* CREATIVE INTERACTIVE THUMBNAIL SELECTOR STRIP */}
             <div style={{ marginTop: '1rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-                <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#A5D6A7', letterSpacing: '0.1em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#A5D6A7', letterSpacing: '0.1em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                   SELECT SHOWCASE SLIDE THUMBNAIL ({currentSlide + 1}/4)
                 </span>
 
@@ -400,7 +400,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
                       }}
                     >
                       {/* Mini Thumbnail Image Frame */}
-                      <div style={{ height: '48px', width: '100%', overflow: 'hidden', position: 'relative', borderRadius: '1px', background: '#000' }}>
+                      <div style={{ height: '48px', width: '100%', overflow: 'hidden', position: 'relative', borderRadius: '1px', background: '#1B5E20' }}>
                         <img 
                           src={item.mediaSrc} 
                           alt={item.tag}
@@ -414,7 +414,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
                           }} 
                         />
                         {isActive && (
-                          <div style={{ position: 'absolute', top: '4px', right: '4px', background: '#81C784', color: '#1B5E20', fontSize: '7.5px', fontWeight: 900, padding: '1px 4px', borderRadius: '1px', fontFamily: "'Geist', sans-serif !important" }}>
+                          <div style={{ position: 'absolute', top: '4px', right: '4px', background: '#81C784', color: '#1B5E20', fontSize: '7.5px', fontWeight: 900, padding: '1px 4px', borderRadius: '1px', fontFamily: "'Manrope', sans-serif !important" }}>
                             ACTIVE
                           </div>
                         )}
@@ -432,7 +432,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
                           overflow: 'hidden',
                           textOverflow: 'ellipsis',
                           display: 'block',
-                          fontFamily: "'Geist', sans-serif !important"
+                          fontFamily: "'Manrope', sans-serif !important"
                         }}
                       >
                         {item.tag}
@@ -466,7 +466,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <TrainTrack size={20} color="#81C784" />
               <div>
-                <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>NORTH AMERICAN FOUNDRY</strong>
+                <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>NORTH AMERICAN FOUNDRY</strong>
                 <span style={{ fontSize: '11px', color: '#FAF6EE', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Heavy rail manufacturing leader</span>
               </div>
             </div>
@@ -474,7 +474,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', borderLeft: '1px solid rgba(255, 255, 255, 0.2)', paddingLeft: '1.5rem' }}>
               <ShieldCheck size={20} color="#81C784" />
               <div>
-                <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>36-TON HAL RATING</strong>
+                <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>36-TON HAL RATING</strong>
                 <span style={{ fontSize: '11px', color: '#FAF6EE', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Heavy freight axle load endurance</span>
               </div>
             </div>
@@ -482,7 +482,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', borderLeft: '1px solid rgba(255, 255, 255, 0.2)', paddingLeft: '1.5rem' }}>
               <Zap size={20} color="#81C784" />
               <div>
-                <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>±0.05MM CNC TOLERANCE</strong>
+                <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>±0.05MM CNC TOLERANCE</strong>
                 <span style={{ fontSize: '11px', color: '#FAF6EE', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Robotic 5-axis heavy machining</span>
               </div>
             </div>
@@ -490,7 +490,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', borderLeft: '1px solid rgba(255, 255, 255, 0.2)', paddingLeft: '1.5rem' }}>
               <ShieldCheck size={20} color="#81C784" />
               <div>
-                <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>100% VOLUMETRIC NDT</strong>
+                <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>100% VOLUMETRIC NDT</strong>
                 <span style={{ fontSize: '11px', color: '#FAF6EE', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Ultrasonic &amp; magnetic flaw scan</span>
               </div>
             </div>

@@ -32,7 +32,7 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
         alignItems: 'center',
         justifyContent: 'center',
         padding: '1.5rem',
-        fontFamily: "'Geist', sans-serif !important"
+        fontFamily: "'Manrope', sans-serif !important"
       }}
       onClick={onClose}
     >
@@ -87,7 +87,7 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
                 style={{ width: '100%', height: '360px', objectFit: 'contain', display: 'block', margin: '0 auto' }}
               />
 
-              <div style={{ marginTop: '0.75rem', paddingTop: '0.75rem', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '11px', color: '#4B5563' }}>
+              <div style={{ marginTop: '0.75rem', paddingTop: '0.75rem', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '11px', color: '#2E7D32' }}>
                 <span>Scale: 1:1 True-to-Cast CAD</span>
                 <span style={{ fontWeight: 800, color: '#1B5E20' }}>Tolerance: ±0.05mm CMM Verified</span>
               </div>
@@ -101,10 +101,10 @@ export const EngineeringDrawingModal: React.FC<EngineeringDrawingModalProps> = (
                 <span style={{ fontSize: '11px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
                   SPECIFICATION METALLURGY
                 </span>
-                <h4 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1B5E20', margin: '0 0 6px 0', textTransform: 'uppercase' }}>
+                <h4 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#111827', margin: '0 0 6px 0', textTransform: 'uppercase' }}>
                   {productSpecs}
                 </h4>
-                <p style={{ fontSize: '12.5px', color: '#4B5563', lineHeight: 1.5, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+                <p style={{ fontSize: '12.5px', color: '#2E7D32', lineHeight: 1.5, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
                   Manufactured via computerized electric induction melting with 100% volumetric ultrasonic NDT flaw scanning per AAR M-1003 rules.
                 </p>
               </div>

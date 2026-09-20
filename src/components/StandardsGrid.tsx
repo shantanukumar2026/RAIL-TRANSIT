@@ -50,7 +50,7 @@ export const StandardsGrid: React.FC = () => {
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
               <span style={{ color: '#4CAF50' }}>CERTIFICATIONS &amp; GLOBAL COMPLIANCE</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               INTERNATIONAL STANDARDS
             </h2>
           </div>
@@ -64,12 +64,12 @@ export const StandardsGrid: React.FC = () => {
         {/* 6 High-Contrast Certified Standards Cards Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', marginBottom: '2.5rem' }}>
           {standards.map((std, idx) => (
-            <div 
+            <div
               key={idx}
               className="card-hover-industrial"
-              style={{ 
-                background: '#F8F9FA', 
-                border: '1px solid #D1D5DB', 
+              style={{
+                background: '#F8F9FA',
+                border: '1px solid #D1D5DB',
                 padding: '2rem',
                 display: 'flex',
                 flexDirection: 'column',
@@ -80,7 +80,7 @@ export const StandardsGrid: React.FC = () => {
             >
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', borderBottom: '1px solid #E5E7EB', paddingBottom: '0.75rem' }}>
-                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.02em', fontFamily: "'Geist', sans-serif !important" }}>
+                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#111827', letterSpacing: '0.02em', fontFamily: "'Manrope', sans-serif !important" }}>
                     {std.code}
                   </span>
                   <div style={{ width: '28px', height: '28px', borderRadius: '2px', background: '#1B5E20', color: '#4CAF50', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -88,11 +88,11 @@ export const StandardsGrid: React.FC = () => {
                   </div>
                 </div>
 
-                <strong style={{ fontSize: '11.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '0.65rem', fontFamily: "'Geist', sans-serif !important" }}>
+                <strong style={{ fontSize: '12px', fontWeight: 900, color: '#111827', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '0.65rem', fontFamily: "'Manrope', sans-serif !important" }}>
                   {std.name}
                 </strong>
 
-                <p style={{ fontSize: '13px', color: '#1B5E20', lineHeight: 1.6, margin: 0, fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
+                <p style={{ fontSize: '13px', color: '#2E7D32', lineHeight: 1.6, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
                   {std.desc}
                 </p>
               </div>
@@ -102,34 +102,34 @@ export const StandardsGrid: React.FC = () => {
 
         {/* High-Impact Visual Banner: Train Wheels & Gearboxes */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
-          
+
           <div className="img-hover-zoom" style={{ border: '1px solid #D1D5DB', borderRadius: '2px', overflow: 'hidden', position: 'relative', height: '220px' }}>
-            <img 
-              src="/images/real_train_wheelset_stock.jpg" 
-              alt="Heavy Duty Locomotive Wheelset & Gear Assembly" 
+            <img
+              src="/images/real_train_wheelset_stock.jpg"
+              alt="Heavy Duty Locomotive Wheelset & Gear Assembly"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(27,94,32,0.9), transparent)', padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-              <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+              <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                 AAR M-101 CERTIFIED WHEELSETS
               </span>
-              <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+              <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                 Heavy Freight Train Axle &amp; Wheel Assemblies
               </h3>
             </div>
           </div>
 
           <div className="img-hover-zoom" style={{ border: '1px solid #D1D5DB', borderRadius: '2px', overflow: 'hidden', position: 'relative', height: '220px' }}>
-            <img 
-              src="/images/real_cnc_machining_stock.jpg" 
-              alt="Machined Industrial Rotavator Gearboxes" 
+            <img
+              src="/images/gettyimages-144461984-1024x1024 (1).jpg"
+              alt="Machined Industrial Rotavator Gearboxes"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(27,94,32,0.9), transparent)', padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-              <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+              <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                 PRECISION GEARING DIVISIONS
               </span>
-              <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+              <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                 Machined Rotavator Gearboxes &amp; Sprockets
               </h3>
             </div>

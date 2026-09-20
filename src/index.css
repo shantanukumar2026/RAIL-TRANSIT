@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
   --bg-sand: #F8F9FA;
@@ -22,7 +22,8 @@
   --rail-yellow: #F59E0B;
   
   --steel: #4CAF50;
-  --text-primary: #1B5E20;
+  --text-heading: #111827;
+  --text-primary: #111827;
   --text-secondary: #2E7D32;
   --text-muted: #4CAF50;
   --text-light: #FAF6EE;
@@ -30,7 +31,7 @@
   --border-light: #E5E7EB;
   --border-dark: #1B5E20;
   
-  --font-heading: 'Geist', sans-serif !important;
+  --font-heading: 'Manrope', sans-serif !important;
   --font-body: 'Manrope', sans-serif !important;
 }
 
@@ -45,11 +46,11 @@ html {
 
 /* UNIVERSAL FONT ENFORCEMENT ACROSS ALL ELEMENTS STRICTLY */
 body, p, span, li, input, textarea, select, small, td, th, label {
-  font-family: 'Manrope', 'Geist', sans-serif !important;
+  font-family: 'Manrope', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6, .heading-geist, nav, nav *, button, button *, .eyebrow, .eyebrow *, strong, b, a, .btn-animated {
-  font-family: 'Geist', 'Manrope', sans-serif !important;
+  font-family: 'Manrope', sans-serif !important;
 }
 
 body {
@@ -68,6 +69,10 @@ body {
   padding: 3.5rem 0;
   position: relative;
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-heading);
 }
 
 h1 {
@@ -89,9 +94,14 @@ h4, h5, h6 {
   font-weight: 600 !important;
 }
 
+p {
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
 /* Eyebrow Label */
 .eyebrow {
-  font-family: 'Geist', sans-serif !important;
+  font-family: 'Manrope', sans-serif !important;
   font-size: 0.75rem;
   font-weight: 800 !important;
   text-transform: uppercase;
@@ -147,7 +157,7 @@ h4, h5, h6 {
   border: 1.5px solid #1B5E20 !important;
   box-shadow: 0 4px 12px rgba(27, 94, 32, 0.15) !important;
   transition: all 0.25s ease !important;
-  font-family: 'Geist', sans-serif !important;
+  font-family: 'Manrope', sans-serif !important;
 }
 
 .btn-animated::before {
@@ -174,8 +184,11 @@ h4, h5, h6 {
   box-shadow: 0 6px 16px rgba(27, 94, 32, 0.2) !important;
 }
 
+.btn-animated:hover,
+.btn-animated:hover *,
 .btn-animated:hover span,
-.btn-animated:hover svg {
+.btn-animated:hover svg,
+.btn-animated:hover svg path {
   color: #1B5E20 !important;
   stroke: #1B5E20 !important;
 }
@@ -211,7 +224,7 @@ h4, h5, h6 {
   background: transparent !important;
   box-shadow: none !important;
   transition: all 0.2s ease !important;
-  font-family: 'Geist', sans-serif !important;
+  font-family: 'Manrope', sans-serif !important;
 }
 
 .link-hover-arrow:hover {
@@ -220,6 +233,15 @@ h4, h5, h6 {
   border-bottom-color: #1B5E20 !important;
   transform: translateY(-1px) !important;
   box-shadow: none !important;
+}
+
+.link-hover-arrow:hover,
+.link-hover-arrow:hover *,
+.link-hover-arrow:hover span,
+.link-hover-arrow:hover svg,
+.link-hover-arrow:hover svg path {
+  color: #1B5E20 !important;
+  stroke: #1B5E20 !important;
 }
 
 /* Mega Menu Overlay Panel */
@@ -304,20 +326,28 @@ h4, h5, h6 {
   background: #4CAF50;
 }
 
-/* Container */
+/* Container - 100% Full Width Edge-to-Edge Layout */
 .container-custom {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: 100%;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
 }
 
 @media (max-width: 768px) {
   .container-custom {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
   }
 }
 
@@ -392,4 +422,26 @@ h4, h5, h6 {
   width: 100%;
   margin-top: 6px;
   border-radius: 1px;
+}
+
+/* Responsive Executive Footer Grid */
+.footer-corporate-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 1.1fr) minmax(400px, 1.6fr) minmax(280px, 1.1fr);
+  gap: 3.5rem;
+  align-items: start;
+}
+
+@media (max-width: 1180px) {
+  .footer-corporate-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-corporate-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
 }

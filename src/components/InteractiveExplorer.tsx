@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { 
-  Search, Check, Download, 
-  ChevronRight, ArrowRight, Eye, Table, Grid, Info, Sparkles, X, Compass
+import {
+  Search, Check, Download,
+  ChevronRight, ArrowRight, Eye, Table, Grid, Info, Sparkles, X, Compass,
+  ShoppingBag
 } from 'lucide-react';
-import EngineeringDrawingModal from './EngineeringDrawingModal';
 
 export interface ProductItem {
   id: string;
@@ -135,8 +135,8 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Pin Bracket manufactured by Westpoint Industries.',
-    img: '/images/prod_pin_bracket.jpg',
-    drawingImg: '/images/prod_pin_bracket.jpg',
+    img: '/images/gettyimages-1412298980-1024x1024.jpg',
+    drawingImg: '/images/gettyimages-1412298980-1024x1024.jpg',
     cadFile: 'RAIL-5.STEP',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
@@ -667,8 +667,8 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Sprockets for Undercarriage manufactured by Westpoint Industries.',
-    img: '/images/prod_sprockets.jpg',
-    drawingImg: '/images/prod_sprockets.jpg',
+    img: '/images/gettyimages-157479520-1024x1024.jpg',
+    drawingImg: '/images/gettyimages-157479520-1024x1024.jpg',
     cadFile: 'OEM-33.STEP',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
@@ -1014,25 +1014,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     cadFile: 'OTHER-51.STEP',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
-  {
-    id: 'other-52',
-    category: 'other',
-    categoryLabel: 'Other Industries',
-    title: 'Heat Resistant Castings for Boilers',
-    series: 'SERIES OTHER',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Heat Resistant Castings for Boilers manufactured by Westpoint Industries.',
-    img: '/images/real_metal_casting_stock.jpg',
-    drawingImg: '/images/real_metal_casting_stock.jpg',
-    cadFile: 'OTHER-52.STEP',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  }
+
 ];
 
 interface InteractiveExplorerProps {
@@ -1052,14 +1034,13 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
   const [activeAxleLoad, setActiveAxleLoad] = useState<string>('all');
   // View & Glossary States
   const [viewMode, setViewMode] = useState<'grid' | 'table' | 'compare'>('grid');
-  const [showGlossary, setShowGlossary] = useState<boolean>(true);
-  
+  const [showGlossary, setShowGlossary] = useState<boolean>(false);
+
   // Selected for Detailed CAD & Spec Drawer
   const [selectedProduct, setSelectedProduct] = useState<ProductItem | null>(null);
-  
+
   // Selected items for Comparison Tool (max 3)
   const [comparedProductIds, setComparedProductIds] = useState<string[]>([]);
-  const [drawingModalProduct, setDrawingModalProduct] = useState<{ title: string; series: string; specs: string; img: string } | null>(null);
 
   // Available Standards Filter Options
   const standardsList = [
@@ -1099,7 +1080,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
       // Standard match
       if (activeStandard !== 'all') {
         const matchesStandard = item.compliance.some(c => c.toLowerCase().includes(activeStandard.toLowerCase())) ||
-                                item.specs.toLowerCase().includes(activeStandard.toLowerCase());
+          item.specs.toLowerCase().includes(activeStandard.toLowerCase());
         if (!matchesStandard) return false;
       }
 
@@ -1112,7 +1093,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
       // Search match
       if (searchQuery.trim() !== '') {
         const query = searchQuery.toLowerCase();
-        const matchesSearch = 
+        const matchesSearch =
           item.title.toLowerCase().includes(query) ||
           item.series.toLowerCase().includes(query) ||
           item.specs.toLowerCase().includes(query) ||
@@ -1146,27 +1127,27 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
   }, [comparedProductIds]);
 
   return (
-    <section 
-      id="explorer" 
-      style={{ 
+    <section
+      id="explorer"
+      style={{
         background: isModalView ? '#FFFFFF' : '#FAFBFD',
         padding: isModalView ? '1.5rem' : '4rem 1.5rem',
         borderBottom: isModalView ? 'none' : '1px solid #E2E8F0',
-        fontFamily: "'Geist', -apple-system, BlinkMacSystemFont, sans-serif"
+        fontFamily: "'Manrope', -apple-system, BlinkMacSystemFont, sans-serif"
       }}
     >
       <div className={isModalView ? '' : 'container-custom'}>
-        
+
         {/* Section Header */}
         {!isModalView && (
           <div style={{ marginBottom: '2.5rem', textAlign: 'center', maxWidth: '850px', margin: '0 auto 3rem auto' }}>
-            <div style={{ 
-              display: 'inline-flex', 
-              alignItems: 'center', 
-              gap: '8px', 
-              background: 'rgba(27, 94, 32, 0.08)', 
-              color: '#1B5E20', 
-              padding: '6px 16px', 
+            <div style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              background: 'rgba(27, 94, 32, 0.08)',
+              color: '#1B5E20',
+              padding: '6px 16px',
               borderRadius: '999px',
               fontSize: '0.85rem',
               fontWeight: 700,
@@ -1178,10 +1159,10 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
               <span>INTERACTIVE ENGINEERING SEARCH ENGINE</span>
             </div>
 
-            <h2 style={{ 
-              fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', 
-              color: '#1B5E20', 
-              fontWeight: 900, 
+            <h2 style={{
+              fontSize: 'clamp(2rem, 3.5vw, 2.75rem)',
+              color: '#111827',
+              fontWeight: 900,
               lineHeight: 1.15,
               textTransform: 'uppercase',
               letterSpacing: '-0.02em',
@@ -1204,7 +1185,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                 <Compass size={22} />
               </div>
               <div>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#1B5E20', margin: 0 }}>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#111827', margin: 0 }}>
                   Component &amp; Technical Spec Explorer
                 </h3>
                 <span style={{ fontSize: '0.825rem', color: '#4CAF50' }}>
@@ -1214,7 +1195,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
             </div>
 
             {onCloseModal && (
-              <button 
+              <button
                 onClick={onCloseModal}
                 style={{
                   background: '#F1F5F9',
@@ -1245,10 +1226,10 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
           border: '1px solid #E2E8F0',
           marginBottom: '2rem'
         }}>
-          
+
           {/* Top Line: Search Bar + View Mode Toggles + Compare Counter */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.25rem' }}>
-            
+
             {/* Search Input Box */}
             <div style={{ flex: '1 1 320px', position: 'relative' }}>
               <Search size={18} color="#4CAF50" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }} />
@@ -1293,7 +1274,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
 
             {/* View Mode Switcher + Compare Counter */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              
+
               {/* Compare Items Button */}
               {comparedProductIds.length > 0 && (
                 <button
@@ -1394,7 +1375,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
 
           {/* Secondary Pill Filters: Standard & Axle Load */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
-            
+
             {/* Standards Filter Pills */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
               <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#4CAF50', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
@@ -1488,7 +1469,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.75rem' }}>
                 <Info size={16} color="#1B5E20" />
-                <h4 style={{ fontSize: '0.9rem', fontWeight: 800, color: '#1B5E20', margin: 0, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                <h4 style={{ fontSize: '0.9rem', fontWeight: 800, color: '#111827', margin: 0, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                   Full Form Glossary &amp; Technical Abbreviation Legend
                 </h4>
               </div>
@@ -1533,12 +1514,14 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
           }}>
             {filteredProducts.map(product => {
               const isCompared = comparedProductIds.includes(product.id);
+
               return (
                 <div
                   key={product.id}
+                  className="card-hover-industrial"
                   style={{
                     background: '#FFFFFF',
-                    borderRadius: '16px',
+                    borderRadius: '14px',
                     border: '1px solid #E2E8F0',
                     overflow: 'hidden',
                     display: 'flex',
@@ -1549,7 +1532,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                   }}
                   onMouseEnter={e => {
                     e.currentTarget.style.transform = 'translateY(-4px)';
-                    e.currentTarget.style.boxShadow = '0 12px 28px rgba(0,0,0,0.08)';
+                    e.currentTarget.style.boxShadow = '0 14px 28px rgba(27,94,32,0.1)';
                     e.currentTarget.style.borderColor = '#4CAF50';
                   }}
                   onMouseLeave={e => {
@@ -1559,160 +1542,194 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                   }}
                 >
                   {/* Card Media Preview Header */}
-                  <div style={{ position: 'relative', height: '190px', background: '#1B5E20', overflow: 'hidden' }}>
-                    <img 
-                      src={product.img} 
-                      alt={product.title} 
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85 }} 
+                  <div style={{ position: 'relative', height: '200px', background: '#0F2E14', overflow: 'hidden' }}>
+                    <img
+                      src={product.img}
+                      alt={product.title}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9, transition: 'transform 0.4s ease' }}
                     />
-                    
-                    {/* Top Badges overlay */}
-                    <div style={{ position: 'absolute', top: '12px', left: '12px', right: '12px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ 
-                        background: '#1B5E20', 
-                        color: '#FFF', 
-                        fontSize: '0.7rem', 
-                        fontWeight: 800, 
-                        padding: '4px 10px', 
+
+                    {/* Top Series Badge */}
+                    <div style={{ position: 'absolute', top: '12px', left: '12px', display: 'flex', alignItems: 'center', zIndex: 2 }}>
+                      <span style={{
+                        background: '#1B5E20',
+                        color: '#FFF',
+                        fontSize: '0.7rem',
+                        fontWeight: 800,
+                        padding: '4px 10px',
                         borderRadius: '4px',
                         letterSpacing: '0.05em',
                         textTransform: 'uppercase'
                       }}>
                         {product.series}
                       </span>
-                      
-                      <span style={{ 
-                        background: 'rgba(15, 23, 42, 0.85)', 
-                        backdropFilter: 'blur(4px)',
-                        color: '#38BDF8', 
-                        fontSize: '0.7rem', 
-                        fontWeight: 700, 
-                        padding: '4px 10px', 
-                        borderRadius: '4px',
-                        border: '1px solid rgba(56, 189, 248, 0.3)'
-                      }}>
-                        {product.axleLoad}
-                      </span>
                     </div>
 
-                    {/* Quick CAD Preview Button */}
+                    {/* Quick View Button */}
                     <button
-                      onClick={() => setDrawingModalProduct({
-                        title: product.title,
-                        series: product.series,
-                        specs: product.specs,
-                        img: product.drawingImg
-                      })}
+                      onClick={() => setSelectedProduct(product)}
                       style={{
                         position: 'absolute',
                         bottom: '12px',
                         right: '12px',
-                        background: 'rgba(255, 255, 255, 0.9)',
+                        background: 'rgba(255, 255, 255, 0.92)',
                         backdropFilter: 'blur(4px)',
-                        border: 'none',
+                        border: '1px solid rgba(27, 94, 32, 0.2)',
                         borderRadius: '6px',
-                        padding: '6px 12px',
+                        padding: '5px 11px',
                         fontSize: '0.75rem',
                         fontWeight: 700,
                         color: '#1B5E20',
                         cursor: 'pointer',
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '6px',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
+                        gap: '5px',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
+                        zIndex: 2,
+                        transition: 'all 0.2s'
+                      }}
+                      onMouseEnter={e => {
+                        e.currentTarget.style.background = '#FAF6EE';
+                      }}
+                      onMouseLeave={e => {
+                        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.92)';
                       }}
                     >
-                      <Eye size={14} color="#1B5E20" />
-                      <span>CAD Blueprint</span>
+                      <Eye size={13} color="#1B5E20" />
+                      <span>Quick View</span>
                     </button>
                   </div>
 
                   {/* Card Body */}
-                  <div style={{ padding: '1.25rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    
+                  <div style={{ padding: '1.25rem 1.4rem 1.4rem 1.4rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+
+                    {/* Brand Tag */}
+                    <div style={{ marginBottom: '8px' }}>
+                      <span style={{ fontSize: '11px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
+                        WESTPOINT RAIL™
+                      </span>
+                    </div>
+
                     {/* Compliance pills */}
-                    <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '8px' }}>
+                    <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '10px' }}>
                       {product.compliance.slice(0, 2).map((comp, idx) => (
-                        <span key={idx} style={{ background: '#F1F5F9', color: '#2E7D32', fontSize: '0.725rem', fontWeight: 600, padding: '2px 8px', borderRadius: '4px' }}>
+                        <span key={idx} style={{ background: '#F0FDF4', color: '#166534', border: '1px solid #BBF7D0', fontSize: '0.7rem', fontWeight: 700, padding: '2px 8px', borderRadius: '4px' }}>
                           {comp}
                         </span>
                       ))}
+                      <span style={{ background: '#F8FAFC', color: '#475569', border: '1px solid #E2E8F0', fontSize: '0.7rem', fontWeight: 600, padding: '2px 8px', borderRadius: '4px' }}>
+                        {product.axleLoad}
+                      </span>
                     </div>
 
-                    <h3 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#1B5E20', margin: '0 0 6px 0', lineHeight: 1.3 }}>
+                    {/* Product Title */}
+                    <h3
+                      onClick={() => setSelectedProduct(product)}
+                      style={{
+                        fontSize: '1.1rem',
+                        fontWeight: 800,
+                        color: '#111827',
+                        margin: '0 0 8px 0',
+                        lineHeight: 1.4,
+                        letterSpacing: '-0.01em',
+                        fontFamily: "'Manrope', sans-serif !important",
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                        minHeight: '2.8em',
+                        cursor: 'pointer',
+                        transition: 'color 0.2s'
+                      }}
+                      onMouseEnter={e => e.currentTarget.style.color = '#1B5E20'}
+                      onMouseLeave={e => e.currentTarget.style.color = '#111827'}
+                    >
                       {product.title}
                     </h3>
 
-                    <p style={{ fontSize: '1rem', color: '#2E7D32', lineHeight: 1.5, margin: '0 0 1rem 0', flex: 1 }}>
+                    {/* Product Description */}
+                    <p style={{
+                      fontSize: '0.875rem',
+                      color: '#2E7D32',
+                      lineHeight: 1.6,
+                      margin: '0 0 10px 0',
+                      flex: 1,
+                      fontWeight: 500,
+                      display: '-webkit-box',
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: 'vertical',
+                      overflow: 'hidden',
+                      fontFamily: "'Manrope', sans-serif !important"
+                    }}>
                       {product.desc}
                     </p>
 
-                    {/* Tech Spec Mini Table */}
-                    <div style={{ background: '#F8FAFC', borderRadius: '8px', padding: '10px', fontSize: '0.775rem', border: '1px solid #F1F5F9', marginBottom: '1.25rem' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
-                        <span style={{ color: '#4CAF50', fontWeight: 500 }}>Material Grade:</span>
-                        <strong style={{ color: '#1B5E20', fontWeight: 700 }}>{product.materialGrade.split(' ')[0]} {product.materialGrade.split(' ')[1] || ''}</strong>
-                      </div>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
-                        <span style={{ color: '#4CAF50', fontWeight: 500 }}>Tensile Strength:</span>
-                        <strong style={{ color: '#1B5E20', fontWeight: 700 }}>{product.tensileStrength}</strong>
-                      </div>
-                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <span style={{ color: '#4CAF50', fontWeight: 500 }}>CAD Reference:</span>
-                        <code style={{ background: '#E2E8F0', padding: '1px 5px', borderRadius: '3px', color: '#1B5E20' }}>{product.cadFile.split('.')[0]}</code>
-                      </div>
-                    </div>
+                    {/* Divider Line (Requested by User) */}
+                    <div style={{ borderTop: '1px solid #E5E7EB', margin: '14px 0 14px 0' }} />
 
                     {/* Card Actions */}
                     <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                      
+
                       {/* Compare Checkbox Button */}
                       <button
                         onClick={() => toggleCompare(product.id)}
                         style={{
-                          background: isCompared ? '#E8F5E9' : '#F1F5F9',
-                          color: isCompared ? '#1B5E20' : '#4CAF50',
-                          border: isCompared ? '1px solid #4CAF50' : '1px solid #E2E8F0',
+                          background: isCompared ? '#E8F5E9' : '#FFFFFF',
+                          color: '#111827',
+                          border: isCompared ? '1.5px solid #1B5E20' : '1.5px solid #94A3B8',
                           borderRadius: '8px',
-                          padding: '8px 12px',
+                          padding: '9px 13px',
                           fontSize: '0.8rem',
-                          fontWeight: 700,
+                          fontWeight: 800,
                           cursor: 'pointer',
                           display: 'flex',
                           alignItems: 'center',
                           gap: '6px',
-                          transition: 'all 0.2s'
+                          transition: 'all 0.2s',
+                          boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
+                          fontFamily: "'Manrope', sans-serif !important"
+                        }}
+                        onMouseEnter={e => {
+                          e.currentTarget.style.background = '#F1F5F9';
+                          e.currentTarget.style.borderColor = '#111827';
+                        }}
+                        onMouseLeave={e => {
+                          e.currentTarget.style.background = isCompared ? '#E8F5E9' : '#FFFFFF';
+                          e.currentTarget.style.borderColor = isCompared ? '#1B5E20' : '#94A3B8';
                         }}
                       >
-                        <Check size={14} color={isCompared ? '#1B5E20' : '#94A3B8'} />
-                        <span>{isCompared ? 'Compared' : 'Compare'}</span>
+                        <Check size={14} color={isCompared ? '#1B5E20' : '#111827'} strokeWidth={2.5} />
+                        <span style={{ color: '#111827', fontWeight: 800 }}>{isCompared ? 'Compared' : 'Compare'}</span>
                       </button>
 
-                      {/* Full Spec Details Drawer Trigger */}
+                      {/* Full Spec / Request RFQ Details Button */}
                       <button
                         onClick={() => setSelectedProduct(product)}
+                        className="btn-animated"
                         style={{
                           flex: 1,
                           background: '#1B5E20',
                           color: '#FFFFFF',
-                          border: 'none',
+                          border: '1.5px solid #1B5E20',
                           borderRadius: '8px',
-                          padding: '8px 14px',
-                          fontSize: '0.825rem',
-                          fontWeight: 700,
+                          padding: '9px 14px',
+                          fontSize: '0.8rem',
+                          fontWeight: 800,
                           cursor: 'pointer',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
                           gap: '6px',
                           boxShadow: '0 2px 8px rgba(27,94,32,0.2)',
-                          transition: 'all 0.2s'
+                          transition: 'all 0.2s',
+                          letterSpacing: '0.03em',
+                          textTransform: 'uppercase',
+                          fontFamily: "'Manrope', sans-serif !important"
                         }}
-                        onMouseEnter={e => e.currentTarget.style.background = '#2E7D32'}
-                        onMouseLeave={e => e.currentTarget.style.background = '#1B5E20'}
                       >
+                        <ShoppingBag size={14} />
                         <span>Full Tech Spec</span>
-                        <ChevronRight size={16} />
+                        <ChevronRight size={14} />
                       </button>
 
                     </div>
@@ -1800,14 +1817,14 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
           <div style={{ background: '#FFFFFF', borderRadius: '16px', border: '1px solid #E2E8F0', padding: '1.5rem', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', borderBottom: '1px solid #E2E8F0', paddingBottom: '1rem' }}>
               <div>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#1B5E20', margin: 0 }}>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#111827', margin: 0 }}>
                   Side-by-Side Component Comparison Matrix
                 </h3>
                 <span style={{ fontSize: '0.85rem', color: '#4CAF50' }}>
                   Comparing {comparedProducts.length} selected engineering components
                 </span>
               </div>
-              
+
               <button
                 onClick={() => setComparedProductIds([])}
                 style={{ background: '#F1F5F9', border: 'none', borderRadius: '6px', padding: '6px 12px', fontSize: '0.8rem', fontWeight: 600, color: '#4CAF50', cursor: 'pointer' }}
@@ -1937,7 +1954,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
               boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
               position: 'relative'
             }}>
-              
+
               {/* Drawer Header */}
               <div style={{ background: '#1B5E20', color: '#FFF', padding: '1.5rem 2rem', borderTopLeftRadius: '20px', borderTopRightRadius: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
@@ -1962,58 +1979,66 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
 
               {/* Drawer Content */}
               <div style={{ padding: '2rem' }}>
-                
+
                 {/* 2-Column layout: CAD Image + Technical Specifications */}
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', marginBottom: '2rem' }}>
-                  
-                  {/* Left Column: Image Preview & CAD blueprint trigger */}
+
+                  {/* Left Column: Image Preview & RFQ trigger */}
                   <div>
-                    <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid #E2E8F0', height: '240px', background: '#1B5E20', marginBottom: '1rem', position: 'relative' }}>
+                    <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid #E2E8F0', height: '240px', background: '#0F2E14', marginBottom: '1rem', position: 'relative' }}>
                       <img src={selectedProduct.img} alt={selectedProduct.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
 
                     <button
-                      onClick={() => setDrawingModalProduct({
-                        title: selectedProduct.title,
-                        series: selectedProduct.series,
-                        specs: selectedProduct.specs,
-                        img: selectedProduct.drawingImg
-                      })}
+                      onClick={() => {
+                        const prodTitle = selectedProduct.title;
+                        setSelectedProduct(null);
+                        if (onCloseModal) onCloseModal();
+                        if (onRequestQuoteForProduct) onRequestQuoteForProduct(prodTitle);
+                      }}
+                      className="btn-animated"
                       style={{
                         width: '100%',
-                        background: '#F1F5F9',
-                        color: '#1B5E20',
-                        border: '1px solid #CBD5E1',
+                        background: '#1B5E20',
+                        color: '#FFFFFF',
+                        border: '1.5px solid #1B5E20',
                         borderRadius: '8px',
-                        padding: '10px',
-                        fontWeight: 700,
+                        padding: '11px',
+                        fontWeight: 800,
                         fontSize: '0.875rem',
                         cursor: 'pointer',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        gap: '8px'
+                        gap: '8px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.04em'
                       }}
                     >
-                      <Eye size={18} color="#1B5E20" />
-                      <span>Launch 2D CAD Spec Sheet Viewer</span>
+                      <ShoppingBag size={16} />
+                      <span>Request Enterprise Quote (RFQ)</span>
                     </button>
                   </div>
 
-                  {/* Right Column: Spec Properties Sheet */}
+                  {/* Right Column: Key Technical Parameters */}
                   <div>
-                    <h4 style={{ fontSize: '1rem', fontWeight: 800, color: '#1B5E20', margin: '0 0 1rem 0', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                      Mechanical &amp; Metallurgical Parameters
+                    <h4 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#111827', margin: '0 0 1rem 0' }}>
+                      Material &amp; Mechanical Performance
                     </h4>
 
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.875rem' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.9rem' }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '8px', borderBottom: '1px solid #F1F5F9' }}>
-                        <span style={{ color: '#4CAF50' }}>Primary Material Grade:</span>
+                        <span style={{ color: '#4CAF50' }}>Material Grade:</span>
                         <strong style={{ color: '#1B5E20' }}>{selectedProduct.materialGrade}</strong>
                       </div>
 
                       <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '8px', borderBottom: '1px solid #F1F5F9' }}>
-                        <span style={{ color: '#4CAF50' }}>Tensile Strength Rating:</span>
+                        <span style={{ color: '#4CAF50' }}>Axle Load Capacity:</span>
+                        <strong style={{ color: '#1B5E20' }}>{selectedProduct.axleLoad}</strong>
+                      </div>
+
+                      <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '8px', borderBottom: '1px solid #F1F5F9' }}>
+                        <span style={{ color: '#4CAF50' }}>Tensile Strength:</span>
                         <strong style={{ color: '#1B5E20' }}>{selectedProduct.tensileStrength}</strong>
                       </div>
 
@@ -2033,7 +2058,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                       </div>
 
                       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <span style={{ color: '#4CAF50' }}>Downloadable CAD Reference:</span>
+                        <span style={{ color: '#4CAF50' }}>Part Reference No:</span>
                         <code style={{ background: '#E2E8F0', padding: '2px 8px', borderRadius: '4px', fontWeight: 700 }}>{selectedProduct.cadFile}</code>
                       </div>
                     </div>
@@ -2043,7 +2068,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
 
                 {/* Key Features Bullet List */}
                 <div style={{ background: '#F8FAFC', borderRadius: '12px', padding: '1.25rem', marginBottom: '2rem', border: '1px solid #E2E8F0' }}>
-                  <h5 style={{ fontSize: '0.875rem', fontWeight: 800, color: '#1B5E20', margin: '0 0 8px 0', textTransform: 'uppercase' }}>
+                  <h5 style={{ fontSize: '0.875rem', fontWeight: 800, color: '#111827', margin: '0 0 8px 0', textTransform: 'uppercase' }}>
                     Key Engineering Features &amp; Innovations
                   </h5>
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '8px' }}>
@@ -2065,34 +2090,37 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                       if (onCloseModal) onCloseModal();
                       if (onRequestQuoteForProduct) onRequestQuoteForProduct(prodTitle);
                     }}
+                    className="btn-animated"
                     style={{
                       flex: 1,
                       background: '#1B5E20',
                       color: '#FFFFFF',
                       border: 'none',
-                      borderRadius: '10px',
-                      padding: '12px 20px',
+                      borderRadius: '8px',
+                      padding: '14px 24px',
                       fontSize: '0.95rem',
                       fontWeight: 800,
                       cursor: 'pointer',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      gap: '8px',
-                      boxShadow: '0 4px 14px rgba(27,94,32,0.3)'
+                      gap: '10px',
+                      boxShadow: '0 4px 14px rgba(27,94,32,0.25)',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.04em'
                     }}
                   >
-                    <span>Request Custom RFQ Quote for this Item</span>
+                    <span>Request Engineering Quotation (RFQ)</span>
                     <ArrowRight size={18} />
                   </button>
 
                   <button
-                    onClick={() => alert(`Simulated Download: ${selectedProduct.cadFile}`)}
+                    onClick={() => alert(`Downloading Technical Spec Sheet for ${selectedProduct.title}`)}
                     style={{
-                      background: '#FFFFFF',
+                      background: '#F1F5F9',
                       color: '#1B5E20',
-                      border: '1.5px solid #CBD5E1',
-                      borderRadius: '10px',
+                      border: '1px solid #CBD5E1',
+                      borderRadius: '8px',
                       padding: '12px 20px',
                       fontSize: '0.95rem',
                       fontWeight: 700,
@@ -2103,7 +2131,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                     }}
                   >
                     <Download size={18} color="#1B5E20" />
-                    <span>Download Spec Sheet (.DWG / PDF)</span>
+                    <span>Download Spec Sheet (PDF)</span>
                   </button>
                 </div>
 
@@ -2111,18 +2139,6 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
 
             </div>
           </div>
-        )}
-
-        {/* CAD Drawing Blueprint Viewer Sub-Modal */}
-        {drawingModalProduct && (
-          <EngineeringDrawingModal
-            isOpen={!!drawingModalProduct}
-            onClose={() => setDrawingModalProduct(null)}
-            productTitle={drawingModalProduct.title}
-            productSeries={drawingModalProduct.series}
-            productSpecs={drawingModalProduct.specs}
-            productImg={drawingModalProduct.img}
-          />
         )}
 
       </div>

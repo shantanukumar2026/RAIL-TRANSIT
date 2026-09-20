@@ -80,7 +80,7 @@ export const AuthoritiesApprovals: React.FC = () => {
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
               <span style={{ color: '#4CAF50' }}>RDSO CLASS A FOUNDRY &amp; INSTITUTIONAL ACCREDITATION</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               AUTHORITIES &amp; ACCREDITATIONS
             </h2>
           </div>
@@ -116,9 +116,9 @@ export const AuthoritiesApprovals: React.FC = () => {
                       <IconComp size={20} color="#4CAF50" />
                     </div>
                     <div>
-                      <strong style={{ fontSize: '12px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', lineHeight: 1.3, fontFamily: "'Geist', sans-serif !important" }}>
+                      <h3 style={{ fontSize: '13px', fontWeight: 900, color: '#111827', letterSpacing: '0.06em', textTransform: 'uppercase', margin: '0 0 3px 0', lineHeight: 1.3, fontFamily: "'Manrope', sans-serif !important" }}>
                         {app.category}
-                      </strong>
+                      </h3>
                       <span style={{ fontSize: '11px', color: '#4CAF50', fontFamily: "'Manrope', sans-serif !important" }}>
                         {app.desc}
                       </span>
@@ -143,18 +143,18 @@ export const AuthoritiesApprovals: React.FC = () => {
         <div style={{ background: '#1B5E20', color: '#FAF6EE', padding: '1.25rem 2rem', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', borderTop: '3px solid #4CAF50' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
             <div>
-              <span style={{ fontSize: '10px', color: '#4CAF50', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>FOUNDRY CLASSIFICATION</span>
-              <strong style={{ fontSize: '14px', color: '#FAF6EE', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>RDSO APPROVED CLASS 'A' FOUNDRY</strong>
+              <span style={{ fontSize: '10px', color: '#4CAF50', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>FOUNDRY CLASSIFICATION</span>
+              <strong style={{ fontSize: '14px', color: '#FAF6EE', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>RDSO APPROVED CLASS 'A' FOUNDRY</strong>
             </div>
 
             <div style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '2rem' }}>
-              <span style={{ fontSize: '10px', color: '#4CAF50', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>ULTRASONIC NDT PASS RATE</span>
-              <strong style={{ fontSize: '14px', color: '#4CAF50', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>100.00% VOLUMETRIC SCAN</strong>
+              <span style={{ fontSize: '10px', color: '#4CAF50', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>ULTRASONIC NDT PASS RATE</span>
+              <strong style={{ fontSize: '14px', color: '#4CAF50', fontWeight: 900, fontFamily: "'Manrope', sans-serif !important" }}>100.00% VOLUMETRIC SCAN</strong>
             </div>
 
             <div style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '2rem' }}>
-              <span style={{ fontSize: '10px', color: '#4CAF50', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>AAR &amp; AREMA COMPLIANCE</span>
-              <strong style={{ fontSize: '14px', color: '#FAF6EE', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>FULL HEAT CODE CERTIFICATION</strong>
+              <span style={{ fontSize: '10px', color: '#4CAF50', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>AAR &amp; AREMA COMPLIANCE</span>
+              <strong style={{ fontSize: '14px', color: '#FAF6EE', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>FULL HEAT CODE CERTIFICATION</strong>
             </div>
           </div>
 

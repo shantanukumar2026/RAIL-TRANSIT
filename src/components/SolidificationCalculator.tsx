@@ -48,14 +48,14 @@ export const SolidificationCalculator: React.FC = () => {
               <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#81C784' }} />
               <span style={{ color: '#A5D6A7', fontWeight: 900 }}>INTERACTIVE METALLURGICAL ENGINE</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               THERMAL SOLIDIFICATION &amp; TOLERANCE CALCULATOR
             </h2>
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid #81C784', padding: '6px 14px', borderRadius: '2px' }}>
             <Activity size={16} color="#81C784" />
-            <span style={{ fontSize: '11px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.1em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <span style={{ fontSize: '11px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.1em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               LIVE SIMULATION ACTIVE
             </span>
           </div>
@@ -67,7 +67,7 @@ export const SolidificationCalculator: React.FC = () => {
           {/* Left Panel: Inputs */}
           <div style={{ gridColumn: 'span 5', background: '#144818', border: '1px solid #81C784', padding: '2rem', borderRadius: '2px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
-              <h3 style={{ fontSize: '14px', fontWeight: 900, color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 1.5rem 0', display: 'flex', alignItems: 'center', gap: '8px', fontFamily: "'Geist', sans-serif !important" }}>
+              <h3 style={{ fontSize: '14px', fontWeight: 900, color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 1.5rem 0', display: 'flex', alignItems: 'center', gap: '8px', fontFamily: "'Manrope', sans-serif !important" }}>
                 <Sliders size={16} color="#81C784" />
                 <span>SELECT ALLOY &amp; PARAMETERS</span>
               </h3>
@@ -87,7 +87,7 @@ export const SolidificationCalculator: React.FC = () => {
                     cursor: 'pointer',
                     borderRadius: '2px',
                     transition: 'all 0.2s',
-                    fontFamily: "'Geist', sans-serif !important"
+                    fontFamily: "'Manrope', sans-serif !important"
                   }}
                   onMouseEnter={e => { if (alloy !== 'manganese') { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; } }}
                   onMouseLeave={e => { if (alloy !== 'manganese') { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#FAF6EE'; } }}
@@ -108,7 +108,7 @@ export const SolidificationCalculator: React.FC = () => {
                     cursor: 'pointer',
                     borderRadius: '2px',
                     transition: 'all 0.2s',
-                    fontFamily: "'Geist', sans-serif !important"
+                    fontFamily: "'Manrope', sans-serif !important"
                   }}
                   onMouseEnter={e => { if (alloy !== 'ductile') { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; } }}
                   onMouseLeave={e => { if (alloy !== 'ductile') { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#FAF6EE'; } }}
@@ -129,7 +129,7 @@ export const SolidificationCalculator: React.FC = () => {
                     cursor: 'pointer',
                     borderRadius: '2px',
                     transition: 'all 0.2s',
-                    fontFamily: "'Geist', sans-serif !important"
+                    fontFamily: "'Manrope', sans-serif !important"
                   }}
                   onMouseEnter={e => { if (alloy !== 'forged') { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; } }}
                   onMouseLeave={e => { if (alloy !== 'forged') { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#FAF6EE'; } }}
@@ -141,8 +141,8 @@ export const SolidificationCalculator: React.FC = () => {
               {/* Pouring Temperature Slider */}
               <div style={{ marginBottom: '1.5rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
-                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Geist', sans-serif !important" }}>MELT POURING TEMP (°C)</label>
-                  <span style={{ fontSize: '12px', fontWeight: 900, color: '#4CAF50', fontFamily: "'Geist', sans-serif !important" }}>{temp} °C</span>
+                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Manrope', sans-serif !important" }}>MELT POURING TEMP (°C)</label>
+                  <span style={{ fontSize: '12px', fontWeight: 900, color: '#4CAF50', fontFamily: "'Manrope', sans-serif !important" }}>{temp} °C</span>
                 </div>
                 <input 
                   type="range" 
@@ -158,8 +158,8 @@ export const SolidificationCalculator: React.FC = () => {
               {/* Axle Load Capacity Slider */}
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
-                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Geist', sans-serif !important" }}>AXLE LOAD SPECIFICATION (TONS)</label>
-                  <span style={{ fontSize: '12px', fontWeight: 900, color: '#4CAF50', fontFamily: "'Geist', sans-serif !important" }}>{axleLoad} TONS</span>
+                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Manrope', sans-serif !important" }}>AXLE LOAD SPECIFICATION (TONS)</label>
+                  <span style={{ fontSize: '12px', fontWeight: 900, color: '#4CAF50', fontFamily: "'Manrope', sans-serif !important" }}>{axleLoad} TONS</span>
                 </div>
                 <input 
                   type="range" 
@@ -186,38 +186,38 @@ export const SolidificationCalculator: React.FC = () => {
           <div style={{ gridColumn: 'span 7', background: '#FFFFFF', color: '#1B5E20', padding: '2.25rem', borderRadius: '2px', boxShadow: '0 20px 45px rgba(0,0,0,0.25)', borderTop: '4px solid #4CAF50', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', borderBottom: '1px solid #E5E7EB', paddingBottom: '0.75rem' }}>
-                <h4 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#1B5E20', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                <h4 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#111827', margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                   {current.name}
                 </h4>
-                <span style={{ background: '#1B5E20', color: '#FFFFFF', fontSize: '10px', fontWeight: 900, padding: '4px 10px', letterSpacing: '0.1em', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ background: '#1B5E20', color: '#FFFFFF', fontSize: '10px', fontWeight: 900, padding: '4px 10px', letterSpacing: '0.1em', fontFamily: "'Manrope', sans-serif !important" }}>
                   SIMULATED TELEMETRY
                 </span>
               </div>
 
-              <p style={{ fontSize: '13px', color: '#4B5563', lineHeight: 1.6, marginBottom: '1.5rem', fontFamily: "'Manrope', sans-serif !important" }}>
+              <p style={{ fontSize: '13px', color: '#2E7D32', lineHeight: 1.6, marginBottom: '1.5rem', fontFamily: "'Manrope', sans-serif !important" }}>
                 {current.desc}
               </p>
 
               {/* Telemetry Metric Cards */}
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem', marginBottom: '1.5rem' }}>
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
-                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>YIELD STRENGTH</span>
-                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.yieldStrength}</strong>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>YIELD STRENGTH</span>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>{current.yieldStrength}</strong>
                 </div>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
-                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>BRINELL HARDNESS</span>
-                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.hardness}</strong>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>BRINELL HARDNESS</span>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>{current.hardness}</strong>
                 </div>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
-                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>SUB-ZERO IMPACT TOUGHNESS</span>
-                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.fractureToughness}</strong>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>SUB-ZERO IMPACT TOUGHNESS</span>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>{current.fractureToughness}</strong>
                 </div>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1rem', borderLeft: '3.5px solid #4CAF50' }}>
-                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>INTERNAL POROSITY RISK</span>
-                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{current.porosityRisk}</strong>
+                  <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>INTERNAL POROSITY RISK</span>
+                  <strong style={{ fontSize: '16px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>{current.porosityRisk}</strong>
                 </div>
               </div>
             </div>
@@ -225,7 +225,7 @@ export const SolidificationCalculator: React.FC = () => {
             <div style={{ background: '#1B5E20', color: '#FAF6EE', padding: '1rem 1.25rem', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Zap size={16} color="#4CAF50" />
-                <span style={{ fontSize: '12px', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '12px', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>
                   CALCULATED HAL SAFETY FACTOR: 3.4x OPERATIONAL LOAD
                 </span>
               </div>

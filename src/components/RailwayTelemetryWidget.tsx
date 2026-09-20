@@ -27,14 +27,14 @@ export const RailwayTelemetryWidget: React.FC = () => {
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#81C784' }} />
               <span style={{ color: '#A5D6A7', fontWeight: 900 }}>LIVE CORRIDOR TELEMETRY</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               HIGH-SPEED LOCOMOTIVE SIGNAL &amp; AXLE MONITOR
             </h2>
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.1)', border: '1px solid #81C784', padding: '8px 16px', borderRadius: '2px' }}>
             <Radio size={16} color={getSignalColor()} />
-            <span style={{ fontSize: '11px', fontWeight: 900, color: getSignalColor(), letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <span style={{ fontSize: '11px', fontWeight: 900, color: getSignalColor(), letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               CORRIDOR SIGNAL: {signalStatus}
             </span>
           </div>
@@ -46,7 +46,7 @@ export const RailwayTelemetryWidget: React.FC = () => {
           {/* Left Panel: Speed & Signal Interactive JS Controls */}
           <div style={{ gridColumn: 'span 5', background: '#144818', border: '1px solid #81C784', padding: '2rem', borderRadius: '2px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
-              <h3 style={{ fontSize: '14px', fontWeight: 900, color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.1em', margin: '0 0 1.5rem 0', display: 'flex', alignItems: 'center', gap: '8px', fontFamily: "'Geist', sans-serif !important" }}>
+              <h3 style={{ fontSize: '14px', fontWeight: 900, color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.1em', margin: '0 0 1.5rem 0', display: 'flex', alignItems: 'center', gap: '8px', fontFamily: "'Manrope', sans-serif !important" }}>
                 <Gauge size={18} color="#81C784" />
                 <span>LOCOMOTIVE SPEED CONTROL</span>
               </h3>
@@ -54,8 +54,8 @@ export const RailwayTelemetryWidget: React.FC = () => {
               {/* Speed Slider */}
               <div style={{ marginBottom: '2rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                  <label style={{ fontSize: '11.5px', fontWeight: 800, color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.08em', fontFamily: "'Geist', sans-serif !important" }}>OPERATIONAL SPEED (KM/H)</label>
-                  <span style={{ fontSize: '18px', fontWeight: 900, color: '#4CAF50', fontFamily: "'Geist', sans-serif !important" }}>{speed} KM/H</span>
+                  <label style={{ fontSize: '11.5px', fontWeight: 800, color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.08em', fontFamily: "'Manrope', sans-serif !important" }}>OPERATIONAL SPEED (KM/H)</label>
+                  <span style={{ fontSize: '18px', fontWeight: 900, color: '#4CAF50', fontFamily: "'Manrope', sans-serif !important" }}>{speed} KM/H</span>
                 </div>
                 <input
                   type="range"
@@ -75,7 +75,7 @@ export const RailwayTelemetryWidget: React.FC = () => {
 
               {/* Signal Switcher Buttons */}
               <div>
-                <label style={{ fontSize: '11.5px', fontWeight: 800, color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '10px', fontFamily: "'Geist', sans-serif !important" }}>SIMULATE SIGNAL STATE</label>
+                <label style={{ fontSize: '11.5px', fontWeight: 800, color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '10px', fontFamily: "'Manrope', sans-serif !important" }}>SIMULATE SIGNAL STATE</label>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px' }}>
                   <button
                     onClick={() => { setSignalStatus('CLEAR'); setAxleTemp(68); }}
@@ -89,7 +89,7 @@ export const RailwayTelemetryWidget: React.FC = () => {
                       cursor: 'pointer',
                       borderRadius: '2px',
                       transition: 'all 0.2s',
-                      fontFamily: "'Geist', sans-serif !important"
+                      fontFamily: "'Manrope', sans-serif !important"
                     }}
                     onMouseEnter={e => { if (signalStatus !== 'CLEAR') { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; } }}
                     onMouseLeave={e => { if (signalStatus !== 'CLEAR') { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.color = '#FAF6EE'; } }}
@@ -109,7 +109,7 @@ export const RailwayTelemetryWidget: React.FC = () => {
                       cursor: 'pointer',
                       borderRadius: '2px',
                       transition: 'all 0.2s',
-                      fontFamily: "'Geist', sans-serif !important"
+                      fontFamily: "'Manrope', sans-serif !important"
                     }}
                     onMouseEnter={e => { if (signalStatus !== 'CAUTION') { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; } }}
                     onMouseLeave={e => { if (signalStatus !== 'CAUTION') { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.color = '#FAF6EE'; } }}
@@ -129,7 +129,7 @@ export const RailwayTelemetryWidget: React.FC = () => {
                       cursor: 'pointer',
                       borderRadius: '2px',
                       transition: 'all 0.2s',
-                      fontFamily: "'Geist', sans-serif !important"
+                      fontFamily: "'Manrope', sans-serif !important"
                     }}
                     onMouseEnter={e => { if (signalStatus !== 'STOP') { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; } }}
                     onMouseLeave={e => { if (signalStatus !== 'STOP') { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.color = '#FAF6EE'; } }}
@@ -153,12 +153,12 @@ export const RailwayTelemetryWidget: React.FC = () => {
           <div style={{ gridColumn: 'span 7', background: '#FFFFFF', color: '#1B5E20', padding: '2.25rem', borderRadius: '2px', boxShadow: '0 20px 45px rgba(0,0,0,0.3)', borderTop: '4px solid #4CAF50', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem', borderBottom: '1px solid #E5E7EB', paddingBottom: '0.75rem' }}>
-                <h4 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#1B5E20', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                <h4 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#111827', margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                   BOGIE &amp; AXLEBOX THERMAL TELEMETRY
                 </h4>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <span className={signalStatus === 'STOP' ? 'signal-dot-red' : 'signal-dot-green'} />
-                  <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                  <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                     {signalStatus === 'STOP' ? 'THERMAL ALERT' : 'NOMINAL RANGE'}
                   </span>
                 </div>
@@ -168,20 +168,20 @@ export const RailwayTelemetryWidget: React.FC = () => {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '1.5rem' }}>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1.15rem', borderLeft: `4px solid ${getSignalColor()}` }}>
-                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>AXLEBOX BEARING TEMP</span>
-                  <strong style={{ fontSize: '20px', fontWeight: 900, color: axleTemp > 100 ? '#DC2626' : '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{axleTemp} °C</strong>
+                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>AXLEBOX BEARING TEMP</span>
+                  <strong style={{ fontSize: '20px', fontWeight: 900, color: axleTemp > 100 ? '#DC2626' : '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>{axleTemp} °C</strong>
                   <span style={{ fontSize: '10px', color: '#4CAF50', display: 'block', marginTop: '2px', fontWeight: 600 }}>Max threshold: 120°C</span>
                 </div>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1.15rem', borderLeft: '4px solid #4CAF50' }}>
-                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>HAL LOAD FORCE</span>
-                  <strong style={{ fontSize: '20px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{Math.round(36 * (speed / 180))} TONS</strong>
+                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>HAL LOAD FORCE</span>
+                  <strong style={{ fontSize: '20px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>{Math.round(36 * (speed / 180))} TONS</strong>
                   <span style={{ fontSize: '10px', color: '#4CAF50', display: 'block', marginTop: '2px', fontWeight: 600 }}>36-Ton Axle Spec</span>
                 </div>
 
                 <div style={{ background: '#F8F9FA', border: '1px solid #E5E7EB', padding: '1.15rem', borderLeft: '4px solid #1B5E20' }}>
-                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>TRACK BRAKE SHOE FORCE</span>
-                  <strong style={{ fontSize: '20px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>{signalStatus === 'STOP' ? '12.4 kN' : '0.0 kN'}</strong>
+                  <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>TRACK BRAKE SHOE FORCE</span>
+                  <strong style={{ fontSize: '20px', fontWeight: 900, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>{signalStatus === 'STOP' ? '12.4 kN' : '0.0 kN'}</strong>
                   <span style={{ fontSize: '10px', color: '#4CAF50', display: 'block', marginTop: '2px', fontWeight: 600 }}>Ductile Iron Shoe</span>
                 </div>
 
@@ -189,7 +189,7 @@ export const RailwayTelemetryWidget: React.FC = () => {
 
               {/* Telemetry Visual Progress Bar */}
               <div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', fontWeight: 800, color: '#1B5E20', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', fontWeight: 800, color: '#1B5E20', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>
                   <span>DYNAMIC STRUCTURAL ENDURANCE SPECTRUM</span>
                   <span>{Math.round((speed / 350) * 100)}% LOAD</span>
                 </div>
@@ -202,7 +202,7 @@ export const RailwayTelemetryWidget: React.FC = () => {
             <div style={{ marginTop: '1.5rem', background: '#1B5E20', color: '#FAF6EE', padding: '1rem 1.25rem', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Activity size={16} color="#4CAF50" />
-                <span style={{ fontSize: '12px', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '12px', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>
                   FRA RULE 213 CLASS 9 HIGH-SPEED TRACK COMPLIANT
                 </span>
               </div>

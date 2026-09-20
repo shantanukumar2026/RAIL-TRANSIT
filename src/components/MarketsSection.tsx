@@ -36,7 +36,7 @@ export const MarketsSection: React.FC = () => {
               <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#4CAF50' }} />
               <span style={{ color: '#4CAF50' }}>MARKET SECTORS</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: '0 0 0.5rem 0', textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: '0 0 0.5rem 0', textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Manrope', sans-serif !important" }}>
               MARKETS WE SERVE
             </h2>
             <p style={{ fontSize: '14px', color: '#4CAF50', margin: 0, maxWidth: '580px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
@@ -59,7 +59,7 @@ export const MarketsSection: React.FC = () => {
               gap: '6px',
               borderBottom: '2px solid #4CAF50',
               paddingBottom: '2px',
-              fontFamily: "'Geist', sans-serif !important"
+              fontFamily: "'Manrope', sans-serif !important"
             }}
           >
             <span>SUBMIT TECHNICAL SPECIFICATION</span>
@@ -82,19 +82,19 @@ export const MarketsSection: React.FC = () => {
               }}
             >
               <div>
-                <span style={{ fontSize: '10px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '1rem', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '10px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '1rem', fontFamily: "'Manrope', sans-serif !important" }}>
                   {market.tag}
                 </span>
-                <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.02em', lineHeight: 1.25, marginBottom: '1rem', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#111827', letterSpacing: '0.02em', lineHeight: 1.25, marginBottom: '1rem', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                   {market.title}
                 </h3>
-                <p style={{ fontSize: '13px', color: '#4B5563', lineHeight: 1.6, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+                <p style={{ fontSize: '13px', color: '#2E7D32', lineHeight: 1.6, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
                   {market.desc}
                 </p>
               </div>
 
               <div style={{ paddingTop: '1.5rem', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <span style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                   LEARN MORE
                 </span>
                 <ArrowRight size={14} color="#4CAF50" />

@@ -37,7 +37,7 @@ export const NewsInsights: React.FC = () => {
               <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#4CAF50' }} />
               <span style={{ color: '#4CAF50' }}>INDUSTRY &amp; GRIEVANCE UPDATES</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               NEWS &amp; INSIGHTS
             </h2>
           </div>
@@ -81,27 +81,27 @@ export const NewsInsights: React.FC = () => {
                 {/* Card Content */}
                 <div style={{ padding: '1.5rem 1.25rem' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '0.65rem' }}>
-                    <span style={{ fontSize: '10px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                    <span style={{ fontSize: '10px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                       {item.category}
                     </span>
                     <span style={{ color: '#E5E7EB' }}>|</span>
-                    <span style={{ fontSize: '10.5px', color: '#4CAF50', fontWeight: 700, fontFamily: "'Geist', sans-serif !important" }}>
+                    <span style={{ fontSize: '10.5px', color: '#4CAF50', fontWeight: 700, fontFamily: "'Manrope', sans-serif !important" }}>
                       {item.date}
                     </span>
                   </div>
 
-                  <h3 style={{ fontSize: '1.05rem', fontWeight: 900, color: '#1B5E20', lineHeight: 1.35, margin: '0 0 0.5rem 0', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                  <h3 style={{ fontSize: '1.05rem', fontWeight: 900, color: '#111827', lineHeight: 1.35, margin: '0 0 0.5rem 0', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                     {item.title}
                   </h3>
 
-                  <p style={{ fontSize: '12px', color: '#4B5563', lineHeight: 1.5, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+                  <p style={{ fontSize: '13px', color: '#2E7D32', lineHeight: 1.6, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
                     {item.desc}
                   </p>
                 </div>
               </div>
 
               <div style={{ padding: '1rem 1.25rem', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <span style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                   READ TECHNICAL BULLETIN
                 </span>
                 <ArrowRight size={13} color="#4CAF50" />

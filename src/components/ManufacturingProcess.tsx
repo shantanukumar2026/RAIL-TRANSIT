@@ -45,7 +45,7 @@ export const ManufacturingProcess: React.FC = () => {
             <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: '#4CAF50' }} />
             <span style={{ color: '#4CAF50' }}>QUALITY ASSURANCE WORKFLOW</span>
           </div>
-          <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 800, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+          <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 800, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
             MANUFACTURING PROCESS TIMELINE
           </h2>
         </div>
@@ -68,13 +68,13 @@ export const ManufacturingProcess: React.FC = () => {
               }}
             >
               <div>
-                <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#4CAF50', marginBottom: '0.75rem', lineHeight: 1, fontFamily: "'Geist', sans-serif !important" }}>
+                <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#4CAF50', marginBottom: '0.75rem', lineHeight: 1, fontFamily: "'Manrope', sans-serif !important" }}>
                   {step.num}
                 </div>
-                <h3 style={{ fontSize: '12px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.04em', lineHeight: 1.35, marginBottom: '0.75rem', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+                <h3 style={{ fontSize: '12px', fontWeight: 800, color: '#111827', letterSpacing: '0.04em', lineHeight: 1.35, marginBottom: '0.75rem', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                   {step.title}
                 </h3>
-                <p style={{ fontSize: '11.5px', color: '#4B5563', lineHeight: 1.5, margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>
+                <p style={{ fontSize: '11.5px', color: '#2E7D32', lineHeight: 1.5, margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>
                   {step.desc}
                 </p>
               </div>

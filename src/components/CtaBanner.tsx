@@ -27,7 +27,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
               <span style={{ color: '#A5D6A7', fontWeight: 900 }}>ENGINEERING CONSULTATION &amp; QUOTATIONS</span>
             </div>
 
-            <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.75rem)', color: '#FFFFFF', fontWeight: 900, lineHeight: 1.15, margin: '0 0 1rem 0', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.75rem)', color: '#FFFFFF', fontWeight: 900, lineHeight: 1.15, margin: '0 0 1rem 0', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               READY TO DISCUSS YOUR COMPONENT SPECIFICATIONS?
             </h2>
 
@@ -55,7 +55,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
                 gap: '10px',
                 borderRadius: '2px',
                 boxShadow: '0 10px 25px rgba(27, 94, 32, 0.5)',
-                fontFamily: "'Geist', sans-serif !important"
+                fontFamily: "'Manrope', sans-serif !important"
               }}
             >
               <span>REQUEST A QUOTE</span>
@@ -79,7 +79,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
                 alignItems: 'center',
                 gap: '10px',
                 borderRadius: '2px',
-                fontFamily: "'Geist', sans-serif !important"
+                fontFamily: "'Manrope', sans-serif !important"
               }}
             >
               <Mail size={15} color="#4CAF50" />

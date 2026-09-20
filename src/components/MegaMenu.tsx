@@ -29,7 +29,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
         animation: 'fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
       }}
     >
-      <div className="mega-menu-container" style={{ maxWidth: '1440px', margin: '0 auto' }}>
+      <div className="mega-menu-container" style={{ width: '100%', margin: '0 auto' }}>
         
         {/* 1. PRODUCTS CATEGORY MEGA MENU */}
         {activeMegaMenu === 'products' && (
@@ -38,33 +38,33 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Freight Wagons & Rolling Stock' : 'Vagones de Carga'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> BCNHL / BCNA Covered Wagons
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> BOXNHL / BOXN Open Freight Wagons
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> BOBRN Rapid Discharge Hopper Wagons
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> BLC Container Flat &amp; BTPN Tank Wagons
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> BVZI Brake Vans &amp; Special Wagons
                   </a>
                 </li>
@@ -75,28 +75,28 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Bogies & Suspension' : 'Bogies y Suspensión'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> CASNUB 22HS / 22NLR / 25T Bogies
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Barber S2 Design Freight Bogies
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> LHB Coach &amp; Locomotive Bogies
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Machined Axlebox &amp; Bearing Adaptors
                   </a>
                 </li>
@@ -107,28 +107,28 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Couplers & Draft Gears' : 'Enganches y Amortiguadores'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> AAR Type E / F / H Tightlock CBC
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Cardwell High-Capacity Friction Draft Gear
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Elastomeric Suspension Pads &amp; Springs
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Rotary &amp; Transition Coupler Systems
                   </a>
                 </li>
@@ -139,28 +139,28 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'CMS Turnouts & Foundries' : 'Desvíos CMS y Fundiciones'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Cast Manganese Steel (CMS) Frogs
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Thick Web Switches (TWS) &amp; SEJ Joints
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Heavy Steel Castings (up to 20 Tons)
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#products" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Jacking Pads, Brake Heads &amp; Gearboxes
                   </a>
                 </li>
@@ -175,23 +175,23 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Class I Heavy Freight' : 'Carga Pesada Clase I'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> 39-Ton Axle Load Intermodal Corridors
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Transcontinental Mainline Turnouts
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Port &amp; Intermodal Terminal Tracks
                   </a>
                 </li>
@@ -201,23 +201,23 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Passenger & High-Speed' : 'Pasajeros y Alta Velocidad'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> 200+ mph High-Speed Rail Corridors
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Noise-Damped Urban Light Rail
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Underground Rapid Transit Metro
                   </a>
                 </li>
@@ -227,23 +227,23 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Industrial & Mining Sidings' : 'Minería e Industria'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Open-Pit Mining Haul Sidings
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> High-Heat Steel Mill Trackage
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#markets" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Chemical Plant Rail Loading Bays
                   </a>
                 </li>
@@ -295,23 +295,23 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Decarbonized Metallurgy' : 'Metalurgia Descarbonizada'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> 100% Recycled Scrap Steel Melting
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Renewable-Powered Electric Induction
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Zero Foundry Slag Landfill Goal
                   </a>
                 </li>
@@ -321,23 +321,23 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Closed-Loop Operations' : 'Operaciones de Ciclo Cerrado'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> 98% Silica Sand Thermal Recovery
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Industrial Water Recirculation
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> ISO 14001 Zero Air Emissions
                   </a>
                 </li>
@@ -347,23 +347,23 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Product Life Extension' : 'Extensión de Vida Útil'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Austenitic Work-Hardening Steel
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> 2x Service Life Under Heavy Loads
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#sustainability" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Environmental Product Declarations
                   </a>
                 </li>
@@ -415,23 +415,23 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Engineering Guidelines' : 'Guías de Ingeniería'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> AREMA Chapter 4 Trackwork Standards
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> AAR M-1003 Quality Assurance Protocol
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> ASTM A27 / A536 Metallurgical Specs
                   </a>
                 </li>
@@ -441,23 +441,23 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'Quality & Laboratory' : 'Calidad y Laboratorio'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Class 1 Ultrasonic (UT) Defect Scanning
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Magnetic Particle &amp; Dye Penetrant (MT)
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Sub-Zero Impact &amp; Brinell Hardness
                   </a>
                 </li>
@@ -467,23 +467,23 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ activeMegaMenu, setActiveMeg
             <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <span style={{ width: '8px', height: '8px', background: '#34D399' }} />
-                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#1B5E20', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+                <h4 style={{ fontSize: '11px', fontWeight: 700, color: '#111827', letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
                   {lang === 'en' ? 'CAD & Design Library' : 'Biblioteca CAD y Diseño'}
                 </h4>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> 3D STEP Models for Frog Turnouts
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Axle &amp; Wheelset Dimensional Schematics
                   </a>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1E293B', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
+                  <a href="#knowledge" onClick={() => setActiveMegaMenu(null)} className="mega-link" style={{ textDecoration: 'none', color: '#1B5E20', fontWeight: 500, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.15s ease' }}>
                     <span style={{ color: '#1B5E20', fontWeight: 700 }}>›</span> Catenary Cantilever Installation Manuals
                   </a>
                 </li>

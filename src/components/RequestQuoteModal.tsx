@@ -51,10 +51,10 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
             <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: '#1B5E20', color: '#FAF6EE', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.25rem auto' }}>
               <CheckCircle2 size={32} color="#4CAF50" />
             </div>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#1B5E20', marginBottom: '0.75rem' }}>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#111827', marginBottom: '0.75rem' }}>
               QUOTATION REQUEST SUBMITTED
             </h3>
-            <p style={{ fontSize: '14px', color: '#4B5563', lineHeight: 1.6, marginBottom: '2rem' }}>
+            <p style={{ fontSize: '14px', color: '#2E7D32', lineHeight: 1.6, marginBottom: '2rem' }}>
               Thank you for reaching out. A Westpoint Group Companies metallurgical sales engineer will review your specifications and contact you within 24 business hours.
             </p>
             <button
@@ -82,11 +82,11 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
               <span style={{ color: '#4CAF50' }}>COMMERCIAL TENDER &amp; SPECIFICATIONS</span>
             </div>
 
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#1B5E20', margin: '0 0 0.5rem 0', textTransform: 'uppercase' }}>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#111827', margin: '0 0 0.5rem 0', textTransform: 'uppercase' }}>
               REQUEST A QUOTE
             </h3>
 
-            <p style={{ fontSize: '13px', color: '#4B5563', margin: '0 0 1.75rem 0', lineHeight: 1.5 }}>
+            <p style={{ fontSize: '13px', color: '#2E7D32', margin: '0 0 1.75rem 0', lineHeight: 1.5 }}>
               Submit your technical requirements, CAD files, or project parameters for an immediate engineering estimate.
             </p>
 

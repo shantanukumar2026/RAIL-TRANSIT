@@ -13,7 +13,7 @@ export const CompanyIntro: React.FC = () => {
           
           {/* Left Side: Storytelling & Why Choose Us */}
           <div style={{ gridColumn: 'span 7' }}>
-            <div className="eyebrow" style={{ letterSpacing: '0.2em', marginBottom: '1rem', fontFamily: "'Geist', sans-serif !important" }}>
+            <div className="eyebrow" style={{ letterSpacing: '0.2em', marginBottom: '1rem', fontFamily: "'Manrope', sans-serif !important" }}>
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
               <span style={{ color: '#4CAF50' }}>THE MANUFACTURING HERITAGE</span>
             </div>
@@ -22,13 +22,13 @@ export const CompanyIntro: React.FC = () => {
             <h2 
               style={{ 
                 fontSize: 'clamp(2.5rem, 4.2vw, 3.8rem)', 
-                color: '#1B5E20', 
+                color: '#111827', 
                 fontWeight: 900, 
                 lineHeight: 1.06, 
                 marginBottom: '1.5rem', 
                 letterSpacing: '-0.025em', 
                 textTransform: 'uppercase',
-                fontFamily: "'Geist', sans-serif !important" 
+                fontFamily: "'Manrope', sans-serif !important" 
               }}
             >
               HEAVY RAIL &amp; METALLURGICAL<br />
@@ -38,31 +38,31 @@ export const CompanyIntro: React.FC = () => {
               </span>
             </h2>
 
-            <p style={{ fontSize: '1.1rem', color: '#4B5563', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '640px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+            <p style={{ fontSize: '1.1rem', color: '#2E7D32', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '640px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
               Westpoint Group Companies specializes in electric induction cast manganese turnout trackwork, heavy drop forged locomotive axles, and precision bogie components. Serving Class I freight railroads, high-speed corridors, and urban transit authorities globally with uncompromised quality assurance.
             </p>
 
             {/* Why Choose Westpoint Group Companies - 4 Story Pillars */}
             <div style={{ marginBottom: '2.25rem', padding: '1.25rem', background: '#FFFFFF', border: '1px solid #E5E7EB', borderLeft: '4px solid #4CAF50', borderRadius: '2px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
-              <strong style={{ fontSize: '12.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.1em', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem', fontFamily: "'Geist', sans-serif !important" }}>
+              <strong style={{ fontSize: '12.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.1em', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem', fontFamily: "'Manrope', sans-serif !important" }}>
                 WHY CLASS I RAILROADS PARTNER WITH WESTPOINT
               </strong>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.85rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>RDSO Approved Class A Foundry</span>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>RDSO Approved Class A Foundry</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>100% Volumetric Ultrasonic NDT</span>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>100% Volumetric Ultrasonic NDT</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>36-Ton Axle Load Rating</span>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>36-Ton Axle Load Rating</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Geist', sans-serif !important" }}>AREMA Ch. 4 &amp; AAR M-1003</span>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>AREMA Ch. 4 &amp; AAR M-1003</span>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ export const CompanyIntro: React.FC = () => {
             <div className="img-hover-zoom" style={{ border: '1px solid #E5E7EB', background: '#FFFFFF', boxShadow: '0 20px 45px rgba(27, 94, 32, 0.12)', borderRadius: '2px', position: 'relative' }}>
               
               {/* Badge overlay */}
-              <div style={{ position: 'absolute', top: '14px', right: '14px', zIndex: 20, background: '#1B5E20', color: '#FFFFFF', fontSize: '9.5px', fontWeight: 900, padding: '4px 10px', border: '1px solid #4CAF50', letterSpacing: '0.1em', fontFamily: "'Geist', sans-serif !important" }}>
+              <div style={{ position: 'absolute', top: '14px', right: '14px', zIndex: 20, background: '#1B5E20', color: '#FFFFFF', fontSize: '9.5px', fontWeight: 900, padding: '4px 10px', border: '1px solid #4CAF50', letterSpacing: '0.1em', fontFamily: "'Manrope', sans-serif !important" }}>
                 AAR M-1003 QA
               </div>
 
@@ -97,7 +97,7 @@ export const CompanyIntro: React.FC = () => {
               {/* Image Footer Details */}
               <div style={{ padding: '1.25rem', background: '#FFFFFF', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div>
-                  <strong style={{ fontSize: '12px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>
+                  <strong style={{ fontSize: '12px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
                     FINISH MACHINED AXLEBOX HOUSING
                   </strong>
                   <span style={{ fontSize: '11px', color: '#4CAF50', fontFamily: "'Manrope', sans-serif !important" }}>
@@ -107,7 +107,7 @@ export const CompanyIntro: React.FC = () => {
                 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                   <ShieldCheck size={16} color="#4CAF50" />
-                  <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>PASSED NDT</span>
+                  <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>PASSED NDT</span>
                 </div>
               </div>
 

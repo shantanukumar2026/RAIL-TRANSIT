@@ -99,14 +99,14 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
                 style={{ width: '100%', accentColor: '#195B34', cursor: 'pointer' }}
               />
 
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', color: '#6B7280', marginTop: '8px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', color: '#2E7D32', marginTop: '8px' }}>
                 <span>Min: 10% Recycled</span>
                 <span style={{ color: '#195B34', fontWeight: 800 }}>Estimated CO₂ Reduction: {percentCo2Cut}%</span>
                 <span>Max: 60% Recycled</span>
               </div>
 
               <div style={{ marginTop: '12px', paddingTop: '10px', borderTop: '1px solid #E5E7EB', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: '11.5px', color: '#6B7280' }}>
+                <span style={{ fontSize: '11.5px', color: '#2E7D32' }}>
                   Output Base: <strong style={{ color: '#1B5E20' }}>{esgVolumeVal} Tons</strong>
                 </span>
                 <span style={{ fontSize: '12px', color: '#195B34', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '4px' }}>

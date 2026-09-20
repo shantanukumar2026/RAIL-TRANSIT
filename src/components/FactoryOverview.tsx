@@ -55,12 +55,12 @@ export const FactoryOverview: React.FC = () => {
                       <div style={{ width: '32px', height: '32px', borderRadius: '2px', background: 'rgba(255, 255, 255, 0.12)', border: '1px solid #81C784', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#81C784' }}>
                         <IconComp size={16} color="#81C784" />
                       </div>
-                      <span style={{ fontSize: '1.85rem', fontWeight: 900, color: '#FFFFFF', lineHeight: 1, fontFamily: "'Geist', sans-serif !important" }}>
+                      <span style={{ fontSize: '1.85rem', fontWeight: 900, color: '#FFFFFF', lineHeight: 1, fontFamily: "'Manrope', sans-serif !important" }}>
                         {stat.value}
                       </span>
                     </div>
 
-                    <strong style={{ fontSize: '11px', fontWeight: 900, color: '#81C784', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>
+                    <strong style={{ fontSize: '11px', fontWeight: 900, color: '#81C784', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>
                       {stat.label}
                     </strong>
                     <span style={{ fontSize: '11px', color: '#FFFFFF', lineHeight: 1.4, display: 'block', fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>

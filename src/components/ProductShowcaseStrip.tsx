@@ -55,7 +55,7 @@ export const ProductShowcaseStrip: React.FC = () => {
             <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
             <span style={{ color: '#4CAF50' }}>PRECISION METAL CASTINGS &amp; FORGINGS</span>
           </div>
-          <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+          <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
             CRITICAL RAIL &amp; INDUSTRIAL COMPONENTS
           </h2>
         </div>
@@ -90,10 +90,10 @@ export const ProductShowcaseStrip: React.FC = () => {
 
               {/* Product Label & Arrow */}
               <div>
-                <h3 style={{ fontSize: '11px', fontWeight: 900, color: '#1B5E20', margin: '0 0 4px 0', textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Geist', sans-serif !important" }}>
+                <h3 style={{ fontSize: '11px', fontWeight: 900, color: '#111827', margin: '0 0 4px 0', textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Manrope', sans-serif !important" }}>
                   {item.title}
                 </h3>
-                <span style={{ fontSize: '9.5px', color: '#4CAF50', fontWeight: 800, display: 'block', marginBottom: '8px', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '9.5px', color: '#4CAF50', fontWeight: 800, display: 'block', marginBottom: '8px', fontFamily: "'Manrope', sans-serif !important" }}>
                   {item.specs}
                 </span>
 

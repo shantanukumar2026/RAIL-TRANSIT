@@ -132,7 +132,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
           background: '#FFFFFF',
           boxShadow: isScrolled ? '0 4px 20px rgba(0, 0, 0, 0.08)' : 'none',
           transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-          fontFamily: "'Geist', sans-serif"
+          fontFamily: "'Manrope', sans-serif"
         }}
         onMouseLeave={() => setActiveMegaMenu(null)}
       >
@@ -218,7 +218,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                   alignItems: 'center',
                   gap: '8px',
                   borderRadius: '2px',
-                  fontFamily: "'Geist', sans-serif"
+                  fontFamily: "'Manrope', sans-serif"
                 }}
               >
                 <span>REQUEST QUOTE</span>
@@ -259,7 +259,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                         whiteSpace: 'nowrap',
                         transition: 'all 0.2s ease',
                         borderBottom: isActive ? '3px solid #1B5E20' : '3px solid transparent',
-                        fontFamily: "'Geist', sans-serif"
+                        fontFamily: "'Manrope', sans-serif"
                       }}
                       onMouseEnter={e => {
                         if (!isActive) {
@@ -308,7 +308,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '6px',
-                    fontFamily: "'Geist', sans-serif",
+                    fontFamily: "'Manrope', sans-serif",
                     borderRadius: '2px'
                   }}
                   onMouseEnter={e => { e.currentTarget.style.color = '#1B5E20'; e.currentTarget.style.background = '#FAF6EE'; }}
@@ -334,7 +334,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '6px',
-                    fontFamily: "'Geist', sans-serif",
+                    fontFamily: "'Manrope', sans-serif",
                     borderRadius: '2px'
                   }}
                   onMouseEnter={e => { e.currentTarget.style.color = '#1B5E20'; e.currentTarget.style.background = '#FAF6EE'; }}
@@ -374,7 +374,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                 <div style={{ gridColumn: 'span 8', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem' }}>
                   {navCategories.find(m => m.id === activeMegaMenu)?.columns.map((col, idx) => (
                     <div key={idx}>
-                      <div style={{ fontSize: '13px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.85rem', borderBottom: '1.5px solid #E5E7EB', paddingBottom: '0.4rem', display: 'flex', alignItems: 'center', gap: '8px', fontFamily: "'Geist', sans-serif" }}>
+                      <div style={{ fontSize: '13px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.85rem', borderBottom: '1.5px solid #E5E7EB', paddingBottom: '0.4rem', display: 'flex', alignItems: 'center', gap: '8px', fontFamily: "'Manrope', sans-serif" }}>
                         <span style={{ width: '4px', height: '14px', background: '#4CAF50', display: 'inline-block' }} />
                         <span>{col.title}</span>
                       </div>
@@ -425,12 +425,12 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                       />
                       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(27, 94, 32, 0.88), transparent)' }} />
-                      <span style={{ position: 'absolute', bottom: '12px', left: '14px', color: '#FFFFFF', fontSize: '11px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.12em', fontFamily: "'Geist', sans-serif" }}>
+                      <span style={{ position: 'absolute', bottom: '12px', left: '14px', color: '#FFFFFF', fontSize: '11px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.12em', fontFamily: "'Manrope', sans-serif" }}>
                         AAR M-1003 CERTIFIED FOUNDRY
                       </span>
                     </div>
                     <div style={{ padding: '1.25rem' }}>
-                      <h4 style={{ fontSize: '15px', fontWeight: 900, color: '#1B5E20', margin: '0 0 6px 0', fontFamily: "'Geist', sans-serif" }}>
+                      <h4 style={{ fontSize: '15px', fontWeight: 900, color: '#111827', margin: '0 0 6px 0', fontFamily: "'Manrope', sans-serif" }}>
                         North American Heavy Freight &amp; Transit Castings
                       </h4>
                       <p style={{ fontSize: '12.5px', color: '#4CAF50', margin: '0 0 14px 0', lineHeight: 1.45, fontFamily: "'Manrope', sans-serif" }}>
@@ -439,7 +439,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
                       <a
                         href="#products"
                         onClick={() => setActiveMegaMenu(null)}
-                        style={{ color: '#1B5E20', fontSize: '13px', fontWeight: 900, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '4px 8px', borderRadius: '2px', transition: 'all 0.2s', fontFamily: "'Geist', sans-serif" }}
+                        style={{ color: '#1B5E20', fontSize: '13px', fontWeight: 900, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '4px 8px', borderRadius: '2px', transition: 'all 0.2s', fontFamily: "'Manrope', sans-serif" }}
                         onMouseEnter={e => { e.currentTarget.style.background = '#FAF6EE'; }}
                         onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
                       >

@@ -1,16 +1,9 @@
 import React, { useRef, useState } from 'react';
-import { ArrowRight, ChevronLeft, ChevronRight, Check, FileText, Filter } from 'lucide-react';
-import EngineeringDrawingModal from './EngineeringDrawingModal';
+import { ArrowRight, ChevronLeft, ChevronRight, Check, Filter } from 'lucide-react';
 
 export const FeaturedComponents: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeCategory, setActiveCategory] = useState<string>('all');
-  const [selectedProduct, setSelectedProduct] = useState<{
-    title: string;
-    series: string;
-    specs: string;
-    img: string;
-  } | null>(null);
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -187,8 +180,8 @@ export const FeaturedComponents: React.FC = () => {
       series: 'OEM SPROCKET',
       specs: 'Wear Resistant',
       desc: 'Heavy duty sprockets for tracked undercarriage systems.',
-      img: '/images/prod_sprockets.jpg',
-      drawingImg: '/images/prod_sprockets.jpg'
+      img: '/images/gettyimages-157479520-1024x1024.jpg',
+      drawingImg: '/images/gettyimages-157479520-1024x1024.jpg'
     },
     {
       id: 'oem-04',
@@ -286,8 +279,8 @@ export const FeaturedComponents: React.FC = () => {
     }
   ];
 
-  const filteredComponents = activeCategory === 'all' 
-    ? components 
+  const filteredComponents = activeCategory === 'all'
+    ? components
     : components.filter(c => c.category === activeCategory);
 
   return (
@@ -302,7 +295,7 @@ export const FeaturedComponents: React.FC = () => {
                 <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
                 <span>RDSO, AREMA &amp; AAR M-1003 CERTIFIED CATALOG</span>
               </div>
-              <h2 style={{ fontSize: 'clamp(2.2rem, 3.8vw, 3rem)', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Geist', sans-serif !important" }}>
+              <h2 style={{ fontSize: 'clamp(2.2rem, 3.8vw, 3rem)', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Manrope', sans-serif !important" }}>
                 FEATURED WAGONS, BOGIES &amp; STEEL CASTINGS
               </h2>
             </div>
@@ -325,8 +318,16 @@ export const FeaturedComponents: React.FC = () => {
                     boxShadow: '0 4px 14px rgba(27,94,32,0.25)',
                     transition: 'all 0.2s'
                   }}
-                  onMouseEnter={e => { e.currentTarget.style.background = '#FAF6EE'; }}
-                  onMouseLeave={e => { e.currentTarget.style.background = '#1B5E20'; }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.background = '#FAF6EE';
+                    const svg = e.currentTarget.querySelector('svg');
+                    if (svg) svg.style.stroke = '#1B5E20';
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.background = '#1B5E20';
+                    const svg = e.currentTarget.querySelector('svg');
+                    if (svg) svg.style.stroke = '#4CAF50';
+                  }}
                 >
                   <ChevronLeft size={22} color="#4CAF50" />
                 </button>
@@ -345,15 +346,23 @@ export const FeaturedComponents: React.FC = () => {
                     boxShadow: '0 4px 14px rgba(27,94,32,0.25)',
                     transition: 'all 0.2s'
                   }}
-                  onMouseEnter={e => { e.currentTarget.style.background = '#FAF6EE'; }}
-                  onMouseLeave={e => { e.currentTarget.style.background = '#1B5E20'; }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.background = '#FAF6EE';
+                    const svg = e.currentTarget.querySelector('svg');
+                    if (svg) svg.style.stroke = '#1B5E20';
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.background = '#1B5E20';
+                    const svg = e.currentTarget.querySelector('svg');
+                    if (svg) svg.style.stroke = '#4CAF50';
+                  }}
                 >
                   <ChevronRight size={22} color="#4CAF50" />
                 </button>
               </div>
 
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="link-hover-arrow"
               >
                 <span>REQUEST COMPLETE TECHNICAL CATALOG</span>
@@ -364,7 +373,7 @@ export const FeaturedComponents: React.FC = () => {
 
           {/* Interactive Category Filter Tabs */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '2rem', flexWrap: 'wrap' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginRight: '8px', color: '#1B5E20', fontWeight: 800, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Geist', sans-serif !important" }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginRight: '8px', color: '#1B5E20', fontWeight: 800, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Manrope', sans-serif !important" }}>
               <Filter size={14} color="#4CAF50" />
               <span>CATEGORY FILTER:</span>
             </div>
@@ -385,7 +394,7 @@ export const FeaturedComponents: React.FC = () => {
                     cursor: 'pointer',
                     transition: 'all 0.2s ease',
                     letterSpacing: '0.04em',
-                    fontFamily: "'Geist', sans-serif !important"
+                    fontFamily: "'Manrope', sans-serif !important"
                   }}
                 >
                   {cat.label}
@@ -395,12 +404,12 @@ export const FeaturedComponents: React.FC = () => {
           </div>
 
           {/* Full Card Horizontal Slider (4 visible across 100% container width) */}
-          <div 
+          <div
             ref={scrollRef}
-            style={{ 
-              display: 'flex', 
-              gap: '1.25rem', 
-              overflowX: 'auto', 
+            style={{
+              display: 'flex',
+              gap: '1.25rem',
+              overflowX: 'auto',
               scrollSnapType: 'x mandatory',
               scrollbarWidth: 'none',
               paddingBottom: '0.5rem',
@@ -408,20 +417,20 @@ export const FeaturedComponents: React.FC = () => {
             }}
           >
             {filteredComponents.map((item, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="card-hover-industrial img-hover-zoom"
-                style={{ 
+                style={{
                   width: 'calc(25% - 0.95rem)',
-                  minWidth: 'calc(25% - 0.95rem)', 
-                  maxWidth: 'calc(25% - 0.95rem)', 
+                  minWidth: 'calc(25% - 0.95rem)',
+                  maxWidth: 'calc(25% - 0.95rem)',
                   flexShrink: 0,
                   scrollSnapAlign: 'start',
-                  background: '#FFFFFF', 
-                  border: '1px solid #E5E7EB', 
+                  background: '#FFFFFF',
+                  border: '1px solid #E5E7EB',
                   borderRadius: '2px',
-                  display: 'flex', 
-                  flexDirection: 'column', 
+                  display: 'flex',
+                  flexDirection: 'column',
                   justifyContent: 'space-between',
                   cursor: 'pointer',
                   boxShadow: '0 10px 30px rgba(0, 0, 0, 0.04)',
@@ -430,12 +439,12 @@ export const FeaturedComponents: React.FC = () => {
               >
                 {/* Product Photo */}
                 <div style={{ height: '210px', overflow: 'hidden', background: '#FFFFFF', position: 'relative', flexShrink: 0, borderBottom: '1px solid #E5E7EB', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img 
-                    src={item.img} 
-                    alt={item.title} 
+                  <img
+                    src={item.img}
+                    alt={item.title}
                     style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', display: 'block' }}
                   />
-                  <span style={{ position: 'absolute', top: '12px', right: '12px', background: '#1B5E20', color: '#FFFFFF', fontSize: '9.5px', fontWeight: 900, padding: '4px 8px', letterSpacing: '0.08em', border: '1px solid #4CAF50', fontFamily: "'Geist', sans-serif !important" }}>
+                  <span style={{ position: 'absolute', top: '12px', right: '12px', background: '#1B5E20', color: '#FFFFFF', fontSize: '9.5px', fontWeight: 900, padding: '4px 8px', letterSpacing: '0.08em', border: '1px solid #4CAF50', fontFamily: "'Manrope', sans-serif !important" }}>
                     {item.series}
                   </span>
                 </div>
@@ -443,10 +452,10 @@ export const FeaturedComponents: React.FC = () => {
                 {/* Full Card Body & Footer */}
                 <div style={{ padding: '1.25rem 1.15rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', flex: 1 }}>
                   <div>
-                    <h3 style={{ fontSize: '13px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.04em', margin: '0 0 6px 0', textTransform: 'uppercase', lineHeight: 1.3, fontFamily: "'Geist', sans-serif !important" }}>
+                    <h3 style={{ fontSize: '13px', fontWeight: 900, color: '#111827', letterSpacing: '0.04em', margin: '0 0 6px 0', textTransform: 'uppercase', lineHeight: 1.3, fontFamily: "'Manrope', sans-serif !important" }}>
                       {item.title}
                     </h3>
-                    <span style={{ fontSize: '11px', fontWeight: 700, color: '#4CAF50', display: 'block', marginBottom: '8px', letterSpacing: '0.05em', fontFamily: "'Geist', sans-serif !important" }}>
+                    <span style={{ fontSize: '11px', fontWeight: 700, color: '#4CAF50', display: 'block', marginBottom: '8px', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>
                       {item.specs}
                     </span>
                     <p style={{ fontSize: '14px', color: '#2E7D32', lineHeight: 1.5, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
@@ -454,42 +463,24 @@ export const FeaturedComponents: React.FC = () => {
                     </p>
                   </div>
 
-                  <div style={{ paddingTop: '0.85rem', marginTop: '0.85rem', borderTop: '1px solid #E5E7EB', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                        <Check size={13} color="#4CAF50" />
-                        <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>RDSO / AREMA COMPLIANT</span>
-                      </div>
-
-                      <button
-                        onClick={() => setSelectedProduct({
-                          title: item.title,
-                          series: item.series,
-                          specs: item.specs,
-                          img: item.drawingImg
-                        })}
-                        style={{
-                          background: '#1B5E20',
-                          border: '1px solid #4CAF50',
-                          color: '#FFFFFF',
-                          fontSize: '10px',
-                          fontWeight: 900,
-                          padding: '4px 8px',
-                          borderRadius: '2px',
-                          cursor: 'pointer',
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: '4px',
-                          transition: 'all 0.2s',
-                          fontFamily: "'Geist', sans-serif !important"
-                        }}
-                        onMouseEnter={e => { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; }}
-                        onMouseLeave={e => { e.currentTarget.style.background = '#1B5E20'; e.currentTarget.style.color = '#FFFFFF'; }}
-                      >
-                        <FileText size={11} color="#4CAF50" />
-                        <span>CAD DRAWING</span>
-                      </button>
+                  <div style={{ paddingTop: '0.85rem', marginTop: '0.85rem', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Check size={13} color="#4CAF50" />
+                      <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>WESTPOINT QUALITY CERTIFIED</span>
                     </div>
+
+                    <span style={{
+                      background: '#E8F5E9',
+                      color: '#1B5E20',
+                      fontSize: '10px',
+                      fontWeight: 800,
+                      padding: '3px 8px',
+                      borderRadius: '4px',
+                      letterSpacing: '0.04em',
+                      fontFamily: "'Manrope', sans-serif !important"
+                    }}>
+                      AAR / AREMA
+                    </span>
                   </div>
                 </div>
 
@@ -499,18 +490,6 @@ export const FeaturedComponents: React.FC = () => {
 
         </div>
       </section>
-
-      {/* Engineering Blueprint CAD Drawing Modal */}
-      {selectedProduct && (
-        <EngineeringDrawingModal 
-          isOpen={!!selectedProduct}
-          onClose={() => setSelectedProduct(null)}
-          productTitle={selectedProduct.title}
-          productSeries={selectedProduct.series}
-          productSpecs={selectedProduct.specs}
-          productImg={selectedProduct.img}
-        />
-      )}
     </>
   );
 };

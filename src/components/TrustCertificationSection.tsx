@@ -120,10 +120,10 @@ export const TrustCertificationSection: React.FC = () => {
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
               <span style={{ color: '#1B5E20', fontWeight: 900 }}>COMPANY TRUST &amp; COMPLIANCE DIVISION</span>
             </div>
-            <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', lineHeight: 1.1, fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', lineHeight: 1.1, fontFamily: "'Manrope', sans-serif !important" }}>
               TRUST &amp; OFFICIAL CERTIFICATIONS
             </h2>
-            <p style={{ fontSize: '1.05rem', color: '#4B5563', margin: '0.75rem 0 0 0', maxWidth: '680px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+            <p style={{ fontSize: '1.05rem', color: '#2E7D32', margin: '0.75rem 0 0 0', maxWidth: '680px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
               Our manufacturing facilities operate under strict AAR M-1003, AREMA Chapter 4, and FRA Rule 213 quality management frameworks, audited annually by top international rail standards committees.
             </p>
           </div>
@@ -131,8 +131,8 @@ export const TrustCertificationSection: React.FC = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', background: '#FAF6EE', border: '1.5px solid #1B5E20', padding: '12px 20px', borderRadius: '2px' }}>
             <Lock size={18} color="#1B5E20" />
             <div>
-              <span style={{ fontSize: '10.5px', color: '#1B5E20', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>AUDITED QUALITY SYSTEM</span>
-              <strong style={{ fontSize: '13px', color: '#1B5E20', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>AAR M-1003 &amp; ISO CERTIFIED</strong>
+              <span style={{ fontSize: '10.5px', color: '#1B5E20', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>AUDITED QUALITY SYSTEM</span>
+              <strong style={{ fontSize: '13px', color: '#1B5E20', fontWeight: 900, fontFamily: "'Manrope', sans-serif !important" }}>AAR M-1003 &amp; ISO CERTIFIED</strong>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ export const TrustCertificationSection: React.FC = () => {
               <div>
                 {/* Header Tag */}
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
-                  <div style={{ background: '#1B5E20', color: '#FFFFFF', padding: '6px 12px', fontSize: '11px', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', borderRadius: '2px', fontFamily: "'Geist', sans-serif !important" }}>
+                  <div style={{ background: '#1B5E20', color: '#FFFFFF', padding: '6px 12px', fontSize: '11px', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', borderRadius: '2px', fontFamily: "'Manrope', sans-serif !important" }}>
                     {cert.code}
                   </div>
                   <span style={{ fontSize: '11px', fontWeight: 700, color: '#166534', background: '#F0FDF4', padding: '4px 10px', borderRadius: '2px', border: '1px solid #BBF7D0' }}>
@@ -168,11 +168,11 @@ export const TrustCertificationSection: React.FC = () => {
                   </span>
                 </div>
 
-                <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#1B5E20', margin: '0 0 8px 0', lineHeight: 1.35, fontFamily: "'Geist', sans-serif !important" }}>
+                <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#111827', margin: '0 0 8px 0', lineHeight: 1.35, fontFamily: "'Manrope', sans-serif !important" }}>
                   {cert.title}
                 </h3>
 
-                <p style={{ fontSize: '12px', color: '#6B7280', margin: '0 0 1rem 0', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px', fontFamily: "'Manrope', sans-serif !important" }}>
+                <p style={{ fontSize: '12px', color: '#2E7D32', margin: '0 0 1rem 0', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px', fontFamily: "'Manrope', sans-serif !important" }}>
                   <Building2 size={13} color="#4CAF50" />
                   <span>{cert.authority}</span>
                 </p>
@@ -183,7 +183,7 @@ export const TrustCertificationSection: React.FC = () => {
               </div>
 
               <div>
-                <div style={{ background: '#F9FAFB', border: '1px solid #F3F4F6', padding: '10px 12px', borderRadius: '2px', marginBottom: '1.25rem', fontSize: '11.5px', color: '#4B5563' }}>
+                <div style={{ background: '#F9FAFB', border: '1px solid #F3F4F6', padding: '10px 12px', borderRadius: '2px', marginBottom: '1.25rem', fontSize: '11.5px', color: '#2E7D32' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
                     <span style={{ fontWeight: 600 }}>Cert No:</span>
                     <strong style={{ color: '#1B5E20', fontWeight: 800 }}>{cert.certNumber}</strong>
@@ -214,7 +214,7 @@ export const TrustCertificationSection: React.FC = () => {
                       gap: '6px',
                       borderRadius: '2px',
                       transition: 'all 0.2s',
-                      fontFamily: "'Geist', sans-serif !important"
+                      fontFamily: "'Manrope', sans-serif !important"
                     }}
                     onMouseEnter={e => { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = '#1B5E20'; e.currentTarget.style.color = '#FFFFFF'; }}
@@ -255,10 +255,10 @@ export const TrustCertificationSection: React.FC = () => {
         {/* Rail Authorities Approval Grid */}
         <div style={{ background: '#1B5E20', color: '#FFFFFF', padding: '3.5rem', borderRadius: '2px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ maxWidth: '640px', marginBottom: '2.5rem' }}>
-            <span style={{ fontSize: '11px', fontWeight: 900, color: '#A5D6A7', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '8px', fontFamily: "'Geist', sans-serif !important" }}>
+            <span style={{ fontSize: '11px', fontWeight: 900, color: '#A5D6A7', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '8px', fontFamily: "'Manrope', sans-serif !important" }}>
               CLASS I FREIGHT &amp; PASSENGER RAIL AUTHORITY APPROVALS
             </span>
-            <h3 style={{ fontSize: '1.85rem', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h3 style={{ fontSize: '1.85rem', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               APPROVED RAIL NETWORK VENDOR STATUS
             </h3>
           </div>
@@ -277,18 +277,18 @@ export const TrustCertificationSection: React.FC = () => {
                   gap: '14px'
                 }}
               >
-                <div style={{ width: '40px', height: '40px', borderRadius: '2px', background: '#FFFFFF', color: '#1B5E20', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: '11px', flexShrink: 0, fontFamily: "'Geist', sans-serif !important" }}>
+                <div style={{ width: '40px', height: '40px', borderRadius: '2px', background: '#FFFFFF', color: '#1B5E20', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: '11px', flexShrink: 0, fontFamily: "'Manrope', sans-serif !important" }}>
                   {auth.logo.slice(0, 3)}
                 </div>
 
                 <div>
-                  <h4 style={{ fontSize: '13.5px', fontWeight: 900, color: '#FFFFFF', margin: '0 0 2px 0', fontFamily: "'Geist', sans-serif !important" }}>
+                  <h4 style={{ fontSize: '13.5px', fontWeight: 900, color: '#FFFFFF', margin: '0 0 2px 0', fontFamily: "'Manrope', sans-serif !important" }}>
                     {auth.name}
                   </h4>
                   <span style={{ fontSize: '11px', color: '#A5D6A7', fontWeight: 700, display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>
                     {auth.status}
                   </span>
-                  <span style={{ fontSize: '10px', color: 'rgba(255, 255, 255, 0.7)', fontFamily: "'Geist', sans-serif !important" }}>
+                  <span style={{ fontSize: '10px', color: 'rgba(255, 255, 255, 0.7)', fontFamily: "'Manrope', sans-serif !important" }}>
                     Ref: {auth.code}
                   </span>
                 </div>
@@ -331,10 +331,10 @@ export const TrustCertificationSection: React.FC = () => {
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <ShieldCheck size={24} color="#1B5E20" />
                 <div>
-                  <h3 style={{ fontSize: '18px', fontWeight: 900, color: '#1B5E20', margin: 0, fontFamily: "'Geist', sans-serif !important" }}>
+                  <h3 style={{ fontSize: '18px', fontWeight: 900, color: '#111827', margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>
                     {selectedCert.code} - OFFICIAL SPECIFICATION
                   </h3>
-                  <span style={{ fontSize: '11px', color: '#6B7280', fontWeight: 600 }}>{selectedCert.authority}</span>
+                  <span style={{ fontSize: '11px', color: '#2E7D32', fontWeight: 600 }}>{selectedCert.authority}</span>
                 </div>
               </div>
               <button 
@@ -347,17 +347,17 @@ export const TrustCertificationSection: React.FC = () => {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2rem' }}>
               <div style={{ background: '#F9FAFB', border: '1px solid #E5E7EB', padding: '1rem', borderRadius: '2px' }}>
-                <strong style={{ fontSize: '11px', color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>CERTIFICATE TITLE</strong>
-                <p style={{ fontSize: '14px', fontWeight: 800, color: '#1B5E20', margin: 0, fontFamily: "'Geist', sans-serif !important" }}>{selectedCert.title}</p>
+                <strong style={{ fontSize: '11px', color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>CERTIFICATE TITLE</strong>
+                <p style={{ fontSize: '14px', fontWeight: 800, color: '#1B5E20', margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>{selectedCert.title}</p>
               </div>
 
               <div style={{ background: '#F9FAFB', border: '1px solid #E5E7EB', padding: '1rem', borderRadius: '2px' }}>
-                <strong style={{ fontSize: '11px', color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>MANUFACTURING SCOPE</strong>
+                <strong style={{ fontSize: '11px', color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>MANUFACTURING SCOPE</strong>
                 <p style={{ fontSize: '13px', color: '#2E7D32', margin: 0, lineHeight: 1.5, fontFamily: "'Manrope', sans-serif !important" }}>{selectedCert.scope}</p>
               </div>
 
               <div style={{ background: '#F0FDF4', border: '1px solid #BBF7D0', padding: '1rem', borderRadius: '2px' }}>
-                <strong style={{ fontSize: '11px', color: '#166534', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>AUDIT &amp; QUALITY DETAILS</strong>
+                <strong style={{ fontSize: '11px', color: '#166534', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>AUDIT &amp; QUALITY DETAILS</strong>
                 <p style={{ fontSize: '12.5px', color: '#14532D', margin: 0, lineHeight: 1.5, fontFamily: "'Manrope', sans-serif !important" }}>{selectedCert.details}</p>
               </div>
             </div>
@@ -379,7 +379,7 @@ export const TrustCertificationSection: React.FC = () => {
                   justifyContent: 'center',
                   gap: '8px',
                   borderRadius: '2px',
-                  fontFamily: "'Geist', sans-serif !important"
+                  fontFamily: "'Manrope', sans-serif !important"
                 }}
               >
                 <Download size={15} color="#FFFFFF" />
@@ -397,7 +397,7 @@ export const TrustCertificationSection: React.FC = () => {
                   fontWeight: 800,
                   cursor: 'pointer',
                   borderRadius: '2px',
-                  fontFamily: "'Geist', sans-serif !important"
+                  fontFamily: "'Manrope', sans-serif !important"
                 }}
               >
                 CLOSE

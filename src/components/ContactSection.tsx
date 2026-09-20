@@ -35,7 +35,7 @@ export const ContactSection: React.FC = () => {
               <span style={{ color: '#A5D6A7', fontWeight: 900 }}>COMMERCIAL &amp; TECHNICAL DISPATCH</span>
             </div>
 
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: '#FFFFFF', margin: '0 0 1.25rem 0', textTransform: 'uppercase', lineHeight: 1.15, fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: '#FFFFFF', margin: '0 0 1.25rem 0', textTransform: 'uppercase', lineHeight: 1.15, fontFamily: "'Manrope', sans-serif !important" }}>
               REQUEST A TECHNICAL QUOTE
             </h2>
 
@@ -49,8 +49,12 @@ export const ContactSection: React.FC = () => {
                   <Phone size={18} color="#81C784" />
                 </div>
                 <div>
-                  <span style={{ fontSize: '11px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontWeight: 700, fontFamily: "'Geist', sans-serif !important" }}>FOUNDRY DISPATCH HOTLINE</span>
-                  <strong style={{ fontSize: '15px', color: '#FFFFFF', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>+1 (800) 555-0199</strong>
+                  <span style={{ fontSize: '11px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontWeight: 700, fontFamily: "'Manrope', sans-serif !important" }}>FOUNDRY DISPATCH HOTLINE</span>
+                  <div style={{ display: 'flex', gap: '12px', alignItems: 'center', marginTop: '2px' }}>
+                    <a href="tel:6038383333" style={{ fontSize: '15px', color: '#FFFFFF', fontWeight: 900, textDecoration: 'none', fontFamily: "'Manrope', sans-serif !important" }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>603 838 3333</a>
+                    <span style={{ color: '#81C784', fontWeight: 900 }}>/</span>
+                    <a href="tel:6038383222" style={{ fontSize: '15px', color: '#FFFFFF', fontWeight: 900, textDecoration: 'none', fontFamily: "'Manrope', sans-serif !important" }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>603 838 3222</a>
+                  </div>
                 </div>
               </div>
 
@@ -59,8 +63,8 @@ export const ContactSection: React.FC = () => {
                   <Mail size={18} color="#81C784" />
                 </div>
                 <div>
-                  <span style={{ fontSize: '11px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontWeight: 700, fontFamily: "'Geist', sans-serif !important" }}>ENGINEERING ESTIMATING EMAIL</span>
-                  <strong style={{ fontSize: '15px', color: '#FFFFFF', fontWeight: 900, fontFamily: "'Geist', sans-serif !important" }}>foundrymen@westpointindustries.com</strong>
+                  <span style={{ fontSize: '11px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontWeight: 700, fontFamily: "'Manrope', sans-serif !important" }}>ENGINEERING ESTIMATING EMAIL</span>
+                  <strong style={{ fontSize: '15px', color: '#FFFFFF', fontWeight: 900, fontFamily: "'Manrope', sans-serif !important" }}>foundrymen@westpointindustries.com</strong>
                 </div>
               </div>
 
@@ -69,8 +73,8 @@ export const ContactSection: React.FC = () => {
                   <MapPin size={18} color="#4CAF50" />
                 </div>
                 <div>
-                  <span style={{ fontSize: '11px', color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontFamily: "'Geist', sans-serif !important" }}>FOUNDRY &amp; FORGE COMPLEX</span>
-                  <strong style={{ fontSize: '15px', color: '#FAF6EE', fontWeight: 800, fontFamily: "'Geist', sans-serif !important" }}>100 Industrial Parkway, Suite 500</strong>
+                  <span style={{ fontSize: '11px', color: '#E8F5E9', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>FOUNDRY &amp; FORGE COMPLEX</span>
+                  <strong style={{ fontSize: '15px', color: '#FAF6EE', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>105 Maxess Road, Melville, NY 11747, United States</strong>
                 </div>
               </div>
             </div>
@@ -84,8 +88,8 @@ export const ContactSection: React.FC = () => {
               {formSubmitted ? (
                 <div style={{ padding: '3rem 2rem', textAlign: 'center' }}>
                   <CheckCircle2 size={48} color="#1B5E20" style={{ margin: '0 auto 1rem auto' }} />
-                  <h3 style={{ fontSize: '1.5rem', color: '#1B5E20', margin: '0 0 0.5rem 0', fontFamily: "'Geist', sans-serif !important" }}>SPECIFICATION SUBMITTED</h3>
-                  <p style={{ color: '#4B5563', fontSize: '14px', margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>
+                  <h3 style={{ fontSize: '1.5rem', color: '#111827', margin: '0 0 0.5rem 0', fontFamily: "'Manrope', sans-serif !important" }}>SPECIFICATION SUBMITTED</h3>
+                  <p style={{ color: '#2E7D32', fontSize: '14px', margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>
                     Thank you. Our heavy rail metallurgical engineering team will review your parameters and respond within 24 hours.
                   </p>
                 </div>
@@ -94,7 +98,7 @@ export const ContactSection: React.FC = () => {
                   
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
                     <div>
-                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>FULL NAME *</label>
+                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>FULL NAME *</label>
                       <input 
                         type="text"
                         required
@@ -106,7 +110,7 @@ export const ContactSection: React.FC = () => {
                     </div>
 
                     <div>
-                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>CORPORATE EMAIL *</label>
+                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>CORPORATE EMAIL *</label>
                       <input 
                         type="email"
                         required
@@ -120,7 +124,7 @@ export const ContactSection: React.FC = () => {
 
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
                     <div>
-                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>PHONE NUMBER</label>
+                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>PHONE NUMBER</label>
                       <input 
                         type="tel"
                         placeholder="+1 (800) 555-0199"
@@ -131,7 +135,7 @@ export const ContactSection: React.FC = () => {
                     </div>
 
                     <div>
-                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>COMPANY / AGENCY</label>
+                      <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>COMPANY / AGENCY</label>
                       <input 
                         type="text"
                         placeholder="Class I Rail / Transit Agency"
@@ -143,7 +147,7 @@ export const ContactSection: React.FC = () => {
                   </div>
 
                   <div>
-                    <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>PRODUCT CATEGORY *</label>
+                    <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>PRODUCT CATEGORY *</label>
                     <select 
                       value={formData.specification}
                       onChange={e => setFormData({ ...formData, specification: e.target.value })}
@@ -158,7 +162,7 @@ export const ContactSection: React.FC = () => {
                   </div>
 
                   <div>
-                    <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Geist', sans-serif !important" }}>PROJECT SPECIFICATION &amp; VOLUME DETAILS</label>
+                    <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>PROJECT SPECIFICATION &amp; VOLUME DETAILS</label>
                     <textarea 
                       rows={3}
                       placeholder="Specify material grade (e.g., ASTM A27, manganese steel), volume units, and delivery timeline..."
@@ -187,11 +191,11 @@ export const ContactSection: React.FC = () => {
                       gap: '10px',
                       borderRadius: '2px',
                       boxShadow: '0 6px 16px rgba(27, 94, 32, 0.2)',
-                      fontFamily: "'Geist', sans-serif !important"
+                      fontFamily: "'Manrope', sans-serif !important"
                     }}
                   >
                     <span>SUBMIT REQUEST FOR QUOTE</span>
-                    <Send size={15} color="#4CAF50" />
+                    <Send size={15} color="currentColor" />
                   </button>
 
                 </form>

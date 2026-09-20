@@ -52,7 +52,7 @@ export const ProductCategories: React.FC = () => {
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
               <span style={{ color: '#4CAF50' }}>RDSO, AREMA &amp; AAR M-1003 APPROVED DIVISIONS</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               ENTERPRISE PRODUCT DIVISIONS &amp; WAGON SYSTEMS
             </h2>
           </div>
@@ -93,7 +93,7 @@ export const ProductCategories: React.FC = () => {
                     alt={cat.title} 
                     style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', display: 'block' }}
                   />
-                  <span style={{ position: 'absolute', top: '12px', left: '12px', background: '#1B5E20', color: '#FAF6EE', fontSize: '9px', fontWeight: 900, padding: '4px 8px', letterSpacing: '0.08em', border: '1px solid #4CAF50', fontFamily: "'Geist', sans-serif !important" }}>
+                  <span style={{ position: 'absolute', top: '12px', left: '12px', background: '#1B5E20', color: '#FAF6EE', fontSize: '9px', fontWeight: 900, padding: '4px 8px', letterSpacing: '0.08em', border: '1px solid #4CAF50', fontFamily: "'Manrope', sans-serif !important" }}>
                     {cat.tag}
                   </span>
                 </div>
@@ -103,14 +103,14 @@ export const ProductCategories: React.FC = () => {
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
                       <Icon size={16} color="#4CAF50" />
-                      <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.06em', fontFamily: "'Geist', sans-serif !important" }}>
+                      <span style={{ fontSize: '10px', fontWeight: 800, color: '#4CAF50', letterSpacing: '0.06em', fontFamily: "'Manrope', sans-serif !important" }}>
                         {cat.specs}
                       </span>
                     </div>
-                    <h3 style={{ fontSize: '13px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.04em', margin: '0 0 8px 0', textTransform: 'uppercase', lineHeight: 1.35, fontFamily: "'Geist', sans-serif !important" }}>
+                    <h3 style={{ fontSize: '13px', fontWeight: 900, color: '#111827', letterSpacing: '0.04em', margin: '0 0 8px 0', textTransform: 'uppercase', lineHeight: 1.35, fontFamily: "'Manrope', sans-serif !important" }}>
                       {cat.title}
                     </h3>
-                    <p style={{ fontSize: '11.5px', color: '#4B5563', lineHeight: 1.45, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+                    <p style={{ fontSize: '11.5px', color: '#2E7D32', lineHeight: 1.45, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
                       {cat.desc}
                     </p>
                   </div>
@@ -118,7 +118,7 @@ export const ProductCategories: React.FC = () => {
                   <div style={{ paddingTop: '0.85rem', marginTop: '0.85rem', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                       <ShieldCheck size={13} color="#4CAF50" />
-                      <span style={{ fontSize: '9.5px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Geist', sans-serif !important" }}>CERTIFIED SPEC</span>
+                      <span style={{ fontSize: '9.5px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>CERTIFIED SPEC</span>
                     </div>
                     
                     <div style={{ width: '26px', height: '26px', borderRadius: '50%', background: '#F8F9FA', border: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

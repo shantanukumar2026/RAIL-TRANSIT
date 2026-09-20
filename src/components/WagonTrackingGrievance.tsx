@@ -18,7 +18,7 @@ export const WagonTrackingGrievance: React.FC = () => {
   };
 
   return (
-    <div style={{ fontFamily: "'Geist', sans-serif", color: '#1B5E20', maxWidth: '900px', margin: '0 auto' }}>
+    <div style={{ fontFamily: "'Manrope', sans-serif", color: '#1B5E20', maxWidth: '900px', margin: '0 auto' }}>
       
       {/* Simple Grievance Card */}
       <div style={{ background: '#FFFFFF', borderRadius: '16px', padding: '2.5rem', border: '1px solid #E2E8F0', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>

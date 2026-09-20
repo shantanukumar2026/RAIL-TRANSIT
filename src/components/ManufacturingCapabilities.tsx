@@ -50,10 +50,10 @@ export const ManufacturingCapabilities: React.FC = () => {
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
               <span style={{ color: '#4CAF50' }}>END-TO-END INDUSTRIAL PRODUCTION</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#1B5E20', fontWeight: 900, margin: '0 0 0.5rem 0', textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Geist', sans-serif !important" }}>
+            <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: '0 0 0.5rem 0', textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Manrope', sans-serif !important" }}>
               MANUFACTURING CAPABILITIES
             </h2>
-            <p style={{ fontSize: '14px', color: '#4B5563', margin: 0, maxWidth: '580px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+            <p style={{ fontSize: '14px', color: '#2E7D32', margin: 0, maxWidth: '580px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
               Integrated manufacturing from melting and forging to precision CNC machining and certified non-destructive testing.
             </p>
           </div>
@@ -97,10 +97,10 @@ export const ManufacturingCapabilities: React.FC = () => {
 
               {/* Card Label Overlay */}
               <div style={{ position: 'relative', zIndex: 10, padding: '1.5rem', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-                <span style={{ fontSize: '10px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '4px', fontFamily: "'Geist', sans-serif !important" }}>
+                <span style={{ fontSize: '10px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '4px', fontFamily: "'Manrope', sans-serif !important" }}>
                   {cap.sub}
                 </span>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#FAF6EE', margin: 0, textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Geist', sans-serif !important" }}>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#FAF6EE', margin: 0, textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Manrope', sans-serif !important" }}>
                   {cap.title}
                 </h3>
               </div>
