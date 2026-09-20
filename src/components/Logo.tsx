@@ -6,7 +6,7 @@ type Props = {
   variant?: 'light' | 'dark' | 'transparent';
 };
 
-export default function Logo({ className = '', style, variant = 'light' }: Props) {
+export default function Logo({ className = '', style }: Props) {
   return (
     <a href="/" className={className} style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none', ...style }}>
       <img
