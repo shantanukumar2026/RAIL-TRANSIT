@@ -7,7 +7,7 @@ export const NewsInsights: React.FC = () => {
       category: 'MANUFACTURING',
       date: 'TECHNICAL BULLETIN',
       title: 'Expanding Our Production Capacity in Central Foundry Facility',
-      desc: 'ABC Rail completes installation of second electric induction melting furnace and automated sand reclamation line.',
+      desc: 'Westpoint Group Companies completes installation of second electric induction melting furnace and automated sand reclamation line.',
       img: '/images/real_metal_casting_stock.jpg'
     },
     {

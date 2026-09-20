@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           <div style={{ gridColumn: 'span 4' }}>
             <Logo variant="dark" style={{ marginBottom: '1.75rem' }} />
             <p style={{ fontSize: '14px', color: '#FFFFFF', lineHeight: 1.7, maxWidth: '360px', margin: '0 0 2rem 0', fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
-              ABC Foundries &amp; Forge is a global manufacturer of electric induction cast manganese turnout trackwork, forged steel axles, and rolling stock components. Engineered for heavy haul endurance.
+              Westpoint Group Companies is a global manufacturer of electric induction cast manganese turnout trackwork, forged steel axles, and rolling stock components. Engineered for heavy haul endurance.
             </p>
 
             {/* Social Icons */}
@@ -106,7 +106,7 @@ export const Footer: React.FC = () => {
       <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.2)', background: '#103F14', padding: '1.5rem 0', fontSize: '13px', color: '#FFFFFF', fontWeight: 600 }}>
         <div className="container-custom" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
           <div style={{ fontFamily: "'Manrope', sans-serif !important", fontWeight: 700 }}>
-            &copy; ABC Foundries &amp; Forge Inc. All Rights Reserved.
+            &copy; Westpoint Group Companies. All Rights Reserved.
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.75rem' }}>

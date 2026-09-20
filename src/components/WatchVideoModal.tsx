@@ -59,7 +59,7 @@ export const WatchVideoModal: React.FC<WatchVideoModalProps> = ({ isOpen, onClos
               DOCUMENTARY REEL
             </span>
             <h4 style={{ fontSize: '15px', fontWeight: 800, margin: '2px 0 0 0', color: '#F5F2EB' }}>
-              ABC Foundries Electric Induction &amp; Forging Operations
+              Westpoint Group Companies Electric Induction &amp; Forging Operations
             </h4>
           </div>
 

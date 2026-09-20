@@ -38,7 +38,7 @@ export const FactoryOverview: React.FC = () => {
           <div style={{ gridColumn: 'span 7', position: 'relative', minHeight: '440px' }}>
             <img 
               src="/images/istockphoto-1196704251-2048x2048.jpg" 
-              alt="ABC Rail 5-Axis CNC Machined Axlebox Housing" 
+              alt="Westpoint 5-Axis CNC Machined Axlebox Housing" 
               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, transparent 60%, rgba(27, 94, 32, 0.95) 100%)' }} />

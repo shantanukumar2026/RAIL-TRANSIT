@@ -39,13 +39,13 @@ export const CompanyIntro: React.FC = () => {
             </h2>
 
             <p style={{ fontSize: '1.1rem', color: '#4B5563', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '640px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
-              ABC Rail &amp; Transit specializes in electric induction cast manganese turnout trackwork, heavy drop forged locomotive axles, and precision bogie components. Serving Class I freight railroads, high-speed corridors, and urban transit authorities globally with uncompromised quality assurance.
+              Westpoint Group Companies specializes in electric induction cast manganese turnout trackwork, heavy drop forged locomotive axles, and precision bogie components. Serving Class I freight railroads, high-speed corridors, and urban transit authorities globally with uncompromised quality assurance.
             </p>
 
-            {/* Why Choose ABC Foundries - 4 Story Pillars */}
+            {/* Why Choose Westpoint Group Companies - 4 Story Pillars */}
             <div style={{ marginBottom: '2.25rem', padding: '1.25rem', background: '#FFFFFF', border: '1px solid #E5E7EB', borderLeft: '4px solid #4CAF50', borderRadius: '2px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
               <strong style={{ fontSize: '12.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.1em', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem', fontFamily: "'Geist', sans-serif !important" }}>
-                WHY CLASS I RAILROADS PARTNER WITH ABC
+                WHY CLASS I RAILROADS PARTNER WITH WESTPOINT
               </strong>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.85rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>

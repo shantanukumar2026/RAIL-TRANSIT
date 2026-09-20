@@ -47,10 +47,10 @@ export const translations = {
     hoursTitle: 'GLOBAL ENGINEERING DISPATCH',
     hoursVal: 'Mon - Sat: 5AM - 7PM EST',
     locationsTitle: 'GLOBAL FOUNDRY NETWORK',
-    locationsVal: 'ABC Foundries & Forge Network',
-    locationsValShort: 'ABC Global Network',
+    locationsVal: 'Westpoint Group Companies & Forge Network',
+    locationsValShort: 'Westpoint Global Network',
     contactUsBtn: 'REQUEST QUOTE',
-    proudText: 'Global Leader in Rail & Transit Castings, Forgings & Metallurgical Engineering | ABC Foundries',
+    proudText: 'Global Leader in Rail & Transit Castings, Forgings & Metallurgical Engineering | Westpoint Group Companies',
 
     // Section 1: Hero Banner (OVERVIEW & OBJECTIVES)
     heroTitlePart1: 'ENGINEERING HIGH-RELIABILITY',
@@ -69,7 +69,7 @@ export const translations = {
 
     // Section 2: Company Intro (OVERVIEW & OBJECTIVES)
     introTitle: 'Precision Metallurgical Engineering for Modern Rail Systems',
-    introSub: 'ABC Foundries and ABC Forge operate an integrated network of specialized foundries, forge shops, and CNC machining complexes serving freight and passenger transit networks globally.',
+    introSub: 'Westpoint Group Companies operates an integrated network of specialized foundries, forge shops, and CNC machining complexes serving freight and passenger transit networks globally.',
     introP1: 'Our core objective is to deliver zero-defect rail trackwork castings, heavy forged steel axles, bogie side frames, frog crossovers, and overhead catenary hardware engineered for extreme fatigue resistance and heavy axle load capacity.',
     introP2: 'Through advanced 3D solidification modeling, spectrometric melt verification, and automated heat treatment, we reduce lifecycle maintenance costs and maximize structural longevity across Class I railroads, high-speed rail lines, and urban transit systems.',
     statPlants: 'Advanced Foundry & Forge Units',
@@ -79,7 +79,7 @@ export const translations = {
 
     // Section 3: Why Choose Us (OBJECTIVES & VALUE PROPOSITION)
     whyTitle: 'Key Strategic Objectives & Manufacturing Standards',
-    whySub: 'Why Class I railroads, transit agencies, and global OEM car builders choose ABC Foundries.',
+    whySub: 'Why Class I railroads, transit agencies, and global OEM car builders choose Westpoint Group Companies.',
     why1Title: 'Zero-Defect Metallurgical Integrity',
     why1Desc: 'Computerized electric induction melting with argon degassing for ultra-pure steel and ductile iron microstructures.',
     why2Title: 'Extreme Fatigue Resistance',
@@ -211,7 +211,7 @@ export const translations = {
 
     // Section 16: Customer Testimonials (AUTHORITIES & PARTNER TRUST)
     testiTitle: 'Rail Industry Trust & Authority Testimonials',
-    testiSub: 'What Class I chief engineers, transit procurement managers, and rail car builders say about ABC Foundries.',
+    testiSub: 'What Class I chief engineers, transit procurement managers, and rail car builders say about Westpoint Group Companies.',
 
     // Section 17: Latest News & Insights (TESTINGS & ARTICLES)
     newsTitle: 'Metallurgical Research & Rail Standards Bulletins',
@@ -263,7 +263,7 @@ export const translations = {
     subscribeText: 'Subscribe to our rail engineering technical bulletin for AREMA updates and metallurgical insights.',
     emailPlaceholder: 'Corporate email address',
     join: 'Subscribe',
-    rightsReserved: 'All rights reserved. ABC Industries & Groups — ABC Foundries & ABC Forge.',
+    rightsReserved: 'All rights reserved. Westpoint Group Companies.',
     privacyPolicy: 'Privacy Policy',
     termsOfService: 'Terms & Conditions',
   },
@@ -315,9 +315,9 @@ export const translations = {
     hoursTitle: 'DESPACHO DE INGENIERÍA GLOBAL',
     hoursVal: 'Lun - Sáb: 5AM - 7PM EST',
     locationsTitle: 'RED GLOBAL DE FUNDICIONES',
-    locationsVal: 'ABC Foundries y Red de Forja',
+    locationsVal: 'Westpoint Group Companies y Red de Forja',
     contactUsBtn: 'SOLICITAR COTIZACIÓN',
-    proudText: 'Líder Global en Piezas Fundidas, Forjadas e Ingeniería Metalúrgica para Ferrocarriles | ABC Foundries',
+    proudText: 'Líder Global en Piezas Fundidas, Forjadas e Ingeniería Metalúrgica para Ferrocarriles | Westpoint Group Companies',
 
     // Section 1: Hero Banner (OVERVIEW & OBJECTIVES)
     heroTitlePart1: 'INGENIERÍA PARA',
@@ -336,7 +336,7 @@ export const translations = {
 
     // Section 2: Company Intro (OVERVIEW & OBJECTIVES)
     introTitle: 'Ingeniería Metalúrgica de Precisión para Sistemas Ferroviarios Modernos',
-    introSub: 'ABC Foundries y ABC Forge operan una red integrada de fundiciones especializadas y talleres de forja que abastecen a redes de carga y pasajeros globalmente.',
+    introSub: 'Westpoint Group Companies opera una red integrada de fundiciones especializadas y talleres de forja que abastecen a redes de carga y pasajeros globalmente.',
     introP1: 'Nuestro objetivo principal es suministrar fundiciones de vías sin defectos, ejes forjados pesados, bastidores de bogie y herrajes para catenarias diseñados para alta resistencia a la fatiga y cargas pesadas por eje.',
     introP2: 'A través del modelado 3D de solidificación y tratamiento térmico automatizado, reducimos los costos de mantenimiento y maximizamos la vida útil estructural.',
     statPlants: 'Unidades de Fundición y Forja',
@@ -346,7 +346,7 @@ export const translations = {
 
     // Section 3: Why Choose Us
     whyTitle: 'Objetivos Estratégicos y Estándares de Fabricación',
-    whySub: 'Por qué los ferrocarriles de Clase I y agencias de tránsito eligen ABC Foundries.',
+    whySub: 'Por qué los ferrocarriles de Clase I y agencias de tránsito eligen Westpoint Group Companies.',
     why1Title: 'Integridad Metalúrgica Cero Defectos',
     why1Desc: 'Fusión por inducción eléctrica computarizada con desgasificación por argón para microestructuras ultrapuras.',
     why2Title: 'Resistencia Extrema a la Fatiga',
@@ -478,7 +478,7 @@ export const translations = {
 
     // Section 16: Customer Testimonials
     testiTitle: 'Confianza de la Industria Ferroviaria y Testimonios',
-    testiSub: 'Lo que dicen ingenieros jefe de Clase I y gerentes de compras sobre ABC Foundries.',
+    testiSub: 'Lo que dicen ingenieros jefe de Clase I y gerentes de compras sobre Westpoint Group Companies.',
 
     // Section 17: Latest News & Insights
     newsTitle: 'Investigación Metalúrgica y Boletines Técnicos',
@@ -530,7 +530,7 @@ export const translations = {
     subscribeText: 'Suscríbase a nuestro boletín técnico para actualizaciones AREMA e información metalúrgica.',
     emailPlaceholder: 'Correo corporativo',
     join: 'Suscribirse',
-    rightsReserved: 'Todos los derechos reservados. ABC Industries & Groups — ABC Foundries y ABC Forge.',
+    rightsReserved: 'Todos los derechos reservados. Westpoint Group Companies.',
     privacyPolicy: 'Política de Privacidad',
     termsOfService: 'Términos y Condiciones',
   }
