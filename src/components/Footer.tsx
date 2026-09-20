@@ -68,10 +68,10 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer style={{ background: '#144818', color: '#FFFFFF', borderTop: '3px solid #4CAF50', position: 'relative' }}>
+    <footer style={{ background: '#144818', color: '#FFFFFF', borderTop: '3px solid #4CAF50', position: 'relative', zIndex: 1002 }}>
 
-      {/* Main Top Footer Grid with 13rem top padding so sticky header never obscures headings */}
-      <div className="container-custom" style={{ paddingTop: '13rem', paddingBottom: '4rem', paddingLeft: '2rem', paddingRight: '2.5rem' }}>
+      {/* Main Top Footer Grid with compact top padding */}
+      <div className="container-custom" style={{ paddingTop: '1.25rem', paddingBottom: '2.5rem', paddingLeft: '2rem', paddingRight: '2.5rem' }}>
         <div className="footer-corporate-grid">
 
           {/* ==================== LEFT COLUMN: BRAND & CONTACT ==================== */}

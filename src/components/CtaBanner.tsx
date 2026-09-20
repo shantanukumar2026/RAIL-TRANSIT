@@ -7,7 +7,7 @@ interface CtaBannerProps {
 
 export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => {
   return (
-    <section className="section-dark-gradient" style={{ position: 'relative', color: '#FAF6EE', padding: '5rem 0', overflow: 'hidden', borderBottom: '2px solid #4CAF50' }}>
+    <section className="section-dark-gradient" style={{ position: 'relative', color: '#FAF6EE', padding: '3.5rem 0', overflow: 'hidden', borderBottom: '2px solid #4CAF50' }}>
       {/* Background Photo */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
         <img
