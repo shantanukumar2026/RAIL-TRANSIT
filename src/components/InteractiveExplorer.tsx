@@ -1,8 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import {
-  Search, Check, Download,
-  ChevronRight, ArrowRight, Eye, Table, Grid, Info, Sparkles, X, Compass,
-  ShoppingBag
+  Search, Check,
+  ChevronRight, Table, Grid, Info, Sparkles, X, Compass
 } from 'lucide-react';
 
 export interface ProductItem {
@@ -1036,9 +1035,6 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
   const [viewMode, setViewMode] = useState<'grid' | 'table' | 'compare'>('grid');
   const [showGlossary, setShowGlossary] = useState<boolean>(false);
 
-  // Selected for Detailed CAD & Spec Drawer
-  const [selectedProduct, setSelectedProduct] = useState<ProductItem | null>(null);
-
   // Selected items for Comparison Tool (max 3)
   const [comparedProductIds, setComparedProductIds] = useState<string[]>([]);
 
@@ -1542,7 +1538,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                   }}
                 >
                   {/* Card Media Preview Header */}
-                  <div style={{ position: 'relative', height: '200px', background: '#0F2E14', overflow: 'hidden' }}>
+                  <div style={{ position: 'relative', height: '200px', background: '#0F2E14', overflow: 'hidden', borderBottom: '1px solid #E2E8F0' }}>
                     <img
                       src={product.img}
                       alt={product.title}
@@ -1564,40 +1560,6 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                         {product.series}
                       </span>
                     </div>
-
-                    {/* Quick View Button */}
-                    <button
-                      onClick={() => setSelectedProduct(product)}
-                      style={{
-                        position: 'absolute',
-                        bottom: '12px',
-                        right: '12px',
-                        background: 'rgba(255, 255, 255, 0.92)',
-                        backdropFilter: 'blur(4px)',
-                        border: '1px solid rgba(27, 94, 32, 0.2)',
-                        borderRadius: '6px',
-                        padding: '5px 11px',
-                        fontSize: '0.75rem',
-                        fontWeight: 700,
-                        color: '#1B5E20',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '5px',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
-                        zIndex: 2,
-                        transition: 'all 0.2s'
-                      }}
-                      onMouseEnter={e => {
-                        e.currentTarget.style.background = '#FAF6EE';
-                      }}
-                      onMouseLeave={e => {
-                        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.92)';
-                      }}
-                    >
-                      <Eye size={13} color="#1B5E20" />
-                      <span>Quick View</span>
-                    </button>
                   </div>
 
                   {/* Card Body */}
@@ -1623,9 +1585,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                     </div>
 
                     {/* Product Title */}
-                    <h3
-                      onClick={() => setSelectedProduct(product)}
-                      style={{
+                    <h3 style={{
                         fontSize: '1.1rem',
                         fontWeight: 800,
                         color: '#111827',
@@ -1637,13 +1597,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                         WebkitLineClamp: 2,
                         WebkitBoxOrient: 'vertical',
                         overflow: 'hidden',
-                        minHeight: '2.8em',
-                        cursor: 'pointer',
-                        transition: 'color 0.2s'
-                      }}
-                      onMouseEnter={e => e.currentTarget.style.color = '#1B5E20'}
-                      onMouseLeave={e => e.currentTarget.style.color = '#111827'}
-                    >
+                        minHeight: '2.8em',}}>
                       {product.title}
                     </h3>
 
@@ -1702,9 +1656,9 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                         <span style={{ color: '#111827', fontWeight: 800 }}>{isCompared ? 'Compared' : 'Compare'}</span>
                       </button>
 
-                      {/* Full Spec / Request RFQ Details Button */}
-                      <button
-                        onClick={() => setSelectedProduct(product)}
+                      {/* See More Button */}
+                      <a
+                        href="#contact"
                         className="btn-animated"
                         style={{
                           flex: 1,
@@ -1713,7 +1667,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                           border: '1.5px solid #1B5E20',
                           borderRadius: '8px',
                           padding: '9px 14px',
-                          fontSize: '0.8rem',
+                          fontSize: '0.85rem',
                           fontWeight: 800,
                           cursor: 'pointer',
                           display: 'flex',
@@ -1722,15 +1676,13 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                           gap: '6px',
                           boxShadow: '0 2px 8px rgba(27,94,32,0.2)',
                           transition: 'all 0.2s',
-                          letterSpacing: '0.03em',
-                          textTransform: 'uppercase',
+                          textDecoration: 'none',
                           fontFamily: "'Manrope', sans-serif !important"
                         }}
                       >
-                        <ShoppingBag size={14} />
-                        <span>Full Tech Spec</span>
-                        <ChevronRight size={14} />
-                      </button>
+                        <span>See More</span>
+                        <ChevronRight size={15} />
+                      </a>
 
                     </div>
 
@@ -1788,8 +1740,8 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                         </code>
                       </td>
                       <td style={{ padding: '14px 16px', textAlign: 'right' }}>
-                        <button
-                          onClick={() => setSelectedProduct(p)}
+                        <a
+                          href="#contact"
                           style={{
                             background: '#1B5E20',
                             color: '#FFF',
@@ -1798,11 +1750,12 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                             padding: '6px 12px',
                             fontSize: '0.775rem',
                             fontWeight: 700,
-                            cursor: 'pointer'
+                            textDecoration: 'none',
+                            display: 'inline-block'
                           }}
                         >
-                          View Specs
-                        </button>
+                          See More
+                        </a>
                       </td>
                     </tr>
                   ))}
@@ -1928,220 +1881,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
           </div>
         )}
 
-        {/* ==================== SPECIFICATION & CAD DETAIL DRAWER MODAL ==================== */}
-        {selectedProduct && (
-          <div style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: 'rgba(15, 23, 42, 0.75)',
-            backdropFilter: 'blur(6px)',
-            zIndex: 1200,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '1.5rem'
-          }}>
-            <div style={{
-              background: '#FFFFFF',
-              borderRadius: '20px',
-              maxWidth: '850px',
-              width: '100%',
-              maxHeight: '90vh',
-              overflowY: 'auto',
-              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-              position: 'relative'
-            }}>
-
-              {/* Drawer Header */}
-              <div style={{ background: '#1B5E20', color: '#FFF', padding: '1.5rem 2rem', borderTopLeftRadius: '20px', borderTopRightRadius: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div>
-                  <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '4px' }}>
-                    <span style={{ background: '#1B5E20', color: '#FFF', fontSize: '0.75rem', fontWeight: 800, padding: '2px 8px', borderRadius: '4px' }}>
-                      {selectedProduct.series}
-                    </span>
-                    <span style={{ color: '#38BDF8', fontSize: '0.8rem', fontWeight: 700 }}>
-                      {selectedProduct.axleLoad}
-                    </span>
-                  </div>
-                  <h3 style={{ fontSize: '1.4rem', fontWeight: 800, margin: 0 }}>{selectedProduct.title}</h3>
-                </div>
-
-                <button
-                  onClick={() => setSelectedProduct(null)}
-                  style={{ background: 'rgba(255,255,255,0.1)', border: 'none', color: '#FFF', borderRadius: '50%', width: '36px', height: '36px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                >
-                  <X size={20} />
-                </button>
               </div>
-
-              {/* Drawer Content */}
-              <div style={{ padding: '2rem' }}>
-
-                {/* 2-Column layout: CAD Image + Technical Specifications */}
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', marginBottom: '2rem' }}>
-
-                  {/* Left Column: Image Preview & RFQ trigger */}
-                  <div>
-                    <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid #E2E8F0', height: '240px', background: '#0F2E14', marginBottom: '1rem', position: 'relative' }}>
-                      <img src={selectedProduct.img} alt={selectedProduct.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                    </div>
-
-                    <button
-                      onClick={() => {
-                        const prodTitle = selectedProduct.title;
-                        setSelectedProduct(null);
-                        if (onCloseModal) onCloseModal();
-                        if (onRequestQuoteForProduct) onRequestQuoteForProduct(prodTitle);
-                      }}
-                      className="btn-animated"
-                      style={{
-                        width: '100%',
-                        background: '#1B5E20',
-                        color: '#FFFFFF',
-                        border: '1.5px solid #1B5E20',
-                        borderRadius: '8px',
-                        padding: '11px',
-                        fontWeight: 800,
-                        fontSize: '0.875rem',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: '8px',
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.04em'
-                      }}
-                    >
-                      <ShoppingBag size={16} />
-                      <span>Request Enterprise Quote (RFQ)</span>
-                    </button>
-                  </div>
-
-                  {/* Right Column: Key Technical Parameters */}
-                  <div>
-                    <h4 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#111827', margin: '0 0 1rem 0' }}>
-                      Material &amp; Mechanical Performance
-                    </h4>
-
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.9rem' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '8px', borderBottom: '1px solid #F1F5F9' }}>
-                        <span style={{ color: '#4CAF50' }}>Material Grade:</span>
-                        <strong style={{ color: '#1B5E20' }}>{selectedProduct.materialGrade}</strong>
-                      </div>
-
-                      <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '8px', borderBottom: '1px solid #F1F5F9' }}>
-                        <span style={{ color: '#4CAF50' }}>Axle Load Capacity:</span>
-                        <strong style={{ color: '#1B5E20' }}>{selectedProduct.axleLoad}</strong>
-                      </div>
-
-                      <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '8px', borderBottom: '1px solid #F1F5F9' }}>
-                        <span style={{ color: '#4CAF50' }}>Tensile Strength:</span>
-                        <strong style={{ color: '#1B5E20' }}>{selectedProduct.tensileStrength}</strong>
-                      </div>
-
-                      <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '8px', borderBottom: '1px solid #F1F5F9' }}>
-                        <span style={{ color: '#4CAF50' }}>Yield Strength:</span>
-                        <strong style={{ color: '#1B5E20' }}>{selectedProduct.yieldStrength}</strong>
-                      </div>
-
-                      <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '8px', borderBottom: '1px solid #F1F5F9' }}>
-                        <span style={{ color: '#4CAF50' }}>Brinell Hardness (BHN):</span>
-                        <strong style={{ color: '#1B5E20' }}>{selectedProduct.hardness}</strong>
-                      </div>
-
-                      <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '8px', borderBottom: '1px solid #F1F5F9' }}>
-                        <span style={{ color: '#4CAF50' }}>Compliance Standards:</span>
-                        <strong style={{ color: '#1B5E20' }}>{selectedProduct.compliance.join(' | ')}</strong>
-                      </div>
-
-                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <span style={{ color: '#4CAF50' }}>Part Reference No:</span>
-                        <code style={{ background: '#E2E8F0', padding: '2px 8px', borderRadius: '4px', fontWeight: 700 }}>{selectedProduct.cadFile}</code>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-                {/* Key Features Bullet List */}
-                <div style={{ background: '#F8FAFC', borderRadius: '12px', padding: '1.25rem', marginBottom: '2rem', border: '1px solid #E2E8F0' }}>
-                  <h5 style={{ fontSize: '0.875rem', fontWeight: 800, color: '#111827', margin: '0 0 8px 0', textTransform: 'uppercase' }}>
-                    Key Engineering Features &amp; Innovations
-                  </h5>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '8px' }}>
-                    {selectedProduct.keyFeatures.map((feat, idx) => (
-                      <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: '#2E7D32' }}>
-                        <Check size={14} color="#4CAF50" />
-                        <span>{feat}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Action Buttons: Request Quote & Download Datasheet */}
-                <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                  <button
-                    onClick={() => {
-                      const prodTitle = selectedProduct.title;
-                      setSelectedProduct(null);
-                      if (onCloseModal) onCloseModal();
-                      if (onRequestQuoteForProduct) onRequestQuoteForProduct(prodTitle);
-                    }}
-                    className="btn-animated"
-                    style={{
-                      flex: 1,
-                      background: '#1B5E20',
-                      color: '#FFFFFF',
-                      border: 'none',
-                      borderRadius: '8px',
-                      padding: '14px 24px',
-                      fontSize: '0.95rem',
-                      fontWeight: 800,
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      gap: '10px',
-                      boxShadow: '0 4px 14px rgba(27,94,32,0.25)',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.04em'
-                    }}
-                  >
-                    <span>Request Engineering Quotation (RFQ)</span>
-                    <ArrowRight size={18} />
-                  </button>
-
-                  <button
-                    onClick={() => alert(`Downloading Technical Spec Sheet for ${selectedProduct.title}`)}
-                    style={{
-                      background: '#F1F5F9',
-                      color: '#1B5E20',
-                      border: '1px solid #CBD5E1',
-                      borderRadius: '8px',
-                      padding: '12px 20px',
-                      fontSize: '0.95rem',
-                      fontWeight: 700,
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '8px'
-                    }}
-                  >
-                    <Download size={18} color="#1B5E20" />
-                    <span>Download Spec Sheet (PDF)</span>
-                  </button>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        )}
-
-      </div>
     </section>
   );
 };

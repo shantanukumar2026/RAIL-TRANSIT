@@ -285,7 +285,7 @@ export const FeaturedComponents: React.FC = () => {
 
   return (
     <>
-      <section id="products" className="section-full-vh" style={{ background: '#F8F9FA', borderBottom: '1px solid #E5E7EB', position: 'relative' }}>
+      <section id="products" style={{ background: '#F8F9FA', borderBottom: '1px solid #E5E7EB', position: 'relative', padding: '2.75rem 0 1.5rem 0' }}>
         <div className="container-custom" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
 
           {/* Section Header with Navigation Arrow Controls */}

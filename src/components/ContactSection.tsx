@@ -27,7 +27,7 @@ export const ContactSection: React.FC = () => {
 
       <div className="container-custom" style={{ position: 'relative', zIndex: 10 }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '3.5rem', alignItems: 'center' }}>
-          
+
           {/* Left Column: Contact Information */}
           <div style={{ gridColumn: 'span 5' }}>
             <div className="eyebrow eyebrow-dark" style={{ marginBottom: '1.25rem' }}>
@@ -64,7 +64,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <span style={{ fontSize: '11px', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', fontWeight: 700, fontFamily: "'Manrope', sans-serif !important" }}>ENGINEERING ESTIMATING EMAIL</span>
-                  <strong style={{ fontSize: '15px', color: '#FFFFFF', fontWeight: 900, fontFamily: "'Manrope', sans-serif !important" }}>foundrymen@westpointindustries.com</strong>
+                  <strong style={{ fontSize: '15px', color: '#FFFFFF', fontWeight: 900, fontFamily: "'Manrope', sans-serif !important" }}>foundry@westpointndustries.com</strong>
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ export const ContactSection: React.FC = () => {
           {/* Right Column: Quote Request Form */}
           <div style={{ gridColumn: 'span 7' }}>
             <div style={{ background: '#FFFFFF', color: '#1B5E20', padding: '2.5rem', borderRadius: '2px', boxShadow: '0 25px 50px rgba(0,0,0,0.3)', borderTop: '4px solid #4CAF50' }}>
-              
+
               {formSubmitted ? (
                 <div style={{ padding: '3rem 2rem', textAlign: 'center' }}>
                   <CheckCircle2 size={48} color="#1B5E20" style={{ margin: '0 auto 1rem auto' }} />
@@ -95,11 +95,11 @@ export const ContactSection: React.FC = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                  
+
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
                     <div>
                       <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>FULL NAME *</label>
-                      <input 
+                      <input
                         type="text"
                         required
                         placeholder="John Doe"
@@ -111,7 +111,7 @@ export const ContactSection: React.FC = () => {
 
                     <div>
                       <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>CORPORATE EMAIL *</label>
-                      <input 
+                      <input
                         type="email"
                         required
                         placeholder="jdoe@railway.com"
@@ -125,7 +125,7 @@ export const ContactSection: React.FC = () => {
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
                     <div>
                       <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>PHONE NUMBER</label>
-                      <input 
+                      <input
                         type="tel"
                         placeholder="+1 (800) 555-0199"
                         value={formData.phone}
@@ -136,7 +136,7 @@ export const ContactSection: React.FC = () => {
 
                     <div>
                       <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>COMPANY / AGENCY</label>
-                      <input 
+                      <input
                         type="text"
                         placeholder="Class I Rail / Transit Agency"
                         value={formData.company}
@@ -148,7 +148,7 @@ export const ContactSection: React.FC = () => {
 
                   <div>
                     <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>PRODUCT CATEGORY *</label>
-                    <select 
+                    <select
                       value={formData.specification}
                       onChange={e => setFormData({ ...formData, specification: e.target.value })}
                       style={{ width: '100%', padding: '10px 14px', fontSize: '13px', background: '#F8F9FA', border: '1px solid #E5E7EB', outline: 'none', fontFamily: "'Manrope', sans-serif !important" }}
@@ -163,7 +163,7 @@ export const ContactSection: React.FC = () => {
 
                   <div>
                     <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>PROJECT SPECIFICATION &amp; VOLUME DETAILS</label>
-                    <textarea 
+                    <textarea
                       rows={3}
                       placeholder="Specify material grade (e.g., ASTM A27, manganese steel), volume units, and delivery timeline..."
                       value={formData.message}
@@ -172,18 +172,18 @@ export const ContactSection: React.FC = () => {
                     />
                   </div>
 
-                  <button 
+                  <button
                     type="submit"
                     className="btn-animated"
-                    style={{ 
-                      background: '#1B5E20', 
-                      color: '#FFFFFF', 
-                      border: '1.5px solid #4CAF50', 
-                      padding: '14px 28px', 
-                      fontSize: '13px', 
-                      fontWeight: 900, 
-                      letterSpacing: '0.08em', 
-                      textTransform: 'uppercase', 
+                    style={{
+                      background: '#1B5E20',
+                      color: '#FFFFFF',
+                      border: '1.5px solid #4CAF50',
+                      padding: '14px 28px',
+                      fontSize: '13px',
+                      fontWeight: 900,
+                      letterSpacing: '0.08em',
+                      textTransform: 'uppercase',
                       cursor: 'pointer',
                       display: 'inline-flex',
                       alignItems: 'center',

@@ -14,48 +14,48 @@ const slidesData = [
     tag: '01 ROLLING STOCK',
     eyebrow: 'WESTPOINT GROUP RAIL & TRANSIT MANUFACTURING',
     headline: 'BUILT TO MOVE THE WORLD',
-    desc: 'Westpoint Group Companies is a global leader in precision-engineered castings and forgings for rail and transit applications. Turnout frogs, forged axles, bogies, and catenary hardware built for strength and made to last.',
+    desc: 'Westpoint Group manufactures heavy-duty steel parts for trains, subways, and railways. From wheel axles and undercarriage bogies to track switch frogs, we build the strong metal components that keep North American rail lines moving safely.',
     mediaType: 'image',
     mediaSrc: '/images/istockphoto-1196704251-2048x2048.jpg',
     badgeTitle: 'WESTPOINT FOUNDRY & FORGING OPERATIONS',
-    badgeSub: 'Electric induction melting & 5-axis CNC machining',
-    cadSpec: 'AAR M-201 GRADE E STEEL'
+    badgeSub: 'High-strength steel casting & precision CNC machining',
+    cadSpec: 'AAR M-201 CERTIFIED STEEL'
   },
   {
     id: 2,
     tag: '02 TURNOUT FROGS',
-    eyebrow: 'AREMA CHAPTER 4 CERTIFIED TRACKWORK',
+    eyebrow: 'AMERICAN RAILWAY (AREMA) COMPLIANT TRACKWORK',
     headline: 'PRECISION TURNOUT & SWITCH FROGS',
-    desc: 'Austenitic manganese turnout frogs, heavy tie plates, and guard rail assemblies tested for extreme 36-ton axle load endurance across transcontinental freight lines.',
+    desc: 'Track switches and turnout frogs that let trains transfer between tracks smoothly. Made from hardened manganese steel to endure heavy freight cars without cracking.',
     mediaType: 'image',
     mediaSrc: '/images/turnout_frog_manganese_stock.jpg',
-    badgeTitle: 'HEAVY HAUL TURNOUT MANUFACTURING',
-    badgeSub: '100% volumetric NDT & 3D solidification modeling',
-    cadSpec: 'IRS T-29 AUSTENITIC MN'
+    badgeTitle: 'HEAVY-HAUL TRACK SWITCH MANUFACTURING',
+    badgeSub: '100% volumetric ultrasonic testing & impact hardening',
+    cadSpec: 'MANGANESE ALLOY STEEL'
   },
   {
     id: 3,
     tag: '03 LOCOMOTIVE BOGIES',
     eyebrow: 'AAR M-1003 QUALITY ASSURANCE',
     headline: 'LOCOMOTIVE BOGIES & AXLE HOUSINGS',
-    desc: 'Finish-machined locomotive axleboxes, friction wedges, and brake beam head assemblies forged and machined to tight ±0.05mm tolerances.',
+    desc: 'Heavy-duty steel wheel housings, suspension wedges, and brake heads that support train cars, ensuring smooth and reliable rides under heavy cargo loads.',
     mediaType: 'image',
     mediaSrc: '/images/locomotive_wheelset_stock.jpg',
-    badgeTitle: 'LOCOMOTIVE WHEELSET & BOGIE ASSEMBLIES',
-    badgeSub: 'AAR M-201 & ASTM A668 certified metallurgical engineering',
-    cadSpec: 'CASNUB 22HS / 25T ENDURANCE'
+    badgeTitle: 'WHEELSET & BOGIE UNDERCARRIAGE PARTS',
+    badgeSub: 'Certified metallurgical testing for maximum strength',
+    cadSpec: 'HEAVY AXLE LOAD TESTED'
   },
   {
     id: 4,
     tag: '04 5-AXIS CNC',
     eyebrow: 'ROBOTIC 5-AXIS CNC MACHINING',
     headline: 'PRECISION MACHINED RAIL COMPONENTS',
-    desc: 'State-of-the-art 5-axis CNC heavy milling and turning complexes delivering flawless AREMA and AAR compliance across North American rail networks.',
+    desc: 'Advanced computer-controlled machining ensuring every railway part fits accurately, installs seamlessly, and meets strict U.S. railroad safety standards.',
     mediaType: 'image',
     mediaSrc: '/images/real_cnc_machining_stock.jpg',
     badgeTitle: '5-AXIS CNC MACHINING COMPLEX',
-    badgeSub: 'Sub-millimeter dimensional inspection & CMM auditing',
-    cadSpec: '±0.05MM TOLERANCE CMM'
+    badgeSub: 'Laser inspection & coordinate measuring quality audits',
+    cadSpec: 'EXACT FIT TOLERANCES'
   }
 ];
 

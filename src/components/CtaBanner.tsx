@@ -10,9 +10,9 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
     <section className="section-dark-gradient" style={{ position: 'relative', color: '#FAF6EE', padding: '5rem 0', overflow: 'hidden', borderBottom: '2px solid #4CAF50' }}>
       {/* Background Photo */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
-        <img 
-          src="/images/istockphoto-1196704251-2048x2048.jpg" 
-          alt="Factory Assembly Facility" 
+        <img
+          src="/images/istockphoto-1196704251-2048x2048.jpg"
+          alt="Factory Assembly Facility"
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(27, 94, 32, 0.96) 0%, rgba(20, 61, 46, 0.88) 100%)' }} />
@@ -20,7 +20,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
 
       <div className="container-custom" style={{ position: 'relative', zIndex: 10 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem' }}>
-          
+
           <div style={{ maxWidth: '680px' }}>
             <div className="eyebrow eyebrow-dark" style={{ marginBottom: '1rem' }}>
               <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#81C784' }} />
@@ -63,7 +63,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onRequestQuoteClick }) => 
             </button>
 
             <a
-              href="mailto:foundrymen@westpointindustries.com"
+              href="mailto:foundry@westpointndustries.com"
               className="btn-animated"
               style={{
                 background: '#1B5E20',

@@ -10,7 +10,7 @@ import InteractiveExplorer from './components/InteractiveExplorer';
 import ProductShowcaseStrip from './components/ProductShowcaseStrip';
 import RailwayTelemetryWidget from './components/RailwayTelemetryWidget';
 import ManufacturingCapabilities from './components/ManufacturingCapabilities';
-import SolidificationCalculator from './components/SolidificationCalculator';
+// import SolidificationCalculator from './components/SolidificationCalculator';
 import ManufacturingProcess from './components/ManufacturingProcess';
 import IndustriesWeServe from './components/IndustriesWeServe';
 import FactoryOverview from './components/FactoryOverview';
@@ -79,8 +79,8 @@ function App() {
         {/* 09 Manufacturing Capabilities */}
         <ManufacturingCapabilities />
 
-        {/* 10 Interactive Solidification & Metallurgy Calculator */}
-        <SolidificationCalculator />
+        {/* 10 Solidification & Metallurgy Calculator - Hidden per user request */}
+        {/* <SolidificationCalculator /> */}
 
         {/* 11 Manufacturing Process Timeline */}
         <ManufacturingProcess />

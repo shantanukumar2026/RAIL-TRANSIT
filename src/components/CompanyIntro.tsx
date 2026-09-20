@@ -39,30 +39,30 @@ export const CompanyIntro: React.FC = () => {
             </h2>
 
             <p style={{ fontSize: '1.1rem', color: '#2E7D32', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '640px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
-              Westpoint Group Companies specializes in electric induction cast manganese turnout trackwork, heavy drop forged locomotive axles, and precision bogie components. Serving Class I freight railroads, high-speed corridors, and urban transit authorities globally with uncompromised quality assurance.
+              Westpoint Group manufactures the heavy-duty steel components that keep freight trains, subways, and passenger rail systems operating safely. We specialize in forged wheel axles, undercarriage bogies, and durable track switch frogs engineered to endure millions of tons of cargo without failing.
             </p>
 
             {/* Why Choose Westpoint Group Companies - 4 Story Pillars */}
             <div style={{ marginBottom: '2.25rem', padding: '1.25rem', background: '#FFFFFF', border: '1px solid #E5E7EB', borderLeft: '4px solid #4CAF50', borderRadius: '2px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
               <strong style={{ fontSize: '12.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.1em', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem', fontFamily: "'Manrope', sans-serif !important" }}>
-                WHY CLASS I RAILROADS PARTNER WITH WESTPOINT
+                WHY RAILROADS &amp; INDUSTRIAL BUYERS PARTNER WITH WESTPOINT
               </strong>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.85rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>RDSO Approved Class A Foundry</span>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>Certified Steel Foundry</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>100% Volumetric Ultrasonic NDT</span>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>100% Ultrasonic Soundness Testing</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>36-Ton Axle Load Rating</span>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>Heavy 36-Ton Axle Load Rating</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>AREMA Ch. 4 &amp; AAR M-1003</span>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>U.S. &amp; International Standards Compliant</span>
                 </div>
               </div>
             </div>
