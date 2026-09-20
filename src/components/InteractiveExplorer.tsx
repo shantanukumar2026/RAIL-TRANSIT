@@ -19,8 +19,6 @@ export interface ProductItem {
   hardness: string;
   desc: string;
   img: string;
-  drawingImg: string;
-  cadFile: string;
   keyFeatures: string[];
 }
 
@@ -39,9 +37,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Under-chassis critical components of high speed German LHB/FIAT coaches manufactured by Westpoint Industries.',
-    img: '/images/amsted_bogie_axlebox.jpg',
-    drawingImg: '/images/amsted_bogie_axlebox.jpg',
-    cadFile: 'RAIL-0.STEP',
+    img: '/images/prod_railway_track_plates.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -58,9 +54,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Control Arm Upper, Lower Right, Lower Left - SG 400/18 manufactured by Westpoint Industries.',
-    img: '/images/trackside_turnout_castings.jpg',
-    drawingImg: '/images/trackside_turnout_castings.jpg',
-    cadFile: 'RAIL-1.STEP',
+    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -77,9 +71,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Centering Disc Assembly (All Types) - DIN 17182 GS-20Mn5V manufactured by Westpoint Industries.',
-    img: '/images/amsted_centering_disc.jpg',
-    drawingImg: '/images/amsted_centering_disc.jpg',
-    cadFile: 'RAIL-2.STEP',
+    img: 'https://www.shutterstock.com/image-photo/closeup-flywheel-industrial-steam-engine-260nw-2629035775.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -96,9 +88,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Brake support - GS-20Mn5V manufactured by Westpoint Industries.',
-    img: '/images/amsted_brake_head.jpg',
-    drawingImg: '/images/amsted_brake_head.jpg',
-    cadFile: 'RAIL-3.STEP',
+    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -115,9 +105,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Set Of Console manufactured by Westpoint Industries.',
-    img: '/images/real_metal_casting_stock.jpg',
-    drawingImg: '/images/real_metal_casting_stock.jpg',
-    cadFile: 'RAIL-4.STEP',
+    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -134,9 +122,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Pin Bracket manufactured by Westpoint Industries.',
-    img: '/images/gettyimages-1412298980-1024x1024.jpg',
-    drawingImg: '/images/gettyimages-1412298980-1024x1024.jpg',
-    cadFile: 'RAIL-5.STEP',
+    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -153,9 +139,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Bump Stop Bracket manufactured by Westpoint Industries.',
-    img: '/images/prod_pin_bracket.jpg',
-    drawingImg: '/images/prod_pin_bracket.jpg',
-    cadFile: 'RAIL-6.STEP',
+    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -172,9 +156,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Articulation Piece - IS 1030 manufactured by Westpoint Industries.',
-    img: '/images/trackside_turnout_castings_2.jpg',
-    drawingImg: '/images/trackside_turnout_castings_2.jpg',
-    cadFile: 'RAIL-7.STEP',
+    img: 'https://www.shutterstock.com/image-photo/close-train-car-coupler-joint-260nw-2189679387.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -191,9 +173,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Axlebox Housing - IS 1030 manufactured by Westpoint Industries.',
-    img: '/images/amsted_bogie_axlebox.jpg',
-    drawingImg: '/images/amsted_bogie_axlebox.jpg',
-    cadFile: 'RAIL-8.STEP',
+    img: 'https://media.istockphoto.com/id/175853314/pl/zdj%C4%99cie/zestaw-ko%C5%82owy.jpg?c=n_AGSy3nqQbVpnDcYgTC9RbjDdViTYDOb4BjWYeCrDI%3D&k=20&s=1024x1024&w=is',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -210,9 +190,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Front and Rear Draft Lugs - Grade B & C manufactured by Westpoint Industries.',
-    img: '/images/real_cnc_machining_stock.jpg',
-    drawingImg: '/images/real_cnc_machining_stock.jpg',
-    cadFile: 'RAIL-9.STEP',
+    img: 'https://www.shutterstock.com/image-photo/close-train-coupler-260nw-1680899338.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -229,9 +207,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Railway Track Plates manufactured by Westpoint Industries.',
-    img: '/images/trackside_turnout_castings_2.jpg',
-    drawingImg: '/images/trackside_turnout_castings_2.jpg',
-    cadFile: 'RAIL-10.STEP',
+    img: 'https://www.shutterstock.com/image-photo/railroad-tracks-divided-into-two-260nw-2686728089.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -248,9 +224,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Castings for Buffers manufactured by Westpoint Industries.',
-    img: '/images/real_train_wheelset_stock.jpg',
-    drawingImg: '/images/real_train_wheelset_stock.jpg',
-    cadFile: 'RAIL-11.STEP',
+    img: 'https://www.shutterstock.com/image-photo/couplers-air-hose-between-two-260nw-2216664385.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -267,9 +241,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Other railway components manufactured by Westpoint Industries.',
-    img: '/images/turnout_frog_manganese_stock.jpg',
-    drawingImg: '/images/turnout_frog_manganese_stock.jpg',
-    cadFile: 'RAIL-12.STEP',
+    img: 'https://www.shutterstock.com/image-photo/close-train-coupler-260nw-1680899338.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -286,9 +258,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Rotavator Gearbox 13x23 manufactured by Westpoint Industries.',
-    img: '/images/prod_rotavator_gearbox_13x23.jpg',
-    drawingImg: '/images/prod_rotavator_gearbox_13x23.jpg',
-    cadFile: 'AGRI-13.STEP',
+    img: 'https://www.shutterstock.com/image-photo/gearbox-housing-cover-store-exhibition-260nw-2032227950.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -305,9 +275,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Rotavator Gearbox 13x25 manufactured by Westpoint Industries.',
-    img: '/images/prod_rotavator_gearbox_13x23.jpg',
-    drawingImg: '/images/prod_rotavator_gearbox_13x23.jpg',
-    cadFile: 'AGRI-14.STEP',
+    img: 'https://www.shutterstock.com/image-photo/gearbox-housing-cover-store-exhibition-260nw-2032227950.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -324,9 +292,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Other castings for Rotavator manufactured by Westpoint Industries.',
-    img: '/images/real_metal_casting_stock.jpg',
-    drawingImg: '/images/real_metal_casting_stock.jpg',
-    cadFile: 'AGRI-15.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -343,9 +309,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Reduction Gear Housing manufactured by Westpoint Industries.',
-    img: '/images/prod_rotavator_gearbox_13x23.jpg',
-    drawingImg: '/images/prod_rotavator_gearbox_13x23.jpg',
-    cadFile: 'AGRI-16.STEP',
+    img: 'https://media.gettyimages.com/id/654392522/photo/gearbox-metal-wheels-close-up.jpg?c=8tLIS2VMbTwdbYNGTL-eDH6zZL61mb40BH4GRD8-TCM%3D&k=20&s=170667a&w=gi',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -362,9 +326,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Castings for Combine Harvester manufactured by Westpoint Industries.',
-    img: '/images/real_cnc_machining_stock.jpg',
-    drawingImg: '/images/real_cnc_machining_stock.jpg',
-    cadFile: 'AGRI-17.STEP',
+    img: 'https://www.shutterstock.com/image-photo/rear-end-farm-tractor-showing-260nw-2656208361.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -381,9 +343,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Shackle manufactured by Westpoint Industries.',
-    img: '/images/prod_pin_bracket.jpg',
-    drawingImg: '/images/prod_pin_bracket.jpg',
-    cadFile: 'AGRI-18.STEP',
+    img: 'https://www.shutterstock.com/image-photo/tow-hitch-modern-tractor-safety-260nw-2206903103.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -400,9 +360,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Brake Drums manufactured by Westpoint Industries.',
-    img: '/images/locomotive_wheelset_stock.jpg',
-    drawingImg: '/images/locomotive_wheelset_stock.jpg',
-    cadFile: 'AGRI-19.STEP',
+    img: 'https://www.shutterstock.com/image-photo/drum-brake-truck-bus-tractor-260nw-2457408845.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -419,9 +377,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Flywheels manufactured by Westpoint Industries.',
-    img: '/images/real_metal_casting_stock.jpg',
-    drawingImg: '/images/real_metal_casting_stock.jpg',
-    cadFile: 'AGRI-20.STEP',
+    img: 'https://www.shutterstock.com/image-photo/closeup-flywheel-industrial-steam-engine-260nw-2629035775.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -438,9 +394,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Rotor Housing manufactured by Westpoint Industries.',
-    img: '/images/prod_rotavator_gearbox_13x23.jpg',
-    drawingImg: '/images/prod_rotavator_gearbox_13x23.jpg',
-    cadFile: 'AGRI-21.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -457,9 +411,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Front Linkage - top and bottom manufactured by Westpoint Industries.',
-    img: '/images/real_cnc_machining_stock.jpg',
-    drawingImg: '/images/real_cnc_machining_stock.jpg',
-    cadFile: 'AGRI-22.STEP',
+    img: 'https://www.shutterstock.com/image-photo/tow-hitch-modern-tractor-safety-260nw-2206903103.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -476,9 +428,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Jacking Pad manufactured by Westpoint Industries.',
-    img: '/images/amsted_jacking_pad.jpg',
-    drawingImg: '/images/amsted_jacking_pad.jpg',
-    cadFile: 'LOCO-23.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -495,9 +445,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Coupler Carrier manufactured by Westpoint Industries.',
-    img: '/images/prod_pin_bracket.jpg',
-    drawingImg: '/images/prod_pin_bracket.jpg',
-    cadFile: 'LOCO-24.STEP',
+    img: 'https://www.shutterstock.com/image-photo/close-train-coupler-260nw-1680899338.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -514,9 +462,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Bearing Adaptor Plate Assembly manufactured by Westpoint Industries.',
-    img: '/images/real_train_wheelset_stock.jpg',
-    drawingImg: '/images/real_train_wheelset_stock.jpg',
-    cadFile: 'LOCO-25.STEP',
+    img: 'https://www.shutterstock.com/image-photo/closeup-flywheel-industrial-steam-engine-260nw-2629035775.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -533,9 +479,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Brake Head for Brake rigging kit manufactured by Westpoint Industries.',
-    img: '/images/amsted_brake_head.jpg',
-    drawingImg: '/images/amsted_brake_head.jpg',
-    cadFile: 'LOCO-26.STEP',
+    img: 'https://www.shutterstock.com/image-photo/drum-brake-truck-bus-tractor-260nw-2457408845.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -552,9 +496,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Equaliser Spring Seat manufactured by Westpoint Industries.',
-    img: '/images/real_metal_casting_stock.jpg',
-    drawingImg: '/images/real_metal_casting_stock.jpg',
-    cadFile: 'LOCO-27.STEP',
+    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -571,9 +513,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Fuel Pump Support manufactured by Westpoint Industries.',
-    img: '/images/prod_pin_bracket.jpg',
-    drawingImg: '/images/prod_pin_bracket.jpg',
-    cadFile: 'LOCO-28.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -590,9 +530,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality 10 Ton Stub Axle manufactured by Westpoint Industries.',
-    img: '/images/locomotive_wheelset_stock.jpg',
-    drawingImg: '/images/locomotive_wheelset_stock.jpg',
-    cadFile: 'OEM-29.STEP',
+    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -609,9 +547,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality 8 Ton Knuckle manufactured by Westpoint Industries.',
-    img: '/images/real_metal_casting_stock.jpg',
-    drawingImg: '/images/real_metal_casting_stock.jpg',
-    cadFile: 'OEM-30.STEP',
+    img: 'https://www.shutterstock.com/image-photo/close-train-coupler-260nw-1680899338.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -628,9 +564,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Rotor manufactured by Westpoint Industries.',
-    img: '/images/prod_rotavator_gearbox_13x23.jpg',
-    drawingImg: '/images/prod_rotavator_gearbox_13x23.jpg',
-    cadFile: 'OEM-31.STEP',
+    img: 'https://www.shutterstock.com/image-photo/closeup-flywheel-industrial-steam-engine-260nw-2629035775.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -647,9 +581,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Eliptcal Pin manufactured by Westpoint Industries.',
-    img: '/images/prod_pin_bracket.jpg',
-    drawingImg: '/images/prod_pin_bracket.jpg',
-    cadFile: 'OEM-32.STEP',
+    img: 'https://www.shutterstock.com/image-photo/tow-hitch-modern-tractor-safety-260nw-2206903103.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -666,9 +598,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Sprockets for Undercarriage manufactured by Westpoint Industries.',
-    img: '/images/gettyimages-157479520-1024x1024.jpg',
-    drawingImg: '/images/gettyimages-157479520-1024x1024.jpg',
-    cadFile: 'OEM-33.STEP',
+    img: 'https://www.shutterstock.com/image-photo/track-drive-gear-bulldozer-sprocket-mechanism-260nw-623455658.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -685,9 +615,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Trailer Components manufactured by Westpoint Industries.',
-    img: '/images/real_cnc_machining_stock.jpg',
-    drawingImg: '/images/real_cnc_machining_stock.jpg',
-    cadFile: 'OEM-34.STEP',
+    img: 'https://www.shutterstock.com/image-photo/tow-hitch-modern-tractor-safety-260nw-2206903103.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -704,9 +632,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Haulages manufactured by Westpoint Industries.',
-    img: '/images/istockphoto-1030443074-1024x1024.jpg',
-    drawingImg: '/images/istockphoto-1030443074-1024x1024.jpg',
-    cadFile: 'MINING-35.STEP',
+    img: 'https://www.shutterstock.com/image-photo/mining-dump-truck-open-pit-260nw-2506208325.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -723,9 +649,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Winches manufactured by Westpoint Industries.',
-    img: '/images/istockphoto-1030443074-1024x1024.jpg',
-    drawingImg: '/images/istockphoto-1030443074-1024x1024.jpg',
-    cadFile: 'MINING-36.STEP',
+    img: 'https://www.shutterstock.com/image-photo/crane-hook-system-pulleys-ropes-260nw-2462965813.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -742,9 +666,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Aeriel Ropeways manufactured by Westpoint Industries.',
-    img: '/images/real_metal_casting_stock.jpg',
-    drawingImg: '/images/real_metal_casting_stock.jpg',
-    cadFile: 'MINING-37.STEP',
+    img: 'https://www.shutterstock.com/image-photo/crane-hook-system-pulleys-ropes-260nw-2462965813.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -761,9 +683,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Flanges manufactured by Westpoint Industries.',
-    img: '/images/real_cnc_machining_stock.jpg',
-    drawingImg: '/images/real_cnc_machining_stock.jpg',
-    cadFile: 'MINING-38.STEP',
+    img: 'https://www.shutterstock.com/image-photo/closeup-industrial-flange-bolts-being-tightened-260nw-2590452867.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -780,9 +700,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Pulleys manufactured by Westpoint Industries.',
-    img: '/images/real_train_wheelset_stock.jpg',
-    drawingImg: '/images/real_train_wheelset_stock.jpg',
-    cadFile: 'MINING-39.STEP',
+    img: 'https://www.shutterstock.com/image-photo/crane-hook-system-pulleys-ropes-260nw-2462965813.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -799,9 +717,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Gearboxes manufactured by Westpoint Industries.',
-    img: '/images/real_metal_casting_stock.jpg',
-    drawingImg: '/images/real_metal_casting_stock.jpg',
-    cadFile: 'MINING-40.STEP',
+    img: 'https://media.gettyimages.com/id/654392522/photo/gearbox-metal-wheels-close-up.jpg?c=8tLIS2VMbTwdbYNGTL-eDH6zZL61mb40BH4GRD8-TCM%3D&k=20&s=170667a&w=gi',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -818,9 +734,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Roof bolter manufactured by Westpoint Industries.',
-    img: '/images/istockphoto-1030443074-1024x1024.jpg',
-    drawingImg: '/images/istockphoto-1030443074-1024x1024.jpg',
-    cadFile: 'MINING-41.STEP',
+    img: 'https://www.shutterstock.com/image-photo/heavy-drilling-machinery-work-dimly-260nw-2503406227.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -837,9 +751,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN8 Carbon Steel Castings manufactured by Westpoint Industries.',
-    img: '/images/trackside_turnout_castings.jpg',
-    drawingImg: '/images/trackside_turnout_castings.jpg',
-    cadFile: 'OTHER-42.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -856,9 +768,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN9 Castings manufactured by Westpoint Industries.',
-    img: '/images/trackside_turnout_castings.jpg',
-    drawingImg: '/images/trackside_turnout_castings.jpg',
-    cadFile: 'OTHER-43.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -875,9 +785,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN15 Castings manufactured by Westpoint Industries.',
-    img: '/images/trackside_turnout_castings.jpg',
-    drawingImg: '/images/trackside_turnout_castings.jpg',
-    cadFile: 'OTHER-44.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -894,9 +802,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN18 Castings manufactured by Westpoint Industries.',
-    img: '/images/trackside_turnout_castings.jpg',
-    drawingImg: '/images/trackside_turnout_castings.jpg',
-    cadFile: 'OTHER-45.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -913,9 +819,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN19 Castings manufactured by Westpoint Industries.',
-    img: '/images/trackside_turnout_castings.jpg',
-    drawingImg: '/images/trackside_turnout_castings.jpg',
-    cadFile: 'OTHER-46.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -932,9 +836,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN24 Castings manufactured by Westpoint Industries.',
-    img: '/images/trackside_turnout_castings.jpg',
-    drawingImg: '/images/trackside_turnout_castings.jpg',
-    cadFile: 'OTHER-47.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -951,9 +853,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality IS 2708 Castings manufactured by Westpoint Industries.',
-    img: '/images/real_cnc_machining_stock.jpg',
-    drawingImg: '/images/real_cnc_machining_stock.jpg',
-    cadFile: 'OTHER-48.STEP',
+    img: 'https://www.shutterstock.com/image-photo/closeup-industrial-flange-bolts-being-tightened-260nw-2590452867.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -970,9 +870,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality High Chrome Castings manufactured by Westpoint Industries.',
-    img: '/images/real_cnc_machining_stock.jpg',
-    drawingImg: '/images/real_cnc_machining_stock.jpg',
-    cadFile: 'OTHER-49.STEP',
+    img: 'https://www.shutterstock.com/image-photo/track-drive-gear-bulldozer-sprocket-mechanism-260nw-623455658.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -989,9 +887,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Castings for Stone Crushers manufactured by Westpoint Industries.',
-    img: '/images/real_cnc_machining_stock.jpg',
-    drawingImg: '/images/real_cnc_machining_stock.jpg',
-    cadFile: 'OTHER-50.STEP',
+    img: 'https://www.shutterstock.com/image-photo/track-drive-gear-bulldozer-sprocket-mechanism-260nw-623455658.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -1008,12 +904,26 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Ornamental Castings manufactured by Westpoint Industries.',
-    img: '/images/real_metal_casting_stock.jpg',
-    drawingImg: '/images/real_metal_casting_stock.jpg',
-    cadFile: 'OTHER-51.STEP',
+    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
-
+  // {
+  //   id: 'other-52',
+  //   category: 'other',
+  //   categoryLabel: 'Other Industries',
+  //   title: 'Heat Resistant Castings for Boilers',
+  //   series: 'SERIES OTHER',
+  //   specs: 'Standard Specification',
+  //   compliance: ['ISO 9001:2015'],
+  //   axleLoad: 'Variable',
+  //   materialGrade: 'Standard Grade',
+  //   tensileStrength: 'N/A',
+  //   yieldStrength: 'N/A',
+  //   hardness: 'N/A',
+  //   desc: 'High-quality Heat Resistant Castings for Boilers manufactured by Westpoint Industries.',
+  //   img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
+  //   keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
+  // }
 ];
 
 interface InteractiveExplorerProps {
@@ -1095,7 +1005,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
           item.specs.toLowerCase().includes(query) ||
           item.materialGrade.toLowerCase().includes(query) ||
           item.desc.toLowerCase().includes(query) ||
-          item.cadFile.toLowerCase().includes(query);
+          item.id.toLowerCase().includes(query);
         if (!matchesSearch) return false;
       }
 
@@ -1542,7 +1452,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                     <img
                       src={product.img}
                       alt={product.title}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9, transition: 'transform 0.4s ease' }}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain', background: '#F8FAFC', opacity: 1, transition: 'transform 0.4s ease' }}
                     />
 
                     {/* Top Series Badge */}
@@ -1568,7 +1478,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                     {/* Brand Tag */}
                     <div style={{ marginBottom: '8px' }}>
                       <span style={{ fontSize: '11px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-                        WESTPOINT RAIL™
+                        WESTPOINT GROUP
                       </span>
                     </div>
 
@@ -1586,18 +1496,19 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
 
                     {/* Product Title */}
                     <h3 style={{
-                        fontSize: '1.1rem',
-                        fontWeight: 800,
-                        color: '#111827',
-                        margin: '0 0 8px 0',
-                        lineHeight: 1.4,
-                        letterSpacing: '-0.01em',
-                        fontFamily: "'Manrope', sans-serif !important",
-                        display: '-webkit-box',
-                        WebkitLineClamp: 2,
-                        WebkitBoxOrient: 'vertical',
-                        overflow: 'hidden',
-                        minHeight: '2.8em',}}>
+                      fontSize: '1.1rem',
+                      fontWeight: 800,
+                      color: '#111827',
+                      margin: '0 0 8px 0',
+                      lineHeight: 1.4,
+                      letterSpacing: '-0.01em',
+                      fontFamily: "'Manrope', sans-serif !important",
+                      display: '-webkit-box',
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: 'vertical',
+                      overflow: 'hidden',
+                      minHeight: '2.8em',
+                    }}>
                       {product.title}
                     </h3>
 
@@ -1706,7 +1617,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                     <th style={{ padding: '14px 16px' }}>Specification Standard</th>
                     <th style={{ padding: '14px 16px' }}>Material Grade</th>
                     <th style={{ padding: '14px 16px' }}>Tensile Strength</th>
-                    <th style={{ padding: '14px 16px' }}>CAD File</th>
+                    <th style={{ padding: '14px 16px' }}>Ref Code</th>
                     <th style={{ padding: '14px 16px', textAlign: 'right' }}>Actions</th>
                   </tr>
                 </thead>
@@ -1728,15 +1639,15 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                       <td style={{ padding: '14px 16px', color: '#2E7D32', fontWeight: 600 }}>
                         {p.specs}
                       </td>
-                      <td style={{ padding: '14px 16px', color: '#4CAF50', fontSize: '0.8rem' }}>
+                      <td style={{ padding: '14px 16px', color: '#4CAF50', fontWeight: 600 }}>
                         {p.materialGrade}
                       </td>
                       <td style={{ padding: '14px 16px', fontWeight: 700, color: '#1B5E20' }}>
                         {p.tensileStrength}
                       </td>
                       <td style={{ padding: '14px 16px' }}>
-                        <code style={{ background: '#F1F5F9', padding: '2px 6px', borderRadius: '4px', fontSize: '0.75rem' }}>
-                          {p.cadFile}
+                        <code style={{ background: '#F1F5F9', padding: '2px 6px', borderRadius: '4px', fontSize: '0.75rem', textTransform: 'uppercase' }}>
+                          {p.id.toUpperCase()}
                         </code>
                       </td>
                       <td style={{ padding: '14px 16px', textAlign: 'right' }}>
@@ -1881,7 +1792,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
           </div>
         )}
 
-              </div>
+      </div>
     </section>
   );
 };

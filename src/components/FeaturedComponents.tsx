@@ -34,8 +34,7 @@ export const FeaturedComponents: React.FC = () => {
       series: 'SG 400/18',
       specs: 'DIN/EN/ISO Standards',
       desc: 'Under-chassis critical components of high speed German LHB/FIAT coaches.',
-      img: '/images/amsted_bogie_axlebox.jpg',
-      drawingImg: '/images/amsted_bogie_axlebox.jpg'
+      img: '/images/trackside_turnout_castings.jpg',
     },
     {
       id: 'rail-02',
@@ -45,7 +44,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'DIN 17182',
       desc: 'Centering disc assembly for all types of high-speed passenger coaches.',
       img: '/images/amsted_centering_disc.jpg',
-      drawingImg: '/images/amsted_centering_disc.jpg'
     },
     {
       id: 'rail-03',
@@ -55,7 +53,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Precision Machined',
       desc: 'Axlebox housing for freight and passenger bogie bolsters.',
       img: '/images/amsted_bogie_axlebox.jpg',
-      drawingImg: '/images/amsted_bogie_axlebox.jpg'
     },
     {
       id: 'rail-04',
@@ -65,7 +62,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Heavy Duty',
       desc: 'Precision cast steel track tie plates and turnout components.',
       img: '/images/trackside_turnout_castings_2.jpg',
-      drawingImg: '/images/trackside_turnout_castings_2.jpg'
     },
 
     // Agri Industry
@@ -77,7 +73,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Precision Cast',
       desc: 'High durability rotavator gearbox casing for agricultural machinery.',
       img: '/images/prod_rotavator_gearbox_13x23.jpg',
-      drawingImg: '/images/prod_rotavator_gearbox_13x23.jpg'
     },
     {
       id: 'agri-02',
@@ -87,7 +82,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Heavy Duty Cast Iron',
       desc: 'Reduction gear housing for tractors and combine harvesters.',
       img: '/images/prod_rotavator_gearbox_13x23.jpg',
-      drawingImg: '/images/prod_rotavator_gearbox_13x23.jpg'
     },
     {
       id: 'agri-03',
@@ -97,7 +91,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Ductile Iron',
       desc: 'High-friction brake drums for agricultural trailers and tractors.',
       img: '/images/locomotive_wheelset_stock.jpg',
-      drawingImg: '/images/locomotive_wheelset_stock.jpg'
     },
     {
       id: 'agri-04',
@@ -107,7 +100,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Balanced Cast Iron',
       desc: 'Precision balanced flywheels for high-torque agricultural engines.',
       img: '/images/real_cnc_machining_stock.jpg',
-      drawingImg: '/images/real_cnc_machining_stock.jpg'
     },
 
     // Locomotives
@@ -119,7 +111,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Heavy Duty',
       desc: 'Jacking pad for diesel-electric locomotives.',
       img: '/images/amsted_jacking_pad.jpg',
-      drawingImg: '/images/amsted_jacking_pad.jpg'
     },
     {
       id: 'loco-02',
@@ -129,7 +120,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Ductile Iron',
       desc: 'Brake head for locomotive brake rigging kit.',
       img: '/images/amsted_brake_head.jpg',
-      drawingImg: '/images/amsted_brake_head.jpg'
     },
     {
       id: 'loco-03',
@@ -139,7 +129,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Precision Cast',
       desc: 'Bearing adaptor plate assembly for locomotive bogies.',
       img: '/images/real_train_wheelset_stock.jpg',
-      drawingImg: '/images/real_train_wheelset_stock.jpg'
     },
     {
       id: 'loco-04',
@@ -149,7 +138,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'High Tensile Steel',
       desc: 'Coupler carrier support for heavy haul locomotives.',
       img: '/images/prod_pin_bracket.jpg',
-      drawingImg: '/images/prod_pin_bracket.jpg'
     },
 
     // OEMs
@@ -161,7 +149,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Forged Steel',
       desc: 'Heavy duty 10 Ton stub axle for OEM applications.',
       img: '/images/locomotive_wheelset_stock.jpg',
-      drawingImg: '/images/locomotive_wheelset_stock.jpg'
     },
     {
       id: 'oem-02',
@@ -171,7 +158,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Hardened Steel',
       desc: 'Precision engineered eliptcal pins for industrial machinery.',
       img: '/images/prod_pin_bracket.jpg',
-      drawingImg: '/images/prod_pin_bracket.jpg'
     },
     {
       id: 'oem-03',
@@ -181,7 +167,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Wear Resistant',
       desc: 'Heavy duty sprockets for tracked undercarriage systems.',
       img: '/images/gettyimages-157479520-1024x1024.jpg',
-      drawingImg: '/images/gettyimages-157479520-1024x1024.jpg'
     },
     {
       id: 'oem-04',
@@ -191,7 +176,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'High Capacity',
       desc: 'Various structural components for heavy haul trailers.',
       img: '/images/istockphoto-1967717882-1024x1024.jpg',
-      drawingImg: '/images/istockphoto-1967717882-1024x1024.jpg'
     },
 
     // Mining Industries
@@ -203,7 +187,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'High Torque',
       desc: 'Heavy duty winches for underground and surface mining operations.',
       img: '/images/istockphoto-1030443074-1024x1024.jpg',
-      drawingImg: '/images/istockphoto-1030443074-1024x1024.jpg'
     },
     {
       id: 'mine-02',
@@ -213,7 +196,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Wear Resistant',
       desc: 'Heavy flanged pulleys for aerial ropeway material transport.',
       img: '/images/real_metal_casting_stock.jpg',
-      drawingImg: '/images/real_metal_casting_stock.jpg'
     },
     {
       id: 'mine-03',
@@ -223,7 +205,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'High Impact',
       desc: 'Reduction gearboxes for severe duty mining conveyors.',
       img: '/images/real_metal_casting_stock.jpg',
-      drawingImg: '/images/real_metal_casting_stock.jpg'
     },
     {
       id: 'mine-04',
@@ -233,7 +214,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Abrasion Resistant',
       desc: 'Components for underground mining roof bolter machinery.',
       img: '/images/istockphoto-1030443074-1024x1024.jpg',
-      drawingImg: '/images/istockphoto-1030443074-1024x1024.jpg'
     },
 
     // Other Industries
@@ -245,7 +225,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'High Tensile',
       desc: 'Engineering carbon steel castings for heavy machinery.',
       img: '/images/trackside_turnout_castings.jpg',
-      drawingImg: '/images/trackside_turnout_castings.jpg'
     },
     {
       id: 'other-02',
@@ -255,7 +234,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Abrasion Resistant',
       desc: 'High chrome abrasion-resistant liners and wear parts.',
       img: '/images/real_cnc_machining_stock.jpg',
-      drawingImg: '/images/real_cnc_machining_stock.jpg'
     },
     {
       id: 'other-03',
@@ -265,7 +243,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Manganese Steel',
       desc: 'Castings for stone crushers including jaw plates and mantles.',
       img: '/images/real_cnc_machining_stock.jpg',
-      drawingImg: '/images/real_cnc_machining_stock.jpg'
     },
     {
       id: 'other-04',
@@ -275,7 +252,6 @@ export const FeaturedComponents: React.FC = () => {
       specs: 'Heat Resistant',
       desc: 'Boiler grates and heat-resistant components for thermal plants.',
       img: '/images/real_metal_casting_stock.jpg',
-      drawingImg: '/images/real_metal_casting_stock.jpg'
     }
   ];
 
