@@ -71,7 +71,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Centering Disc Assembly (All Types) - DIN 17182 GS-20Mn5V manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/closeup-flywheel-industrial-steam-engine-260nw-2629035775.jpg',
+    img: '/images/gettyimages-1124259795-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
