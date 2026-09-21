@@ -88,7 +88,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Brake support - GS-20Mn5V manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
+    img: 'images/gettyimages-520686084-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -105,7 +105,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Set Of Console manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
+    img: 'images/gettyimages-169263915-1024x1024 (1).jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -122,7 +122,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Pin Bracket manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
+    img: 'images/gettyimages-976893614-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -139,7 +139,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Bump Stop Bracket manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
+    img: 'images/gettyimages-1020709664-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -156,7 +156,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Articulation Piece - IS 1030 manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/close-train-car-coupler-joint-260nw-2189679387.jpg',
+    img: 'images/two-crossing-train-tracks.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -224,7 +224,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Castings for Buffers manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/couplers-air-hose-between-two-260nw-2216664385.jpg',
+    img: '/images/gettyimages-980499052-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -292,7 +292,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Other castings for Rotavator manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
+    img: 'images/high-angle-bicycle-pieces-wooden-table.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -326,7 +326,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Castings for Combine Harvester manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/rear-end-farm-tractor-showing-260nw-2656208361.jpg',
+    img: '/images/gettyimages-2163460998-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -343,7 +343,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Shackle manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/tow-hitch-modern-tractor-safety-260nw-2206903103.jpg',
+    img: '/images/safety-hook-600w-100728346.webp',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -377,7 +377,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Flywheels manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/closeup-flywheel-industrial-steam-engine-260nw-2629035775.jpg',
+    img: 'images/istanbul-turkey-june-22-2023-600w-2321811587.webp',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -462,7 +462,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Bearing Adaptor Plate Assembly manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/closeup-flywheel-industrial-steam-engine-260nw-2629035775.jpg',
+    img: 'images/camber-plates-drift-aluminium-race-600w-576380224.webp',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -496,7 +496,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Equaliser Spring Seat manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
+    img: '/images/big-industrial-springs-600w-159552263.webp',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -547,7 +547,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality 8 Ton Knuckle manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/close-train-coupler-260nw-1680899338.jpg',
+    img: 'images/gettyimages-2234684923-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -564,7 +564,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Rotor manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/closeup-flywheel-industrial-steam-engine-260nw-2629035775.jpg',
+    img: 'images/disused-electric-drive-rack-railway-600w-2624945193.webp',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -649,7 +649,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Winches manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/crane-hook-system-pulleys-ropes-260nw-2462965813.jpg',
+    img: '/images/gettyimages-2190288624-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -666,7 +666,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Aeriel Ropeways manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/crane-hook-system-pulleys-ropes-260nw-2462965813.jpg',
+    img: '/images/gettyimages-2163070546-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -683,7 +683,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Flanges manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/closeup-industrial-flange-bolts-being-tightened-260nw-2590452867.jpg',
+    img: 'images/gettyimages-2216199288-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -700,7 +700,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Pulleys manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/crane-hook-system-pulleys-ropes-260nw-2462965813.jpg',
+    img: 'images/gettyimages-2231519548-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -751,7 +751,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN8 Carbon Steel Castings manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
+    img: 'images/gettyimages-1354189688-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -768,7 +768,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN9 Castings manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
+    img: 'images/gettyimages-1367004269-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -785,7 +785,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN15 Castings manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
+    img: 'images/gettyimages-2160735166-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -802,7 +802,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN18 Castings manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
+    img: 'images/gettyimages-2160735166-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -819,7 +819,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN19 Castings manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
+    img: 'images/gettyimages-2160735166-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -836,7 +836,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality EN24 Castings manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
+    img: 'images/gettyimages-2160735166-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -870,7 +870,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality High Chrome Castings manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/track-drive-gear-bulldozer-sprocket-mechanism-260nw-623455658.jpg',
+    img: 'images/gettyimages-1316758701-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
