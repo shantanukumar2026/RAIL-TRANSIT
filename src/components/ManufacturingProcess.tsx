@@ -51,7 +51,7 @@ export const ManufacturingProcess: React.FC = () => {
         </div>
 
         {/* 6-Step Timeline Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '1rem', position: 'relative' }}>
+        <div className="grid-responsive-6" style={{ position: 'relative' }}>
           {steps.map((step, idx) => (
             <div 
               key={idx}

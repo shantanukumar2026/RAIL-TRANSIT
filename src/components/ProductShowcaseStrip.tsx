@@ -1,7 +1,11 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
-export const ProductShowcaseStrip: React.FC = () => {
+interface ProductShowcaseStripProps {
+  onOpenProductDetail?: (productTitle: string) => void;
+}
+
+export const ProductShowcaseStrip: React.FC<ProductShowcaseStripProps> = ({ onOpenProductDetail }) => {
   const parts = [
     {
       title: 'JACKING PAD',
@@ -61,10 +65,11 @@ export const ProductShowcaseStrip: React.FC = () => {
         </div>
 
         {/* 6 Isolated Product Cards Grid (100% Component Stock Photos Fitted) */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '1.25rem' }}>
+        <div className="grid-responsive-6">
           {parts.map((item, idx) => (
             <div 
               key={idx}
+              onClick={() => onOpenProductDetail && onOpenProductDetail(item.fullTitle || item.title)}
               className="card-hover-industrial img-hover-zoom"
               style={{
                 background: '#FFFFFF',

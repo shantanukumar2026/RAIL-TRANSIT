@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
-import { ArrowRight, Search, ChevronDown, Building2, Layers, ShieldCheck, Compass } from 'lucide-react';
+import { ArrowRight, Search, ChevronDown, Building2, Layers, ShieldCheck, Compass, Menu, X, ChevronRight, Phone, Mail } from 'lucide-react';
 
 interface HeaderProps {
   onRequestQuoteClick?: () => void;
@@ -10,6 +10,8 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplorer }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [expandedMobileCategory, setExpandedMobileCategory] = useState<string | null>('rail_coach');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +25,26 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close mobile drawer on ESC key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  // Prevent background scroll when mobile drawer is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [isMobileMenuOpen]);
 
   const navCategories = [
     {
@@ -139,16 +161,16 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
       >
 
         {/* Tier 1: Middle Corporate Branding Bar */}
-        <div style={{ background: '#FFFFFF', borderBottom: '1px solid #E5E7EB', padding: '14px 0' }}>
-          <div className="container-custom" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
+        <div style={{ background: '#FFFFFF', borderBottom: '1px solid #E5E7EB', padding: '12px 0' }}>
+          <div className="container-custom" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '14px' }}>
 
             {/* Corporate Division Emblem */}
-            <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <Logo variant="light" />
             </div>
 
-            {/* Technical Search Bar */}
-            <div style={{ flex: 1, maxWidth: '440px', position: 'relative' }}>
+            {/* Technical Search Bar (Desktop) */}
+            <div className="desktop-nav-only" style={{ flex: 1, maxWidth: '440px', position: 'relative' }}>
               <input
                 type="text"
                 placeholder="Search AREMA specs, CAD models, products..."
@@ -170,8 +192,8 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
               <Search size={16} color="#4CAF50" style={{ position: 'absolute', right: '14px', top: '50%', transform: 'translateY(-50%)' }} />
             </div>
 
-            {/* Action Buttons: Product Explorer + Request Quote CTA */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            {/* Action Buttons: Product Explorer + Request Quote CTA (Desktop) */}
+            <div className="desktop-nav-only" style={{ alignItems: 'center', gap: '12px' }}>
               {/* Product Explorer Nav CTA */}
               <button
                 onClick={() => {
@@ -227,8 +249,57 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
               </button>
             </div>
 
+            {/* Mobile Header Right Controls: Fast Explorer Trigger + Hamburger Menu Toggle */}
+            <div className="mobile-nav-toggle" style={{ alignItems: 'center', gap: '8px' }}>
+              <button
+                onClick={() => {
+                  if (onOpenExplorer) {
+                    onOpenExplorer();
+                  } else {
+                    const el = document.getElementById('explorer');
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                style={{
+                  padding: '8px 12px',
+                  fontSize: '11px',
+                  fontWeight: 800,
+                  background: '#E8F5E9',
+                  color: '#1B5E20',
+                  border: '1px solid #4CAF50',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '4px'
+                }}
+              >
+                <Compass size={14} />
+                <span>SPECS</span>
+              </button>
+
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                aria-label="Toggle Navigation Menu"
+                style={{
+                  padding: '8px 10px',
+                  background: '#1B5E20',
+                  color: '#FFFFFF',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+              >
+                {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+              </button>
+            </div>
+
           </div>
         </div>
+
 
         {/* Tier 2: Fortune 500 Corporate Industrial Navigation Bar */}
         <div style={{ background: '#4CAF50', borderBottom: '3px solid #388E3C', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.2)' }}>
@@ -466,8 +537,274 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick, onOpenExplo
           onClick={() => setActiveMegaMenu(null)}
         />
       )}
+
+      {/* Mobile Drawer Menu */}
+      {isMobileMenuOpen && (
+        <>
+          <div
+            className="mobile-drawer-overlay"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+          <div className="mobile-drawer-content">
+            {/* Drawer Header */}
+            <div style={{ padding: '16px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid #E5E7EB', background: '#F8F9FA' }}>
+              <Logo variant="light" />
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                aria-label="Close navigation menu"
+                style={{
+                  width: '36px',
+                  height: '36px',
+                  borderRadius: '50%',
+                  background: '#E8F5E9',
+                  border: '1px solid #4CAF50',
+                  color: '#1B5E20',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer'
+                }}
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            {/* Mobile Search Bar */}
+            <div style={{ padding: '16px 20px', borderBottom: '1px solid #E5E7EB', background: '#FFFFFF' }}>
+              <div style={{ position: 'relative' }}>
+                <input
+                  type="text"
+                  placeholder="Search products, AREMA specs..."
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    if (onOpenExplorer) onOpenExplorer();
+                  }}
+                  style={{
+                    width: '100%',
+                    padding: '10px 38px 10px 14px',
+                    fontSize: '13px',
+                    background: '#F8F9FA',
+                    border: '1.5px solid #E5E7EB',
+                    borderRadius: '6px',
+                    outline: 'none',
+                    color: '#1B5E20',
+                    fontFamily: "'Manrope', sans-serif"
+                  }}
+                />
+                <Search size={16} color="#4CAF50" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)' }} />
+              </div>
+            </div>
+
+            {/* Mobile Primary Actions */}
+            <div style={{ padding: '16px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', background: '#F8F9FA', borderBottom: '1px solid #E5E7EB' }}>
+              <button
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  if (onOpenExplorer) {
+                    onOpenExplorer();
+                  } else {
+                    const el = document.getElementById('explorer');
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                style={{
+                  padding: '12px 10px',
+                  fontSize: '11px',
+                  fontWeight: 900,
+                  textTransform: 'uppercase',
+                  background: '#E8F5E9',
+                  color: '#1B5E20',
+                  border: '1.5px solid #4CAF50',
+                  borderRadius: '4px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '6px',
+                  cursor: 'pointer'
+                }}
+              >
+                <Compass size={15} />
+                <span>SPEC EXPLORER</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  if (onRequestQuoteClick) onRequestQuoteClick();
+                }}
+                style={{
+                  padding: '12px 10px',
+                  fontSize: '11px',
+                  fontWeight: 900,
+                  textTransform: 'uppercase',
+                  background: '#1B5E20',
+                  color: '#FFFFFF',
+                  border: '1.5px solid #1B5E20',
+                  borderRadius: '4px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '6px',
+                  cursor: 'pointer'
+                }}
+              >
+                <span>REQUEST QUOTE</span>
+                <ArrowRight size={14} color="#FFFFFF" />
+              </button>
+            </div>
+
+            {/* Collapsible Accordion Navigation Categories */}
+            <div style={{ flex: 1, padding: '12px 0', overflowY: 'auto' }}>
+              <div style={{ padding: '8px 20px', fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+                PRODUCT DIVISIONS &amp; SPECIFICATIONS
+              </div>
+
+              {navCategories.map((cat) => {
+                const isExpanded = expandedMobileCategory === cat.id;
+                const IconComp = cat.icon;
+
+                return (
+                  <div key={cat.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
+                    <button
+                      onClick={() => setExpandedMobileCategory(isExpanded ? null : cat.id)}
+                      style={{
+                        width: '100%',
+                        padding: '14px 20px',
+                        background: isExpanded ? '#F0FDF4' : 'transparent',
+                        border: 'none',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        cursor: 'pointer',
+                        textAlign: 'left',
+                        fontFamily: "'Manrope', sans-serif"
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <IconComp size={16} color="#1B5E20" />
+                        <span style={{ fontSize: '13px', fontWeight: 800, color: '#1B5E20' }}>{cat.label}</span>
+                      </div>
+                      <ChevronDown
+                        size={16}
+                        color="#1B5E20"
+                        style={{
+                          transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)',
+                          transition: 'transform 0.2s ease'
+                        }}
+                      />
+                    </button>
+
+                    {isExpanded && (
+                      <div style={{ padding: '8px 20px 16px 20px', background: '#FAFAFA' }}>
+                        {cat.columns.map((col, cIdx) => (
+                          <div key={cIdx} style={{ marginBottom: '14px' }}>
+                            <div style={{ fontSize: '11px', fontWeight: 900, color: '#4CAF50', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                              <span style={{ width: '3px', height: '10px', background: '#4CAF50', display: 'inline-block' }} />
+                              <span>{col.title}</span>
+                            </div>
+                            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                              {col.links.map((link, lIdx) => (
+                                <li key={lIdx}>
+                                  <a
+                                    href="#products"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    style={{
+                                      fontSize: '12.5px',
+                                      color: '#2E7D32',
+                                      textDecoration: 'none',
+                                      fontWeight: 600,
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                      gap: '6px',
+                                      padding: '3px 0'
+                                    }}
+                                  >
+                                    <ChevronRight size={12} color="#81C784" />
+                                    <span>{link}</span>
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+
+              {/* Quick Section Anchors */}
+              <div style={{ padding: '16px 20px 8px 20px', fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+                DIRECT DIRECTORY
+              </div>
+              <div style={{ padding: '0 20px 16px 20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <a
+                  href="#capabilities"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  style={{ fontSize: '13px', color: '#1B5E20', fontWeight: 800, textDecoration: 'none' }}
+                >
+                  Foundry Capabilities &amp; Metallurgy
+                </a>
+                <a
+                  href="#process"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  style={{ fontSize: '13px', color: '#1B5E20', fontWeight: 800, textDecoration: 'none' }}
+                >
+                  Manufacturing Timeline Workflow
+                </a>
+                <a
+                  href="#standards"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  style={{ fontSize: '13px', color: '#1B5E20', fontWeight: 800, textDecoration: 'none' }}
+                >
+                  International Standards &amp; Wheelsets
+                </a>
+                <a
+                  href="#testing"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  style={{ fontSize: '13px', color: '#1B5E20', fontWeight: 800, textDecoration: 'none' }}
+                >
+                  In-House Testing Facilities
+                </a>
+                <a
+                  href="#approvals"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  style={{ fontSize: '13px', color: '#1B5E20', fontWeight: 800, textDecoration: 'none' }}
+                >
+                  Authorities &amp; Certifications
+                </a>
+                <a
+                  href="#news"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  style={{ fontSize: '13px', color: '#1B5E20', fontWeight: 800, textDecoration: 'none' }}
+                >
+                  News &amp; Technical Bulletins
+                </a>
+              </div>
+            </div>
+
+            {/* Mobile Drawer Footer Contacts */}
+            <div style={{ padding: '16px 20px', background: '#144818', color: '#FFFFFF', borderTop: '2px solid #4CAF50' }}>
+              <div style={{ fontSize: '11px', color: '#A5D6A7', fontWeight: 800, marginBottom: '8px' }}>
+                24/7 TECHNICAL SALES HOTLINE
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '12.5px' }}>
+                <a href="tel:6038383333" style={{ color: '#FFFFFF', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 700 }}>
+                  <Phone size={14} color="#81C784" />
+                  <span>603 838 3333 / 603 838 3222</span>
+                </a>
+                <a href="mailto:foundry@westpointndustries.com" style={{ color: '#FFFFFF', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 600 }}>
+                  <Mail size={14} color="#81C784" />
+                  <span>foundry@westpointndustries.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 };
 
 export default Header;
+

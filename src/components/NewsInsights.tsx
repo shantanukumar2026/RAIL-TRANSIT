@@ -52,7 +52,7 @@ export const NewsInsights: React.FC = () => {
         </div>
 
         {/* Exactly 3 Premium Cards Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
+        <div className="grid-responsive-3">
           {news.map((item, idx) => (
             <div 
               key={idx}

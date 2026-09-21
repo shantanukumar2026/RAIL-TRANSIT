@@ -32,10 +32,10 @@ export const FactoryOverview: React.FC = () => {
   return (
     <section className="section-full-vh" style={{ background: '#F8F9FA', borderBottom: '1px solid #E5E7EB' }}>
       <div className="container-custom">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '0', border: '1px solid #E5E7EB', background: '#FFFFFF', overflow: 'hidden' }}>
+        <div className="factory-overview-grid">
           
           {/* Left Column: Large Machined Axlebox Housing Photo */}
-          <div style={{ gridColumn: 'span 7', position: 'relative', minHeight: '440px' }}>
+          <div className="factory-col-img">
             <img 
               src="/images/istockphoto-1196704251-2048x2048.jpg" 
               alt="Westpoint 5-Axis CNC Machined Axlebox Housing" 
@@ -45,8 +45,8 @@ export const FactoryOverview: React.FC = () => {
           </div>
 
           {/* Right Column: Dark Green Stats Panel */}
-          <div style={{ gridColumn: 'span 5', background: '#1B5E20', color: '#FAF6EE', padding: '3.5rem 3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2.5rem 2rem' }}>
+          <div className="factory-col-stats">
+            <div className="grid-responsive-2" style={{ gap: '2rem 1.5rem' }}>
               {stats.map((stat, idx) => {
                 const IconComp = stat.icon;
                 return (

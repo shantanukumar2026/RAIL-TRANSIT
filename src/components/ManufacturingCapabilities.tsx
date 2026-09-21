@@ -68,7 +68,7 @@ export const ManufacturingCapabilities: React.FC = () => {
         </div>
 
         {/* 5 Horizontal / Grid Cards Matching Reference Screenshot */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '1.25rem' }}>
+        <div className="grid-responsive-5">
           {capabilities.map((cap, idx) => (
             <div 
               key={idx}

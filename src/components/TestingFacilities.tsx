@@ -58,7 +58,7 @@ export const TestingFacilities: React.FC = () => {
         </div>
 
         {/* 6 High-Contrast High-Legibility Cards Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
+        <div className="grid-responsive-3">
           {tests.map((test, idx) => {
             const IconComp = test.icon;
             return (

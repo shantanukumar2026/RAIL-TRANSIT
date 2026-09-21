@@ -112,10 +112,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
       }}
     >
       <div className="container-custom" style={{ position: 'relative', zIndex: 10 }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '3rem', alignItems: 'center' }}>
+        <div className="hero-grid-responsive">
           
-          {/* Left Column (6 Cols): Animated Content Slide */}
-          <div style={{ gridColumn: 'span 6' }}>
+          {/* Left Column: Animated Content Slide */}
+          <div className="hero-col-left">
             <div ref={textRef}>
               
               {/* Eyebrow Label */}
@@ -225,8 +225,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
             </div>
           </div>
 
-          {/* Right Column (6 Cols): Main Media Viewport & Interactive Thumbnail Selector */}
-          <div style={{ gridColumn: 'span 6', position: 'relative' }}>
+          {/* Right Column: Main Media Viewport & Interactive Thumbnail Selector */}
+          <div className="hero-col-right">
             
             {/* Main Image Frame with Floating Tech Chip */}
             <div 
@@ -461,7 +461,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
         }}
       >
         <div className="container-custom">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem' }}>
+          <div className="hero-metric-grid">
             
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <TrainTrack size={20} color="#81C784" />
@@ -471,7 +471,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
               </div>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', borderLeft: '1px solid rgba(255, 255, 255, 0.2)', paddingLeft: '1.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <ShieldCheck size={20} color="#81C784" />
               <div>
                 <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>36-TON HAL RATING</strong>
@@ -479,7 +479,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
               </div>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', borderLeft: '1px solid rgba(255, 255, 255, 0.2)', paddingLeft: '1.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <Zap size={20} color="#81C784" />
               <div>
                 <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>±0.05MM CNC TOLERANCE</strong>
@@ -487,7 +487,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
               </div>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', borderLeft: '1px solid rgba(255, 255, 255, 0.2)', paddingLeft: '1.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <ShieldCheck size={20} color="#81C784" />
               <div>
                 <strong style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>100% VOLUMETRIC NDT</strong>

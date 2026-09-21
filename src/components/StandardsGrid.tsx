@@ -62,7 +62,7 @@ export const StandardsGrid: React.FC = () => {
         </div>
 
         {/* 6 High-Contrast Certified Standards Cards Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', marginBottom: '2.5rem' }}>
+        <div className="grid-responsive-3" style={{ marginBottom: '2.5rem' }}>
           {standards.map((std, idx) => (
             <div
               key={idx}
@@ -101,7 +101,7 @@ export const StandardsGrid: React.FC = () => {
         </div>
 
         {/* High-Impact Visual Banner: Train Wheels & Gearboxes */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
+        <div className="grid-responsive-2">
 
           <div className="img-hover-zoom" style={{ border: '1px solid #D1D5DB', borderRadius: '2px', overflow: 'hidden', position: 'relative', height: '220px' }}>
             <img

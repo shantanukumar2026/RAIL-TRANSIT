@@ -92,7 +92,7 @@ export const AuthoritiesApprovals: React.FC = () => {
         </div>
 
         {/* 6 Full Detailed Regulatory Cards Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', marginBottom: '2.5rem' }}>
+        <div className="grid-responsive-3" style={{ marginBottom: '2.5rem' }}>
           {approvals.map((app, idx) => {
             const IconComp = app.icon;
             return (
@@ -142,19 +142,19 @@ export const AuthoritiesApprovals: React.FC = () => {
         </div>
 
         {/* Live Accreditation Audit Telemetry Bar */}
-        <div style={{ background: '#1B5E20', color: '#FFFFFF', padding: '1.25rem 2rem', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', borderTop: '3px solid #4CAF50' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+        <div style={{ background: '#1B5E20', color: '#FFFFFF', padding: '1.25rem 1.5rem', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1.25rem', borderTop: '3px solid #4CAF50' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
             <div>
               <span style={{ fontSize: '10px', color: '#A5D6A7', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>FOUNDRY CLASSIFICATION</span>
               <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>RDSO APPROVED CLASS 'A' FOUNDRY</strong>
             </div>
 
-            <div style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '2rem' }}>
+            <div style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '1.5rem' }}>
               <span style={{ fontSize: '10px', color: '#A5D6A7', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>ULTRASONIC NDT PASS RATE</span>
               <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 900, fontFamily: "'Manrope', sans-serif !important" }}>100.00% VOLUMETRIC SCAN</strong>
             </div>
 
-            <div style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '2rem' }}>
+            <div style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '1.5rem' }}>
               <span style={{ fontSize: '10px', color: '#A5D6A7', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>AAR &amp; AREMA COMPLIANCE</span>
               <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>FULL HEAT CODE CERTIFICATION</strong>
             </div>

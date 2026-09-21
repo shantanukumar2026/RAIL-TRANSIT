@@ -44,7 +44,7 @@ export const IndustriesWeServe: React.FC = () => {
         </div>
 
         {/* 6 Large Image Cards Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '1.25rem' }}>
+        <div className="grid-responsive-6">
           {industries.map((ind, idx) => (
             <div 
               key={idx}

@@ -4,10 +4,10 @@ export const EngineeringExcellence: React.FC = () => {
   return (
     <section className="section-full-vh" style={{ background: '#FFFFFF', borderBottom: '1px solid #E5E7EB' }}>
       <div className="container-custom">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '3.5rem', alignItems: 'center' }}>
+        <div className="engineering-grid">
           
           {/* Left Column: Real CNC Precision Photo */}
-          <div style={{ gridColumn: 'span 6' }}>
+          <div className="engineering-col-left">
             <div className="img-hover-zoom" style={{ border: '1px solid #E5E7EB', background: '#F8F9FA', position: 'relative' }}>
               <img 
                 src="/images/real_cnc_machining_stock.jpg" 
@@ -21,7 +21,7 @@ export const EngineeringExcellence: React.FC = () => {
           </div>
 
           {/* Right Column: Technical Details */}
-          <div style={{ gridColumn: 'span 6' }}>
+          <div className="engineering-col-right">
             <div className="eyebrow">
               <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#4CAF50' }} />
               <span style={{ color: '#4CAF50' }}>PRECISION METALLURGY &amp; MACHINING</span>
@@ -36,7 +36,7 @@ export const EngineeringExcellence: React.FC = () => {
             </p>
 
             {/* 4 Feature Bullet Blocks */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+            <div className="grid-responsive-2" style={{ gap: '1.5rem' }}>
               <div style={{ borderLeft: '3px solid #4CAF50', paddingLeft: '1rem' }}>
                 <strong style={{ fontSize: '13px', color: '#1B5E20', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em', fontWeight: 900, fontFamily: "'Manrope', sans-serif !important" }}>
                   3D Thermal Simulation

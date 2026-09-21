@@ -1,12 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './index.css';
+import { ChevronUp } from 'lucide-react';
 
 import TopContactBar from './components/TopContactBar';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import CompanyIntro from './components/CompanyIntro';
 import FeaturedComponents from './components/FeaturedComponents';
-import InteractiveExplorer from './components/InteractiveExplorer';
+import InteractiveExplorer, { EXPLORER_PRODUCTS } from './components/InteractiveExplorer';
+import type { ProductItem } from './components/InteractiveExplorer';
 import ProductShowcaseStrip from './components/ProductShowcaseStrip';
 import RailwayTelemetryWidget from './components/RailwayTelemetryWidget';
 import ManufacturingCapabilities from './components/ManufacturingCapabilities';
@@ -26,11 +28,37 @@ import Footer from './components/Footer';
 import RequestQuoteModal from './components/RequestQuoteModal';
 import WatchVideoModal from './components/WatchVideoModal';
 import ProductExplorerModal from './components/ProductExplorerModal';
+import ProductDetailPage from './components/ProductDetailPage';
 
 function App() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isExplorerModalOpen, setIsExplorerModalOpen] = useState(false);
+  const [selectedProductForDetail, setSelectedProductForDetail] = useState<ProductItem | null>(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) {
+        const progress = (window.scrollY / totalHeight) * 100;
+        setScrollProgress(progress);
+      }
+      if (window.scrollY > 400) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const handleOpenQuote = () => setIsQuoteModalOpen(true);
   const handleCloseQuote = () => setIsQuoteModalOpen(false);
@@ -41,11 +69,37 @@ function App() {
   const handleOpenExplorer = () => setIsExplorerModalOpen(true);
   const handleCloseExplorer = () => setIsExplorerModalOpen(false);
 
+  const handleOpenProductDetail = (itemOrTitle: ProductItem | string) => {
+    if (typeof itemOrTitle === 'string') {
+      const q = itemOrTitle.toLowerCase().trim();
+      const match = EXPLORER_PRODUCTS.find(p => 
+        p.title.toLowerCase().includes(q) || 
+        q.includes(p.title.toLowerCase()) ||
+        p.series.toLowerCase().includes(q) ||
+        p.desc.toLowerCase().includes(q)
+      ) || EXPLORER_PRODUCTS[0];
+      setSelectedProductForDetail(match);
+    } else {
+      setSelectedProductForDetail(itemOrTitle);
+    }
+  };
+
   return (
     <div style={{ minHeight: '100vh', background: '#F8F9FA', color: '#1B5E20' }}>
       
+      {/* Top Scroll Reading Progress Bar */}
+      <div 
+        className="scroll-progress-bar"
+        style={{ width: `${scrollProgress}%` }}
+        role="progressbar"
+        aria-valuenow={Math.round(scrollProgress)}
+        aria-valuemin={0}
+        aria-valuemax={100}
+      />
+
       {/* 01 Top Contact Bar */}
       <TopContactBar />
+
 
       {/* 02 Main Navigation & 03 Mega Menu */}
       <Header 
@@ -65,13 +119,16 @@ function App() {
         <CompanyIntro />
 
         {/* 06 Featured Rail Components (All Products) */}
-        <FeaturedComponents />
+        <FeaturedComponents onOpenProductDetail={handleOpenProductDetail} />
 
         {/* 06B Interactive Engineering & Product Spec Explorer */}
-        <InteractiveExplorer onRequestQuoteForProduct={() => setIsQuoteModalOpen(true)} />
+        <InteractiveExplorer 
+          onRequestQuoteForProduct={() => setIsQuoteModalOpen(true)} 
+          onOpenProductDetail={handleOpenProductDetail}
+        />
 
         {/* 07 Isolated Metal Castings Showcase Strip */}
-        <ProductShowcaseStrip />
+        <ProductShowcaseStrip onOpenProductDetail={handleOpenProductDetail} />
 
         {/* 08 Live Interactive Railway Telemetry & Speed Monitor */}
         <RailwayTelemetryWidget />
@@ -116,7 +173,18 @@ function App() {
       {/* 20 Corporate Mega Footer & Bottom Footer */}
       <Footer />
 
-      {/* Interactive Modals */}
+      {/* Interactive Modals & Product Detail Page */}
+      <ProductDetailPage 
+        isOpen={!!selectedProductForDetail}
+        product={selectedProductForDetail}
+        onClose={() => setSelectedProductForDetail(null)}
+        onRequestQuoteForProduct={(_title) => {
+          setSelectedProductForDetail(null);
+          setIsQuoteModalOpen(true);
+        }}
+        onSelectProduct={setSelectedProductForDetail}
+      />
+
       <RequestQuoteModal isOpen={isQuoteModalOpen} onClose={handleCloseQuote} />
       <WatchVideoModal isOpen={isVideoModalOpen} onClose={handleCloseVideo} />
       <ProductExplorerModal 
@@ -126,7 +194,42 @@ function App() {
           setIsExplorerModalOpen(false);
           setIsQuoteModalOpen(true);
         }}
+        onOpenProductDetail={handleOpenProductDetail}
       />
+
+      {/* Floating Action Buttons */}
+      <div className="floating-action-btn">
+        {showScrollTop && (
+          <button
+            onClick={scrollToTop}
+            aria-label="Scroll to top"
+            style={{
+              width: '44px',
+              height: '44px',
+              borderRadius: '50%',
+              background: '#1B5E20',
+              color: '#FFFFFF',
+              border: '2px solid #4CAF50',
+              boxShadow: '0 6px 20px rgba(0,0,0,0.25)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: 'pointer',
+              transition: 'all 0.25s ease',
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.background = '#4CAF50';
+              e.currentTarget.style.transform = 'translateY(-3px)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.background = '#1B5E20';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
+          >
+            <ChevronUp size={22} />
+          </button>
+        )}
+      </div>
 
     </div>
   );

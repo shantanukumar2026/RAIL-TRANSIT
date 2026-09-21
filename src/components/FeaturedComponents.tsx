@@ -1,7 +1,11 @@
 import React, { useRef, useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, Check, Filter } from 'lucide-react';
 
-export const FeaturedComponents: React.FC = () => {
+interface FeaturedComponentsProps {
+  onOpenProductDetail?: (productTitle: string) => void;
+}
+
+export const FeaturedComponents: React.FC<FeaturedComponentsProps> = ({ onOpenProductDetail }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
@@ -395,13 +399,9 @@ export const FeaturedComponents: React.FC = () => {
             {filteredComponents.map((item, idx) => (
               <div
                 key={idx}
-                className="card-hover-industrial img-hover-zoom"
+                onClick={() => onOpenProductDetail && onOpenProductDetail(item.title)}
+                className="card-slider-item card-hover-industrial img-hover-zoom"
                 style={{
-                  width: 'calc(25% - 0.95rem)',
-                  minWidth: 'calc(25% - 0.95rem)',
-                  maxWidth: 'calc(25% - 0.95rem)',
-                  flexShrink: 0,
-                  scrollSnapAlign: 'start',
                   background: '#FFFFFF',
                   border: '1px solid #E5E7EB',
                   borderRadius: '2px',
@@ -410,7 +410,7 @@ export const FeaturedComponents: React.FC = () => {
                   justifyContent: 'space-between',
                   cursor: 'pointer',
                   boxShadow: '0 10px 30px rgba(0, 0, 0, 0.04)',
-                  height: '490px'
+                  minHeight: '480px'
                 }}
               >
                 {/* Product Photo */}

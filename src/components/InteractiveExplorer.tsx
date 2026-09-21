@@ -930,12 +930,14 @@ interface InteractiveExplorerProps {
   onRequestQuoteForProduct?: (productTitle: string) => void;
   isModalView?: boolean;
   onCloseModal?: () => void;
+  onOpenProductDetail?: (product: ProductItem) => void;
 }
 
 export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
   onRequestQuoteForProduct,
   isModalView = false,
-  onCloseModal
+  onCloseModal,
+  onOpenProductDetail
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<string>('all');
@@ -1448,7 +1450,10 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                   }}
                 >
                   {/* Card Media Preview Header */}
-                  <div style={{ position: 'relative', height: '200px', background: '#0F2E14', overflow: 'hidden', borderBottom: '1px solid #E2E8F0' }}>
+                  <div 
+                    onClick={() => onOpenProductDetail && onOpenProductDetail(product)}
+                    style={{ position: 'relative', height: '200px', background: '#0F2E14', overflow: 'hidden', borderBottom: '1px solid #E2E8F0', cursor: onOpenProductDetail ? 'pointer' : 'default' }}
+                  >
                     <img
                       src={product.img}
                       alt={product.title}
@@ -1495,20 +1500,30 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                     </div>
 
                     {/* Product Title */}
-                    <h3 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: 800,
-                      color: '#111827',
-                      margin: '0 0 8px 0',
-                      lineHeight: 1.4,
-                      letterSpacing: '-0.01em',
-                      fontFamily: "'Manrope', sans-serif !important",
-                      display: '-webkit-box',
-                      WebkitLineClamp: 2,
-                      WebkitBoxOrient: 'vertical',
-                      overflow: 'hidden',
-                      minHeight: '2.8em',
-                    }}>
+                    <h3 
+                      onClick={() => onOpenProductDetail && onOpenProductDetail(product)}
+                      style={{
+                        fontSize: '1.1rem',
+                        fontWeight: 800,
+                        color: '#111827',
+                        margin: '0 0 8px 0',
+                        lineHeight: 1.4,
+                        letterSpacing: '-0.01em',
+                        fontFamily: "'Manrope', sans-serif !important",
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                        minHeight: '2.8em',
+                        cursor: onOpenProductDetail ? 'pointer' : 'default'
+                      }}
+                      onMouseEnter={e => {
+                        if (onOpenProductDetail) e.currentTarget.style.color = '#1B5E20';
+                      }}
+                      onMouseLeave={e => {
+                        if (onOpenProductDetail) e.currentTarget.style.color = '#111827';
+                      }}
+                    >
                       {product.title}
                     </h3>
 
@@ -1567,9 +1582,15 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                         <span style={{ color: '#111827', fontWeight: 800 }}>{isCompared ? 'Compared' : 'Compare'}</span>
                       </button>
 
-                      {/* See More Button */}
-                      <a
-                        href="#contact"
+                      {/* See More Button -> Opens Product Detail Page */}
+                      <button
+                        onClick={() => {
+                          if (onOpenProductDetail) {
+                            onOpenProductDetail(product);
+                          } else {
+                            window.location.hash = '#contact';
+                          }
+                        }}
                         className="btn-animated"
                         style={{
                           flex: 1,
@@ -1587,13 +1608,12 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                           gap: '6px',
                           boxShadow: '0 2px 8px rgba(27,94,32,0.2)',
                           transition: 'all 0.2s',
-                          textDecoration: 'none',
                           fontFamily: "'Manrope', sans-serif !important"
                         }}
                       >
                         <span>See More</span>
                         <ChevronRight size={15} />
-                      </a>
+                      </button>
 
                     </div>
 
@@ -1623,7 +1643,11 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                 </thead>
                 <tbody>
                   {filteredProducts.map((p, idx) => (
-                    <tr key={p.id} style={{ borderBottom: '1px solid #E2E8F0', background: idx % 2 === 0 ? '#FFFFFF' : '#F8FAFC' }}>
+                    <tr 
+                      key={p.id} 
+                      style={{ borderBottom: '1px solid #E2E8F0', background: idx % 2 === 0 ? '#FFFFFF' : '#F8FAFC', cursor: onOpenProductDetail ? 'pointer' : 'default' }}
+                      onClick={() => onOpenProductDetail && onOpenProductDetail(p)}
+                    >
                       <td style={{ padding: '14px 16px' }}>
                         <div style={{ fontWeight: 800, color: '#1B5E20' }}>{p.title}</div>
                         <span style={{ fontSize: '0.75rem', color: '#1B5E20', fontWeight: 700 }}>{p.series}</span>
@@ -1651,8 +1675,15 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                         </code>
                       </td>
                       <td style={{ padding: '14px 16px', textAlign: 'right' }}>
-                        <a
-                          href="#contact"
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (onOpenProductDetail) {
+                              onOpenProductDetail(p);
+                            } else {
+                              window.location.hash = '#contact';
+                            }
+                          }}
                           style={{
                             background: '#1B5E20',
                             color: '#FFF',
@@ -1661,12 +1692,12 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                             padding: '6px 12px',
                             fontSize: '0.775rem',
                             fontWeight: 700,
-                            textDecoration: 'none',
+                            cursor: 'pointer',
                             display: 'inline-block'
                           }}
                         >
                           See More
-                        </a>
+                        </button>
                       </td>
                     </tr>
                   ))}

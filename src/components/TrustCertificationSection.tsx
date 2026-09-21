@@ -186,7 +186,7 @@ export const TrustCertificationSection: React.FC = () => {
         </div>
 
         {/* 6 Grid Certification Cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.75rem', marginBottom: '4rem' }}>
+        <div className="grid-responsive-3" style={{ marginBottom: '4rem' }}>
           {certificationsList.map((cert) => (
             <div
               key={cert.id}
@@ -220,31 +220,26 @@ export const TrustCertificationSection: React.FC = () => {
                   {cert.title}
                 </h3>
 
-                <p style={{ fontSize: '12px', color: '#2E7D32', margin: '0 0 1rem 0', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px', fontFamily: "'Manrope', sans-serif !important" }}>
-                  <Building2 size={13} color="#4CAF50" />
-                  <span>{cert.authority}</span>
-                </p>
+                <div style={{ fontSize: '12px', fontWeight: 700, color: '#4CAF50', marginBottom: '12px', fontFamily: "'Manrope', sans-serif !important" }}>
+                  {cert.authority}
+                </div>
 
-                <p style={{ fontSize: '12.5px', color: '#2E7D32', lineHeight: 1.55, margin: '0 0 1.25rem 0', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
+                <p style={{ fontSize: '13px', color: '#2E7D32', lineHeight: 1.55, margin: '0 0 16px 0', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
                   {cert.scope}
                 </p>
               </div>
 
-              <div>
-                <div style={{ background: '#F9FAFB', border: '1px solid #F3F4F6', padding: '10px 12px', borderRadius: '2px', marginBottom: '1.25rem', fontSize: '11.5px', color: '#2E7D32' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
-                    <span style={{ fontWeight: 600 }}>Cert No:</span>
-                    <strong style={{ color: '#1B5E20', fontWeight: 800 }}>{cert.certNumber}</strong>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span style={{ fontWeight: 600 }}>Audit Validity:</span>
-                    <span style={{ color: '#166534', fontWeight: 700 }}>{cert.validUntil}</span>
-                  </div>
+              {/* Card Footer: Metadata & Action CTA */}
+              <div style={{ borderTop: '1px solid #E5E7EB', paddingTop: '14px', marginTop: '14px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11.5px', color: '#1B5E20', marginBottom: '12px', fontWeight: 600 }}>
+                  <span>Cert: <strong style={{ color: '#111827' }}>{cert.certNumber}</strong></span>
+                  <span>Valid: <strong style={{ color: '#166534' }}>{cert.validUntil}</strong></span>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                   <button
                     onClick={() => setSelectedCert(cert)}
+                    className="btn-animated"
                     style={{
                       flex: 1,
                       background: '#1B5E20',
@@ -256,16 +251,13 @@ export const TrustCertificationSection: React.FC = () => {
                       letterSpacing: '0.06em',
                       textTransform: 'uppercase',
                       cursor: 'pointer',
-                      display: 'inline-flex',
+                      borderRadius: '2px',
+                      display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       gap: '6px',
-                      borderRadius: '2px',
-                      transition: 'all 0.2s',
                       fontFamily: "'Manrope', sans-serif !important"
                     }}
-                    onMouseEnter={e => { e.currentTarget.style.background = '#FAF6EE'; e.currentTarget.style.color = '#1B5E20'; }}
-                    onMouseLeave={e => { e.currentTarget.style.background = '#1B5E20'; e.currentTarget.style.color = '#FFFFFF'; }}
                   >
                     <Eye size={14} />
                     <span>INSPECT CERT</span>
@@ -301,7 +293,7 @@ export const TrustCertificationSection: React.FC = () => {
         </div>
 
         {/* Rail Authorities Approval Directory */}
-        <div style={{ background: '#1B5E20', color: '#FFFFFF', padding: '3.5rem 3rem', borderRadius: '4px', position: 'relative', overflow: 'hidden', borderTop: '4px solid #4CAF50' }}>
+        <div style={{ background: '#1B5E20', color: '#FFFFFF', padding: '2.5rem 2rem', borderRadius: '4px', position: 'relative', overflow: 'hidden', borderTop: '4px solid #4CAF50' }}>
           <div style={{ maxWidth: '720px', marginBottom: '2.5rem' }}>
             <span style={{ fontSize: '11px', fontWeight: 900, color: '#A5D6A7', letterSpacing: '0.14em', textTransform: 'uppercase', display: 'block', marginBottom: '8px', fontFamily: "'Manrope', sans-serif !important" }}>
               CLASS I FREIGHT &amp; PASSENGER RAIL AUTHORITY APPROVALS
@@ -314,7 +306,7 @@ export const TrustCertificationSection: React.FC = () => {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
+          <div className="grid-responsive-3">
             {authorityApprovals.map((auth, i) => {
               const IconComp = auth.icon;
               return (
@@ -402,9 +394,11 @@ export const TrustCertificationSection: React.FC = () => {
               background: '#FFFFFF',
               maxWidth: '640px',
               width: '100%',
+              maxHeight: '90vh',
+              overflowY: 'auto',
               borderRadius: '2px',
               border: '2px solid #1B5E20',
-              padding: '2.5rem',
+              padding: '1.75rem',
               boxShadow: '0 25px 50px rgba(0, 0, 0, 0.3)',
               position: 'relative'
             }}

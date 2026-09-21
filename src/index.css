@@ -442,6 +442,431 @@ p {
 @media (max-width: 768px) {
   .footer-corporate-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 }
+
+/* ==========================================================================
+   FLUID & HIGH-IMPACT RESPONSIVE LAYOUT SYSTEM
+   ========================================================================== */
+
+/* 6-Column Responsive Grid */
+.grid-responsive-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+  .grid-responsive-6 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-responsive-6 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-responsive-6 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* 5-Column Responsive Grid (Capabilities) */
+.grid-responsive-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+  .grid-responsive-5 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-responsive-5 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-responsive-5 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* 4-Column Responsive Grid */
+.grid-responsive-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+  .grid-responsive-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-responsive-4 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* 3-Column Responsive Grid (Standards, Approvals, News, Labs) */
+.grid-responsive-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .grid-responsive-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-responsive-3 {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* 2-Column Responsive Grid */
+.grid-responsive-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .grid-responsive-2 {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* Hero 2-Column Responsive Collapse */
+.hero-grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-col-left {
+  grid-column: span 6;
+}
+
+.hero-col-right {
+  grid-column: span 6;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .hero-grid-responsive {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .hero-col-left,
+  .hero-col-right {
+    grid-column: span 1;
+    width: 100%;
+  }
+}
+
+/* Hero Technical Metric Bar Grid */
+.hero-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .hero-metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-metric-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Featured Components Responsive Card Slider Items */
+.card-slider-item {
+  width: calc(25% - 0.95rem);
+  min-width: calc(25% - 0.95rem);
+  max-width: calc(25% - 0.95rem);
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 1100px) {
+  .card-slider-item {
+    width: calc(33.333% - 0.9rem);
+    min-width: calc(33.333% - 0.9rem);
+    max-width: calc(33.333% - 0.9rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-slider-item {
+    width: 290px;
+    min-width: 290px;
+    max-width: 290px;
+  }
+}
+
+/* Telemetry Dashboard Responsive Grid */
+.telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.telemetry-col-left {
+  grid-column: span 5;
+}
+
+.telemetry-col-right {
+  grid-column: span 7;
+}
+
+@media (max-width: 992px) {
+  .telemetry-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .telemetry-col-left,
+  .telemetry-col-right {
+    grid-column: span 1;
+    width: 100%;
+  }
+}
+
+/* Factory Overview Responsive Grid */
+.factory-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0;
+  border: 1px solid #E5E7EB;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.factory-col-img {
+  grid-column: span 7;
+  position: relative;
+  min-height: 440px;
+}
+
+.factory-col-stats {
+  grid-column: span 5;
+  background: #1B5E20;
+  color: #FAF6EE;
+  padding: 3.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .factory-overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .factory-col-img {
+    grid-column: span 1;
+    min-height: 280px;
+  }
+  .factory-col-stats {
+    grid-column: span 1;
+    padding: 2.25rem 1.5rem;
+  }
+}
+
+/* Engineering Excellence Grid */
+.engineering-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.engineering-col-left {
+  grid-column: span 6;
+}
+
+.engineering-col-right {
+  grid-column: span 6;
+}
+
+@media (max-width: 992px) {
+  .engineering-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .engineering-col-left,
+  .engineering-col-right {
+    grid-column: span 1;
+    width: 100%;
+  }
+}
+
+/* Company Intro Grid */
+.company-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.company-intro-col-left {
+  grid-column: span 7;
+}
+
+.company-intro-col-right {
+  grid-column: span 5;
+}
+
+@media (max-width: 992px) {
+  .company-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .company-intro-col-left,
+  .company-intro-col-right {
+    grid-column: span 1;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   NAVIGATION VISIBILITY BREAKPOINTS
+   ========================================================================== */
+.desktop-nav-only {
+  display: flex !important;
+}
+
+.mobile-nav-toggle {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .desktop-nav-only {
+    display: none !important;
+  }
+  .mobile-nav-toggle {
+    display: flex !important;
+  }
+}
+
+/* Mobile Navigation Drawer */
+.mobile-drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 41, 30, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 10050;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.mobile-drawer-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+  max-width: 420px;
+  background: #FFFFFF;
+  z-index: 10051;
+  box-shadow: -10px 0 35px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  animation: slideDrawer 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: 'Manrope', sans-serif !important;
+}
+
+@keyframes slideDrawer {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Scroll Reading Progress Bar */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5px;
+  background: linear-gradient(90deg, #81C784 0%, #4CAF50 50%, #FFEB3B 100%);
+  z-index: 10010;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.6);
+}
+
+/* Floating Quick Actions */
+.floating-action-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9990;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+@media (max-width: 600px) {
+  .floating-action-btn {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+/* Micro-interaction hover lift & glow */
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(27, 94, 32, 0.15);
+}
+
+/* Smooth Table Responsive Horizontal Wrapper */
+.table-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 8px;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 3px;
+}

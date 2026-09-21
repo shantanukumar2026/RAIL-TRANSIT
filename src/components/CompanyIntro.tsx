@@ -9,10 +9,10 @@ export const CompanyIntro: React.FC = () => {
       <div className="section-shape-accent" style={{ top: '10%', right: '5%' }} />
 
       <div className="container-custom" style={{ position: 'relative', zIndex: 10 }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '3.5rem', alignItems: 'center' }}>
+        <div className="company-intro-grid">
           
           {/* Left Side: Storytelling & Why Choose Us */}
-          <div style={{ gridColumn: 'span 7' }}>
+          <div className="company-intro-col-left">
             <div className="eyebrow" style={{ letterSpacing: '0.2em', marginBottom: '1rem', fontFamily: "'Manrope', sans-serif !important" }}>
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
               <span style={{ color: '#4CAF50' }}>THE MANUFACTURING HERITAGE</span>
@@ -47,7 +47,7 @@ export const CompanyIntro: React.FC = () => {
               <strong style={{ fontSize: '12.5px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.1em', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem', fontFamily: "'Manrope', sans-serif !important" }}>
                 WHY RAILROADS &amp; INDUSTRIAL BUYERS PARTNER WITH WESTPOINT
               </strong>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.85rem' }}>
+              <div className="grid-responsive-2" style={{ gap: '0.85rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
                   <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>Certified Steel Foundry</span>
@@ -77,7 +77,7 @@ export const CompanyIntro: React.FC = () => {
           </div>
 
           {/* Right Side: Heavy Machined Axlebox Housing Photo */}
-          <div style={{ gridColumn: 'span 5' }}>
+          <div className="company-intro-col-right">
             <div className="img-hover-zoom" style={{ border: '1px solid #E5E7EB', background: '#FFFFFF', boxShadow: '0 20px 45px rgba(27, 94, 32, 0.12)', borderRadius: '2px', position: 'relative' }}>
               
               {/* Badge overlay */}

@@ -1,16 +1,19 @@
 import React from 'react';
 import InteractiveExplorer from './InteractiveExplorer';
+import type { ProductItem } from './InteractiveExplorer';
 
 interface ProductExplorerModalProps {
   isOpen: boolean;
   onClose: () => void;
   onRequestQuoteForProduct?: (productTitle: string) => void;
+  onOpenProductDetail?: (product: ProductItem) => void;
 }
 
 export const ProductExplorerModal: React.FC<ProductExplorerModalProps> = ({
   isOpen,
   onClose,
-  onRequestQuoteForProduct
+  onRequestQuoteForProduct,
+  onOpenProductDetail
 }) => {
   if (!isOpen) return null;
 
@@ -44,6 +47,12 @@ export const ProductExplorerModal: React.FC<ProductExplorerModalProps> = ({
           isModalView={true}
           onCloseModal={onClose}
           onRequestQuoteForProduct={onRequestQuoteForProduct}
+          onOpenProductDetail={(prod) => {
+            onClose();
+            if (onOpenProductDetail) {
+              onOpenProductDetail(prod);
+            }
+          }}
         />
       </div>
     </div>
