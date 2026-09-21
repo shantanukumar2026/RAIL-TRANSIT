@@ -615,7 +615,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Trailer Components manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/tow-hitch-modern-tractor-safety-260nw-2206903103.jpg',
+    img: 'images/gettyimages-1756783058-1024x1024.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
@@ -632,7 +632,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     yieldStrength: 'N/A',
     hardness: 'N/A',
     desc: 'High-quality Haulages manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/mining-dump-truck-open-pit-260nw-2506208325.jpg',
+    img: 'images/istockphoto-2225928128-2048x2048.jpg',
     keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
   },
   {
